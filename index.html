@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Letom po Stredomorí je AI cestovateľský magazín pre krásne destinácie, praktické itineráre, letecké trasy a dovolenky pri mori."
+    />
+    <title>Letom po Stredomorí</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="#domov" aria-label="Letom po Stredomorí domov">
+          <img
+            class="brand-logo"
+            src="images/logo/logo.png"
+            alt="Logo Letom po Stredomorí"
+          />
+          <span>Letom po Stredomorí</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Otvoriť menu"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="primary-menu">
+          <a href="#domov">Domov</a>
+          <a href="#destinacie">Destinácie</a>
+          <a href="#moje-cesty">Moje cesty</a>
+          <a href="#ai-prieskum">AI prieskum</a>
+          <a href="#itinerare">Itineráre</a>
+          <a href="#audio">Audio prehľady</a>
+          <a href="#youtube">YouTube</a>
+          <a class="nav-cta" href="#destinacie">Objav destinácie</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="domov" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="images/hero/hero-stredomorie.png"
+          alt="Svetlá stredomorská scenéria pri tyrkysovom mori"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI cestovateľský magazín</p>
+          <h1 id="hero-title">Letom po Stredomorí</h1>
+          <p class="hero-subtitle">
+            AI cestovateľský magazín pre krásne destinácie, praktické
+            itineráre, letecké trasy a dovolenky pri mori.
+          </p>
+          <p class="hero-copy">
+            Osobné skúsenosti, AI cestovateľský prieskum a vizuálna inšpirácia
+            pre ľudí, ktorí chcú objavovať Stredomorie jednoducho a s chuťou.
+          </p>
+          <div class="hero-actions" aria-label="Hlavné akcie">
+            <a class="button button-primary" href="#destinacie">Objav destinácie</a>
+            <a
+              class="button button-light"
+              href="https://youtube.com/@letompostredomori"
+              target="_blank"
+              rel="noopener"
+            >
+              Pozri YouTube
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section destinations-section" id="destinacie">
+        <div class="section-heading">
+          <p class="eyebrow">Destinácie pri mori</p>
+          <h2>Stredomorské krajiny EÚ</h2>
+          <p>
+            Výber krajín, ktoré spájajú krásne pobrežia, ostrovy, historické
+            mestá a dovolenkovú atmosféru.
+          </p>
+        </div>
+
+        <div class="destination-grid">
+          <article class="destination-card has-video">
+            <img src="images/destinacie/taliansko.png" alt="Taliansko" />
+            <div class="card-body">
+              <span class="country-tag">Dolce vita</span>
+              <h3>Taliansko</h3>
+              <p>Mestá, pláže, ostrovy a chute pravého juhu Európy.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=taliansko"
+                aria-label="Pozrieť videá pre Taliansko, počet videí 2"
+              >
+                Počet videí (2)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=taliansko"
+                aria-label="Pozrieť audio prehľady pre Taliansko, počet audio prehľadov 1"
+              >
+                Audio prehľady (1)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/destinacie/grecko.png" alt="Grécko" />
+            <div class="card-body">
+              <span class="country-tag">Ostrovy</span>
+              <h3>Grécko</h3>
+              <p>Tyrkysové more, ostrovy, história a pohodová atmosféra.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=grecko"
+                aria-label="Pozrieť videá pre Grécko, počet videí 0"
+              >
+                Počet videí (0)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=grecko"
+                aria-label="Pozrieť audio prehľady pre Grécko, počet audio prehľadov 0"
+              >
+                Audio prehľady (0)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card has-video">
+            <img src="images/destinacie/spanielsko.png" alt="Španielsko" />
+            <div class="card-body">
+              <span class="country-tag">Pobrežie</span>
+              <h3>Španielsko</h3>
+              <p>Slnečné pobrežie, temperament miest a krásne zátoky.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=spanielsko"
+                aria-label="Pozrieť videá pre Španielsko, počet videí 2"
+              >
+                Počet videí (2)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=spanielsko"
+                aria-label="Pozrieť audio prehľady pre Španielsko, počet audio prehľadov 2"
+              >
+                Audio prehľady (2)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/destinacie/francuzsko.png" alt="Francúzsko" />
+            <div class="card-body">
+              <span class="country-tag">Riviéra</span>
+              <h3>Francúzsko</h3>
+              <p>Azúrové pobrežie, elegancia a stredomorský šarm.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=francuzsko"
+                aria-label="Pozrieť videá pre Francúzsko, počet videí 0"
+              >
+                Počet videí (0)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=francuzsko"
+                aria-label="Pozrieť audio prehľady pre Francúzsko, počet audio prehľadov 0"
+              >
+                Audio prehľady (0)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/destinacie/chorvatsko.png" alt="Chorvátsko" />
+            <div class="card-body">
+              <span class="country-tag">Jadran</span>
+              <h3>Chorvátsko</h3>
+              <p>Blízke more, krištáľová voda a historické mestá.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=chorvatsko"
+                aria-label="Pozrieť videá pre Chorvátsko, počet videí 0"
+              >
+                Počet videí (0)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=chorvatsko"
+                aria-label="Pozrieť audio prehľady pre Chorvátsko, počet audio prehľadov 0"
+              >
+                Audio prehľady (0)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/destinacie/malta.png" alt="Malta" />
+            <div class="card-body">
+              <span class="country-tag">Farby</span>
+              <h3>Malta</h3>
+              <p>Malý ostrov s veľkou atmosférou, históriou a farbami.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=malta"
+                aria-label="Pozrieť videá pre Maltu, počet videí 0"
+              >
+                Počet videí (0)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=malta"
+                aria-label="Pozrieť audio prehľady pre Maltu, počet audio prehľadov 0"
+              >
+                Audio prehľady (0)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card has-video">
+            <img src="images/destinacie/cyprus.png" alt="Cyprus" />
+            <div class="card-body">
+              <span class="country-tag">Slnko</span>
+              <h3>Cyprus</h3>
+              <p>Slnečný ostrov s plážami, starobylými pamiatkami a pokojom.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=cyprus"
+                aria-label="Pozrieť videá pre Cyprus, počet videí 1"
+              >
+                Počet videí (1)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=cyprus"
+                aria-label="Pozrieť audio prehľady pre Cyprus, počet audio prehľadov 1"
+              >
+                Audio prehľady (1)
+              </a>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <img src="images/destinacie/slovinsko.png" alt="Slovinsko" />
+            <div class="card-body">
+              <span class="country-tag">Piran</span>
+              <h3>Slovinsko</h3>
+              <p>Krátke, ale čarovné pobrežie s príjemnými mestami.</p>
+              <a
+                class="video-count-button"
+                href="videa.html?krajina=slovinsko"
+                aria-label="Pozrieť videá pre Slovinsko, počet videí 0"
+              >
+                Počet videí (0)
+              </a>
+              <a
+                class="audio-count-button"
+                href="audio.html?krajina=slovinsko"
+                aria-label="Pozrieť audio prehľady pre Slovinsko, počet audio prehľadov 0"
+              >
+                Audio prehľady (0)
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="moje-cesty">
+        <div class="section-heading">
+          <p class="eyebrow">Transparentný prístup</p>
+          <h2>Ako vzniká obsah</h2>
+          <p>
+            Obsah prepája osobné skúsenosti s praktickým AI prieskumom. Cieľom
+            je priniesť užitočnú inšpiráciu, nie predstierať realitu.
+          </p>
+        </div>
+
+        <div class="process-grid" id="ai-prieskum">
+          <article class="info-box">
+            <span class="info-number">01</span>
+            <h3>Moje cesty</h3>
+            <p>
+              Niektoré miesta som navštívil osobne a do obsahu prinášam vlastný
+              pohľad, dojmy a praktické postrehy z ciest.
+            </p>
+          </article>
+
+          <article class="info-box">
+            <span class="info-number">02</span>
+            <h3>AI cestovateľský prieskum</h3>
+            <p>
+              AI používam na výskum destinácií, návrh itinerárov, letecké trasy
+              a prípravu podkladov pre zrozumiteľný cestovateľský obsah.
+            </p>
+          </article>
+
+          <article class="info-box">
+            <span class="info-number">03</span>
+            <h3>AI vizuálna inšpirácia</h3>
+            <p>
+              Vizuálna inšpirácia pomáha rýchlo zachytiť atmosféru miest, farby
+              Stredomoria a náladu dovolenky pri mori.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section itinerary-section" id="itinerare">
+        <div class="section-heading">
+          <p class="eyebrow">Plánovanie ciest</p>
+          <h2>Itineráre</h2>
+          <p>
+            Čoskoro tu pribudnú praktické itineráre pre víkendové výlety,
+            letecké trasy a dovolenky pri Stredozemnom mori.
+          </p>
+        </div>
+        <div class="itinerary-placeholder">
+          Prvé itineráre pripravujem ako kombináciu osobných skúseností a AI
+          cestovateľského prieskumu.
+        </div>
+      </section>
+
+      <section class="youtube-section" id="youtube">
+        <div class="youtube-content">
+          <div>
+            <p class="eyebrow">Video sprievodca</p>
+            <h2>YouTube</h2>
+            <p>
+              Na YouTube zdieľam videá o destináciách, tipoch na cesty,
+              itinerároch a vizuálnej inšpirácii zo Stredomoria.
+            </p>
+            <a
+              class="button button-primary"
+              href="https://youtube.com/@letompostredomori"
+              target="_blank"
+              rel="noopener"
+              data-youtube-link
+            >
+              Prejsť na YouTube
+            </a>
+          </div>
+          <div class="youtube-card" aria-label="Miesto pre YouTube kanál">
+            <img src="images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+            <span>Letom po Stredomorí</span>
+            <strong>Nové videá už čoskoro</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section audio-section" id="audio">
+        <div class="section-heading">
+          <p class="eyebrow">Počúvanie na cestu</p>
+          <h2>Audio prehľady</h2>
+          <p>
+            Audio prehľady sú priradené priamo ku konkrétnym krajinám. Vyber
+            krajinu v sekcii Destinácie a otvor si jej dostupné nahrávky.
+          </p>
+        </div>
+
+        <div class="audio-hint">
+          <strong>Prvý audio prehľad je pri Taliansku.</strong>
+          <p>
+            Klikni na tlačidlo Audio prehľady (1) v karte Taliansko a otvorí sa
+            samostatná stránka s prehrávačom.
+          </p>
+          <a class="button button-primary" href="#destinacie">Vybrať krajinu</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <div>
+            <strong>Letom po Stredomorí</strong>
+            <p>
+              Cestovateľský magazín spájajúci osobné skúsenosti, AI výskum a
+              vizuálnu inšpiráciu.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Odkazy v pätičke">
+          <a href="#destinacie">Destinácie</a>
+          <a href="#moje-cesty">Moje cesty</a>
+          <a href="#ai-prieskum">AI prieskum</a>
+          <a href="#itinerare">Itineráre</a>
+          <a href="#audio">Audio prehľady</a>
+          <a href="#youtube">YouTube</a>
+        </div>
+
+        <p class="ai-note">
+          Časť obsahu vzniká s pomocou AI pri výskume, návrhoch itinerárov a
+          vizuálnej inšpirácii. Obsah je pripravovaný transparentne a s dôrazom
+          na praktickú hodnotu.
+        </p>
+
+        <p class="copyright">© 2026 Letom po Stredomorí</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
