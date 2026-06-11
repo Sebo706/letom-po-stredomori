@@ -749,6 +749,31 @@ a {
   accent-color: var(--color-sea);
 }
 
+.audio-description {
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  background: rgba(10, 166, 180, 0.08);
+  border: 1px solid rgba(10, 166, 180, 0.14);
+}
+
+.audio-description summary {
+  color: var(--color-sea-dark);
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.audio-description p {
+  margin-top: 10px;
+}
+
+.spotify-player {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: var(--color-sand-soft);
+  box-shadow: 0 14px 30px rgba(16, 47, 69, 0.1);
+}
+
 .site-footer {
   padding: 56px 18px 34px;
   background: var(--color-navy);

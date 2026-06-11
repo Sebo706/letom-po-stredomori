@@ -101,15 +101,8 @@ const videoLibrary = {
 const audioLibrary = {
   taliansko: {
     name: "Taliansko",
-    description: "Audio prehľady z talianskych miest, regiónov a pobrežia.",
-    audios: [
-      {
-        title: "Januárová Apúlia – poklad alebo frustrácia zatvorených dverí",
-        description:
-          "Audio prehľad o zimnej atmosfére Apúlie, praktických očakávaniach a tom, čo môže január pri mori priniesť.",
-        src: "audio/januarova-apulia-poklad-alebo-frustracia-zatvorenych-dveri.m4a",
-      },
-    ],
+    description: "Spotify audio prehľady z Talianska pribudnú po zverejnení epizód.",
+    audios: [],
   },
   grecko: {
     name: "Grécko",
@@ -118,19 +111,14 @@ const audioLibrary = {
   },
   spanielsko: {
     name: "Španielsko",
-    description: "Audio prehľady zo španielskych miest, pobrežia a dovolenkovej reality.",
+    description: "Spotify audio prehľady zo Španielska, miest, pobrežia a dovolenkovej reality.",
     audios: [
       {
-        title: "Barcelona – sen alebo nočná mora turizmu",
+        title: "Malaga – Španielsko",
         description:
-          "Audio prehľad o Barcelone, jej atmosfére, turistickom tlaku a tom, čo od mesta reálne čakať.",
-        src: "audio/barcelona-sen-alebo-nocna-mora-turizmu.m4a",
-      },
-      {
-        title: "Malaga v novembri – koncentrovaný sprievodca",
-        description:
-          "Praktický audio prehľad o Malage mimo hlavnej sezóny, doprave, počasí a cestovateľských očakávaniach.",
-        src: "audio/malaga-v-novembri-koncentrovany-sprievodca.m4a",
+          "Audio epizóda o Malage, španielskej dovolenkovej atmosfére a cestovaní mimo hlavnej sezóny.",
+        spotifyUrl: "https://open.spotify.com/episode/6fOaPxVBsxW8hdcBekNAgX?si=Q2_oEMSITQGMU3hH_o4F4g",
+        spotifyEmbedUrl: "https://open.spotify.com/embed/episode/6fOaPxVBsxW8hdcBekNAgX",
       },
     ],
   },
@@ -151,13 +139,14 @@ const audioLibrary = {
   },
   cyprus: {
     name: "Cyprus",
-    description: "Audio prehľady z Cypru, zimného cestovania a aktívneho objavovania ostrova.",
+    description: "Spotify audio prehľady z Cypru, zimného cestovania a aktívneho objavovania ostrova.",
     audios: [
       {
         title: "Cyprus v januári – skrytý poklad pre aktívnych cestovateľov",
         description:
-          "Audio prehľad o tom, prečo môže byť Cyprus v januári zaujímavý pre aktívne cestovanie mimo hlavnej sezóny.",
-        src: "audio/cyprus-v-januari-skryty-poklad-pre-aktivnych-cestovatelov.m4a",
+          "Cyprus v januári ponúka príjemné teploty, krásnu prírodu, plameniaky, turistiku bez davov a často aj veľmi výhodné letenky. V tejto epizóde sa pozrieme na dôvody, prečo môže byť Cyprus ideálnou voľbou pre každého, kto chce uniknúť slovenskej zime a objaviť Stredomorie mimo hlavnej sezóny. Podcast bol vytvorený pomocou AI z vlastných cestovateľských podkladov projektu Letom po Stredomorí.",
+        spotifyUrl: "https://open.spotify.com/episode/22J0tjJcMahTJehBxFFMRR",
+        spotifyEmbedUrl: "https://open.spotify.com/embed/episode/22J0tjJcMahTJehBxFFMRR",
       },
     ],
   },
@@ -266,11 +255,23 @@ function renderCountryAudios() {
         <article class="country-audio-card">
           <span>Audio ${index + 1}</span>
           <h2>${audio.title}</h2>
-          <p>${audio.description}</p>
-          <audio controls preload="metadata">
-            <source src="${audio.src}" type="audio/mp4" />
-            Váš prehliadač nepodporuje prehrávanie audio súborov.
-          </audio>
+          <details class="audio-description">
+            <summary>Čítať popis epizódy</summary>
+            <p>${audio.description}</p>
+          </details>
+          <iframe
+            class="spotify-player"
+            src="${audio.spotifyEmbedUrl}"
+            width="100%"
+            height="232"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="${audio.title}"
+          ></iframe>
+          <a class="button button-primary" href="${audio.spotifyUrl}" target="_blank" rel="noopener">
+            Otvoriť na Spotify
+          </a>
         </article>
       `
     )
