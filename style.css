@@ -736,11 +736,11 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: min(100%, 960px);
   max-width: 100%;
   margin: 0 auto;
-  gap: 16px;
-  padding: 16px 18px;
+  gap: 14px;
+  padding: 18px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 26px;
   background:
@@ -758,7 +758,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-width: 82px;
+  min-width: 78px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.78rem;
   font-weight: 800;
@@ -775,8 +775,8 @@ a {
 }
 
 .social-icon {
-  width: 76px;
-  height: 76px;
+  width: 72px;
+  height: 72px;
   object-fit: cover;
   border-radius: 18px;
   box-shadow:
@@ -947,6 +947,21 @@ a {
   border-radius: 12px;
   background: var(--color-sand-soft);
   box-shadow: 0 14px 30px rgba(16, 47, 69, 0.1);
+}
+
+.spotify-placeholder {
+  display: grid;
+  min-height: 132px;
+  place-items: center;
+  padding: 22px;
+  border-radius: 12px;
+  color: var(--color-muted);
+  background:
+    linear-gradient(135deg, rgba(10, 166, 180, 0.1), rgba(243, 234, 219, 0.68)),
+    var(--color-sand-soft);
+  border: 1px dashed rgba(10, 166, 180, 0.28);
+  text-align: center;
+  font-weight: 750;
 }
 
 .site-footer {

@@ -101,8 +101,16 @@ const videoLibrary = {
 const audioLibrary = {
   taliansko: {
     name: "Taliansko",
-    description: "Spotify audio prehľady z Talianska pribudnú po zverejnení epizód.",
-    audios: [],
+    description: "Spotify audio prehľady z Talianska, juhu krajiny, pobrežia a miest s dovolenkovou atmosférou.",
+    audios: [
+      {
+        title: "Amalfi - Ravello",
+        description:
+          "Audio epizóda z Talianska o atmosfére pobrežia Amalfi a mestečku Ravello.",
+        spotifyUrl: "https://open.spotify.com/episode/49aahaviPcqiQ7wcGvxEx4?si=rJvJozQKQRqleVAaBTferQ",
+        spotifyEmbedUrl: "https://open.spotify.com/embed/episode/49aahaviPcqiQ7wcGvxEx4",
+      },
+    ],
   },
   grecko: {
     name: "Grécko",
@@ -251,14 +259,9 @@ function renderCountryAudios() {
 
   grid.innerHTML = country.audios
     .map(
-      (audio, index) => `
-        <article class="country-audio-card">
-          <span>Audio ${index + 1}</span>
-          <h2>${audio.title}</h2>
-          <details class="audio-description">
-            <summary>Čítať popis epizódy</summary>
-            <p>${audio.description}</p>
-          </details>
+      (audio, index) => {
+        const spotifyPlayer = audio.spotifyEmbedUrl
+          ? `
           <iframe
             class="spotify-player"
             src="${audio.spotifyEmbedUrl}"
@@ -268,12 +271,27 @@ function renderCountryAudios() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             title="${audio.title}"
-          ></iframe>
+          ></iframe>`
+          : `
+          <div class="spotify-placeholder">
+            Spotify prehrávač bude dostupný po doplnení verejného odkazu na epizódu.
+          </div>`;
+
+        return `
+        <article class="country-audio-card">
+          <span>Audio ${index + 1}</span>
+          <h2>${audio.title}</h2>
+          <details class="audio-description">
+            <summary>Čítať popis epizódy</summary>
+            <p>${audio.description}</p>
+          </details>
+          ${spotifyPlayer}
           <a class="button button-primary" href="${audio.spotifyUrl}" target="_blank" rel="noopener">
-            Otvoriť na Spotify
+            Otvoriť odkaz
           </a>
         </article>
-      `
+      `;
+      }
     )
     .join("");
 }
