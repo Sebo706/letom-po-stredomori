@@ -112,6 +112,11 @@ a {
   transform: translateY(-1px);
 }
 
+.nav-panel-static {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .nav-cta,
 .button {
   position: relative;
@@ -643,6 +648,80 @@ a {
   margin-top: 8px;
 }
 
+.blog-section {
+  position: relative;
+}
+
+.blog-section::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(180deg, rgba(228, 250, 249, 0.72), rgba(255, 255, 255, 0.8)),
+    var(--color-white);
+}
+
+.blog-preview-grid,
+.blog-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.blog-preview-card,
+.blog-page-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 28px;
+  border-radius: var(--radius);
+  color: var(--color-navy);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(10, 166, 180, 0.16);
+  box-shadow: var(--shadow-card);
+}
+
+.blog-preview-card-featured,
+.blog-page-card-featured {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(243, 234, 219, 0.74)),
+    var(--color-white);
+  border-color: rgba(201, 155, 63, 0.22);
+}
+
+.blog-preview-card span,
+.blog-page-card span {
+  color: var(--color-sea-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.blog-preview-card h3,
+.blog-page-card h2 {
+  margin: 0;
+  color: var(--color-navy);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.blog-preview-card p,
+.blog-page-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.blog-preview-card .button,
+.blog-page-card .button {
+  width: fit-content;
+  margin-top: 8px;
+}
+
 .social-section {
   padding-top: clamp(68px, 7vw, 84px);
 }
@@ -1006,6 +1085,20 @@ a {
     transform: translateY(0);
   }
 
+  .nav-panel.nav-panel-static {
+    position: static;
+    display: flex;
+    max-height: none;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    overflow: visible;
+  }
+
   .nav-panel a {
     padding: 12px 10px;
     border-radius: 14px;
@@ -1062,6 +1155,8 @@ a {
   .process-grid,
   .audio-grid,
   .latest-audio-grid,
+  .blog-preview-grid,
+  .blog-page-grid,
   .social-grid,
   .youtube-content,
   .country-video-grid,
@@ -1139,6 +1234,8 @@ a {
   .info-box,
   .audio-card,
   .latest-audio-card,
+  .blog-preview-card,
+  .blog-page-card,
   .youtube-card {
     padding: 22px;
   }
