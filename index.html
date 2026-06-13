@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Letom po Stredomorí je AI cestovateľský magazín pre krásne destinácie, praktické itineráre, letecké trasy a dovolenky pri mori."
+      content="Letom po Stredomorí je cestovateľský magazín pre krásne destinácie, praktické itineráre, letecké trasy a dovolenky pri mori."
     />
     <title>Letom po Stredomorí</title>
     <link rel="stylesheet" href="style.css" />
@@ -37,8 +37,7 @@
         <div class="nav-panel" id="primary-menu">
           <a href="#domov">Domov</a>
           <a href="#destinacie">Destinácie</a>
-          <a href="#moje-cesty">Moje cesty</a>
-          <a href="#ai-prieskum">AI prieskum</a>
+          <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
           <a href="#itinerare">Itineráre</a>
           <a href="#audio">Audio prehľady</a>
           <a href="#blog">Blog</a>
@@ -57,15 +56,15 @@
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">AI cestovateľský magazín</p>
+          <p class="eyebrow">Cestovateľský magazín</p>
           <h1 id="hero-title">Letom po Stredomorí</h1>
           <p class="hero-subtitle">
-            AI cestovateľský magazín pre krásne destinácie, praktické
-            itineráre, letecké trasy a dovolenky pri mori.
+            Cestovateľský magazín pre krásne destinácie, praktické itineráre,
+            letecké trasy a dovolenky pri mori.
           </p>
           <p class="hero-copy">
-            Osobné skúsenosti, AI cestovateľský prieskum a vizuálna inšpirácia
-            pre ľudí, ktorí chcú objavovať Stredomorie jednoducho a s chuťou.
+            Osobné skúsenosti, praktický prieskum a vizuálna inšpirácia pre
+            ľudí, ktorí chcú objavovať Stredomorie jednoducho a s chuťou.
           </p>
           <div class="hero-actions" aria-label="Hlavné akcie">
             <a class="button button-primary" href="#destinacie">Objav destinácie</a>
@@ -78,6 +77,53 @@
               Pozri YouTube
             </a>
           </div>
+        </div>
+      </section>
+
+      <section class="section latest-section" aria-labelledby="latest-title">
+        <div class="section-heading">
+          <p class="eyebrow">Najnovšie</p>
+          <h2 id="latest-title">Čo pribudlo na webe</h2>
+          <p>
+            Rýchly prehľad nového článku, audio epizódy a videa, aby si sa
+            vedel hneď chytiť najaktuálnejšieho obsahu.
+          </p>
+        </div>
+
+        <div class="latest-grid">
+          <article class="latest-card latest-card-featured">
+            <span>Nový článok</span>
+            <h3>Amalfské pobrežie bez stresu</h3>
+            <p>
+              Praktický sprievodca od Neapola po Salerno s dopravou, Ravellom
+              a 3-dňovým itinerárom.
+            </p>
+            <a class="button button-primary" href="blog-amalfi-pobrezie.html">
+              Čítať článok
+            </a>
+          </article>
+
+          <article class="latest-card">
+            <span>Nové audio</span>
+            <h3>Amalfi - Ravello</h3>
+            <p>
+              Spotify audio prehľad k Taliansku a Amalfskému pobrežiu.
+            </p>
+            <a class="button button-light" href="audio.html?krajina=taliansko">
+              Vypočuť audio
+            </a>
+          </article>
+
+          <article class="latest-card">
+            <span>Video tip</span>
+            <h3>Cyprus v zime</h3>
+            <p>
+              Kompletný cestovateľský sprievodca pre január a únik zo zimy.
+            </p>
+            <a class="button button-light" href="videa.html?krajina=cyprus">
+              Pozrieť video
+            </a>
+          </article>
         </div>
       </section>
 
@@ -98,20 +144,29 @@
               <span class="country-tag">Dolce vita</span>
               <h3>Taliansko</h3>
               <p>Mestá, pláže, ostrovy a chute pravého juhu Európy.</p>
+              <div class="destination-actions">
               <a
                 class="video-count-button"
                 href="videa.html?krajina=taliansko"
                 aria-label="Pozrieť videá pre Taliansko, počet videí 2"
               >
-                Počet videí (2)
+                Videá 2
               </a>
               <a
                 class="audio-count-button"
                 href="audio.html?krajina=taliansko"
                 aria-label="Pozrieť audio prehľady pre Taliansko, počet audio prehľadov 1"
               >
-                Audio prehľady (1)
+                Audio 1
               </a>
+              <a
+                class="article-count-button"
+                href="clanky.html?krajina=taliansko"
+                aria-label="Pozrieť články pre Taliansko, počet článkov 1"
+              >
+                Články 1
+              </a>
+              </div>
             </div>
           </article>
 
@@ -121,20 +176,17 @@
               <span class="country-tag">Ostrovy</span>
               <h3>Grécko</h3>
               <p>Tyrkysové more, ostrovy, história a pohodová atmosféra.</p>
-              <a
-                class="video-count-button"
-                href="videa.html?krajina=grecko"
-                aria-label="Pozrieť videá pre Grécko, počet videí 0"
-              >
-                Počet videí (0)
-              </a>
-              <a
-                class="audio-count-button"
-                href="audio.html?krajina=grecko"
-                aria-label="Pozrieť audio prehľady pre Grécko, počet audio prehľadov 0"
-              >
-                Audio prehľady (0)
-              </a>
+              <div class="destination-actions">
+              <span class="video-count-button destination-count-disabled" aria-disabled="true">
+                Videá 0
+              </span>
+              <span class="audio-count-button destination-count-disabled" aria-disabled="true">
+                Audio 0
+              </span>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
 
@@ -144,20 +196,25 @@
               <span class="country-tag">Pobrežie</span>
               <h3>Španielsko</h3>
               <p>Slnečné pobrežie, temperament miest a krásne zátoky.</p>
+              <div class="destination-actions">
               <a
                 class="video-count-button"
                 href="videa.html?krajina=spanielsko"
                 aria-label="Pozrieť videá pre Španielsko, počet videí 2"
               >
-                Počet videí (2)
+                Videá 2
               </a>
               <a
                 class="audio-count-button"
                 href="audio.html?krajina=spanielsko"
                 aria-label="Pozrieť audio prehľady pre Španielsko, počet audio prehľadov 1"
               >
-                Audio prehľady (1)
+                Audio 1
               </a>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
 
@@ -167,20 +224,17 @@
               <span class="country-tag">Riviéra</span>
               <h3>Francúzsko</h3>
               <p>Azúrové pobrežie, elegancia a stredomorský šarm.</p>
-              <a
-                class="video-count-button"
-                href="videa.html?krajina=francuzsko"
-                aria-label="Pozrieť videá pre Francúzsko, počet videí 0"
-              >
-                Počet videí (0)
-              </a>
-              <a
-                class="audio-count-button"
-                href="audio.html?krajina=francuzsko"
-                aria-label="Pozrieť audio prehľady pre Francúzsko, počet audio prehľadov 0"
-              >
-                Audio prehľady (0)
-              </a>
+              <div class="destination-actions">
+              <span class="video-count-button destination-count-disabled" aria-disabled="true">
+                Videá 0
+              </span>
+              <span class="audio-count-button destination-count-disabled" aria-disabled="true">
+                Audio 0
+              </span>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
 
@@ -190,20 +244,17 @@
               <span class="country-tag">Jadran</span>
               <h3>Chorvátsko</h3>
               <p>Blízke more, krištáľová voda a historické mestá.</p>
-              <a
-                class="video-count-button"
-                href="videa.html?krajina=chorvatsko"
-                aria-label="Pozrieť videá pre Chorvátsko, počet videí 0"
-              >
-                Počet videí (0)
-              </a>
-              <a
-                class="audio-count-button"
-                href="audio.html?krajina=chorvatsko"
-                aria-label="Pozrieť audio prehľady pre Chorvátsko, počet audio prehľadov 0"
-              >
-                Audio prehľady (0)
-              </a>
+              <div class="destination-actions">
+              <span class="video-count-button destination-count-disabled" aria-disabled="true">
+                Videá 0
+              </span>
+              <span class="audio-count-button destination-count-disabled" aria-disabled="true">
+                Audio 0
+              </span>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
 
@@ -213,20 +264,17 @@
               <span class="country-tag">Farby</span>
               <h3>Malta</h3>
               <p>Malý ostrov s veľkou atmosférou, históriou a farbami.</p>
-              <a
-                class="video-count-button"
-                href="videa.html?krajina=malta"
-                aria-label="Pozrieť videá pre Maltu, počet videí 0"
-              >
-                Počet videí (0)
-              </a>
-              <a
-                class="audio-count-button"
-                href="audio.html?krajina=malta"
-                aria-label="Pozrieť audio prehľady pre Maltu, počet audio prehľadov 0"
-              >
-                Audio prehľady (0)
-              </a>
+              <div class="destination-actions">
+              <span class="video-count-button destination-count-disabled" aria-disabled="true">
+                Videá 0
+              </span>
+              <span class="audio-count-button destination-count-disabled" aria-disabled="true">
+                Audio 0
+              </span>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
 
@@ -236,20 +284,25 @@
               <span class="country-tag">Slnko</span>
               <h3>Cyprus</h3>
               <p>Slnečný ostrov s plážami, starobylými pamiatkami a pokojom.</p>
+              <div class="destination-actions">
               <a
                 class="video-count-button"
                 href="videa.html?krajina=cyprus"
                 aria-label="Pozrieť videá pre Cyprus, počet videí 1"
               >
-                Počet videí (1)
+                Videá 1
               </a>
               <a
                 class="audio-count-button"
                 href="audio.html?krajina=cyprus"
                 aria-label="Pozrieť audio prehľady pre Cyprus, počet audio prehľadov 1"
               >
-                Audio prehľady (1)
+                Audio 1
               </a>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
 
@@ -259,36 +312,68 @@
               <span class="country-tag">Piran</span>
               <h3>Slovinsko</h3>
               <p>Krátke, ale čarovné pobrežie s príjemnými mestami.</p>
-              <a
-                class="video-count-button"
-                href="videa.html?krajina=slovinsko"
-                aria-label="Pozrieť videá pre Slovinsko, počet videí 0"
-              >
-                Počet videí (0)
-              </a>
-              <a
-                class="audio-count-button"
-                href="audio.html?krajina=slovinsko"
-                aria-label="Pozrieť audio prehľady pre Slovinsko, počet audio prehľadov 0"
-              >
-                Audio prehľady (0)
-              </a>
+              <div class="destination-actions">
+              <span class="video-count-button destination-count-disabled" aria-disabled="true">
+                Videá 0
+              </span>
+              <span class="audio-count-button destination-count-disabled" aria-disabled="true">
+                Audio 0
+              </span>
+              <span class="article-count-button destination-count-disabled" aria-disabled="true">
+                Články 0
+              </span>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section process-section" id="moje-cesty">
+      <section class="section poll-section" id="anketa" aria-labelledby="poll-title">
+        <div class="poll-shell">
+          <div class="poll-copy">
+            <p class="eyebrow">Tvoj tip</p>
+            <h2 id="poll-title">Kam sa pozrieme najbližšie?</h2>
+            <p>
+              Vyber región, o ktorom chceš vidieť ďalší obsah na Letom po
+              Stredomorí. Hlasovanie prebieha cez StrawPoll a výsledky uvidíš
+              po odoslaní hlasu kliknutím na Results.
+            </p>
+            <p class="poll-deadline">Hlasovanie končí 25. júna 2026</p>
+          </div>
+
+          <div class="poll-embed-card">
+            <iframe
+              class="poll-embed"
+              src="https://strawpoll.com/embed/kjn1DORpAyQ"
+              title="Hlasovanie Kam sa pozrieme najbližšie?"
+              loading="lazy"
+            ></iframe>
+            <div class="poll-actions">
+              <p>Po hlasovaní klikni na Results.</p>
+              <a
+                class="button button-primary"
+                href="https://strawpoll.com/kjn1DORpAyQ"
+                target="_blank"
+                rel="noopener"
+              >
+                Otvoriť hlasovanie
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="ako-tvorim-obsah">
         <div class="section-heading">
           <p class="eyebrow">Transparentný prístup</p>
-          <h2>Ako vzniká obsah</h2>
+          <h2>Ako tvorím obsah</h2>
           <p>
-            Obsah prepája osobné skúsenosti s praktickým AI prieskumom. Cieľom
-            je priniesť užitočnú inšpiráciu, nie predstierať realitu.
+            Obsah prepája osobné skúsenosti, vlastný výber a pomocné nástroje
+            na prieskum, štruktúru a vizuálnu prípravu.
           </p>
         </div>
 
-        <div class="process-grid" id="ai-prieskum">
+        <div class="process-grid">
           <article class="info-box">
             <span class="info-number">01</span>
             <h3>Moje cesty</h3>
@@ -300,16 +385,16 @@
 
           <article class="info-box">
             <span class="info-number">02</span>
-            <h3>AI cestovateľský prieskum</h3>
+            <h3>Praktický cestovateľský prieskum</h3>
             <p>
-              AI používam na výskum destinácií, návrh itinerárov, letecké trasy
-              a prípravu podkladov pre zrozumiteľný cestovateľský obsah.
+              Pri príprave podkladov využívam aj AI nástroje, ale finálny
+              výber, úpravy a publikovanie robím ručne.
             </p>
           </article>
 
           <article class="info-box">
             <span class="info-number">03</span>
-            <h3>AI vizuálna inšpirácia</h3>
+            <h3>Vizuálna inšpirácia</h3>
             <p>
               Vizuálna inšpirácia pomáha rýchlo zachytiť atmosféru miest, farby
               Stredomoria a náladu dovolenky pri mori.
@@ -321,15 +406,67 @@
       <section class="section itinerary-section" id="itinerare">
         <div class="section-heading">
           <p class="eyebrow">Plánovanie ciest</p>
-          <h2>Itineráre</h2>
+          <h2>Rýchly generátor itinerára</h2>
           <p>
-            Čoskoro tu pribudnú praktické itineráre pre víkendové výlety,
-            letecké trasy a dovolenky pri Stredozemnom mori.
+            Vyber destináciu, počet dní, tempo a spôsob dopravy. Dostaneš
+            praktický návrh podľa toho, čo sa pri danej doprave a tempe dá
+            reálne stihnúť.
+          </p>
+          <p class="itinerary-status">
+            Na vylepšení generátora sa pracuje. Ber ho ako prvý cestovateľský
+            návrh, nie pevný rozpis bez rezervy.
           </p>
         </div>
-        <div class="itinerary-placeholder">
-          Prvé itineráre pripravujem ako kombináciu osobných skúseností a AI
-          cestovateľského prieskumu.
+
+        <div class="itinerary-generator">
+          <form class="itinerary-form" data-itinerary-form>
+            <label>
+              <span>Destinácia</span>
+              <select name="destination">
+                <option value="amalfi">Amalfi a Ravello</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="malaga">Malaga</option>
+                <option value="cyprus">Cyprus v zime</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Počet dní</span>
+              <select name="days">
+                <option value="2">2 dni</option>
+                <option value="3" selected>3 dni</option>
+                <option value="4">4 dni</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Tempo cesty</span>
+              <select name="pace">
+                <option value="pohodovo">Pohodovo</option>
+                <option value="prva-navsteva" selected>Prvá návšteva</option>
+                <option value="aktivne">Aktívne</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Doprava</span>
+              <select name="transport">
+                <option value="bez-auta" selected>Bez auta</option>
+                <option value="kombinovane">Kombinovane</option>
+                <option value="autom">Autom</option>
+              </select>
+            </label>
+
+            <button class="button button-primary" type="submit">
+              Vygenerovať plán
+            </button>
+          </form>
+
+          <article
+            class="itinerary-result"
+            data-itinerary-result
+            aria-live="polite"
+          ></article>
         </div>
       </section>
 
@@ -422,23 +559,32 @@
 
         <div class="blog-preview-grid">
           <article class="blog-preview-card blog-preview-card-featured">
-            <span>Pripravuje sa</span>
-            <h3>Prvý blogový článok</h3>
+            <img
+              class="blog-card-image"
+              src="images/blog/amalfi/amalfi-hero.webp"
+              alt="Amalfské pobrežie s citrónmi a morom"
+            />
+            <span>Taliansko</span>
+            <h3>Od Neapola po Salerno: Amalfské pobrežie bez stresu</h3>
             <p>
-              Keď mi pošleš prvý text, vložím ho sem ako samostatný článok s
-              titulkom, úvodom, dátumom a prepojením na relevantnú krajinu.
+              Praktický sprievodca pobrežím Amalfi, dopravou, bývaním,
+              trajektmi, Ravellom a jednoduchým itinerárom na 3 dni.
             </p>
-            <a class="button button-primary" href="blog.html">Otvoriť blog</a>
+            <a class="button button-primary" href="blog-amalfi-pobrezie.html">
+              Čítať článok
+            </a>
           </article>
 
           <article class="blog-preview-card">
-            <span>Formáty článkov</span>
-            <h3>Sprievodcovia, skúsenosti a itineráre</h3>
+            <span>Audio k článku</span>
+            <h3>Amalfi - Ravello</h3>
             <p>
-              Blog bude pripravený pre články typu čo vidieť, kedy ísť, koľko
-              času si nechať, čo sa oplatí a čo by som nabudúce spravil inak.
+              K článku je priradený Spotify audio prehľad v sekcii Taliansko.
+              Môžeš si ho vypočuť samostatne alebo po prečítaní článku.
             </p>
-            <a class="button button-light" href="blog.html">Pozrieť šablónu</a>
+            <a class="button button-light" href="audio.html?krajina=taliansko">
+              Vypočuť audio
+            </a>
           </article>
         </div>
       </section>
@@ -488,46 +634,6 @@
             <img class="social-icon" src="images/social/preview-tiktok.png" alt="" />
             <span class="social-label">TikTok</span>
           </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-whatsapp.png" alt="" />
-            <span class="social-label">WhatsApp</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-messenger.png" alt="" />
-            <span class="social-label">Messenger</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-telegram.png" alt="" />
-            <span class="social-label">Telegram</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-linkedin.png" alt="" />
-            <span class="social-label">LinkedIn</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-x.png" alt="" />
-            <span class="social-label">X</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-pinterest.png" alt="" />
-            <span class="social-label">Pinterest</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-reddit.png" alt="" />
-            <span class="social-label">Reddit</span>
-          </span>
-
-          <span class="social-button is-disabled" aria-disabled="true">
-            <img class="social-icon" src="images/social/preview-snapchat.png" alt="" />
-            <span class="social-label">Snapchat</span>
-          </span>
         </div>
       </section>
     </main>
@@ -539,16 +645,15 @@
           <div>
             <strong>Letom po Stredomorí</strong>
             <p>
-              Cestovateľský magazín spájajúci osobné skúsenosti, AI výskum a
-              vizuálnu inšpiráciu.
+              Cestovateľský magazín spájajúci osobné skúsenosti, praktický
+              prieskum a vizuálnu inšpiráciu.
             </p>
           </div>
         </div>
 
         <div class="footer-links" aria-label="Odkazy v pätičke">
           <a href="#destinacie">Destinácie</a>
-          <a href="#moje-cesty">Moje cesty</a>
-          <a href="#ai-prieskum">AI prieskum</a>
+          <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
           <a href="#itinerare">Itineráre</a>
           <a href="#audio">Audio prehľady</a>
           <a href="#blog">Blog</a>
@@ -556,13 +661,13 @@
         </div>
 
         <p class="ai-note">
-          Časť obsahu vzniká s pomocou AI pri výskume, návrhoch itinerárov a
-          vizuálnej inšpirácii. Obsah je pripravovaný transparentne a s dôrazom
-          na praktickú hodnotu.
+          Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume,
+          štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a
+          publikovanie robím ručne.
         </p>
 
         <p class="copyright">© 2026 Letom po Stredomorí</p>
-        <p class="last-updated">Posledná aktualizácia: 12. jún 2026</p>
+        <p class="last-updated">Posledná aktualizácia: 13. jún 2026</p>
       </div>
     </footer>
 
