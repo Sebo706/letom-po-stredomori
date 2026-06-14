@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rýchly generátor itinerára pre Stredomorie podľa destinácie, počtu dní, tempa a dopravy."
+    />
+    <title>Generátor itinerára | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="index.html#domov" aria-label="Letom po Stredomorí domov">
+          <img
+            class="brand-logo"
+            src="images/logo/logo.png"
+            alt="Logo Letom po Stredomorí"
+          />
+          <span>Letom po Stredomorí</span>
+        </a>
+
+        <div class="nav-panel nav-panel-static">
+          <a href="index.html#destinacie">Destinácie</a>
+          <a href="index.html#blog">Blog</a>
+          <a href="index.html#audio">Audio prehľady</a>
+          <a class="nav-cta" href="index.html#itinerare">Späť na homepage</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section itinerary-page-section">
+        <div class="section-heading">
+          <p class="eyebrow">Plánovanie ciest</p>
+          <h1>Rýchly generátor itinerára</h1>
+          <p>
+            Vyber destináciu, počet dní, tempo a spôsob dopravy. Dostaneš
+            praktický návrh podľa toho, čo sa pri danej doprave a tempe dá
+            reálne stihnúť.
+          </p>
+          <p class="itinerary-status">
+            Na vylepšení generátora sa pracuje. Ber ho ako prvý cestovateľský
+            návrh, nie pevný rozpis bez rezervy.
+          </p>
+        </div>
+
+        <div class="itinerary-generator">
+          <form class="itinerary-form" data-itinerary-form>
+            <label>
+              <span>Destinácia</span>
+              <select name="destination">
+                <option value="amalfi">Amalfi a Ravello</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="malaga">Malaga</option>
+                <option value="cyprus">Cyprus v zime</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Počet dní</span>
+              <select name="days">
+                <option value="2">2 dni</option>
+                <option value="3" selected>3 dni</option>
+                <option value="4">4 dni</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Tempo cesty</span>
+              <select name="pace">
+                <option value="pohodovo">Pohodovo</option>
+                <option value="prva-navsteva" selected>Prvá návšteva</option>
+                <option value="aktivne">Aktívne</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Doprava</span>
+              <select name="transport">
+                <option value="bez-auta" selected>Bez auta</option>
+                <option value="kombinovane">Kombinovane</option>
+                <option value="autom">Autom</option>
+              </select>
+            </label>
+
+            <button class="button button-primary" type="submit">
+              Vygenerovať plán
+            </button>
+          </form>
+
+          <article
+            class="itinerary-result"
+            data-itinerary-result
+            aria-live="polite"
+          ></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a class="footer-brand" href="index.html#domov" aria-label="Späť na domov">
+          <img src="images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <div>
+            <strong>Letom po Stredomorí</strong>
+            <p>
+              Cestovateľský magazín spájajúci osobné skúsenosti, praktický
+              prieskum a vizuálnu inšpiráciu.
+            </p>
+          </div>
+        </a>
+        <p class="copyright">© 2026 Letom po Stredomorí</p>
+        <p class="last-updated">Posledná aktualizácia: 13. jún 2026</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

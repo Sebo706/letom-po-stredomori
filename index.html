@@ -38,7 +38,7 @@
           <a href="#domov">Domov</a>
           <a href="#destinacie">Destinácie</a>
           <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
-          <a href="#itinerare">Itineráre</a>
+          <a href="itinerar.html">Itineráre</a>
           <a href="#audio">Audio prehľady</a>
           <a href="#blog">Blog</a>
           <a href="#youtube">YouTube</a>
@@ -63,19 +63,12 @@
             letecké trasy a dovolenky pri mori.
           </p>
           <p class="hero-copy">
-            Osobné skúsenosti, praktický prieskum a vizuálna inšpirácia pre
-            ľudí, ktorí chcú objavovať Stredomorie jednoducho a s chuťou.
+            V názve je ukrytá myšlienka, že Stredomorie nie je len miesto na
+            letnú dovolenku, ale aj svet, do ktorého sa dá zaletieť vždy, keď
+            človek potrebuje kúsok slnka.
           </p>
           <div class="hero-actions" aria-label="Hlavné akcie">
             <a class="button button-primary" href="#destinacie">Objav destinácie</a>
-            <a
-              class="button button-light"
-              href="https://youtube.com/@letompostredomori"
-              target="_blank"
-              rel="noopener"
-            >
-              Pozri YouTube
-            </a>
           </div>
         </div>
       </section>
@@ -408,9 +401,8 @@
           <p class="eyebrow">Plánovanie ciest</p>
           <h2>Rýchly generátor itinerára</h2>
           <p>
-            Vyber destináciu, počet dní, tempo a spôsob dopravy. Dostaneš
-            praktický návrh podľa toho, čo sa pri danej doprave a tempe dá
-            reálne stihnúť.
+            Samostatný nástroj, ktorý ti pripraví prvý realistický návrh cesty
+            podľa destinácie, počtu dní, tempa a dopravy.
           </p>
           <p class="itinerary-status">
             Na vylepšení generátora sa pracuje. Ber ho ako prvý cestovateľský
@@ -418,55 +410,27 @@
           </p>
         </div>
 
-        <div class="itinerary-generator">
-          <form class="itinerary-form" data-itinerary-form>
-            <label>
-              <span>Destinácia</span>
-              <select name="destination">
-                <option value="amalfi">Amalfi a Ravello</option>
-                <option value="barcelona">Barcelona</option>
-                <option value="malaga">Malaga</option>
-                <option value="cyprus">Cyprus v zime</option>
-              </select>
-            </label>
+        <div class="itinerary-teaser">
+          <article class="itinerary-teaser-card itinerary-teaser-card-featured">
+            <span>Aktuálne dostupné</span>
+            <h3>Amalfi, Barcelona, Malaga a Cyprus</h3>
+            <p>
+              Generátor mení denný plán podľa dopravy aj tempa a ukáže, čo sa
+              reálne dá stihnúť bez zbytočného naháňania.
+            </p>
+            <a class="button button-primary" href="itinerar.html">
+              Vytvoriť itinerár
+            </a>
+          </article>
 
-            <label>
-              <span>Počet dní</span>
-              <select name="days">
-                <option value="2">2 dni</option>
-                <option value="3" selected>3 dni</option>
-                <option value="4">4 dni</option>
-              </select>
-            </label>
-
-            <label>
-              <span>Tempo cesty</span>
-              <select name="pace">
-                <option value="pohodovo">Pohodovo</option>
-                <option value="prva-navsteva" selected>Prvá návšteva</option>
-                <option value="aktivne">Aktívne</option>
-              </select>
-            </label>
-
-            <label>
-              <span>Doprava</span>
-              <select name="transport">
-                <option value="bez-auta" selected>Bez auta</option>
-                <option value="kombinovane">Kombinovane</option>
-                <option value="autom">Autom</option>
-              </select>
-            </label>
-
-            <button class="button button-primary" type="submit">
-              Vygenerovať plán
-            </button>
-          </form>
-
-          <article
-            class="itinerary-result"
-            data-itinerary-result
-            aria-live="polite"
-          ></article>
+          <article class="itinerary-teaser-card">
+            <span>Vo výstupe nájdeš</span>
+            <h3>Plán, rezervu aj alternatívy</h3>
+            <p>
+              Pri každom dni uvidíš hlavný plán, čo nekombinovať, dopravu,
+              časovú rezervu a jednoduchú alternatívu.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -612,7 +576,7 @@
 
           <a
             class="social-button social-spotify"
-            href="https://open.spotify.com/episode/22J0tjJcMahTJehBxFFMRR"
+            href="https://open.spotify.com/show/033wFks05SYAv2vBhh04gv"
             target="_blank"
             rel="noopener"
           >
@@ -640,7 +604,7 @@
 
     <footer class="site-footer">
       <div class="footer-content">
-        <div class="footer-brand">
+        <a class="footer-brand" href="#domov" aria-label="Späť hore na domov">
           <img src="images/logo/logo.png" alt="Logo Letom po Stredomorí" />
           <div>
             <strong>Letom po Stredomorí</strong>
@@ -649,12 +613,12 @@
               prieskum a vizuálnu inšpiráciu.
             </p>
           </div>
-        </div>
+        </a>
 
         <div class="footer-links" aria-label="Odkazy v pätičke">
           <a href="#destinacie">Destinácie</a>
           <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
-          <a href="#itinerare">Itineráre</a>
+          <a href="itinerar.html">Itineráre</a>
           <a href="#audio">Audio prehľady</a>
           <a href="#blog">Blog</a>
           <a href="#youtube">YouTube</a>

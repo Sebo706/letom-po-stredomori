@@ -40,6 +40,10 @@ body.menu-open {
   overflow: hidden;
 }
 
+main {
+  overflow-x: clip;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -1169,6 +1173,57 @@ a {
   font-weight: 850;
 }
 
+.itinerary-teaser {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.itinerary-teaser-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: clamp(22px, 3vw, 30px);
+  border-radius: var(--radius);
+  color: var(--color-navy);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(16, 47, 69, 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.itinerary-teaser-card-featured {
+  background:
+    linear-gradient(135deg, rgba(228, 250, 249, 0.9), rgba(255, 248, 232, 0.78)),
+    var(--color-white);
+  border-color: rgba(10, 166, 180, 0.2);
+}
+
+.itinerary-teaser-card span {
+  color: var(--color-sea-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.itinerary-teaser-card h3 {
+  margin: 0;
+  color: var(--color-navy);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.itinerary-teaser-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.itinerary-teaser-card .button {
+  width: fit-content;
+  margin-top: 6px;
+}
+
 .itinerary-generator {
   display: grid;
   grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
@@ -1372,6 +1427,7 @@ a {
 
 .video-page-section h1,
 .audio-page-section h1,
+.itinerary-page-section h1,
 .article-page-section h1 {
   margin: 0;
   color: var(--color-navy);
@@ -1748,11 +1804,12 @@ a {
   }
 
   .hero {
-    min-height: auto;
-    display: block;
-    padding: 0 0 54px;
+    min-height: clamp(620px, calc(100svh - 70px), 760px);
+    display: grid;
+    align-items: center;
+    padding: 0;
     background:
-      linear-gradient(180deg, rgba(228, 250, 249, 0.9), rgba(251, 247, 239, 0.94)),
+      linear-gradient(120deg, rgba(243, 234, 219, 0.92), rgba(228, 250, 249, 0.62)),
       var(--color-sand-soft);
   }
 
@@ -1760,27 +1817,33 @@ a {
     left: 0;
     right: auto;
     width: 100%;
-    height: clamp(280px, 48vw, 360px);
-    object-position: center top;
+    height: 100%;
+    object-position: 62% center;
+    animation: none;
+    transform: none;
   }
 
   .hero-overlay {
-    height: clamp(280px, 48vw, 360px);
+    height: 100%;
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(228, 250, 249, 0.08) 54%, rgba(251, 247, 239, 0.98) 100%),
-      linear-gradient(90deg, rgba(16, 47, 69, 0.05), rgba(16, 47, 69, 0));
+      linear-gradient(90deg, rgba(251, 247, 239, 0.58) 0%, rgba(251, 247, 239, 0.34) 48%, rgba(251, 247, 239, 0.08) 100%),
+      linear-gradient(180deg, rgba(16, 47, 69, 0.04), rgba(16, 47, 69, 0.18));
   }
 
   .hero-content {
     width: min(100% - 32px, var(--max-width));
-    padding: calc(clamp(280px, 48vw, 360px) + 28px) 0 0;
+    padding: 86px 0 52px;
   }
 
   .hero-content::before {
-    inset: calc(clamp(280px, 48vw, 360px) + 8px) -8px -22px;
-    width: auto;
-    background: rgba(255, 255, 255, 0.76);
-    box-shadow: 0 18px 44px rgba(16, 47, 69, 0.12);
+    display: none;
+  }
+
+  .hero .eyebrow,
+  .hero h1,
+  .hero-subtitle,
+  .hero-copy {
+    text-shadow: 0 2px 18px rgba(255, 255, 255, 0.72);
   }
 
   .section {
@@ -1790,6 +1853,7 @@ a {
   .process-grid,
   .audio-grid,
   .latest-grid,
+  .itinerary-teaser,
   .itinerary-generator,
   .latest-audio-grid,
   .blog-preview-grid,
@@ -1831,32 +1895,40 @@ a {
   }
 
   .hero {
-    padding-bottom: 46px;
+    min-height: clamp(650px, calc(100svh - 64px), 760px);
+    align-items: start;
+    padding-bottom: 0;
   }
 
   .hero-content {
-    padding-top: calc(clamp(250px, 62vw, 320px) + 24px);
+    width: min(100% - 52px, 348px);
+    margin-left: 18px;
+    margin-right: auto;
+    padding: 46px 0 42px;
   }
 
   .hero-content::before {
-    inset: calc(clamp(250px, 62vw, 320px) + 8px) -6px -20px;
+    display: none;
   }
 
   .hero-image,
   .hero-overlay {
-    height: clamp(250px, 62vw, 320px);
+    height: 100%;
   }
 
   .hero h1 {
-    font-size: clamp(2.45rem, 13vw, 3.55rem);
+    font-size: clamp(2.18rem, 11vw, 3.2rem);
   }
 
   .hero-subtitle {
-    margin-top: 18px;
+    margin-top: 15px;
+    font-size: 1rem;
   }
 
   .hero-copy {
-    margin-top: 14px;
+    max-width: 320px;
+    margin-top: 12px;
+    font-size: 0.94rem;
   }
 
   .hero-actions,
@@ -1892,6 +1964,7 @@ a {
   .info-box,
   .audio-card,
   .latest-card,
+  .itinerary-teaser-card,
   .itinerary-form,
   .itinerary-result,
   .latest-audio-card,
