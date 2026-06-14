@@ -48,27 +48,27 @@ const latestUpdates = [
   },
   {
     kind: "audio",
-    type: "Nové audio",
+    type: "Nový podcast",
     title: "Amalfi - Ravello",
     publishedAt: "2026-06-14",
     date: "Pridané 14. 6. 2026",
-    marker: "Audio",
+    marker: "Podcast",
     description:
-      "Spotify audio prehľad k Taliansku a Amalfskému pobrežiu.",
+      "Spotify podcast k Taliansku a Amalfskému pobrežiu.",
     url: "audio.html?krajina=taliansko",
-    label: "Vypočuť audio",
+    label: "Vypočuť podcast",
   },
   {
     kind: "audio",
-    type: "Nové audio",
+    type: "Nový podcast",
     title: "Malaga - Španielsko",
     publishedAt: "2026-06-14",
     date: "Pridané 14. 6. 2026",
-    marker: "Audio",
+    marker: "Podcast",
     description:
-      "Spotify epizóda o Malage, mori a cestovaní mimo hlavnej sezóny.",
+      "Spotify podcast o Malage, mori a cestovaní mimo hlavnej sezóny.",
     url: "audio.html?krajina=spanielsko",
-    label: "Vypočuť audio",
+    label: "Vypočuť podcast",
   },
 ];
 
@@ -121,6 +121,52 @@ function renderLatestUpdates() {
 
 renderLatestUpdates();
 
+function formatSiteDate(dateValue) {
+  const date = new Date(dateValue);
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+
+  const months = [
+    "január",
+    "február",
+    "marec",
+    "apríl",
+    "máj",
+    "jún",
+    "júl",
+    "august",
+    "september",
+    "október",
+    "november",
+    "december",
+  ];
+
+  return `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+function renderLastUpdated() {
+  const lastUpdatedElements = document.querySelectorAll(".last-updated");
+  if (!lastUpdatedElements.length) {
+    return;
+  }
+
+  const newestUpdate = [...latestUpdates].sort(
+    (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
+  )[0];
+  const formattedDate = formatSiteDate(newestUpdate?.publishedAt);
+
+  if (!formattedDate) {
+    return;
+  }
+
+  lastUpdatedElements.forEach((element) => {
+    element.textContent = `Posledná aktualizácia: ${formattedDate}`;
+  });
+}
+
+renderLastUpdated();
+
 function itineraryDay(title, plan, realistic, avoid, transport, alternative) {
   return { title, plan, realistic, avoid, transport, alternative };
 }
@@ -132,7 +178,7 @@ const itineraryTemplates = {
     intro:
       "Amalfské pobrežie je krásne, ale logisticky citlivé. Plán preto mení dni podľa toho, či ideš bez auta, kombinovane alebo autom.",
     link: { label: "Čítať článok o Amalfi", url: "blog-amalfi-pobrezie.html" },
-    audio: { label: "Vypočuť audio Amalfi", url: "audio.html?krajina=taliansko" },
+    audio: { label: "Vypočuť podcast Amalfi", url: "audio.html?krajina=taliansko" },
     plans: {
       "bez-auta": {
         pohodovo: [
@@ -203,7 +249,7 @@ const itineraryTemplates = {
     intro:
       "Barcelona je najlepšia pešo a metrom. Auto mení plán hlavne pri výletoch mimo mesta.",
     link: { label: "Pozrieť videá zo Španielska", url: "videa.html?krajina=spanielsko" },
-    audio: { label: "Vypočuť audio Španielsko", url: "audio.html?krajina=spanielsko" },
+    audio: { label: "Vypočuť podcast Španielsko", url: "audio.html?krajina=spanielsko" },
     plans: {
       "bez-auta": {
         pohodovo: [
@@ -274,7 +320,7 @@ const itineraryTemplates = {
     intro:
       "Malaga dobre funguje bez auta v meste, ale auto alebo vlak mení možnosti výletov do Andalúzie.",
     link: { label: "Pozrieť videá zo Španielska", url: "videa.html?krajina=spanielsko" },
-    audio: { label: "Vypočuť audio Malaga", url: "audio.html?krajina=spanielsko" },
+    audio: { label: "Vypočuť podcast Malaga", url: "audio.html?krajina=spanielsko" },
     plans: {
       "bez-auta": {
         pohodovo: [
@@ -345,7 +391,7 @@ const itineraryTemplates = {
     intro:
       "Na Cypre doprava výrazne mení plán. Bez auta drž program pri mestách a organizovaných presunoch, autom sa otvorí príroda.",
     link: { label: "Pozrieť video o Cypre", url: "videa.html?krajina=cyprus" },
-    audio: { label: "Vypočuť audio Cyprus", url: "audio.html?krajina=cyprus" },
+    audio: { label: "Vypočuť podcast Cyprus", url: "audio.html?krajina=cyprus" },
     plans: {
       "bez-auta": {
         pohodovo: [
@@ -610,12 +656,12 @@ function getYouTubeThumbnail(url) {
 const audioLibrary = {
   taliansko: {
     name: "Taliansko",
-    description: "Spotify audio prehľady z Talianska, juhu krajiny, pobrežia a miest s dovolenkovou atmosférou.",
+    description: "Spotify podcasty z Talianska, juhu krajiny, pobrežia a miest s dovolenkovou atmosférou.",
     audios: [
       {
         title: "Amalfi - Ravello",
         description:
-          "Audio epizóda z Talianska o atmosfére pobrežia Amalfi a mestečku Ravello.",
+          "Podcast z Talianska o atmosfére pobrežia Amalfi a mestečku Ravello.",
         spotifyUrl: "https://open.spotify.com/episode/49aahaviPcqiQ7wcGvxEx4?si=rJvJozQKQRqleVAaBTferQ",
         spotifyEmbedUrl: "https://open.spotify.com/embed/episode/49aahaviPcqiQ7wcGvxEx4",
       },
@@ -623,17 +669,17 @@ const audioLibrary = {
   },
   grecko: {
     name: "Grécko",
-    description: "Audio prehľady z Grécka pribudnú neskôr.",
+    description: "Podcasty z Grécka pribudnú neskôr.",
     audios: [],
   },
   spanielsko: {
     name: "Španielsko",
-    description: "Spotify audio prehľady zo Španielska, miest, pobrežia a dovolenkovej reality.",
+    description: "Spotify podcasty zo Španielska, miest, pobrežia a dovolenkovej reality.",
     audios: [
       {
         title: "Malaga – Španielsko",
         description:
-          "Audio epizóda o Malage, španielskej dovolenkovej atmosfére a cestovaní mimo hlavnej sezóny.",
+          "Podcast o Malage, španielskej dovolenkovej atmosfére a cestovaní mimo hlavnej sezóny.",
         spotifyUrl: "https://open.spotify.com/episode/6fOaPxVBsxW8hdcBekNAgX?si=Q2_oEMSITQGMU3hH_o4F4g",
         spotifyEmbedUrl: "https://open.spotify.com/embed/episode/6fOaPxVBsxW8hdcBekNAgX",
       },
@@ -641,22 +687,22 @@ const audioLibrary = {
   },
   francuzsko: {
     name: "Francúzsko",
-    description: "Audio prehľady z Francúzska pribudnú neskôr.",
+    description: "Podcasty z Francúzska pribudnú neskôr.",
     audios: [],
   },
   chorvatsko: {
     name: "Chorvátsko",
-    description: "Audio prehľady z Chorvátska pribudnú neskôr.",
+    description: "Podcasty z Chorvátska pribudnú neskôr.",
     audios: [],
   },
   malta: {
     name: "Malta",
-    description: "Audio prehľady z Malty pribudnú neskôr.",
+    description: "Podcasty z Malty pribudnú neskôr.",
     audios: [],
   },
   cyprus: {
     name: "Cyprus",
-    description: "Spotify audio prehľady z Cypru, zimného cestovania a aktívneho objavovania ostrova.",
+    description: "Spotify podcasty z Cypru, zimného cestovania a aktívneho objavovania ostrova.",
     audios: [
       {
         title: "Cyprus v januári – skrytý poklad pre aktívnych cestovateľov",
@@ -669,7 +715,7 @@ const audioLibrary = {
   },
   slovinsko: {
     name: "Slovinsko",
-    description: "Audio prehľady zo Slovinska pribudnú neskôr.",
+    description: "Podcasty zo Slovinska pribudnú neskôr.",
     audios: [],
   },
 };
@@ -804,26 +850,26 @@ function renderCountryAudios() {
   const title = document.querySelector("#audio-country-title");
   const description = document.querySelector("#audio-country-description");
 
-  document.title = `${country.name} audio | Letom po Stredomorí`;
+  document.title = `${country.name} podcast | Letom po Stredomorí`;
   if (title) {
-    title.textContent = `${country.name} - audio prehľady`;
+    title.textContent = `${country.name} - podcasty`;
   }
   if (description) {
     const countText =
       country.audios.length === 1
-        ? "1 audio prehľad"
+        ? "1 podcast"
         : country.audios.length > 1 && country.audios.length < 5
-          ? `${country.audios.length} audio prehľady`
-          : `${country.audios.length} audio prehľadov`;
+          ? `${country.audios.length} podcasty`
+          : `${country.audios.length} podcastov`;
     description.textContent = `${country.description} Aktuálne: ${countText}.`;
   }
 
   if (!country.audios.length) {
     grid.innerHTML = `
       <article class="empty-audio-card">
-        <span>0 audio prehľadov</span>
-        <h2>Audio prehľady pre túto krajinu ešte pripravujem</h2>
-        <p>Keď pribudne prvá nahrávka, zobrazí sa tu ako samostatná položka s prehrávačom.</p>
+        <span>0 podcastov</span>
+        <h2>Podcasty pre túto krajinu ešte pripravujem</h2>
+        <p>Keď pribudne prvá epizóda, zobrazí sa tu ako samostatná položka s prehrávačom.</p>
       </article>
     `;
     return;
@@ -851,7 +897,7 @@ function renderCountryAudios() {
 
         return `
         <article class="country-audio-card">
-          <span>Audio ${index + 1}</span>
+          <span>Podcast ${index + 1}</span>
           <h2>${audio.title}</h2>
           <details class="audio-description">
             <summary>Čítať popis epizódy</summary>
@@ -920,7 +966,7 @@ function renderCountryArticles() {
               Čítať článok
             </a>
             <a class="button button-light" href="${article.audioUrl}">
-              Vypočuť audio
+              Vypočuť podcast
             </a>
           </div>
         </article>
