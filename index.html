@@ -62,62 +62,112 @@
             Cestovateľský magazín pre krásne destinácie, praktické itineráre,
             letecké trasy a dovolenky pri mori.
           </p>
-          <p class="hero-copy">
-            V názve je ukrytá myšlienka, že Stredomorie nie je len miesto na
-            letnú dovolenku, ale aj svet, do ktorého sa dá zaletieť vždy, keď
-            človek potrebuje kúsok slnka.
-          </p>
           <div class="hero-actions" aria-label="Hlavné akcie">
             <a class="button button-primary" href="#destinacie">Objav destinácie</a>
           </div>
         </div>
       </section>
 
+      <section class="name-note-section" aria-label="Myšlienka názvu">
+        <div class="name-note">
+          <p class="eyebrow">O názve</p>
+          <p>
+            V názve je ukrytá myšlienka, že Stredomorie nie je len miesto na
+            letnú dovolenku, ale aj svet, do ktorého sa dá zaletieť vždy, keď
+            človek potrebuje kúsok slnka.
+          </p>
+        </div>
+      </section>
+
       <section class="section latest-section" aria-labelledby="latest-title">
         <div class="section-heading">
           <p class="eyebrow">Najnovšie</p>
-          <h2 id="latest-title">Čo pribudlo na webe</h2>
+          <h2 id="latest-title">Najnovšie na webe</h2>
           <p>
-            Rýchly prehľad nového článku, audio epizódy a videa, aby si sa
-            vedel hneď chytiť najaktuálnejšieho obsahu.
+            Rýchly prehľad toho, čo pribudlo naposledy. Môžu to byť články,
+            audio epizódy, videá alebo nové cestovateľské nástroje.
           </p>
         </div>
 
-        <div class="latest-grid">
-          <article class="latest-card latest-card-featured">
-            <span>Nový článok</span>
-            <h3>Amalfské pobrežie bez stresu</h3>
-            <p>
-              Praktický sprievodca od Neapola po Salerno s dopravou, Ravellom
-              a 3-dňovým itinerárom.
-            </p>
-            <a class="button button-primary" href="blog-amalfi-pobrezie.html">
-              Čítať článok
+        <div class="latest-grid" id="latest-grid">
+          <article class="latest-card latest-card-article latest-card-featured">
+            <a
+              class="latest-card-media"
+              href="blog-amalfi-pobrezie.html"
+              aria-label="Čítať článok: Amalfské pobrežie bez stresu"
+            >
+              <img
+                src="images/blog/amalfi/amalfi-hero.webp"
+                alt="Amalfské pobrežie pri mori"
+                loading="lazy"
+              />
             </a>
+            <div class="latest-card-content">
+              <div class="latest-card-topline">
+                <span class="content-badge">Nový článok</span>
+                <small class="latest-date">Pridané 14. 6. 2026</small>
+              </div>
+              <h3>Amalfské pobrežie bez stresu</h3>
+              <p>
+                Praktický sprievodca od Neapola po Salerno s dopravou, Ravellom
+                a 3-dňovým itinerárom.
+              </p>
+              <a class="button button-primary" href="blog-amalfi-pobrezie.html">
+                Čítať článok
+              </a>
+            </div>
           </article>
 
-          <article class="latest-card">
-            <span>Nové audio</span>
-            <h3>Amalfi - Ravello</h3>
-            <p>
-              Spotify audio prehľad k Taliansku a Amalfskému pobrežiu.
-            </p>
-            <a class="button button-light" href="audio.html?krajina=taliansko">
-              Vypočuť audio
-            </a>
+          <article class="latest-card latest-card-audio">
+            <div class="latest-card-media latest-card-symbol" aria-hidden="true">
+              <span>Audio</span>
+            </div>
+            <div class="latest-card-content">
+              <div class="latest-card-topline">
+                <span class="content-badge">Nové audio</span>
+                <small class="latest-date">Pridané 14. 6. 2026</small>
+              </div>
+              <h3>Amalfi - Ravello</h3>
+              <p>
+                Spotify audio prehľad k Taliansku a Amalfskému pobrežiu.
+              </p>
+              <a class="button button-light" href="audio.html?krajina=taliansko">
+                Vypočuť audio
+              </a>
+            </div>
           </article>
 
-          <article class="latest-card">
-            <span>Video tip</span>
-            <h3>Cyprus v zime</h3>
-            <p>
-              Kompletný cestovateľský sprievodca pre január a únik zo zimy.
-            </p>
-            <a class="button button-light" href="videa.html?krajina=cyprus">
-              Pozrieť video
-            </a>
+          <article class="latest-card latest-card-audio">
+            <div class="latest-card-media latest-card-symbol" aria-hidden="true">
+              <span>Audio</span>
+            </div>
+            <div class="latest-card-content">
+              <div class="latest-card-topline">
+                <span class="content-badge">Nové audio</span>
+                <small class="latest-date">Pridané 14. 6. 2026</small>
+              </div>
+              <h3>Malaga - Španielsko</h3>
+              <p>
+                Spotify epizóda o Malage, mori a cestovaní mimo hlavnej sezóny.
+              </p>
+              <a class="button button-light" href="audio.html?krajina=spanielsko">
+                Vypočuť audio
+              </a>
+            </div>
           </article>
         </div>
+
+        <aside class="upcoming-note" aria-label="Čo pripravujeme">
+          <div>
+            <span>Čo pripravujeme</span>
+            <h3>Zakynthos</h3>
+          </div>
+          <p>
+            Pripravujem nový obsah z gréckeho ostrova Zakynthos: pláže, výlety
+            loďou, praktické tipy a miesta, ktoré dávajú zmysel pri plánovaní
+            dovolenky.
+          </p>
+        </aside>
       </section>
 
       <section class="section destinations-section" id="destinacie">
@@ -125,8 +175,11 @@
           <p class="eyebrow">Destinácie pri mori</p>
           <h2>Stredomorské krajiny EÚ</h2>
           <p>
-            Výber krajín, ktoré spájajú krásne pobrežia, ostrovy, historické
-            mestá a dovolenkovú atmosféru.
+            Začíname krajinami Európskej únie pri Stredozemnom a Jadranskom
+            mori, ktoré sú zo Slovenska praktické a dostupné. Výhodou je
+            jednoduchšie cestovanie, EÚ roaming, známe pravidlá a pri viacerých
+            destináciách aj Schengen či euro. K tomu pláže, mestá, ostrovy,
+            história a dovolenková atmosféra.
           </p>
         </div>
 

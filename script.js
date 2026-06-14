@@ -32,6 +32,95 @@ window.addEventListener("resize", () => {
   }
 });
 
+const latestUpdates = [
+  {
+    kind: "article",
+    type: "Nový článok",
+    title: "Amalfské pobrežie bez stresu",
+    publishedAt: "2026-06-14",
+    date: "Pridané 14. 6. 2026",
+    image: "images/blog/amalfi/amalfi-hero.webp",
+    imageAlt: "Amalfské pobrežie pri mori",
+    description:
+      "Praktický sprievodca od Neapola po Salerno s dopravou, Ravellom a 3-dňovým itinerárom.",
+    url: "blog-amalfi-pobrezie.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "audio",
+    type: "Nové audio",
+    title: "Amalfi - Ravello",
+    publishedAt: "2026-06-14",
+    date: "Pridané 14. 6. 2026",
+    marker: "Audio",
+    description:
+      "Spotify audio prehľad k Taliansku a Amalfskému pobrežiu.",
+    url: "audio.html?krajina=taliansko",
+    label: "Vypočuť audio",
+  },
+  {
+    kind: "audio",
+    type: "Nové audio",
+    title: "Malaga - Španielsko",
+    publishedAt: "2026-06-14",
+    date: "Pridané 14. 6. 2026",
+    marker: "Audio",
+    description:
+      "Spotify epizóda o Malage, mori a cestovaní mimo hlavnej sezóny.",
+    url: "audio.html?krajina=spanielsko",
+    label: "Vypočuť audio",
+  },
+];
+
+function renderLatestUpdates() {
+  const grid = document.querySelector("#latest-grid");
+  if (!grid) {
+    return;
+  }
+
+  const newestUpdates = [...latestUpdates].sort(
+    (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
+  );
+
+  grid.innerHTML = newestUpdates
+    .slice(0, 3)
+    .map(
+      (item, index) => {
+        const media = item.image
+          ? `
+            <a class="latest-card-media" href="${item.url}" aria-label="${item.label}: ${item.title}">
+              <img src="${item.image}" alt="${item.imageAlt || item.title}" loading="lazy" />
+            </a>
+          `
+          : `
+            <div class="latest-card-media latest-card-symbol" aria-hidden="true">
+              <span>${item.marker || item.type}</span>
+            </div>
+          `;
+
+        return `
+        <article class="latest-card latest-card-${item.kind || "update"}${index === 0 ? " latest-card-featured" : ""}">
+          ${media}
+          <div class="latest-card-content">
+            <div class="latest-card-topline">
+              <span class="content-badge">${item.type}</span>
+              <small class="latest-date">${item.date}</small>
+            </div>
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+            <a class="button ${index === 0 ? "button-primary" : "button-light"}" href="${item.url}">
+              ${item.label}
+            </a>
+          </div>
+        </article>
+      `;
+      }
+    )
+    .join("");
+}
+
+renderLatestUpdates();
+
 function itineraryDay(title, plan, realistic, avoid, transport, alternative) {
   return { title, plan, realistic, avoid, transport, alternative };
 }
