@@ -1,4 +1,4 @@
-const navToggle = document.querySelector(".nav-toggle");
+﻿const navToggle = document.querySelector(".nav-toggle");
 const navPanel = document.querySelector(".nav-panel");
 const navLinks = document.querySelectorAll(".nav-panel a");
 
@@ -32,7 +32,68 @@ window.addEventListener("resize", () => {
   }
 });
 
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".brief-more-toggle");
+  if (!button) {
+    return;
+  }
+
+  const targetId = button.getAttribute("aria-controls");
+  const target = targetId ? document.getElementById(targetId) : null;
+
+  if (!target) {
+    return;
+  }
+
+  const isExpanded = button.getAttribute("aria-expanded") === "true";
+  button.setAttribute("aria-expanded", String(!isExpanded));
+  target.hidden = isExpanded;
+  button.textContent = isExpanded ? "Viac" : "Menej";
+});
+
 const latestUpdates = [
+  {
+    kind: "article",
+    type: "Nový článok",
+    title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
+    publishedAt: "2026-06-24",
+    date: "Pridané 24. 6. 2026",
+    image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+    imageAlt: "Elafonissi Beach na Kréte s ružovkastým pieskom a tyrkysovou vodou",
+    description:
+      "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
+    url: "top-5-plazi-stredomoria-eu.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "video",
+    type: "Nové video",
+    title: "Barcelona za 3 dni",
+    publishedAt: "2026-06-24",
+    date: "Pridané 24. 6. 2026",
+    marker: "YouTube",
+    image: getYouTubeThumbnail("https://youtu.be/_kLS2SJ5WeI?si=NjSKAL4IBzav5IC3"),
+    imageAlt: "Náhľad videa Barcelona za 3 dni",
+    mediaUrl: "https://youtu.be/_kLS2SJ5WeI?si=NjSKAL4IBzav5IC3",
+    description:
+      "Ako si užiť Barcelonu za 3 dni: pláž, mesto, futbal a praktický plán bez zbytočného naháňania.",
+    url: "videa.html?krajina=spanielsko",
+    label: "Pozrieť video",
+  },
+  {
+    kind: "audio",
+    type: "Nový podcast",
+    title: "Amalfi - Ravello",
+    publishedAt: "2026-06-14",
+    date: "Pridané 14. 6. 2026",
+    marker: "Podcast",
+    image: "images/social/spotify.png",
+    imageAlt: "Spotify kanál Letom po Stredomorí",
+    description:
+      "Spotify podcast k Taliansku a Amalfskému pobrežiu.",
+    url: "audio.html?krajina=taliansko",
+    label: "Vypočuť podcast",
+  },
   {
     kind: "article",
     type: "Nový článok",
@@ -45,18 +106,6 @@ const latestUpdates = [
       "Praktický sprievodca od Neapola po Salerno s dopravou, Ravellom a 3-dňovým itinerárom.",
     url: "blog-amalfi-pobrezie.html",
     label: "Čítať článok",
-  },
-  {
-    kind: "audio",
-    type: "Nový podcast",
-    title: "Amalfi - Ravello",
-    publishedAt: "2026-06-14",
-    date: "Pridané 14. 6. 2026",
-    marker: "Podcast",
-    description:
-      "Spotify podcast k Taliansku a Amalfskému pobrežiu.",
-    url: "audio.html?krajina=taliansko",
-    label: "Vypočuť podcast",
   },
   {
     kind: "audio",
@@ -86,10 +135,12 @@ function renderLatestUpdates() {
     .slice(0, 3)
     .map(
       (item, index) => {
+        const mediaHref = item.mediaUrl || item.url;
         const media = item.image
           ? `
-            <a class="latest-card-media" href="${item.url}" aria-label="${item.label}: ${item.title}">
+            <a class="latest-card-media${item.kind === "video" ? " latest-card-video-media" : item.kind === "audio" ? " latest-card-audio-media" : ""}" href="${mediaHref}"${item.mediaUrl ? ' target="_blank" rel="noopener"' : ""} aria-label="${item.label}: ${item.title}">
               <img src="${item.image}" alt="${item.imageAlt || item.title}" loading="lazy" />
+              ${item.kind === "video" ? '<span class="video-play-badge" aria-hidden="true"></span>' : ""}
             </a>
           `
           : `
@@ -723,8 +774,16 @@ const audioLibrary = {
 const articleLibrary = {
   taliansko: {
     name: "Taliansko",
-    description: "Články z Talianska, pobrežia Amalfi, miest a praktického plánovania ciest.",
+    description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      {
+        title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
+        description:
+          "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
+        url: "top-5-plazi-stredomoria-eu.html",
+        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+        date: "24. jún 2026",
+      },
       {
         title: "Od Neapola po Salerno: ako si naplánovať Amalfské pobrežie bez stresu",
         description:
@@ -738,13 +797,31 @@ const articleLibrary = {
   },
   grecko: {
     name: "Grécko",
-    description: "Články z Grécka, ostrovov a pobrežia pribudnú neskôr.",
-    articles: [],
+    description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
+    articles: [
+      {
+        title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
+        description:
+          "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
+        url: "top-5-plazi-stredomoria-eu.html",
+        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+        date: "24. jún 2026",
+      },
+    ],
   },
   spanielsko: {
     name: "Španielsko",
-    description: "Články zo Španielska, miest, pobrežia a dovolenkovej reality pribudnú neskôr.",
-    articles: [],
+    description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
+    articles: [
+      {
+        title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
+        description:
+          "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
+        url: "top-5-plazi-stredomoria-eu.html",
+        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+        date: "24. jún 2026",
+      },
+    ],
   },
   francuzsko: {
     name: "Francúzsko",
@@ -965,9 +1042,13 @@ function renderCountryArticles() {
             <a class="button button-primary" href="${article.url}">
               Čítať článok
             </a>
-            <a class="button button-light" href="${article.audioUrl}">
-              Vypočuť podcast
-            </a>
+            ${
+              article.audioUrl
+                ? `<a class="button button-light" href="${article.audioUrl}">
+                    Vypočuť podcast
+                  </a>`
+                : ""
+            }
           </div>
         </article>
       `
