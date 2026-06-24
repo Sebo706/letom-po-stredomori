@@ -46,9 +46,11 @@ document.addEventListener("click", (event) => {
   }
 
   const isExpanded = button.getAttribute("aria-expanded") === "true";
+  const collapsedLabel = button.dataset.collapsedLabel || "Viac";
+  const expandedLabel = button.dataset.expandedLabel || "Menej";
   button.setAttribute("aria-expanded", String(!isExpanded));
   target.hidden = isExpanded;
-  button.textContent = isExpanded ? "Viac" : "Menej";
+  button.textContent = isExpanded ? collapsedLabel : expandedLabel;
 });
 
 const latestUpdates = [
@@ -922,14 +924,31 @@ function renderCountryAudios() {
   }
 
   const params = new URLSearchParams(window.location.search);
-  const countryKey = params.get("krajina") || "taliansko";
-  const country = audioLibrary[countryKey] || audioLibrary.taliansko;
+  const requestedCountryKey = params.get("krajina");
+  const isAllAudios = !requestedCountryKey;
+  const countryKey = requestedCountryKey || "taliansko";
+  const country = isAllAudios
+    ? {
+        name: "Všetky podcasty",
+        description:
+          "Kompletný prehľad dostupných Spotify podcastov projektu Letom po Stredomorí.",
+        audios: Object.entries(audioLibrary).flatMap(([key, item]) =>
+          item.audios.map((audio) => ({
+            ...audio,
+            countryKey: key,
+            countryName: item.name,
+          }))
+        ),
+      }
+    : audioLibrary[countryKey] || audioLibrary.taliansko;
   const title = document.querySelector("#audio-country-title");
   const description = document.querySelector("#audio-country-description");
 
-  document.title = `${country.name} podcast | Letom po Stredomorí`;
+  document.title = isAllAudios
+    ? "Všetky podcasty | Letom po Stredomorí"
+    : `${country.name} podcast | Letom po Stredomorí`;
   if (title) {
-    title.textContent = `${country.name} - podcasty`;
+    title.textContent = isAllAudios ? "Všetky podcasty" : `${country.name} - podcasty`;
   }
   if (description) {
     const countText =
@@ -945,7 +964,7 @@ function renderCountryAudios() {
     grid.innerHTML = `
       <article class="empty-audio-card">
         <span>0 podcastov</span>
-        <h2>Podcasty pre túto krajinu ešte pripravujem</h2>
+        <h2>${isAllAudios ? "Podcasty ešte pripravujem" : "Podcasty pre túto krajinu ešte pripravujem"}</h2>
         <p>Keď pribudne prvá epizóda, zobrazí sa tu ako samostatná položka s prehrávačom.</p>
       </article>
     `;
@@ -974,7 +993,7 @@ function renderCountryAudios() {
 
         return `
         <article class="country-audio-card">
-          <span>Podcast ${index + 1}</span>
+          <span>${isAllAudios ? `${audio.countryName} · podcast ${index + 1}` : `Podcast ${index + 1}`}</span>
           <h2>${audio.title}</h2>
           <details class="audio-description">
             <summary>Čítať popis epizódy</summary>
