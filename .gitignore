@@ -1,0 +1,8 @@
+# Local audio backups are too large for GitHub/GitHub Pages.
+audio/
+*.m4a
+*.mp3
+*.wav
+
+# Local preview/runtime files.
+.preview-server.pid

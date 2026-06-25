@@ -8,7 +8,7 @@
       content="Letom po Stredomorí je cestovateľský magazín pre krásne destinácie, praktické itineráre, letecké trasy a dovolenky pri mori."
     />
     <title>Letom po Stredomorí</title>
-    <link rel="stylesheet" href="style.css?v=20260625-flight-details-2" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
@@ -37,7 +37,6 @@
         <div class="nav-panel" id="primary-menu">
           <a href="#domov">Domov</a>
           <a href="#destinacie">Destinácie</a>
-          <a href="lety.html">Lety</a>
           <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
           <a href="itinerar.html">Itineráre</a>
           <a href="spravy.html">Správy</a>
@@ -405,11 +404,11 @@
             <p class="eyebrow">Letom v skratke</p>
             <h2 id="brief-panel-title">Letom v skratke: tipy a novinky</h2>
             <p>
-              Rýchle cestovateľské správy, ktoré sa oplatí vedieť pred dovolenkou.
+              Rýchle cestovateľské bleskovky o letoch, letiskách, dovolenkách a
+              Stredomorí.
             </p>
           </div>
 
-          <div class="brief-news-grid">
           <article class="brief-featured brief-alert-card">
             <img
               class="brief-featured-image brief-card-image-wide"
@@ -417,18 +416,14 @@
               alt="Zátoka Navagio na Zakyntose s ikonickým vrakom lode"
               loading="lazy"
             />
-            <div class="brief-featured-content">
-              <div class="brief-card-labels">
-                <span class="brief-priority-badge">⚠️ Dôležité upozornenie</span>
-                <span class="brief-card-kicker">⚠️ Bezpečnosť</span>
-              </div>
-              <time datetime="2026-06-24">24. jún 2026</time>
-              <h3>🚨 Navagio zostáva zatvorené aj v sezóne 2026</h3>
-              <p>
-                Jedna z najznámejších pláží v Stredomorí zostáva pre návštevníkov
-                uzavretá minimálne do 31. októbra 2026.
-              </p>
-              <div class="brief-extra" id="navagio-zatvorene-extra" hidden>
+            <span>Zakyntos • Bezpečnostné upozornenie</span>
+            <time datetime="2026-06-24">24. jún 2026</time>
+            <h3>🚨 Navagio zostáva zatvorené aj v sezóne 2026</h3>
+            <p>
+              Jedna z najznámejších pláží v Stredomorí zostáva pre návštevníkov
+              uzavretá minimálne do 31. októbra 2026.
+            </p>
+            <div class="brief-extra" id="navagio-zatvorene-extra" hidden>
               <p>
                 Grécke úrady rozhodli, že pláž Navagio na ostrove Zakyntos bude
                 uzatvorená minimálne do 31. októbra 2026.
@@ -471,18 +466,15 @@
                 Zdroj: oficiálne rozhodnutia miestnych úradov a médiá informujúce
                 o bezpečnostných opatreniach na Zakyntose.
               </p>
-              </div>
-              <button
-                class="button button-primary brief-more-toggle"
-                type="button"
-                aria-expanded="false"
-                aria-controls="navagio-zatvorene-extra"
-                data-collapsed-label="Viac informácií"
-                data-expanded-label="Menej"
-              >
-                Viac informácií
-              </button>
             </div>
+            <button
+              class="button button-primary brief-more-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="navagio-zatvorene-extra"
+            >
+              Viac
+            </button>
           </article>
 
           <div class="brief-list" aria-label="Flash správy">
@@ -493,15 +485,14 @@
                 alt="Malaga pri mori ako inšpirácia na let z Košíc"
                 loading="lazy"
               />
-              <div class="brief-flash-content">
-                <span class="brief-card-kicker">🛫 Lety</span>
-                <time datetime="2026-06-24">Pridané 24. 6. 2026</time>
-                <h3>Košice – Malaga aj mimo leta?</h3>
-                <p>
-                  Priame spojenie z Košíc do Malagy môže byť zaujímavé hlavne pre
-                  cestovateľov z východu Slovenska.
-                </p>
-                <div class="brief-extra" id="kosice-malaga-extra" hidden>
+              <span class="brief-card-kicker">⚡ Flash správa · Lety</span>
+              <time datetime="2026-06-24">Pridané 24. 6. 2026</time>
+              <h3>Košice – Malaga aj mimo leta?</h3>
+              <p>
+                Priame spojenie z Košíc do Malagy môže byť zaujímavé hlavne pre
+                cestovateľov z východu Slovenska.
+              </p>
+              <div class="brief-extra" id="kosice-malaga-extra" hidden>
                 <p>
                   Priame spojenie z Košíc do <strong>Malagy</strong> je zaujímavou
                   novinkou hlavne pre cestovateľov z východného Slovenska. Ryanair
@@ -527,18 +518,15 @@
                   pre tých, ktorí nechcú len pláž, ale aj mesto, jedlo, výlety a
                   príjemnejšiu atmosféru mimo najväčších letných horúčav.
                 </p>
-                </div>
-                <button
-                  class="button button-primary brief-more-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="kosice-malaga-extra"
-                  data-collapsed-label="Čítať viac"
-                  data-expanded-label="Menej"
-                >
-                  Čítať viac
-                </button>
               </div>
+              <button
+                class="button button-primary brief-more-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="kosice-malaga-extra"
+              >
+                Viac
+              </button>
             </article>
 
             <article class="brief-flash-card">
@@ -548,16 +536,15 @@
                 alt="Nissi Beach na Cypre ako dovolenková pláž pri mori"
                 loading="lazy"
               />
-              <div class="brief-flash-content">
-                <span class="brief-card-kicker">💶 Ceny a lety</span>
-                <time datetime="2026-06-24">24. jún 2026</time>
-                <h3>Cyprus: ceny a dovolenka v tieni napätia</h3>
-                <p>
-                  Cyprus zostáva otvorený pre turistov a nie je priamo zasiahnutý
-                  vojnou na Blízkom východe. Napätie v regióne však môže ovplyvniť
-                  leteckú dopravu, ceny paliva, transfery alebo výlety.
-                </p>
-                <div class="brief-extra" id="cyprus-ceny-napatie-extra" hidden>
+              <span class="brief-card-kicker">Cyprus • Nissi Beach • Bezpečnosť • Ceny • Lety</span>
+              <time datetime="2026-06-24">24. jún 2026</time>
+              <h3>Cyprus: ceny a dovolenka v tieni napätia</h3>
+              <p>
+                Cyprus zostáva otvorený pre turistov a nie je priamo zasiahnutý
+                vojnou na Blízkom východe. Napätie v regióne však môže ovplyvniť
+                leteckú dopravu, ceny paliva, transfery alebo výlety.
+              </p>
+              <div class="brief-extra" id="cyprus-ceny-napatie-extra" hidden>
                 <p>
                   Zároveň môže nižší dopyt tlačiť niektoré ceny ubytovania nadol.
                   Pri plánovaní dovolenky preto dáva zmysel sledovať nielen cenu
@@ -579,20 +566,16 @@
                   Informácie odporúčame pred cestou overiť v oficiálnych cestovných
                   odporúčaniach a u leteckej spoločnosti.
                 </p>
-                </div>
-                <button
-                  class="button button-primary brief-more-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="cyprus-ceny-napatie-extra"
-                  data-collapsed-label="Čítať viac"
-                  data-expanded-label="Menej"
-                >
-                  Čítať viac
-                </button>
               </div>
+              <button
+                class="button button-primary brief-more-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="cyprus-ceny-napatie-extra"
+              >
+                Viac
+              </button>
             </article>
-          </div>
           </div>
 
           <a class="button button-light brief-archive-link" href="spravy.html">
@@ -600,22 +583,6 @@
           </a>
         </aside>
       </div>
-
-      <section class="section flights-teaser-section" id="lety" aria-labelledby="flights-teaser-title">
-        <div class="flights-teaser-card">
-          <div>
-            <p class="eyebrow">Lety zo Slovenska</p>
-            <h2 id="flights-teaser-title">Lety zo Slovenska k Stredomoriu</h2>
-            <p>
-              Prehľad priamych pravidelných liniek a dovolenkových charterov zo
-              slovenských letísk do stredomorských destinácií.
-            </p>
-          </div>
-          <a class="button button-primary" href="lety.html">
-            Zobraziť prehľad letov
-          </a>
-        </div>
-      </section>
 
       <section class="section poll-section" id="anketa" aria-labelledby="poll-title">
         <div class="poll-shell">
@@ -854,12 +821,6 @@
             </div>
           </article>
         </div>
-
-        <div class="audio-section-actions">
-          <a class="button button-primary audio-archive-link" href="audio.html">
-            Všetky podcasty
-          </a>
-        </div>
       </section>
 
       <section class="section blog-section" id="blog">
@@ -973,7 +934,6 @@
 
         <div class="footer-links" aria-label="Odkazy v pätičke">
           <a href="#destinacie">Destinácie</a>
-          <a href="lety.html">Lety</a>
           <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
           <a href="itinerar.html">Itineráre</a>
           <a href="#audio">Podcast</a>
@@ -992,6 +952,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260625-flight-details-2"></script>
+    <script src="script.js?v=20260624-blog-plaze"></script>
   </body>
 </html>

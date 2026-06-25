@@ -46,11 +46,9 @@ document.addEventListener("click", (event) => {
   }
 
   const isExpanded = button.getAttribute("aria-expanded") === "true";
-  const collapsedLabel = button.dataset.collapsedLabel || "Viac";
-  const expandedLabel = button.dataset.expandedLabel || "Menej";
   button.setAttribute("aria-expanded", String(!isExpanded));
   target.hidden = isExpanded;
-  button.textContent = isExpanded ? collapsedLabel : expandedLabel;
+  button.textContent = isExpanded ? "Viac" : "Menej";
 });
 
 const latestUpdates = [
@@ -924,31 +922,14 @@ function renderCountryAudios() {
   }
 
   const params = new URLSearchParams(window.location.search);
-  const requestedCountryKey = params.get("krajina");
-  const isAllAudios = !requestedCountryKey;
-  const countryKey = requestedCountryKey || "taliansko";
-  const country = isAllAudios
-    ? {
-        name: "Všetky podcasty",
-        description:
-          "Kompletný prehľad dostupných Spotify podcastov projektu Letom po Stredomorí.",
-        audios: Object.entries(audioLibrary).flatMap(([key, item]) =>
-          item.audios.map((audio) => ({
-            ...audio,
-            countryKey: key,
-            countryName: item.name,
-          }))
-        ),
-      }
-    : audioLibrary[countryKey] || audioLibrary.taliansko;
+  const countryKey = params.get("krajina") || "taliansko";
+  const country = audioLibrary[countryKey] || audioLibrary.taliansko;
   const title = document.querySelector("#audio-country-title");
   const description = document.querySelector("#audio-country-description");
 
-  document.title = isAllAudios
-    ? "Všetky podcasty | Letom po Stredomorí"
-    : `${country.name} podcast | Letom po Stredomorí`;
+  document.title = `${country.name} podcast | Letom po Stredomorí`;
   if (title) {
-    title.textContent = isAllAudios ? "Všetky podcasty" : `${country.name} - podcasty`;
+    title.textContent = `${country.name} - podcasty`;
   }
   if (description) {
     const countText =
@@ -964,7 +945,7 @@ function renderCountryAudios() {
     grid.innerHTML = `
       <article class="empty-audio-card">
         <span>0 podcastov</span>
-        <h2>${isAllAudios ? "Podcasty ešte pripravujem" : "Podcasty pre túto krajinu ešte pripravujem"}</h2>
+        <h2>Podcasty pre túto krajinu ešte pripravujem</h2>
         <p>Keď pribudne prvá epizóda, zobrazí sa tu ako samostatná položka s prehrávačom.</p>
       </article>
     `;
@@ -993,7 +974,7 @@ function renderCountryAudios() {
 
         return `
         <article class="country-audio-card">
-          <span>${isAllAudios ? `${audio.countryName} · podcast ${index + 1}` : `Podcast ${index + 1}`}</span>
+          <span>Podcast ${index + 1}</span>
           <h2>${audio.title}</h2>
           <details class="audio-description">
             <summary>Čítať popis epizódy</summary>
@@ -1076,375 +1057,3 @@ function renderCountryArticles() {
 }
 
 renderCountryArticles();
-
-function normalizeFlightValue(value) {
-  return String(value || "")
-    .toLocaleLowerCase("sk")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
-
-function escapeFlightText(value) {
-  return String(value || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-function getAirportLabel(name, code) {
-  return code ? `${name} (${code})` : name;
-}
-
-function getFlightConfidenceClass(confidence) {
-  const normalized = normalizeFlightValue(confidence);
-  if (normalized.startsWith("vysoka")) {
-    return "flight-confidence-vysoka";
-  }
-  if (normalized.startsWith("stredna")) {
-    return "flight-confidence-stredna";
-  }
-  return "flight-confidence-treba-overit";
-}
-
-function renderFlightRows(legs, columns) {
-  const legKeys = ["day", "departure", "arrival", "flightNumber", "validity"];
-  const getLegValue = (leg, key) => {
-    if (Array.isArray(leg)) {
-      const index = legKeys.indexOf(key);
-      return index >= 0 ? leg[index] : "";
-    }
-
-    return leg[key];
-  };
-
-  return legs
-    .map(
-      (leg) => `
-        <tr>
-          ${columns
-            .map((column) => {
-              const value =
-                typeof column.value === "function" ? column.value(leg) : getLegValue(leg, column.value);
-              return `<td>${escapeFlightText(value)}</td>`;
-            })
-            .join("")}
-        </tr>
-      `
-    )
-    .join("");
-}
-
-function renderFlightTable(title, legs, columns) {
-  return `
-    <section>
-      <h4>${title}</h4>
-      <div class="flight-table-wrap">
-        <table class="flight-table">
-          <thead>
-            <tr>
-              ${columns.map((column) => `<th>${escapeFlightText(column.label)}</th>`).join("")}
-            </tr>
-          </thead>
-          <tbody>${renderFlightRows(legs, columns)}</tbody>
-        </table>
-      </div>
-    </section>
-  `;
-}
-
-function getFlightSeasonFilters(flight) {
-  if (Array.isArray(flight.seasonFilters) && flight.seasonFilters.length) {
-    return flight.seasonFilters;
-  }
-
-  return [flight.seasonFilter || flight.season].filter(Boolean);
-}
-
-function renderFlightDetails(flight) {
-  if (flight.scheduleNote && !flight.outbound.length && !flight.inbound.length) {
-    return `
-      <div class="flight-charter-note">
-        <strong>Charterové termíny</strong>
-        <p>${escapeFlightText(flight.scheduleNote)}</p>
-      </div>
-    `;
-  }
-
-  const departureAirportName =
-    {
-      Bratislava: "Bratislavy",
-      Košice: "Košíc",
-      "Poprad-Tatry": "Popradu",
-      Piešťany: "Piešťan",
-    }[flight.departureAirport] ||
-    flight.departureAirport ||
-    "odletového letiska";
-  const sourceAirportName =
-    flight.departureAirport === "Bratislava"
-      ? "Letiska Bratislava"
-      : flight.departureAirport === "Košice"
-        ? "Letiska Košice"
-        : flight.departureAirport === "Poprad-Tatry"
-          ? "Letiska Poprad-Tatry"
-          : flight.departureAirport === "Piešťany"
-            ? "Letiska Piešťany"
-        : "odletového letiska";
-
-  return `
-    <p class="flight-time-note">Časy sú miestne. Odlet a prílet sú uvádzané podľa miestneho času príslušného letiska.</p>
-    <div class="flight-directions">
-      ${renderFlightTable(`Lety tam – odlety z ${departureAirportName}`, flight.outbound, [
-        { label: "Deň", value: "day" },
-        { label: `Odlet z ${departureAirportName}`, value: "departure" },
-        { label: "Destinácia", value: () => getAirportLabel(flight.arrivalAirport, flight.arrivalCode) },
-        { label: "Číslo letu", value: "flightNumber" },
-      ])}
-      ${renderFlightTable(`Lety späť – prílety do ${departureAirportName}`, flight.inbound, [
-        { label: "Deň", value: "day" },
-        { label: `Prílet do ${departureAirportName}`, value: "arrival" },
-        { label: "Odkiaľ", value: () => getAirportLabel(flight.arrivalAirport, flight.arrivalCode) },
-        { label: "Číslo letu", value: "flightNumber" },
-      ])}
-    </div>
-    <p class="flight-data-note">Údaje vychádzajú z oficiálneho letového poriadku ${sourceAirportName}. Presné časy príletu do cieľovej destinácie a odletu späť z destinácie odporúčame overiť u dopravcu.</p>
-  `;
-}
-
-function renderFlights() {
-  const grid = document.querySelector("[data-flights-grid]");
-  const filters = document.querySelector("[data-flights-filters]");
-  const summary = document.querySelector("[data-flights-summary]");
-
-  if (!grid || !filters) {
-    return;
-  }
-
-  const flights = Array.isArray(window.LETOM_FLIGHTS)
-    ? window.LETOM_FLIGHTS
-    : Array.isArray(window.LETOM_FLIGHTS_DEMO)
-      ? window.LETOM_FLIGHTS_DEMO
-      : [];
-
-  const getFilterValues = () => {
-    const data = new FormData(filters);
-    return {
-      departure: data.get("departure") || "all",
-      country: data.get("country") || "all",
-      type: data.get("type") || "all",
-      season: data.get("season") || "all",
-      tripType: data.get("tripType") || "all",
-      search: normalizeFlightValue(data.get("search")),
-    };
-  };
-
-  const applyQueryParamsToFilters = () => {
-    const params = new URLSearchParams(window.location.search);
-    const fields = ["departure", "country", "type", "season", "tripType", "search"];
-
-    fields.forEach((name) => {
-      const field = filters.elements[name];
-      const value = params.get(name);
-
-      if (!field || value === null) {
-        return;
-      }
-
-      if (field.tagName === "SELECT") {
-        const hasOption = Array.from(field.options).some((option) => option.value === value);
-        if (hasOption) {
-          field.value = value;
-        }
-        return;
-      }
-
-      field.value = value;
-    });
-  };
-
-  const updateFilterUrl = () => {
-    if (!window.history || !window.history.replaceState) {
-      return;
-    }
-
-    const data = new FormData(filters);
-    const params = new URLSearchParams();
-    ["departure", "country", "type", "season", "tripType"].forEach((name) => {
-      const value = data.get(name);
-      if (value && value !== "all") {
-        params.set(name, value);
-      }
-    });
-
-    const search = String(data.get("search") || "").trim();
-    if (search) {
-      params.set("search", search);
-    }
-
-    const query = params.toString();
-    const nextUrl = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
-    window.history.replaceState({}, "", nextUrl);
-  };
-
-  const flightMatches = (flight, values) => {
-    const searchableText = normalizeFlightValue(
-      [
-        flight.title,
-        flight.country,
-        flight.carrier,
-        flight.departureAirport,
-        flight.departureCode,
-        flight.arrivalAirport,
-        flight.arrivalCode,
-        flight.type,
-        flight.season,
-        flight.seasonFilter,
-        ...(flight.seasonFilters || []),
-        flight.sourceName,
-        ...(flight.tripTypes || []),
-      ].join(" ")
-    );
-    const seasonFilters = getFlightSeasonFilters(flight);
-
-    return (
-      (values.departure === "all" || flight.departureAirport === values.departure) &&
-      (values.country === "all" || flight.country === values.country) &&
-      (values.type === "all" || flight.type === values.type) &&
-      (values.season === "all" || seasonFilters.includes(values.season)) &&
-      (values.tripType === "all" || (flight.tripTypes || []).includes(values.tripType)) &&
-      (!values.search || searchableText.includes(values.search))
-    );
-  };
-
-  const render = () => {
-    const values = getFilterValues();
-    const visibleFlights = flights.filter((flight) => flightMatches(flight, values));
-    updateFilterUrl();
-
-    if (summary) {
-      const countText =
-        visibleFlights.length === 1
-          ? "1 let"
-          : visibleFlights.length > 1 && visibleFlights.length < 5
-            ? `${visibleFlights.length} lety`
-            : `${visibleFlights.length} letov`;
-      const demoCount = visibleFlights.filter((flight) => flight.demo).length;
-      summary.textContent = demoCount
-        ? `Zobrazené: ${countText}. Zobrazené lety podľa aktuálnych filtrov. Demo karty sú označené samostatne.`
-        : `Zobrazené: ${countText}. Zobrazené lety podľa aktuálnych filtrov.`;
-    }
-
-    if (!visibleFlights.length) {
-      const airportEmptyNotes = {
-        "Poprad-Tatry":
-          "Pre toto letisko zatiaľ nemáme overené priame lety do vybraných stredomorských krajín.",
-        Piešťany:
-          "Pre toto letisko zatiaľ nemáme overené priame lety do vybraných stredomorských krajín.",
-      };
-      const emptyTitle = airportEmptyNotes[values.departure]
-        ? airportEmptyNotes[values.departure]
-        : "Pre zvolenú kombináciu zatiaľ nie je pripravená ukážková karta.";
-
-      grid.innerHTML = `
-        <article class="flight-empty-card">
-          <span>Žiadny overený výsledok</span>
-          <h3>${emptyTitle}</h3>
-          <p>Skús upraviť filter letiska, krajiny, sezóny alebo vyhľadávací výraz.</p>
-        </article>
-      `;
-      return;
-    }
-
-    grid.innerHTML = visibleFlights
-      .map(
-        (flight) => {
-          const detailsId = `flight-details-${escapeFlightText(flight.id)}`;
-          const sourceLink = flight.sourceUrl
-            ? `<a href="${escapeFlightText(flight.sourceUrl)}" target="_blank" rel="noopener">${escapeFlightText(flight.sourceName || "Zdroj")}</a>`
-            : escapeFlightText(flight.sourceName || "Demo zdroj");
-          const badgeText = flight.demo ? "Demo dáta" : escapeFlightText(flight.dataGroup || "Overené dáta");
-          const isCharterNote = flight.scheduleNote && !flight.outbound.length && !flight.inbound.length;
-          const collapsedLabel = isCharterNote ? "Zobraziť charterové termíny" : "Zobraziť lety tam a späť";
-          const expandedLabel = isCharterNote ? "Skryť charterové termíny" : "Skryť lety tam a späť";
-
-          return `
-          <article class="flight-card">
-            <div class="flight-card-header">
-              <div>
-                <span class="flight-demo-badge">${badgeText}</span>
-                <h3>${escapeFlightText(flight.title)}</h3>
-                <p class="flight-route-airports">
-                  ${escapeFlightText(getAirportLabel(flight.departureAirport, flight.departureCode))}
-                  ↔
-                  ${escapeFlightText(getAirportLabel(flight.arrivalAirport, flight.arrivalCode))}
-                </p>
-              </div>
-              <span class="flight-confidence ${getFlightConfidenceClass(flight.confidence)}">
-                Istota: ${escapeFlightText(flight.confidence)}
-              </span>
-            </div>
-
-            <dl class="flight-meta">
-              <div><dt>Krajina</dt><dd>${escapeFlightText(flight.country)}</dd></div>
-              <div><dt>Typ letu</dt><dd>${escapeFlightText(flight.type)}</dd></div>
-              <div><dt>Dopravca</dt><dd>${escapeFlightText(flight.carrier)}</dd></div>
-              <div><dt>Sezóna</dt><dd>${escapeFlightText(flight.season)}</dd></div>
-              <div><dt>Frekvencia</dt><dd>${escapeFlightText(flight.frequency)}</dd></div>
-              <div><dt>Vhodné pre</dt><dd>${escapeFlightText(flight.suitableFor)}</dd></div>
-              <div><dt>Overené</dt><dd>${escapeFlightText(flight.verified)}</dd></div>
-              <div><dt>Zdroj</dt><dd>${sourceLink}</dd></div>
-              <div><dt>Istota údajov</dt><dd>${escapeFlightText(flight.confidence)}</dd></div>
-            </dl>
-
-            <button
-              class="button button-primary flight-details-toggle"
-              type="button"
-              aria-expanded="false"
-              aria-controls="${detailsId}"
-              data-label-collapsed="${escapeFlightText(collapsedLabel)}"
-              data-label-expanded="${escapeFlightText(expandedLabel)}"
-            >
-              ${escapeFlightText(collapsedLabel)}
-            </button>
-
-            <div class="flight-details" id="${detailsId}" hidden>
-              ${renderFlightDetails(flight)}
-            </div>
-
-            <p class="flight-warning">
-              Letový poriadok sa môže meniť. Pred kúpou letenky alebo zájazdu si vždy over aktuálny termín u dopravcu, letiska alebo cestovnej kancelárie.
-            </p>
-          </article>
-        `;
-        }
-      )
-      .join("");
-  };
-
-  grid.addEventListener("click", (event) => {
-    const button = event.target.closest(".flight-details-toggle");
-    if (!button) {
-      return;
-    }
-
-    const target = document.getElementById(button.getAttribute("aria-controls"));
-    if (!target) {
-      return;
-    }
-
-    const isExpanded = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!isExpanded));
-    target.hidden = isExpanded;
-    button.textContent = isExpanded
-      ? button.dataset.labelCollapsed || "Zobraziť lety tam a späť"
-      : button.dataset.labelExpanded || "Skryť lety tam a späť";
-  });
-
-  filters.addEventListener("input", render);
-  filters.addEventListener("change", render);
-  applyQueryParamsToFilters();
-  render();
-}
-
-renderFlights();
