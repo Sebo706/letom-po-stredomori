@@ -730,6 +730,10 @@ a {
   grid-column: span 2;
 }
 
+.news-archive-latest {
+  order: -1;
+}
+
 .news-archive-card h2 {
   margin: 6px 0 0;
   color: var(--color-navy);
