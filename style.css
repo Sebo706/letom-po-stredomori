@@ -3251,6 +3251,10 @@ a {
     margin-bottom: 16px;
   }
 
+  .brief-panel-header p:not(.eyebrow) {
+    display: none;
+  }
+
   .brief-panel-header h2 {
     font-size: clamp(1.55rem, 8vw, 2.2rem);
   }
@@ -3276,6 +3280,10 @@ a {
     padding: 12px;
   }
 
+  .brief-list {
+    display: none;
+  }
+
   .brief-card-image {
     min-height: auto;
     aspect-ratio: 16 / 9;
@@ -3287,6 +3295,11 @@ a {
 
   .audio-section-actions {
     margin-top: 20px;
+  }
+
+  .audio-section .section-heading p:not(.eyebrow),
+  .latest-audio-card:not(.latest-audio-card-featured) {
+    display: none;
   }
 
   .audio-archive-link {
@@ -3372,6 +3385,16 @@ a {
   .latest-audio-card .button {
     padding-inline: 14px;
     font-size: 0.86rem;
+  }
+
+  .blog-section .section-heading p:not(.eyebrow),
+  .blog-preview-card:not(.blog-preview-card-featured) {
+    display: none;
+  }
+
+  .blog-section-actions .button {
+    width: 100%;
+    justify-content: center;
   }
 
   .social-grid {

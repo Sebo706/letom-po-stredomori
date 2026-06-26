@@ -1,4 +1,4 @@
-﻿const navToggle = document.querySelector(".nav-toggle");
+const navToggle = document.querySelector(".nav-toggle");
 const navPanel = document.querySelector(".nav-panel");
 const navLinks = document.querySelectorAll(".nav-panel a");
 
@@ -217,7 +217,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-06-26";
+  const siteLastUpdated = "2026-06-27";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
