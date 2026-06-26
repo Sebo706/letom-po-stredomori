@@ -3218,6 +3218,26 @@ a {
     padding: 20px;
   }
 
+  .itinerary-section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .itinerary-section .section-heading p:not(.eyebrow),
+  .itinerary-status,
+  .itinerary-teaser-card:not(.itinerary-teaser-card-featured) {
+    display: none;
+  }
+
+  .itinerary-teaser-card {
+    padding: 22px;
+  }
+
+  .itinerary-teaser-card .button {
+    width: 100%;
+    justify-content: center;
+  }
+
   .flight-meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
