@@ -57,6 +57,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Malta v júli: koncerty, more a horúčavy",
+    publishedAt: "2026-06-26",
+    date: "Pridané 26. 6. 2026",
+    image: "images/blog/malta-jul-isle-of-mtv/katy-perry-malta-2026-nahlad.png",
+    imageAlt: "Ilustračný náhľad ku koncertnej atmosfére Malta 2026 a tipom na cestu z Bratislavy",
+    description:
+      "Priama linka z Bratislavy, Isle of MTV, Valletta, Comino a praktické tipy na júlové horúčavy.",
+    url: "blog/malta-jul-isle-of-mtv-more-horucavy.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
     publishedAt: "2026-06-24",
     date: "Pridané 24. 6. 2026",
@@ -204,10 +217,14 @@ function renderLastUpdated() {
     return;
   }
 
+  const siteLastUpdated = "2026-06-26";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
-  const formattedDate = formatSiteDate(newestUpdate?.publishedAt);
+  const latestContentDate = newestUpdate?.publishedAt || siteLastUpdated;
+  const newestDate =
+    new Date(siteLastUpdated) > new Date(latestContentDate) ? siteLastUpdated : latestContentDate;
+  const formattedDate = formatSiteDate(newestDate);
 
   if (!formattedDate) {
     return;
@@ -837,8 +854,17 @@ const articleLibrary = {
   },
   malta: {
     name: "Malta",
-    description: "Články z Malty a jej farebných miest pribudnú neskôr.",
-    articles: [],
+    description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
+    articles: [
+      {
+        title: "Malta v júli: koncerty, more a horúčavy",
+        description:
+          "Priama linka z Bratislavy, Isle of MTV, Valletta, Comino a praktické tipy na júlové horúčavy.",
+        url: "blog/malta-jul-isle-of-mtv-more-horucavy.html",
+        image: "images/blog/malta-jul-isle-of-mtv/katy-perry-malta-2026-nahlad.png",
+        date: "26. jún 2026",
+      },
+    ],
   },
   cyprus: {
     name: "Cyprus",
