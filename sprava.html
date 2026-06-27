@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Videá z YouTube kanála Letom po Stredomorí podľa krajín."
+      content="Samostatná flash správa z cestovateľského magazínu Letom po Stredomorí."
     />
-    <title>Videá podľa krajiny | Letom po Stredomorí</title>
+    <title>Flash správa | Letom po Stredomorí</title>
     <link rel="stylesheet" href="style.css?v=20260627-facebook-match-1" />
   </head>
-  <body>
+  <body class="article-page">
     <header class="site-header">
       <nav class="nav-shell" aria-label="Hlavná navigácia">
         <a class="brand" href="index.html#domov" aria-label="Letom po Stredomorí domov">
@@ -26,39 +26,26 @@
           <a href="index.html#destinacie">Destinácie</a>
           <a href="lety.html">Lety</a>
           <a href="spravy.html">Správy</a>
-          <a href="index.html#blog">Blog</a>
-          <a href="index.html#youtube">YouTube</a>
-          <a class="nav-cta" href="index.html#destinacie">Späť na krajiny</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#audio">Podcast</a>
+          <a class="nav-cta" href="spravy.html">Všetky správy</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="section video-page-section">
-        <div class="section-heading">
-          <p class="eyebrow">YouTube videá</p>
-          <h1 id="video-country-title">Videá podľa krajiny</h1>
-          <p id="video-country-description">
-            Vyber krajinu z úvodnej stránky a tu sa zobrazia priradené videá.
+      <article id="flash-detail" class="flash-detail-page" aria-live="polite">
+        <header class="article-hero">
+          <div class="article-meta">
+            <span>Letom v skratke</span>
+            <span>Flash správa</span>
+          </div>
+          <h1>Načítavam flash správu...</h1>
+          <p class="article-lead">
+            Ak sa správa nezobrazí, vráť sa do archívu flash správ.
           </p>
-        </div>
-
-        <div class="video-page-actions">
-          <a class="button button-light" href="index.html#destinacie">
-            Späť na destinácie
-          </a>
-          <a
-            class="button button-primary"
-            href="https://youtube.com/@letompostredomori"
-            target="_blank"
-            rel="noopener"
-          >
-            Otvoriť YouTube kanál
-          </a>
-        </div>
-
-        <div class="country-video-grid" id="country-video-grid"></div>
-      </section>
+        </header>
+      </article>
     </main>
 
     <footer class="site-footer">
@@ -86,9 +73,11 @@
         </div>
 
         <p class="copyright">© 2026 Letom po Stredomorí</p>
+        <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
+        <p class="last-updated">Posledná aktualizácia: 27. jún 2026</p>
       </div>
     </footer>
-
+    <script src="flash-news-data.js?v=20260627-flash-detail-1"></script>
     <script src="script.js?v=20260627-flash-detail-1"></script>
   </body>
 </html>

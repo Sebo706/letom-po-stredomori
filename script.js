@@ -57,6 +57,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Kde sa more mení na biele zlato",
+    publishedAt: "2026-06-27",
+    date: "Pridané 27. 6. 2026",
+    image: "images/blog/solne-panvy-stredomoria/hero-solne-panvy-stredomoria-hook.png",
+    imageAlt: "Hlavný vizuál článku o soľných panvách Stredomoria so západom slnka, veterným mlynom a plameniakmi",
+    description:
+      "Objav soľné panvy Stredomoria, ružové lagúny, plameniaky a miesta, kde sa príroda mení na nezabudnuteľný zážitok.",
+    url: "blog/solne-panvy-stredomoria.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "Malta v júli: koncerty, more a horúčavy",
     publishedAt: "2026-06-26",
     date: "Pridané 26. 6. 2026",
@@ -236,6 +249,108 @@ function renderLastUpdated() {
 }
 
 renderLastUpdated();
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function renderFlashDetail() {
+  const detail = document.querySelector("#flash-detail");
+  if (!detail) {
+    return;
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const id = detail.dataset.flashId || params.get("id");
+  const assetPrefix = detail.dataset.assetPrefix || "";
+  const news = Array.isArray(window.LETOM_FLASH_NEWS)
+    ? window.LETOM_FLASH_NEWS.find((item) => item.id === id)
+    : null;
+
+  if (!news) {
+    document.title = "Flash správa nenájdená | Letom po Stredomorí";
+    detail.innerHTML = `
+      <header class="article-hero">
+        <div class="article-meta">
+          <span>Letom v skratke</span>
+          <span>Flash správa</span>
+        </div>
+        <h1>Flash správa sa nenašla</h1>
+        <p class="article-lead">
+          Tento odkaz už nemusí existovať alebo mu chýba identifikátor správy.
+        </p>
+        <a class="button button-primary" href="${assetPrefix}spravy.html">Späť na všetky správy</a>
+      </header>
+    `;
+    return;
+  }
+
+  document.title = `${news.title.replace(/^[^\p{L}\p{N}]+/u, "").trim()} | Letom po Stredomorí`;
+  const description = document.querySelector('meta[name="description"]');
+  description?.setAttribute("content", news.summary || news.title);
+
+  const imageMarkup = news.image
+    ? `
+      <figure class="article-cover">
+        <img src="${escapeHtml(assetPrefix + news.image)}" alt="${escapeHtml(news.imageAlt || news.title)}" />
+      </figure>
+    `
+    : "";
+  const bodyMarkup = (news.body || []).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
+  const restrictionsMarkup = news.restrictions?.length
+    ? `
+      <h2>Pre návštevníkov platí</h2>
+      <ul class="brief-restrictions">
+        ${news.restrictions.map((item) => `<li>❌ ${escapeHtml(item)}</li>`).join("")}
+      </ul>
+    `
+    : "";
+  const bodyAfterRestrictionsMarkup = (news.bodyAfterRestrictions || [])
+    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+    .join("");
+  const tipMarkup = news.tip
+    ? `
+      <aside class="article-audio-box">
+        <span>${escapeHtml(news.tipTitle || "Tip Letom po Stredomorí")}</span>
+        <p>${escapeHtml(news.tip)}</p>
+      </aside>
+    `
+    : "";
+  const sourceMarkup = news.source
+    ? `<p class="brief-source">${escapeHtml(news.source)}</p>`
+    : "";
+
+  detail.innerHTML = `
+    <header class="article-hero">
+      <div class="article-meta">
+        <span>Letom v skratke</span>
+        <span>${escapeHtml(news.label || "Flash správa")}</span>
+        <time datetime="${escapeHtml(news.datetime || "")}">${escapeHtml(news.date || "")}</time>
+      </div>
+      <h1>${escapeHtml(news.title)}</h1>
+      <p class="article-lead">${escapeHtml(news.summary || "")}</p>
+      ${imageMarkup}
+    </header>
+    <div class="article-body">
+      ${bodyMarkup}
+      ${restrictionsMarkup}
+      ${bodyAfterRestrictionsMarkup}
+      ${tipMarkup}
+      ${sourceMarkup}
+      <div class="video-page-actions">
+        <a class="button button-light" href="${assetPrefix}spravy.html">Všetky flash správy</a>
+        <a class="button button-primary" href="${assetPrefix}index.html#domov">Späť na homepage</a>
+      </div>
+    </div>
+  `;
+}
+
+renderFlashDetail();
 
 function itineraryDay(title, plan, realistic, avoid, transport, alternative) {
   return { title, plan, realistic, avoid, transport, alternative };
@@ -790,11 +905,21 @@ const audioLibrary = {
   },
 };
 
+const solnePanvyArticle = {
+  title: "Kde sa more mení na biele zlato",
+  description:
+    "Objav soľné panvy Stredomoria, ružové lagúny, plameniaky a miesta, kde sa príroda mení na nezabudnuteľný zážitok.",
+  url: "blog/solne-panvy-stredomoria.html",
+  image: "images/blog/solne-panvy-stredomoria/hero-solne-panvy-stredomoria-hook.png",
+  date: "27. jún 2026",
+};
+
 const articleLibrary = {
   taliansko: {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      solnePanvyArticle,
       {
         title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
         description:
@@ -844,18 +969,19 @@ const articleLibrary = {
   },
   francuzsko: {
     name: "Francúzsko",
-    description: "Články z Azúrového pobrežia a francúzskeho Stredomoria pribudnú neskôr.",
-    articles: [],
+    description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
+    articles: [solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
-    description: "Články z Jadranu, ostrovov a historických miest pribudnú neskôr.",
-    articles: [],
+    description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
+    articles: [solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      solnePanvyArticle,
       {
         title: "Malta v júli: koncerty, more a horúčavy",
         description:
@@ -868,8 +994,8 @@ const articleLibrary = {
   },
   cyprus: {
     name: "Cyprus",
-    description: "Články z Cypru, zimného cestovania a aktívneho objavovania ostrova pribudnú neskôr.",
-    articles: [],
+    description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
+    articles: [solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
