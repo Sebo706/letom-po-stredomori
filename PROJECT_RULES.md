@@ -25,6 +25,11 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 ## Homepage
 
 - Homepage ma byt prehladna a nema tahat velke specializovane moduly.
+- Poradie sekcii na homepage ma byt logicke podla dolezitosti pre navstevnika: najprv najnovsi obsah a aktualne cestovatelske spravy, potom hlavne navigacne a obsahove sekcie ako destinacie a lety, az potom archivne alebo doplnkove sekcie ako blog, videa, podcasty, itinerar, hlasovanie, informacie o tvorbe a socialne siete.
+- PC verzia homepage moze byt plnsia a magazinova, ale mobilna homepage ma byt kratsia, rychla a viac ako rozcestnik.
+- Pri dlhsich sekciach na mobile pouzivat kratky teaser alebo hlavnu kartu s jasnym tlacidlom na prislusnu podstranku/archiv.
+- Na mobile skracovat najma archivne alebo opakovane sekcie, napriklad `Letom v skratke`, podcasty, blog a itinerar; PC verzia moze pri tychto sekciach ostat detailnejsia.
+- Mobilna homepage ma stale zachovat jasne odkazy na kompletne podstranky: `spravy.html`, `audio.html`, `blog.html`, `itinerar.html`, `lety.html` a dalsie relevantne archivy.
 - Sekcia `Lety zo Slovenska k Stredomoriu` ma byt na homepage iba ako kratka uputavka s tlacidlom na `lety.html`.
 - Kompletny modul letov patri na samostatnu podstranku `lety.html`.
 
@@ -41,6 +46,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Zachovat svetly, dovolenkovy, premiovy a doveryhodny styl webu.
 - Nerozbijat existujuce rozlozenie, odkazy, obrazky ani responzivitu.
 - Skontrolovat mobilne aj desktopove zobrazenie pri vacsich vizualnych zmenach.
+- Pri mobilnych upravach skontrolovat, ze nevznika horizontalny posuvnik a ze skryty obsah ma dostupnu cestu cez viditelne tlacidlo na podstranku alebo archiv.
 - Nepridavat externe kniznice, ak to nie je vyslovene dohodnute.
 - Bezpecne a funkcne tlacidla mimo sekcie `Destinacie pri mori` drzat vizualne zjednotene v tyrkysovom style.
 - Socialne ikonove karty mozu ostat brandove.
