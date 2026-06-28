@@ -1,6 +1,11 @@
-const navToggle = document.querySelector(".nav-toggle");
+﻿const navToggle = document.querySelector(".nav-toggle");
 const navPanel = document.querySelector(".nav-panel");
 const navLinks = document.querySelectorAll(".nav-panel a");
+const searchToggle = document.querySelector(".site-search-toggle");
+const searchPanel = document.querySelector("#site-search-panel");
+const searchInput = document.querySelector("#site-search-input");
+const searchResults = document.querySelector("#site-search-results");
+const searchClose = document.querySelector(".site-search-close");
 
 function closeMenu() {
   navToggle?.classList.remove("is-open");
@@ -23,6 +28,7 @@ navLinks.forEach((link) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeMenu();
+    closeSearch();
   }
 });
 
@@ -51,6 +57,98 @@ document.addEventListener("click", (event) => {
   button.setAttribute("aria-expanded", String(!isExpanded));
   target.hidden = isExpanded;
   button.textContent = isExpanded ? collapsedLabel : expandedLabel;
+});
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function openSearch() {
+  if (!searchPanel || !searchToggle) {
+    return;
+  }
+
+  searchPanel.hidden = false;
+  searchToggle.classList.add("is-open");
+  searchToggle.setAttribute("aria-expanded", "true");
+  closeMenu();
+  renderSearchResults("");
+  window.setTimeout(() => searchInput?.focus(), 0);
+}
+
+function closeSearch() {
+  if (!searchPanel || !searchToggle) {
+    return;
+  }
+
+  searchPanel.hidden = true;
+  searchToggle.classList.remove("is-open");
+  searchToggle.setAttribute("aria-expanded", "false");
+}
+
+function renderSearchResults(query) {
+  if (!searchResults) {
+    return;
+  }
+
+  const searchIndex = Array.isArray(window.LETOM_SEARCH_INDEX) ? window.LETOM_SEARCH_INDEX : [];
+  const normalizedQuery = normalizeSearchText(query).trim();
+  const results = normalizedQuery
+    ? searchIndex
+        .map((item) => {
+          const haystack = normalizeSearchText(
+            `${item.title} ${item.description} ${item.type} ${item.keywords || ""}`
+          );
+          const score =
+            normalizeSearchText(item.title).includes(normalizedQuery)
+              ? 3
+              : haystack.includes(normalizedQuery)
+                ? 1
+                : 0;
+          return { item, score };
+        })
+        .filter((entry) => entry.score > 0)
+        .sort((first, second) => second.score - first.score || first.item.title.localeCompare(second.item.title))
+        .slice(0, 8)
+    : searchIndex.slice(0, 6).map((item) => ({ item, score: 1 }));
+
+  if (!results.length) {
+    searchResults.innerHTML = `<p class="site-search-empty">Nič som nenašiel. Skús kratší výraz, napríklad Malta, Cyprus, Malaga alebo pláže.</p>`;
+    return;
+  }
+
+  searchResults.innerHTML = results
+    .map(
+      ({ item }) => `
+        <a class="site-search-result" href="${escapeHtml(item.url)}" role="listitem">
+          <span>${escapeHtml(item.type)}</span>
+          <strong>${escapeHtml(item.title)}</strong>
+          <p>${escapeHtml(item.description)}</p>
+        </a>
+      `
+    )
+    .join("");
+}
+
+searchToggle?.addEventListener("click", () => {
+  if (searchPanel?.hidden === false) {
+    closeSearch();
+  } else {
+    openSearch();
+  }
+});
+
+searchClose?.addEventListener("click", closeSearch);
+searchInput?.addEventListener("input", (event) => {
+  renderSearchResults(event.target.value);
+});
+searchResults?.addEventListener("click", (event) => {
+  if (event.target.closest("a")) {
+    closeSearch();
+  }
 });
 
 const latestUpdates = [
@@ -230,7 +328,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-06-27";
+  const siteLastUpdated = "2026-06-28";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];

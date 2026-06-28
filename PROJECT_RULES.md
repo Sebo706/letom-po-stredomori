@@ -11,6 +11,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Sekcia `Cestovatelsky blog` na homepage ma zobrazovat iba 2 clanky v rovnakom kartovom style ako teraz; dalsie blogy patria do archivu `blog.html` cez tlacidlo `Vsetky clanky`.
 - Pri kazdom novom blogovom clanku treba aktualizovat aj sekciu `Destinacie pri mori`: pri prislusnej krajine doplnit alebo upravit pocet clankov a odkaz na `clanky.html?krajina=...`.
 - Kazdy blogovy clanok, ktory sa tyka viacerych krajin alebo destinacii, musi byt priradeny ku vsetkym relevantnym krajinam v krajinskych filtroch, kartach a zoznamoch clankov, nie iba k jednej hlavnej teme.
+- Pri novom alebo upravenom verejnom obsahu, ktory ma byt dohladatelny na webe, aktualizovat aj vyhladavaci index `search-data.js`.
 - Flash spravy patria do sekcie `Letom v skratke: tipy a novinky`.
 - Starsie alebo dalsie flash spravy patria do archivu `spravy.html` cez tlacidlo `Dalsie spravy`.
 - Kazda flash sprava ma mat samostatnu detailovu podstranku so zdielatelnou URL; karty na homepage aj v archive maju smerovat na detail spravy, nie iba rozbalovat text v zozname.

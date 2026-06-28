@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sk">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
       content="Letom po Stredomorí je cestovateľský magazín pre krásne destinácie, praktické itineráre, letecké trasy a dovolenky pri mori."
     />
     <title>Letom po Stredomorí</title>
-    <link rel="stylesheet" href="style.css?v=20260627-facebook-match-1" />
+    <link rel="stylesheet" href="style.css?v=20260628-search-2" />
   </head>
   <body>
     <header class="site-header">
@@ -46,8 +46,49 @@
           <a href="#youtube">YouTube</a>
           <a class="nav-cta" href="#destinacie">Objav destinácie</a>
         </div>
+
+        <button
+          class="site-search-toggle"
+          type="button"
+          aria-label="Hľadať na webe"
+          aria-controls="site-search-panel"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true">🔎</span>
+          <span class="site-search-toggle-text">Hľadať</span>
+        </button>
       </nav>
     </header>
+
+    <section
+      class="site-search-panel"
+      id="site-search-panel"
+      aria-labelledby="site-search-title"
+      hidden
+    >
+      <div class="site-search-card">
+        <div class="site-search-head">
+          <div>
+            <p class="eyebrow">Vyhľadávanie</p>
+            <h2 id="site-search-title">Hľadať na webe</h2>
+          </div>
+          <button class="site-search-close" type="button" aria-label="Zavrieť vyhľadávanie">
+            ×
+          </button>
+        </div>
+        <label class="site-search-label" for="site-search-input">
+          Zadaj destináciu, tému, let alebo článok
+        </label>
+        <input
+          class="site-search-input"
+          id="site-search-input"
+          type="search"
+          placeholder="Skús napríklad Malta, Cyprus, Navagio, Malaga..."
+          autocomplete="off"
+        />
+        <div class="site-search-results" id="site-search-results" role="list"></div>
+      </div>
+    </section>
 
     <main>
       <section class="hero" id="domov" aria-labelledby="hero-title">
@@ -1017,10 +1058,11 @@
 
         <p class="copyright">© 2026 Letom po Stredomorí</p>
         <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
-        <p class="last-updated">Posledná aktualizácia: 27. jún 2026</p>
+        <p class="last-updated">Posledná aktualizácia: 28. jún 2026</p>
       </div>
     </footer>
 
-    <script src="script.js?v=20260627-flash-detail-1"></script>
+    <script src="search-data.js?v=20260628-search-2"></script>
+    <script src="script.js?v=20260628-search-2"></script>
   </body>
 </html>

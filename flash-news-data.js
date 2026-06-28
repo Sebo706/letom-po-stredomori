@@ -1,4 +1,4 @@
-window.LETOM_FLASH_NEWS = [
+﻿window.LETOM_FLASH_NEWS = [
   {
     id: "ryanair-bratislava-zima-2026",
     label: "Lety z Bratislavy • zima 2026/2027 • letecká novinka",

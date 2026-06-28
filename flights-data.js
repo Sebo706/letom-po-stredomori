@@ -1,4 +1,4 @@
-window.LETOM_FLIGHTS_DEMO = [
+﻿window.LETOM_FLIGHTS_DEMO = [
   {
     id: "demo-bratislava-malta-2026",
     demo: true,
