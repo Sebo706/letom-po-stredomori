@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Prehľad priamych pravidelných liniek a dovolenkových charterov zo slovenských letísk k Stredomoriu."
+    />
+    <title>Lety zo Slovenska k Stredomoriu | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="style.css?v=20260628-prakticke-rady-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="index.html#domov" aria-label="Letom po Stredomorí domov">
+          <img
+            class="brand-logo"
+            src="images/logo/logo.png"
+            alt="Logo Letom po Stredomorí"
+          />
+          <span>Letom po Stredomorí</span>
+        </a>
+
+        <div class="nav-panel nav-panel-static">
+          <a href="index.html#destinacie">Destinácie</a>
+          <a href="lety.html">Lety</a>
+          <a href="index.html#ako-tvorim-obsah">Ako tvorím obsah</a>
+          <a href="itinerar.html">Itineráre</a>
+          <a href="spravy.html">Správy</a>
+          <a href="index.html#audio">Podcast</a>
+          <a href="index.html#blog">Blog</a>
+          <a href="index.html#youtube">YouTube</a>
+          <a class="nav-cta" href="index.html#destinacie">Objav destinácie</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section flights-section flights-page-section" id="lety" aria-labelledby="flights-title">
+        <div class="section-heading">
+          <p class="eyebrow">Lety zo Slovenska</p>
+          <h1 id="flights-title">Lety zo Slovenska k Stredomoriu</h1>
+          <p>
+            Prehľad priamych pravidelných liniek a dovolenkových charterov zo
+            slovenských letísk do stredomorských destinácií — s dňami, časmi,
+            spiatočnými letmi a zdrojmi.
+          </p>
+        </div>
+
+        <div class="flights-demo-note">
+          <strong>Pilotný režim:</strong>
+          Pilotný prehľad letov zo slovenských letísk. Údaje sú overované z
+          oficiálnych zdrojov, ale letový poriadok sa môže meniť.
+        </div>
+
+        <div class="flights-confidence-legend" aria-label="Legenda istoty údajov">
+          <strong>Istota údajov:</strong>
+          <span><b>Vysoká</b> - potvrdené z oficiálneho letiska alebo aerolinky</span>
+          <span><b>Stredná</b> - cestovná kancelária alebo predajca zájazdov</span>
+          <span><b>Treba overiť</b> - chýbajú presné dni, časy alebo obdobie</span>
+        </div>
+
+        <form class="flights-filters" data-flights-filters>
+          <label>
+            <span>Odletové letisko</span>
+            <select name="departure">
+              <option value="all">Všetky letiská</option>
+              <option value="Bratislava">Bratislava (BTS)</option>
+              <option value="Košice">Košice (KSC)</option>
+              <option value="Poprad-Tatry">Poprad-Tatry (TAT)</option>
+              <option value="Piešťany">Piešťany (PZY)</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Krajina</span>
+            <select name="country">
+              <option value="all">Všetky krajiny</option>
+              <option value="Taliansko">Taliansko</option>
+              <option value="Španielsko">Španielsko</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Grécko">Grécko</option>
+              <option value="Chorvátsko">Chorvátsko</option>
+              <option value="Francúzsko">Francúzsko</option>
+              <option value="Malta">Malta</option>
+              <option value="Slovinsko">Slovinsko</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Typ letu</span>
+            <select name="type">
+              <option value="all">Všetky</option>
+              <option value="pravidelná linka">Pravidelná linka</option>
+              <option value="sezónna linka">Sezónna linka</option>
+              <option value="charter">Charter</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Sezóna</span>
+            <select name="season">
+              <option value="all">Všetky</option>
+              <option value="leto 2026">Leto 2026</option>
+              <option value="zima 2026/2027">Zima 2026/2027</option>
+              <option value="celoročné">Celoročné</option>
+              <option value="vybrané termíny">Vybrané termíny</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Typ výletu</span>
+            <select name="tripType">
+              <option value="all">Všetko</option>
+              <option value="predĺžený víkend">Predĺžený víkend</option>
+              <option value="týždňová dovolenka">Týždňová dovolenka</option>
+              <option value="ostrov">Ostrov</option>
+              <option value="pláže">Pláže</option>
+              <option value="mesto + more">Mesto + more</option>
+              <option value="rodiny">Rodiny</option>
+              <option value="mimo sezóny">Mimo sezóny</option>
+              <option value="bez cestovky">Bez cestovky</option>
+              <option value="cez cestovku">Cez cestovku</option>
+            </select>
+          </label>
+
+          <label class="flights-search-field">
+            <span>Vyhľadávanie</span>
+            <input
+              type="search"
+              name="search"
+              placeholder="Destinácia, krajina, letisko alebo dopravca"
+              autocomplete="off"
+            />
+          </label>
+        </form>
+
+        <div class="flights-results-summary" data-flights-summary></div>
+        <div class="flights-grid" data-flights-grid></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a class="footer-brand" href="index.html#domov" aria-label="Späť na domov">
+          <img src="images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <div>
+            <strong>Letom po Stredomorí</strong>
+            <p>
+              Cestovateľský magazín spájajúci osobné skúsenosti, praktický
+              prieskum a vizuálnu inšpiráciu.
+            </p>
+          </div>
+        </a>
+
+        <div class="footer-links" aria-label="Odkazy v pätičke">
+          <a href="index.html#destinacie">Destinácie</a>
+          <a href="lety.html">Lety</a>
+          <a href="index.html#ako-tvorim-obsah">Ako tvorím obsah</a>
+          <a href="itinerar.html">Itineráre</a>
+          <a href="spravy.html">Správy</a>
+          <a href="index.html#audio">Podcast</a>
+          <a href="index.html#blog">Blog</a>
+          <a href="index.html#youtube">YouTube</a>
+        </div>
+
+        <p class="ai-note">
+          Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume,
+          štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a
+          publikovanie robím ručne.
+        </p>
+
+        <p class="copyright">© 2026 Letom po Stredomorí</p>
+        <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
+        <p class="last-updated">Posledná aktualizácia: 28. jún 2026</p>
+      </div>
+    </footer>
+
+    <script src="flights-data.js?v=20260625-regional-pilots-1"></script>
+    <script src="script.js?v=20260628-prakticke-rady-1"></script>
+  </body>
+</html>
+
