@@ -1,11 +1,19 @@
 ﻿window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Slováci po pandémii opäť lietajú viac",
+    description: "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",
+    url: "blog/kolko-slovakov-lieta-do-stredomoria.html",
+    keywords: "slováci slovaci lietajú lietaju slováci lietajú slovaci lietaju lietanie pandémia pandemia covid stredomorie cesty lietadlom štatistika statistika štatistický úrad sr tasr dovolenka more 2025 2026 bratislava ryanair odhad výhľad",
+  },
+  {
+    type: "Článok",
     title: "8 praktických rád pre dovolenku v Stredomorí",
     description: "Menej známe tipy pre dovolenku v Stredomorí, ktoré ti môžu ušetriť stres, čas aj peniaze.",
     url: "blog/8-praktickych-rad-stredomorie.html",
     keywords: "stredomorie dovolenka praktické rady prakticke rady cestovanie pláže plaze hotel ubytovanie more vstup do mora topánky do vody topanky do vody meškanie letu meskanie letu cestovka ostrov pobrežie",
-  },  {
+  },
+  {
     type: "Článok",
     title: "Kde sa more mení na biele zlato",
     description: "Soľné panvy, ružové lagúny a plameniaky v Stredomorí: Sicília, Cyprus, Camargue, Gozo a Ston.",
@@ -160,4 +168,6 @@
     keywords: "blog články clanky cestovateľský magazín",
   },
 ];
+
+
 

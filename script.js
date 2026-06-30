@@ -155,6 +155,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Slováci po pandémii opäť lietajú viac",
+    publishedAt: "2026-06-30",
+    date: "Pridané 30. 6. 2026",
+    image: "images/blog/kolko-slovakov-lieta-do-stredomoria/hero-slovaci-lietanie-pandemia-stredomorie.png",
+    imageAlt: "Hlavný vizuál článku o tom, ako Slováci lietali pred pandémiou, počas nej a dnes",
+    description:
+      "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",
+    url: "blog/kolko-slovakov-lieta-do-stredomoria.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "8 praktických rád pre dovolenku v Stredomorí",
     publishedAt: "2026-06-28",
     date: "Pridané 28. 6. 2026",
@@ -1025,6 +1038,15 @@ const praktickeRadyArticle = {
   date: "28. jún 2026",
 };
 
+const slovaciLietanieArticle = {
+  title: "Slováci po pandémii opäť lietajú viac",
+  description:
+    "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",
+  url: "blog/kolko-slovakov-lieta-do-stredomoria.html",
+  image: "images/blog/kolko-slovakov-lieta-do-stredomoria/hero-slovaci-lietanie-pandemia-stredomorie.png",
+  date: "30. jún 2026",
+};
+
 const solnePanvyArticle = {
   title: "Kde sa more mení na biele zlato",
   description:
@@ -1039,6 +1061,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      slovaciLietanieArticle,
       praktickeRadyArticle,
       solnePanvyArticle,
       {
@@ -1064,6 +1087,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      slovaciLietanieArticle,
       praktickeRadyArticle,
       {
         title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
@@ -1079,6 +1103,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      slovaciLietanieArticle,
       praktickeRadyArticle,
       {
         title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
@@ -1093,17 +1118,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [praktickeRadyArticle, solnePanvyArticle],
+    articles: [slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [praktickeRadyArticle, solnePanvyArticle],
+    articles: [slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      slovaciLietanieArticle,
       praktickeRadyArticle,
       solnePanvyArticle,
       {
@@ -1119,12 +1145,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [praktickeRadyArticle, solnePanvyArticle],
+    articles: [slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [praktickeRadyArticle],
+    articles: [slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 
