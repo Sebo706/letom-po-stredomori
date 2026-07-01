@@ -1,4 +1,4 @@
-# Pravidla projektu Letom po Stredomori
+﻿# Pravidla projektu Letom po Stredomori
 
 Tento subor sluzi ako zive pravidla pre upravy statickeho webu Letom po Stredomori.
 Pri novych dohodnutych pravidlach ich doplnit sem.
@@ -41,7 +41,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Demo data v `flights-data.js` mozu ostat v subore, ale nesmu sa zobrazovat na stranke.
 - Na `lety.html` sa maju zobrazovat pilotne alebo overovane data podla aktualneho rozsahu projektu.
 - Pri neoverenych alebo neuplnych udajoch nepouzivat domnienky.
-- Chybajuce udaje oznacit stylom `doplniť po overení` alebo `overiť u dopravcu / CK`.
+- Chybajuce udaje oznacit stylom `doplniĹĄ po overenĂ­` alebo `overiĹĄ u dopravcu / CK`.
 - Pri pravidelnych linkach rozlisovat konkretny zdroj istoty, napriklad letisko Kosice alebo letisko Bratislava.
 
 ## Dizajn a UX
@@ -49,6 +49,8 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Zachovat svetly, dovolenkovy, premiovy a doveryhodny styl webu.
 - Nerozbijat existujuce rozlozenie, odkazy, obrazky ani responzivitu.
 - Skontrolovat mobilne aj desktopove zobrazenie pri vacsich vizualnych zmenach.
+- Pri akejkolvek zmene verejneho obsahu alebo dizajnu skontrolovat citatelnost textu: nadpisy, odstavce, tlacidla a stitky sa nesmu na mobile ani desktope rozpadat, pretekat mimo obrazovku ani byt neprirodzene natlacene.
+- Pri akejkolvek uprave verejnych HTML/JS/CSS suborov skontrolovat aj kodovanie textu a diakritiku v prehliadaci. Text nesmie obsahovat pokazene kodovanie alebo mojibake namiesto slovenskej diakritiky, napriklad rozpadnute znaky v slovach ako Destinacie, Spravy, Vsetky spravy alebo Letom po Stredomori.
 - Pri mobilnych upravach skontrolovat, ze nevznika horizontalny posuvnik a ze skryty obsah ma dostupnu cestu cez viditelne tlacidlo na podstranku alebo archiv.
 - Nepridavat externe kniznice, ak to nie je vyslovene dohodnute.
 - Bezpecne a funkcne tlacidla mimo sekcie `Destinacie pri mori` drzat vizualne zjednotene v tyrkysovom style.
@@ -61,3 +63,4 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Po dokonceni kazdej ulohy znovu skontrolovat tento subor a overit, ci vysledok neporusuje projektove pravidla.
 - Po dokonceni kazdej ulohy skontrolovat text `Posledna aktualizacia` v pate webu a nastavit ho na aktualny datum poslednej upravy, ak sa menil verejny obsah alebo verejne subory webu.
 - Pri kontrole textu `Posledna aktualizacia` overit aj mobilne zobrazenie, aby bol aktualny datum zmeneny a viditelny aj na mobile.
+

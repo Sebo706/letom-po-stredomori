@@ -132,6 +132,7 @@ a {
   border-radius: 999px;
   font-weight: 800;
   line-height: 1;
+  text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.28);
   overflow: hidden;
   transform: translateY(0);
@@ -2208,6 +2209,7 @@ a {
 .article-tag {
   display: inline-flex;
   align-items: center;
+  max-width: 100%;
   min-height: 30px;
   padding: 6px 11px;
   border-radius: 999px;
@@ -2215,6 +2217,7 @@ a {
   background: rgba(10, 166, 180, 0.1);
   font-size: 0.78rem;
   font-weight: 850;
+  overflow-wrap: anywhere;
 }
 
 .article-hero h1 {
@@ -2224,6 +2227,7 @@ a {
   font-size: clamp(2.3rem, 6vw, 5rem);
   line-height: 0.98;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .article-lead {
@@ -2282,6 +2286,7 @@ a {
 .article-body li {
   color: var(--color-ink);
   font-size: 1.06rem;
+  overflow-wrap: anywhere;
 }
 
 .article-body p {
@@ -3641,6 +3646,37 @@ a {
     width: min(100% - 28px, var(--max-width));
   }
 
+  .article-hero {
+    padding-top: 34px;
+  }
+
+  .article-meta {
+    gap: 8px;
+  }
+
+  .article-meta span,
+  .article-tag {
+    font-size: 0.72rem;
+    line-height: 1.25;
+  }
+
+  .article-hero h1 {
+    font-size: clamp(1.82rem, 8vw, 2.35rem);
+    line-height: 1.08;
+  }
+
+  .article-lead {
+    margin-top: 16px;
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+
+  .article-body p,
+  .article-body li {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
   .article-cover {
     border-radius: 14px;
   }
@@ -3652,6 +3688,22 @@ a {
   .article-audio-box,
   .article-end-actions .button {
     width: 100%;
+  }
+
+  .article-body .video-page-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .article-body .video-page-actions .button {
+    width: 100%;
+    min-height: 50px;
+    padding-inline: 18px;
+    line-height: 1.22;
+    white-space: normal;
+    overflow-wrap: normal;
   }
 }
 
