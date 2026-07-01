@@ -43,6 +43,13 @@
   },
   {
     type: "Flash správa",
+    title: "Dlhé rady na bratislavskom letisku",
+    description: "Praktická pripomienka pre cestujúcich po náporoch pri dovolenkových odletoch z Bratislavy.",
+    url: "spravy/bratislava-letisko-dlhe-rady-2026.html",
+    keywords: "bratislava letisko dlhé rady dlhe rady antalya dovolenka odlety check-in online check-in doklady cestujúci cestujuci dovolenková špička dovolenkova spicka",
+  },
+  {
+    type: "Flash správa",
     title: "Ryanair posilňuje Bratislavu: novinkou bude Turín",
     description: "Zimná sezóna 2026/2027, štvrté bázované lietadlo a južné linky z Bratislavy.",
     url: "spravy/ryanair-bratislava-zima-2026.html",
@@ -168,6 +175,8 @@
     keywords: "blog články clanky cestovateľský magazín",
   },
 ];
+
+
 
 
 

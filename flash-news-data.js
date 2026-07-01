@@ -1,5 +1,24 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "bratislava-letisko-dlhe-rady-2026",
+    label: "Bratislava • Letisko • dovolenková špička",
+    title: "Dlhé rady na bratislavskom letisku skomplikovali cestujúcim začiatok dovolenky",
+    date: "1. júl 2026",
+    datetime: "2026-07-01",
+    image: "images/novinky/bratislava-letisko-dlhe-rady-2026.png",
+    imageAlt: "Dlhé rady cestujúcich na bratislavskom letisku počas dovolenkovej špičky",
+    summary:
+      "Na Letisku Bratislava sa 30. júna 2026 vytvoril nápor pri ranných a dopoludňajších odletoch. Pre cestujúcich je to pripomienka, že rezerva na letisku sa v dovolenkovej špičke oplatí.",
+    body: [
+      "Na Letisku Bratislava sa 30. júna 2026 vytvoril nápor pri ranných a dopoludňajších odletoch. Z dovolenkových letov k moru boli v danom bloku výrazné najmä tri odlety do Antalye, ktoré boli naplánované krátko po sebe.",
+      "Pre cestujúcich je to praktická pripomienka: dovolenka sa nezačína až pri mori, ale už doma — kontrolou dokladov, online check-inom a dostatočnou rezervou na letisku. Letisko odporúča prísť spravidla 2 hodiny pred odletom a počítať s tým, že check-in sa zatvára zvyčajne 40 minút pred odletom.",
+      "Práve preto Letom po Stredomorí ukazuje dostupné stredomorské destinácie, kde sa dá cestovať rozumne, prehľadne a s menším stresom. Pri mnohých cestách potešia aj praktické výhody ako dáta a volania v rámci EÚ, platba eurom, číslo 112 či európsky preukaz zdravotného poistenia.",
+    ],
+    tipTitle: "Tip Letom po Stredomorí",
+    tip:
+      "Na letisko neprichádzajte na poslednú chvíľu. V dovolenkovej špičke sa pár minút rezervy môže rýchlo zmeniť na veľký rozdiel.",
+  },
+  {
     id: "ryanair-bratislava-zima-2026",
     label: "Lety z Bratislavy • zima 2026/2027 • letecká novinka",
     title: "Ryanair posilňuje Bratislavu: novinkou bude Turín, ďalšie linky pokračujú aj v zime",
@@ -151,3 +170,6 @@
     ],
   },
 ];
+
+
+
