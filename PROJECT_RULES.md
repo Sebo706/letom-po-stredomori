@@ -41,7 +41,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Demo data v `flights-data.js` mozu ostat v subore, ale nesmu sa zobrazovat na stranke.
 - Na `lety.html` sa maju zobrazovat pilotne alebo overovane data podla aktualneho rozsahu projektu.
 - Pri neoverenych alebo neuplnych udajoch nepouzivat domnienky.
-- Chybajuce udaje oznacit stylom `doplniĹĄ po overenĂ­` alebo `overiĹĄ u dopravcu / CK`.
+- Chybajuce udaje oznacit stylom `doplnit po overeni` alebo `overit u dopravcu / CK`.
 - Pri pravidelnych linkach rozlisovat konkretny zdroj istoty, napriklad letisko Kosice alebo letisko Bratislava.
 
 ## Dizajn a UX
@@ -51,6 +51,8 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Skontrolovat mobilne aj desktopove zobrazenie pri vacsich vizualnych zmenach.
 - Pri akejkolvek zmene verejneho obsahu alebo dizajnu skontrolovat citatelnost textu: nadpisy, odstavce, tlacidla a stitky sa nesmu na mobile ani desktope rozpadat, pretekat mimo obrazovku ani byt neprirodzene natlacene.
 - Pri akejkolvek uprave verejnych HTML/JS/CSS suborov skontrolovat aj kodovanie textu a diakritiku v prehliadaci. Text nesmie obsahovat pokazene kodovanie alebo mojibake namiesto slovenskej diakritiky, napriklad rozpadnute znaky v slovach ako Destinacie, Spravy, Vsetky spravy alebo Letom po Stredomori.
+- Pri vkladani alebo oprave slovenskych textov nikdy nespoliehat iba na terminalovy vypis. Po uprave spustit kontrolu verejnych HTML/JS/CSS/MD suborov na typicke mojibake znaky a aspon dotknutu stranku overit v prehliadaci.
+- Dlhe slovenske texty nevkladat cez nastroje alebo prikazy, ktore mozu zmenit kodovanie. Pouzivat iba postup, ktory zachova UTF-8, a po ulozeni overit diakritiku v samotnej stranke.
 - Pri akejkolvek uprave verejnych stranok skontrolovat zarovnanie, centrovanie a vyrez obrazkov na mobile aj desktope. Obrazky nesmu posobit posunute mimo stred, mat nechcene bocne odsadenie ani orezavat dolezitu cast motivu.
 - Pri mobilnych upravach skontrolovat, ze nevznika horizontalny posuvnik a ze skryty obsah ma dostupnu cestu cez viditelne tlacidlo na podstranku alebo archiv.
 - Nepridavat externe kniznice, ak to nie je vyslovene dohodnute.
