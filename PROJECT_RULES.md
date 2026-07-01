@@ -51,6 +51,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Skontrolovat mobilne aj desktopove zobrazenie pri vacsich vizualnych zmenach.
 - Pri akejkolvek zmene verejneho obsahu alebo dizajnu skontrolovat citatelnost textu: nadpisy, odstavce, tlacidla a stitky sa nesmu na mobile ani desktope rozpadat, pretekat mimo obrazovku ani byt neprirodzene natlacene.
 - Pri akejkolvek uprave verejnych HTML/JS/CSS suborov skontrolovat aj kodovanie textu a diakritiku v prehliadaci. Text nesmie obsahovat pokazene kodovanie alebo mojibake namiesto slovenskej diakritiky, napriklad rozpadnute znaky v slovach ako Destinacie, Spravy, Vsetky spravy alebo Letom po Stredomori.
+- Pri akejkolvek uprave verejnych stranok skontrolovat zarovnanie, centrovanie a vyrez obrazkov na mobile aj desktope. Obrazky nesmu posobit posunute mimo stred, mat nechcene bocne odsadenie ani orezavat dolezitu cast motivu.
 - Pri mobilnych upravach skontrolovat, ze nevznika horizontalny posuvnik a ze skryty obsah ma dostupnu cestu cez viditelne tlacidlo na podstranku alebo archiv.
 - Nepridavat externe kniznice, ak to nie je vyslovene dohodnute.
 - Bezpecne a funkcne tlacidla mimo sekcie `Destinacie pri mori` drzat vizualne zjednotene v tyrkysovom style.
