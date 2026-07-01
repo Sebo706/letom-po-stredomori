@@ -155,6 +155,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Zakynthos osobne: útesy, korytnačky a výhľady",
+    publishedAt: "2026-07-01",
+    date: "Pridané 1. 7. 2026",
+    image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne.png",
+    imageAlt: "Hlavný vizuál článku o osobnej skúsenosti zo Zakynthosu",
+    description:
+      "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
+    url: "blog/zakynthos-osobne.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "Slováci po pandémii opäť lietajú viac",
     publishedAt: "2026-06-30",
     date: "Pridané 30. 6. 2026",
@@ -1056,6 +1069,15 @@ const solnePanvyArticle = {
   date: "27. jún 2026",
 };
 
+const zakynthosOsobneArticle = {
+  title: "Zakynthos osobne: útesy, korytnačky a výhľady",
+  description:
+    "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
+  url: "blog/zakynthos-osobne.html",
+  image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne.png",
+  date: "1. júl 2026",
+};
+
 const articleLibrary = {
   taliansko: {
     name: "Taliansko",
@@ -1087,6 +1109,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      zakynthosOsobneArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
       {

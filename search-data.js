@@ -1,4 +1,11 @@
-﻿window.LETOM_SEARCH_INDEX = [
+window.LETOM_SEARCH_INDEX = [
+  {
+    type: "Článok",
+    title: "Zakynthos osobne: útesy, korytnačky a výhľady",
+    description: "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
+    url: "blog/zakynthos-osobne.html",
+    keywords: "zakynthos zakyntos grécko grecko laganas navagio myzithres xigia dafni banana beach gerakas kalamaki cameo island porto limnionas korakonissi marathonisi korytnačky korytnacky caretta caretta pláže plaze útesy utesy výhľady vyhlady požičanie auta pozicanie auta",
+  },
   {
     type: "Článok",
     title: "Slováci po pandémii opäť lietajú viac",
