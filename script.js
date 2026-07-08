@@ -153,6 +153,19 @@ searchResults?.addEventListener("click", (event) => {
 
 const latestUpdates = [
   {
+    kind: "article",
+    type: "Nový článok",
+    title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie",
+    publishedAt: "2026-07-08",
+    date: "Pridané 8. 7. 2026",
+    image: "images/blog/5-zaujimavosti-stredomoria-1/hero-5-zaujimavosti-stredomoria-1.png",
+    imageAlt: "Ilustračný vizuál k článku 5 zaujímavostí Stredomoria",
+    description:
+      "Prvá časť seriálu o menej známych príbehoch Stredomoria: rybárske dediny, Slovinsko, Menorca, Málaga a Apúlia.",
+    url: "blog/5-zaujimavosti-stredomoria-1.html",
+    label: "Čítať článok",
+  },
+  {
     kind: "video",
     type: "Nové video",
     title: "Zakynthos osobne: pláže, útesy a výhľady",
@@ -1120,11 +1133,21 @@ const zakynthosOsobneArticle = {
   date: "1. júl 2026",
 };
 
+const zaujimavostiStredomoriaArticle = {
+  title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie",
+  description:
+    "Prvá časť seriálu o menej známych príbehoch Stredomoria: rybárske dediny, Slovinsko, Menorca, Málaga a Apúlia.",
+  url: "blog/5-zaujimavosti-stredomoria-1.html",
+  image: "images/blog/5-zaujimavosti-stredomoria-1/hero-5-zaujimavosti-stredomoria-1.png",
+  date: "8. júl 2026",
+};
+
 const articleLibrary = {
   taliansko: {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
       solnePanvyArticle,
@@ -1151,6 +1174,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      zaujimavostiStredomoriaArticle,
       zakynthosOsobneArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
@@ -1168,6 +1192,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
       {
@@ -1194,6 +1219,7 @@ const articleLibrary = {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
       solnePanvyArticle,
@@ -1215,7 +1241,7 @@ const articleLibrary = {
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 

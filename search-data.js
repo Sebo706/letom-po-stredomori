@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie",
+    description: "Prvá časť seriálu o menej známych príbehoch Stredomoria: rybárske dediny, slovinské pobrežie, Menorca, Málaga a trulli v Apúlii.",
+    url: "blog/5-zaujimavosti-stredomoria-1.html",
+    keywords: "stredomorie zaujímavosti zaujimavosti seriál serial rybárske dediny rybarske dediny portofino naoussa paros marsaxlokk slovinsko slovinské pobrežie slovinske pobrezie piran portorož portoroz izola koper menorca malaga málaga apúlia apulia alberobello trulli taliansko grécko grecko španielsko spanielsko malta",
+  },
+  {
+    type: "Článok",
     title: "Zakynthos osobne: útesy, korytnačky a výhľady",
     description: "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
     url: "blog/zakynthos-osobne.html",

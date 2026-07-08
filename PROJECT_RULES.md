@@ -12,6 +12,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Pri kazdom novom blogovom clanku treba aktualizovat aj sekciu `Destinacie pri mori`: pri prislusnej krajine doplnit alebo upravit pocet clankov a odkaz na `clanky.html?krajina=...`.
 - Kazdy blogovy clanok, ktory sa tyka viacerych krajin alebo destinacii, musi byt priradeny ku vsetkym relevantnym krajinam v krajinskych filtroch, kartach a zoznamoch clankov, nie iba k jednej hlavnej teme.
 - Pri novom alebo upravenom verejnom obsahu, ktory ma byt dohladatelny na webe, aktualizovat vyhladavaci index `window.LETOM_SEARCH_INDEX` vlozeny v `index.html`; subor `letom-data.js` drzat ako zhodnu zaloznu kopiu indexu.
+- Pri pridani noveho videa alebo podcastu overit, ze je viditelny nielen v datovej kniznici, ale aj na mobilnej homepage v `Najnovsie na webe`, v prislusnej sekcii `YouTube` alebo `Najnovsie podcasty`, v karte krajiny v `Destinacie pri mori` a na podstranke `videa.html` alebo `audio.html`.
 - Flash spravy patria do sekcie `Letom v skratke: tipy a novinky`.
 - Starsie alebo dalsie flash spravy patria do archivu `spravy.html` cez tlacidlo `Dalsie spravy`.
 - Kazda flash sprava ma mat samostatnu detailovu podstranku so zdielatelnou URL; karty na homepage aj v archive maju smerovat na detail spravy, nie iba rozbalovat text v zozname.
