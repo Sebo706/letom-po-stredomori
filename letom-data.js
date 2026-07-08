@@ -7,6 +7,20 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "zakynthos zakyntos grécko grecko laganas navagio myzithres xigia dafni banana beach gerakas kalamaki cameo island porto limnionas korakonissi marathonisi korytnačky korytnacky caretta caretta pláže plaze útesy utesy výhľady vyhlady požičanie auta pozicanie auta",
   },
   {
+    type: "Video",
+    title: "Zakynthos osobne: pláže, útesy a výhľady",
+    description: "Video zo Zakynthosu: pláže, útesy, vyhliadky, Laganas a ostrovná dovolenková atmosféra.",
+    url: "videa.html?krajina=grecko",
+    keywords: "zakynthos zakyntos grécko grecko video youtube pláže plaze útesy utesy výhľady vyhlady laganas navagio myzithres xigia gerakas marathonisi",
+  },
+  {
+    type: "Podcast",
+    title: "Zakynthos osobne: ostrov útesov a korytnačiek",
+    description: "Podcast o Zakynthose, plážach, výhľadoch, korytnačkách a praktických dojmoch z ostrova.",
+    url: "audio.html?krajina=grecko",
+    keywords: "zakynthos zakyntos grécko grecko podcast spotify pláže plaze útesy utesy korytnačky korytnacky laganas navagio marathonisi",
+  },
+  {
     type: "Článok",
     title: "Slováci po pandémii opäť lietajú viac",
     description: "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",

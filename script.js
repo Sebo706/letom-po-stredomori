@@ -153,6 +153,35 @@ searchResults?.addEventListener("click", (event) => {
 
 const latestUpdates = [
   {
+    kind: "video",
+    type: "Nové video",
+    title: "Zakynthos osobne: pláže, útesy a výhľady",
+    publishedAt: "2026-07-08",
+    date: "Pridané 8. 7. 2026",
+    marker: "YouTube",
+    image: getYouTubeThumbnail("https://youtu.be/GI5lY-aRLx4"),
+    imageAlt: "Náhľad videa Zakynthos osobne",
+    mediaUrl: "https://youtu.be/GI5lY-aRLx4",
+    description:
+      "Video zo Zakynthosu: pláže, útesy, vyhliadky, Laganas a ostrovná dovolenková atmosféra.",
+    url: "videa.html?krajina=grecko",
+    label: "Pozrieť video",
+  },
+  {
+    kind: "audio",
+    type: "Nový podcast",
+    title: "Zakynthos osobne: ostrov útesov a korytnačiek",
+    publishedAt: "2026-07-08",
+    date: "Pridané 8. 7. 2026",
+    marker: "Podcast",
+    image: "images/social/spotify.png",
+    imageAlt: "Spotify kanál Letom po Stredomorí",
+    description:
+      "Podcast o Zakynthose, plážach, výhľadoch, korytnačkách a praktických dojmoch z ostrova.",
+    url: "audio.html?krajina=grecko",
+    label: "Vypočuť podcast",
+  },
+  {
     kind: "article",
     type: "Nový článok",
     title: "Zakynthos osobne: útesy, korytnačky a výhľady",
@@ -908,8 +937,13 @@ const videoLibrary = {
   },
   grecko: {
     name: "Grécko",
-    description: "Videá z gréckych ostrovov a pobrežia pribudnú neskôr.",
-    videos: [],
+    description: "Videá z gréckych ostrovov, pláží, útesov a dovolenkovej atmosféry.",
+    videos: [
+      {
+        title: "Zakynthos osobne: pláže, útesy a výhľady",
+        url: "https://youtu.be/GI5lY-aRLx4",
+      },
+    ],
   },
   spanielsko: {
     name: "Španielsko",
@@ -991,8 +1025,16 @@ const audioLibrary = {
   },
   grecko: {
     name: "Grécko",
-    description: "Podcasty z Grécka pribudnú neskôr.",
-    audios: [],
+    description: "Spotify podcasty z Grécka, ostrovov, pláží a praktického cestovania.",
+    audios: [
+      {
+        title: "Zakynthos osobne: ostrov útesov a korytnačiek",
+        description:
+          "Podcast o Zakynthose, plážach, výhľadoch, korytnačkách a praktických dojmoch z ostrova.",
+        spotifyUrl: "https://open.spotify.com/episode/3KqSd1oYJf9DvXIytjg9Wf?si=ZZ6SSJxWRQKQSkLMnYAnUQ",
+        spotifyEmbedUrl: "https://open.spotify.com/embed/episode/3KqSd1oYJf9DvXIytjg9Wf",
+      },
+    ],
   },
   spanielsko: {
     name: "Španielsko",

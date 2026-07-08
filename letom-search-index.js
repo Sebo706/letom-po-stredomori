@@ -1,11 +1,40 @@
-﻿window.LETOM_SEARCH_INDEX = [
+window.LETOM_SEARCH_INDEX = [
+  {
+    type: "Článok",
+    title: "Zakynthos osobne: útesy, korytnačky a výhľady",
+    description: "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
+    url: "blog/zakynthos-osobne.html",
+    keywords: "zakynthos zakyntos grécko grecko laganas navagio myzithres xigia dafni banana beach gerakas kalamaki cameo island porto limnionas korakonissi marathonisi korytnačky korytnacky caretta caretta pláže plaze útesy utesy výhľady vyhlady požičanie auta pozicanie auta",
+  },
+  {
+    type: "Video",
+    title: "Zakynthos osobne: pláže, útesy a výhľady",
+    description: "Video zo Zakynthosu: pláže, útesy, vyhliadky, Laganas a ostrovná dovolenková atmosféra.",
+    url: "videa.html?krajina=grecko",
+    keywords: "zakynthos zakyntos grécko grecko video youtube pláže plaze útesy utesy výhľady vyhlady laganas navagio myzithres xigia gerakas marathonisi",
+  },
+  {
+    type: "Podcast",
+    title: "Zakynthos osobne: ostrov útesov a korytnačiek",
+    description: "Podcast o Zakynthose, plážach, výhľadoch, korytnačkách a praktických dojmoch z ostrova.",
+    url: "audio.html?krajina=grecko",
+    keywords: "zakynthos zakyntos grécko grecko podcast spotify pláže plaze útesy utesy korytnačky korytnacky laganas navagio marathonisi",
+  },
+  {
+    type: "Článok",
+    title: "Slováci po pandémii opäť lietajú viac",
+    description: "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",
+    url: "blog/kolko-slovakov-lieta-do-stredomoria.html",
+    keywords: "slováci slovaci lietajú lietaju slováci lietajú slovaci lietaju lietanie pandémia pandemia covid stredomorie cesty lietadlom štatistika statistika štatistický úrad sr tasr dovolenka more 2025 2026 bratislava ryanair odhad výhľad",
+  },
   {
     type: "Článok",
     title: "8 praktických rád pre dovolenku v Stredomorí",
     description: "Menej známe tipy pre dovolenku v Stredomorí, ktoré ti môžu ušetriť stres, čas aj peniaze.",
     url: "blog/8-praktickych-rad-stredomorie.html",
     keywords: "stredomorie dovolenka praktické rady prakticke rady cestovanie pláže plaze hotel ubytovanie more vstup do mora topánky do vody topanky do vody meškanie letu meskanie letu cestovka ostrov pobrežie",
-  },  {
+  },
+  {
     type: "Článok",
     title: "Kde sa more mení na biele zlato",
     description: "Soľné panvy, ružové lagúny a plameniaky v Stredomorí: Sicília, Cyprus, Camargue, Gozo a Ston.",
@@ -32,6 +61,13 @@
     description: "Praktický sprievodca po Amalfskom pobreží, Ravelle, doprave a 3-dňovom itinerári.",
     url: "blog-amalfi-pobrezie.html",
     keywords: "amalfi ravello neapol salerno taliansko pobrežie itinerár doprava",
+  },
+  {
+    type: "Flash správa",
+    title: "Dlhé rady na bratislavskom letisku",
+    description: "Praktická pripomienka pre cestujúcich po náporoch pri dovolenkových odletoch z Bratislavy.",
+    url: "spravy/bratislava-letisko-dlhe-rady-2026.html",
+    keywords: "bratislava letisko dlhé rady dlhe rady antalya dovolenka odlety check-in online check-in doklady cestujúci cestujuci dovolenková špička dovolenkova spicka",
   },
   {
     type: "Flash správa",
@@ -160,5 +196,8 @@
     keywords: "blog články clanky cestovateľský magazín",
   },
 ];
+
+
+
 
 
