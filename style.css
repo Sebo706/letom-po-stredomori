@@ -2355,6 +2355,13 @@ a {
   box-shadow: var(--shadow-card);
 }
 
+.article-photo.article-photo-full img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--color-surface);
+}
+
 .article-photo figcaption {
   margin-top: 10px;
   color: var(--color-muted);

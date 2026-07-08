@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Kos osobne: vietor, Poseidónov mobil a pláže",
+    description: "Osobná skúsenosť z gréckeho Kosu z roku 2025: Caravia Beach, vietor, auto, Plaka Forest, Asklepion, Therma Springs, Zia, Kefalos a Cavo Paradiso.",
+    url: "blog/kos-osobne.html",
+    keywords: "kos grécko grecko osobne dodekanézy dodekanezy caravia beach marmari vietor poseidon mobil plaka forest pávy pavy paradise beach agios stefanos asklepion hippokrates therma springs zia kefalos cavo paradiso limionas nisyros autopia rentals",
+  },
+  {
+    type: "Článok",
     title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie",
     description: "Prvá časť seriálu o menej známych príbehoch Stredomoria: rybárske dediny, slovinské pobrežie, Menorca, Málaga a trulli v Apúlii.",
     url: "blog/5-zaujimavosti-stredomoria-1.html",
@@ -68,6 +75,13 @@ window.LETOM_SEARCH_INDEX = [
     description: "Praktický sprievodca po Amalfskom pobreží, Ravelle, doprave a 3-dňovom itinerári.",
     url: "blog-amalfi-pobrezie.html",
     keywords: "amalfi ravello neapol salerno taliansko pobrežie itinerár doprava",
+  },
+  {
+    type: "Flash správa",
+    title: "Etna ochromila letisko v Catanii",
+    description: "Sopečný popol z Etny 5. a 6. júla 2026 výrazne obmedzil až pozastavil lety cez letisko Catania na Sicílii.",
+    url: "spravy/etna-catania-letisko-popol-2026.html",
+    keywords: "etna catania katánia katania sicília sicilia letisko sopečný popol sopecny popol sopka erupcia voragine lety zrušené zrusene presmerované presmerovane palermo euronews ansa el pais",
   },
   {
     type: "Flash správa",

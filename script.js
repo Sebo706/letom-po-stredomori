@@ -155,6 +155,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Kos osobne: vietor, Poseidónov mobil a pláže",
+    publishedAt: "2026-07-08",
+    date: "Pridané 8. 7. 2026",
+    image: "images/blog/kos-osobne/hero-kos-osobne.png",
+    imageAlt: "Hlavný vizuál článku Kos osobne",
+    description:
+      "Osobná skúsenosť z Kosu z roku 2025: vietor, auto, horúce pramene, západné pláže a mobil, ktorý vrátilo more.",
+    url: "blog/kos-osobne.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie",
     publishedAt: "2026-07-08",
     date: "Pridané 8. 7. 2026",
@@ -1142,6 +1155,15 @@ const zaujimavostiStredomoriaArticle = {
   date: "8. júl 2026",
 };
 
+const kosOsobneArticle = {
+  title: "Kos osobne: vietor, Poseidónov mobil a pláže",
+  description:
+    "Osobná skúsenosť z Kosu z roku 2025: vietor, auto, horúce pramene, západné pláže a mobil, ktorý vrátilo more.",
+  url: "blog/kos-osobne.html",
+  image: "images/blog/kos-osobne/hero-kos-osobne.png",
+  date: "8. júl 2026",
+};
+
 const articleLibrary = {
   taliansko: {
     name: "Taliansko",
@@ -1174,6 +1196,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      kosOsobneArticle,
       zaujimavostiStredomoriaArticle,
       zakynthosOsobneArticle,
       slovaciLietanieArticle,

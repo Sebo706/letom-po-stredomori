@@ -1,5 +1,28 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "etna-catania-letisko-popol-2026",
+    label: "Sicília • Letisko Catania • Etna • letecké upozornenie",
+    title: "Etna ochromila letisko v Catanii: sopečný popol na 2 dni zastavil lety na Sicíliu",
+    date: "8. júl 2026",
+    datetime: "2026-07-08",
+    image: "images/novinky/etna-catania-letisko-popol-2026.png",
+    imageAlt: "Etna a letisko v Catanii so sopečným popolom ako letecké upozornenie pre Sicíliu",
+    summary:
+      "Letisko Catania malo 5. a 6. júla 2026 výrazne obmedzenú až pozastavenú prevádzku pre aktivitu Etny. Lety boli rušené alebo presmerované, najmä do Palerma.",
+    body: [
+      "Letisko Catania na Sicílii malo 5. a 6. júla 2026 výrazne obmedzenú až pozastavenú prevádzku pre aktivitu sopky Etna. Sopečný popol z oblasti krátera Voragine zasiahol letovú prevádzku a časť spojení bola zrušená alebo presmerovaná.",
+      "Podľa talianskej agentúry ANSA sa emisie popola začali ráno 5. júla a neskôr vytvorili erupčný oblak vysoký približne 1,5 km nad vrcholom sopky. Oblak smeroval na juh až juhovýchod, teda aj smerom k oblasti Catanie.",
+      "Sopečný popol je pre lietadlá rizikový, pretože môže poškodiť motory a zhoršiť viditeľnosť. Najprv boli obmedzené prílety, neskôr sa podľa dostupných informácií prerušili všetky prílety a povolené boli len odlety lietadiel, ktoré už boli na zemi.",
+      "Prevádzka sa obnovila 7. júla po znížení leteckého varovania z červenej na oranžovú. Cestujúcim však letisko aj médiá odporúčali ďalej kontrolovať stav letu priamo u aerolinky.",
+      "Podľa zahraničných médií išlo približne o 120 zrušených letov a viac ako 60 presmerovaných spojení na iné letiská v regióne. Pri takýchto situáciách sa však čísla môžu meniť podľa vývoja prevádzky.",
+    ],
+    tipTitle: "Praktické odporúčanie pre cestujúcich",
+    tip:
+      "Ak cestujete na Sicíliu cez Cataniu, pred cestou na letisko vždy skontrolujte stav letu priamo u aerolinky a na stránke letiska Catania. Pri Etne sa situácia môže meniť podľa vetra, množstva popola a vývoja erupcie aj po obnovení prevádzky.",
+    source:
+      "Zdroj: Euronews, ANSA, El País a informácie letiska Catania o obmedzeniach spôsobených sopečným popolom z Etny.",
+  },
+  {
     id: "bratislava-letisko-dlhe-rady-2026",
     label: "Bratislava • Letisko • dovolenková špička",
     title: "Dlhé rady na bratislavskom letisku skomplikovali cestujúcim začiatok dovolenky",
