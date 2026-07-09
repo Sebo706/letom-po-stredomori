@@ -1,5 +1,29 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "zakynthos-f16-nudzove-pristatie-2026",
+    label: "Zakynthos • letisko • bezpečnostné upozornenie",
+    title: "Na letisku Zakynthos núdzovo pristálo grécke F-16. Pilot je v poriadku",
+    date: "9. júl 2026",
+    datetime: "2026-07-09",
+    image: "images/novinky/zakynthos-f16-nudzove-pristatie-2026.jpg",
+    imageAlt: "Grécke F-16 po núdzovom pristátí na letisku Zakynthos so zásahom záchranných zložiek",
+    summary:
+      "Na gréckom ostrove Zakynthos dnes došlo k vážnemu incidentu na letisku. Grécke vojenské lietadlo F-16 muselo počas výcvikového letu núdzovo pristáť na letisku Zakynthos.",
+    body: [
+      "Na gréckom ostrove Zakynthos dnes došlo k vážnemu incidentu na letisku. Grécke vojenské lietadlo F-16 muselo počas výcvikového letu núdzovo pristáť na letisku Zakynthos.",
+      "Podľa oficiálneho vyjadrenia gréckeho letectva išlo o lietadlo F-16 zo 335. letky 116. bojového krídla. Incident sa stal vo štvrtok 9. júla 2026 približne o 13:45 miestneho času. Dôvodom núdzového pristátia bola porucha, ktorej presná príčina sa zatiaľ vyšetruje. Pilot je podľa dostupných informácií v dobrom zdravotnom stave.",
+      "Zábery zo sociálnych sietí a zahraničných médií ukazujú lietadlo po pristátí v plameňoch, pričom na mieste zasahovali letiskové záchranné zložky. Niektoré letecké médiá uvádzajú, že stroj pristál bez vysunutého podvozku a po dosadnutí začal horieť. Túto technickú príčinu však treba zatiaľ brať opatrne, kým nebude potvrdená vyšetrovaním.",
+      "Pre cestujúcich na Zakynthos a zo Zakynthosu je dôležité sledovať aktuálny stav svojho letu. Takýto incident môže na ostrovnom letisku spôsobiť dočasné meškania, presuny časov odletov alebo krátkodobé obmedzenia prevádzky, najmä ak je potrebné uvoľniť dráhu, odstrániť lietadlo a skontrolovať bezpečnosť letiska. Médiá hlásili narušenie prevádzky po incidente.",
+      "Ak dnes alebo zajtra letíte na Zakynthos, odporúčanie je jednoduché: skontrolujte si let priamo u aerolinky, sledujte informácie letiska a neprichádzajte na letisko na poslednú chvíľu. Pri dovolenkových letoch sa situácia môže meniť rýchlo.",
+      "Dobrá správa je, že podľa doterajších informácií nejde o incident civilného dopravného lietadla s turistami, ale o vojenské lietadlo gréckych vzdušných síl. Pilot je v poriadku a príčiny udalosti sa vyšetrujú.",
+    ],
+    tipTitle: "Čo to znamená pre turistov?",
+    tip:
+      "Ak letíte na Zakynthos alebo zo Zakynthosu, skontrolujte si aktuálny stav letu priamo u aerolinky a sledujte informácie letiska. Pri ostrovných letiskách môže aj krátkodobé obmedzenie dráhy rýchlo ovplyvniť dovolenkové odlety a prílety.",
+    source:
+      "Zdroje: oficiálne vyjadrenie gréckeho letectva HAF, AeroTime, The Times of India a ďalšie zahraničné médiá informujúce o núdzovom pristátí F-16 na Zakynthose.",
+  },
+  {
     id: "sad-trencin-autobusom-k-moru-2026",
     label: "Chorvátsko • autobusom k moru • SAD Trenčín",
     title: "Za 50 € autobusom k Jadranu: SAD Trenčín spúšťa jednodňové kúpanie pri mori",

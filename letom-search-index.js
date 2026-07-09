@@ -78,6 +78,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Flash správa",
+    title: "Zakynthos: núdzové pristátie gréckeho F-16",
+    description: "Na letisku Zakynthos núdzovo pristálo grécke vojenské lietadlo F-16. Pilot je v poriadku a cestujúci majú sledovať stav letov.",
+    url: "spravy/zakynthos-f16-nudzove-pristatie-2026.html",
+    keywords: "zakynthos zakyntos grécko grecko f-16 f16 núdzové pristátie nudzove pristatie letisko pilot haf grécke letectvo vojenské lietadlo meškania lety dovolenka",
+  },
+  {
+    type: "Flash správa",
     title: "Za 50 € autobusom k Jadranu",
     description: "SAD Trenčín spúšťa jednodňové kúpanie pri mori v Chorvátsku. Obojsmerná jazda má stáť 50 € a termín je 10. až 11. júla 2026.",
     url: "spravy/sad-trencin-autobusom-k-moru-2026.html",
