@@ -422,7 +422,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-01";
+  const siteLastUpdated = "2026-07-09";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];

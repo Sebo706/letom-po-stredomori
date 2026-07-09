@@ -1,5 +1,26 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "sad-trencin-autobusom-k-moru-2026",
+    label: "Chorvátsko • autobusom k moru • SAD Trenčín",
+    title: "Za 50 € autobusom k Jadranu: SAD Trenčín spúšťa jednodňové kúpanie pri mori",
+    date: "9. júl 2026",
+    datetime: "2026-07-09",
+    image: "images/novinky/sad-trencin-autobusom-k-moru-2026.jpg",
+    imageAlt: "Autobus pri chorvátskom pobreží ako tip na jednodňové kúpanie pri Jadrane",
+    summary:
+      "SAD Trenčín spúšťa predaj jednodňového zájazdu Kúpanie pri mori – Chorvátsko. Cena za obojsmernú jazdu je 50 € a termín je naplánovaný na 10. až 11. júla 2026.",
+    body: [
+      "SAD Trenčín spúšťa predaj jednodňového zájazdu „Kúpanie pri mori – Chorvátsko“. Cena za obojsmernú jazdu je 50 € a konkrétny termín je naplánovaný na 10. júl 2026 smerom do Chorvátska a 11. júl 2026 späť na Slovensko. Informáciu zverejnila SAD Trenčín na svojej oficiálnej stránke.",
+      "Pre cestujúcich zo západného a stredného Slovenska môže ísť o zaujímavý letný tip: večer nasadnúť do autobusu, ráno byť pri Jadrane, stráviť deň pri mori a večer sa vydať späť domov.",
+      "Podľa všeobecnej informácie SAD Trenčín premáva počas leta 2026 medzinárodná linka Žilina – Trenčín – Bratislava – Split – Makarska každý piatok od 26. júna do 30. augusta 2026. Príchod do cieľovej destinácie je v sobotu ráno a návrat späť na Slovensko v sobotu večer.",
+    ],
+    tipTitle: "Prakticky pre cestujúcich",
+    tip:
+      "Pred kúpou lístka si určite overte, či sú ešte voľné miesta, presné miesto nástupu, cieľovú zastávku v Chorvátsku, čas odchodu a návratu a či cena 50 € platí pre konkrétny termín, ktorý chcete. Predaj má prebiehať cez SAD Trenčín, osobne v klientskom centre v Trenčíne alebo telefonicky na čísle uvedenom v ich ozname.",
+    source:
+      "Hodnotenie Letom po Stredomorí: Toto nie je klasická dovolenka, ale skôr rýchly letný únik k moru. Môže byť dobrý pre ľudí, ktorí nechcú riešiť ubytovanie, letenky ani viac dní voľna. Treba však počítať s nočnou cestou autobusom a časovo obmedzeným pobytom pri mori. Zdroj: oficiálny oznam SAD Trenčín.",
+  },
+  {
     id: "etna-catania-letisko-popol-2026",
     label: "Sicília • Letisko Catania • Etna • letecké upozornenie",
     title: "Etna ochromila letisko v Catanii: sopečný popol na 2 dni zastavil lety na Sicíliu",

@@ -78,6 +78,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Flash správa",
+    title: "Za 50 € autobusom k Jadranu",
+    description: "SAD Trenčín spúšťa jednodňové kúpanie pri mori v Chorvátsku. Obojsmerná jazda má stáť 50 € a termín je 10. až 11. júla 2026.",
+    url: "spravy/sad-trencin-autobusom-k-moru-2026.html",
+    keywords: "sad trenčín sad trencin autobusom k moru chorvátsko chorvatsko jadran kúpanie pri mori kupanie pri mori autobus 50 eur split makarska žilina zilina bratislava jednodňový zájazd jednodnovy zajazd",
+  },
+  {
+    type: "Flash správa",
     title: "Etna ochromila letisko v Catanii",
     description: "Sopečný popol z Etny 5. a 6. júla 2026 výrazne obmedzil až pozastavil lety cez letisko Catania na Sicílii.",
     url: "spravy/etna-catania-letisko-popol-2026.html",
