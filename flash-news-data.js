@@ -1,5 +1,52 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "easyjet-sardinia-letiska-strajky-2026",
+    label: "Taliansko • easyJet • Sardínia • štrajky",
+    title: "Letíte 21. júla do Talianska? EasyJet a sardínske letiská čakajú štrajky",
+    date: "10. júl 2026",
+    datetime: "2026-07-10",
+    image: "images/novinky/taliansko-strajky-lety-trajekty-2026.png",
+    imageAlt: "Upozornenie na štrajky v Taliansku s letiskom a trajektom",
+    summary:
+      "Na 21. júla 2026 sú v Taliansku nahlásené štrajky, ktoré sa môžu dotknúť letov easyJet a prevádzky letísk Olbia a Alghero na Sardínii.",
+    body: [
+      "Taliansky register štrajkov bol 10. júla doplnený o nové protesty na letiskách Olbia a Alghero. Na rovnaký deň je naplánovaný aj 24-hodinový štrajk talianskeho palubného personálu easyJetu.",
+      "Pre slovenského cestovateľa to znamená najmä praktické riziko pri letoch na Sardíniu a pri letoch easyJet do alebo z Talianska v utorok 21. júla 2026. Nemusí dôjsť k zrušeniu každého letu, ale treba počítať s možným meškaním, zmenami pri odbavení batožiny alebo so stornami vybraných spojov.",
+      "Potvrdené sú tieto údaje: palubný personál easyJet v Taliansku plánuje 24-hodinový štrajk, pracovníci letiska Olbia majú štrajkovať od 13:00 do 17:00 a rovnaký čas je uvedený aj pre pracovníkov letiska Alghero.",
+      "Talianske pravidlá štandardne chránia lety v časoch 7:00–10:00 a 18:00–21:00. Ani tieto časové pásma však automaticky neznamenajú, že sa cestujúci vyhne každému meškaniu alebo prevádzkovému obmedzeniu.",
+      "Zoznam konkrétnych zrušených letov zatiaľ zverejnený nebol. Štrajk môže byť ešte obmedzený, odvolaný alebo môže mať menší dopad, než sa očakáva.",
+      "Pozor aj na trajekty pri Sicílii: na 17. až 18. júla 2026 je nahlásený 24-hodinový štrajk personálu Caronte & Tourist Isole Minori. Začať sa má 17. júla o 6:30 a skončiť 18. júla o 6:30.",
+      "Toto sa môže dotknúť najmä cestujúcich smerujúcich na menšie sicílske ostrovy, napríklad Liparské ostrovy, Egadské ostrovy, Usticu alebo Pantelleriu. Najväčšie riziko vzniká pri tesnom napojení letu, autobusu a trajektu, preto sa oplatí nechať si väčšiu časovú rezervu.",
+    ],
+    tipTitle: "Odporúčanie pre cestujúcich",
+    tip:
+      "Ak letíte 21. júla do Talianska alebo z Talianska, skontrolujte si stav letu priamo u aerolinky, sledujte e-mail a SMS od dopravcu a nechajte si časovú rezervu. Pri Sardínii odporúčame sledovať aj informácie letísk Olbia a Alghero.",
+    source:
+      "Zdroj: taliansky register štrajkov Ministero delle Infrastrutture e dei Trasporti, informácie dostupné 10. júla 2026. Pred cestou odporúčame overiť stav letu priamo u easyJet alebo príslušného letiska.",
+  },
+  {
+    id: "sicilia-trajekty-mensie-ostrovy-strajk-2026",
+    label: "Sicília • trajekty • menšie ostrovy",
+    title: "Na menšie sicílske ostrovy môže 17. júla skomplikovať cestu štrajk trajektov",
+    date: "10. júl 2026",
+    datetime: "2026-07-10",
+    image: "images/novinky/taliansko-strajky-lety-trajekty-2026.png",
+    imageAlt: "Upozornenie na štrajky v Taliansku s trajektom a letiskom",
+    summary:
+      "Na 17. až 18. júla 2026 je nahlásený 24-hodinový štrajk personálu Caronte & Tourist Isole Minori, ktorý môže ovplyvniť cestu na menšie sicílske ostrovy.",
+    body: [
+      "Cestujúci s ubytovaním na Liparských ostrovoch, Egadských ostrovoch, Ustice alebo Pantellerii by si mali plán preveriť ešte pred odchodom. Štrajk má začať 17. júla o 6:30 a skončiť 18. júla o 6:30.",
+      "Pre slovenského cestovateľa môže byť najväčším problémom tesné nadviazanie letu, autobusu a trajektu. Ak sa jeden spoj posunie, môže sa rozpadnúť celý plán presunu na ostrov.",
+      "Potvrdené je, že štrajk sa týka personálu Caronte & Tourist Isole Minori, má trvať 24 hodín a spoločnosť zabezpečuje spojenia na viaceré menšie sicílske ostrovy.",
+      "Zatiaľ nie je jasné, ktoré konkrétne odchody budú zrušené a ktoré budú vedené ako minimálna garantovaná doprava. Preto je lepšie rátať s rezervou a neplánovať návrat z ostrova tesne pred odletom domov.",
+    ],
+    tipTitle: "Prakticky pred cestou",
+    tip:
+      "Nechajte si časovú rezervu medzi letom a trajektom, skontrolujte aktuálny cestovný poriadok a majte pripravenú alternatívu. Ak bývate na menšom ostrove, oplatí sa kontaktovať aj ubytovanie alebo priamo trajektového dopravcu.",
+    source:
+      "Zdroj: taliansky register štrajkov Ministero delle Infrastrutture e dei Trasporti a údaje k štrajku Caronte & Tourist Isole Minori. Pred cestou odporúčame overiť konkrétne odchody priamo u dopravcu.",
+  },
+  {
     id: "zakynthos-f16-nudzove-pristatie-2026",
     label: "Zakynthos • letisko • bezpečnostné upozornenie",
     title: "Na letisku Zakynthos núdzovo pristálo grécke F-16. Pilot je v poriadku",

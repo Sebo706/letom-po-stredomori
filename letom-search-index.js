@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Je plavba výletnou loďou po Stredomorí vhodná pre Slovákov?",
+    description: "Kompletný sprievodca pre Slovákov: ceny, doprava do prístavu, kajuty, strava, výlety aj skryté poplatky.",
+    url: "blog/plavba-vyletnou-lodou-stredomorie.html",
+    keywords: "plavba výletná loď vyletna lod cruise stredomorie slovaci slovensko ceny doprava prístav pristav trieste benátky benatky ravenna civitavecchia barcelona piraeus kajuta kajuty balkón balkon strava výlety vylety poplatky servisné poplatky msc costa royal caribbean",
+  },
+  {
+    type: "Článok",
     title: "Kos osobne: vietor, Poseidónov mobil a pláže",
     description: "Osobná skúsenosť z gréckeho Kosu z roku 2025: Caravia Beach, vietor, auto, Plaka Forest, Asklepion, Therma Springs, Zia, Kefalos a Cavo Paradiso.",
     url: "blog/kos-osobne.html",
@@ -19,6 +26,20 @@ window.LETOM_SEARCH_INDEX = [
     description: "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
     url: "blog/zakynthos-osobne.html",
     keywords: "zakynthos zakyntos grécko grecko laganas navagio myzithres xigia dafni banana beach gerakas kalamaki cameo island porto limnionas korakonissi marathonisi korytnačky korytnacky caretta caretta pláže plaze útesy utesy výhľady vyhlady požičanie auta pozicanie auta",
+  },
+  {
+    type: "Video",
+    title: "KOS nás úplne prekvapil: Poseidón nám zobral mobil... a potom sa stalo niečo neuveriteľné",
+    description: "Video z gréckeho ostrova Kos: more, pláže, ostrovná atmosféra a dovolenkový pohľad na Grécko.",
+    url: "videa.html?krajina=grecko",
+    keywords: "kos grécko grecko video youtube ostrov more pláže plaze dovolenka dodekanézy dodekanezy poseidon mobil",
+  },
+  {
+    type: "Podcast",
+    title: "Kos osobne: Ostrov vetra, divokých pláží a príbehu s Poseidónom",
+    description: "Podcast o gréckom Kose, vetre, divokých plážach a dovolenkovom príbehu s Poseidónom.",
+    url: "audio.html?krajina=grecko",
+    keywords: "kos grécko grecko podcast spotify vietor divoké pláže divoke plaze poseidon mobil dodekanézy dodekanezy",
   },
   {
     type: "Video",
@@ -75,6 +96,20 @@ window.LETOM_SEARCH_INDEX = [
     description: "Praktický sprievodca po Amalfskom pobreží, Ravelle, doprave a 3-dňovom itinerári.",
     url: "blog-amalfi-pobrezie.html",
     keywords: "amalfi ravello neapol salerno taliansko pobrežie itinerár doprava",
+  },
+  {
+    type: "Flash správa",
+    title: "EasyJet a sardínske letiská čakajú štrajky",
+    description: "Praktické upozornenie pre cestujúcich do Talianska: 21. júla 2026 sú nahlásené štrajky easyJetu a pracovníkov letísk Olbia a Alghero.",
+    url: "spravy/easyjet-sardinia-letiska-strajky-2026.html",
+    keywords: "taliansko easyjet sardinia sardínia sardinie olbia alghero letisko letiská lety štrajk strajk palubný personál 21 júl jul 2026 meškanie zrušenie",
+  },
+  {
+    type: "Flash správa",
+    title: "Štrajk trajektov na menšie sicílske ostrovy",
+    description: "Na 17. až 18. júla 2026 je nahlásený štrajk trajektov Caronte & Tourist Isole Minori na menšie sicílske ostrovy.",
+    url: "spravy/sicilia-trajekty-mensie-ostrovy-strajk-2026.html",
+    keywords: "sicília sicilia trajekty štrajk strajk caronte tourist isole minori liparské ostrovy liparske egadské egadske ustica pantelleria 17 júl 18 júl 2026 trajekt",
   },
   {
     type: "Flash správa",

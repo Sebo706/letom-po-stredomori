@@ -153,6 +153,49 @@ searchResults?.addEventListener("click", (event) => {
 
 const latestUpdates = [
   {
+    kind: "audio",
+    type: "Nový podcast",
+    title: "Kos osobne: Ostrov vetra, divokých pláží a príbehu s Poseidónom",
+    publishedAt: "2026-07-10T10:00:00",
+    date: "Pridané 10. 7. 2026",
+    marker: "Podcast",
+    image: "images/social/spotify.png",
+    imageAlt: "Spotify podcast Letom po Stredomorí",
+    mediaUrl: "https://open.spotify.com/episode/4ehHUFn164v8Gb0YNucYau?si=K6aT3M8OSAKxAc_YfXRj6A",
+    description:
+      "Podcast o gréckom Kose, vetre, divokých plážach a dovolenkovom príbehu s Poseidónom.",
+    url: "audio.html?krajina=grecko",
+    label: "Vypočuť podcast",
+  },
+  {
+    kind: "video",
+    type: "Nové video",
+    title: "KOS nás úplne prekvapil: Poseidón nám zobral mobil... a potom sa stalo niečo neuveriteľné",
+    publishedAt: "2026-07-10T09:00:00",
+    date: "Pridané 10. 7. 2026",
+    marker: "YouTube",
+    image: getYouTubeThumbnail("https://youtu.be/uXmfVDSNCM0?is=p38OaxmWP64025eW"),
+    imageAlt: "Náhľad videa KOS nás úplne prekvapil",
+    mediaUrl: "https://youtu.be/uXmfVDSNCM0?is=p38OaxmWP64025eW",
+    description:
+      "Video z gréckeho ostrova Kos: more, pláže, ostrovná atmosféra a dovolenkový pohľad na Grécko.",
+    url: "videa.html?krajina=grecko",
+    label: "Pozrieť video",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
+    title: "Je plavba výletnou loďou po Stredomorí vhodná pre Slovákov?",
+    publishedAt: "2026-07-10T12:00:00",
+    date: "Pridané 10. 7. 2026",
+    image: "images/blog/plavba-vyletnou-lodou-stredomorie/hero-plavba-po-stredomori.png",
+    imageAlt: "Výletná loď pláva popri stredomorskom pobreží",
+    description:
+      "Kompletný sprievodca pre Slovákov: ceny, doprava do prístavu, kajuty, strava, výlety aj skryté poplatky.",
+    url: "blog/plavba-vyletnou-lodou-stredomorie.html",
+    label: "Čítať článok",
+  },
+  {
     kind: "article",
     type: "Nový článok",
     title: "Kos osobne: vietor, Poseidónov mobil a pláže",
@@ -422,7 +465,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-09";
+  const siteLastUpdated = "2026-07-10";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -966,6 +1009,10 @@ const videoLibrary = {
     description: "Videá z gréckych ostrovov, pláží, útesov a dovolenkovej atmosféry.",
     videos: [
       {
+        title: "KOS nás úplne prekvapil: Poseidón nám zobral mobil... a potom sa stalo niečo neuveriteľné",
+        url: "https://youtu.be/uXmfVDSNCM0?is=p38OaxmWP64025eW",
+      },
+      {
         title: "Zakynthos osobne: pláže, útesy a výhľady",
         url: "https://youtu.be/GI5lY-aRLx4",
       },
@@ -1054,6 +1101,13 @@ const audioLibrary = {
     description: "Spotify podcasty z Grécka, ostrovov, pláží a praktického cestovania.",
     audios: [
       {
+        title: "Kos osobne: Ostrov vetra, divokých pláží a príbehu s Poseidónom",
+        description:
+          "Podcast o gréckom Kose, vetre, divokých plážach a dovolenkovom príbehu s Poseidónom.",
+        spotifyUrl: "https://open.spotify.com/episode/4ehHUFn164v8Gb0YNucYau?si=K6aT3M8OSAKxAc_YfXRj6A",
+        spotifyEmbedUrl: "https://open.spotify.com/embed/episode/4ehHUFn164v8Gb0YNucYau",
+      },
+      {
         title: "Zakynthos osobne: ostrov útesov a korytnačiek",
         description:
           "Podcast o Zakynthose, plážach, výhľadoch, korytnačkách a praktických dojmoch z ostrova.",
@@ -1119,6 +1173,15 @@ const praktickeRadyArticle = {
   date: "28. jún 2026",
 };
 
+const plavbaLodouArticle = {
+  title: "Je plavba výletnou loďou po Stredomorí vhodná pre Slovákov?",
+  description:
+    "Kompletný sprievodca pre Slovákov: ceny, doprava do prístavu, kajuty, strava, výlety aj skryté poplatky.",
+  url: "blog/plavba-vyletnou-lodou-stredomorie.html",
+  image: "images/blog/plavba-vyletnou-lodou-stredomorie/hero-plavba-po-stredomori.png",
+  date: "10. júl 2026",
+};
+
 const slovaciLietanieArticle = {
   title: "Slováci po pandémii opäť lietajú viac",
   description:
@@ -1169,6 +1232,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
@@ -1196,6 +1260,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      plavbaLodouArticle,
       kosOsobneArticle,
       zaujimavostiStredomoriaArticle,
       zakynthosOsobneArticle,
@@ -1215,6 +1280,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
@@ -1231,17 +1297,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
       praktickeRadyArticle,
@@ -1259,12 +1326,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 
