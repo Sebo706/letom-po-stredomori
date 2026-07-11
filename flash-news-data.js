@@ -1,5 +1,28 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "almeria-poziar-evakuacia-2026",
+    label: "Španielsko • Almería • požiar • evakuácia",
+    title: "Požiar v provincii Almería má už najmenej 12 obetí: dovolenkári musia rešpektovať evakuačné pokyny",
+    date: "11. júl 2026",
+    datetime: "2026-07-11",
+    image: "images/novinky/almeria-poziar-evakuacia-2026.png",
+    imageAlt: "Požiar v provincii Almería a uzavretá cesta s bezpečnostným upozornením pre dovolenkárov",
+    summary:
+      "Počet potvrdených obetí požiaru v okolí Los Gallardos a Bédaru v provincii Almería stúpol najmenej na 12. Cestujúci vo východnej Andalúzii majú sledovať miestne výstrahy a rešpektovať evakuačné pokyny.",
+    body: [
+      "Ide o podstatný nový vývoj sledovanej udalosti v provincii Almería. Počet potvrdených obetí požiaru v okolí Los Gallardos a Bédaru stúpol najmenej na 12 a podľa aktuálnych správ sa naďalej pátra po nezvestných.",
+      "Pre slovenského cestovateľa je dôležité najmä to, že upozornenie sa týka konkrétnej časti provincie Almería, nie celého pobrežia Andalúzie. Cestujúci smerujúci do východnej Andalúzie by mali sledovať miestne výstrahy, uzávery ciest a pokyny ubytovania alebo cestovnej kancelárie.",
+      "Podľa aktuálnych údajov bolo evakuovaných približne 800 až 1 400 ľudí. Čísla sa medzi správami líšia a môžu sa ďalej aktualizovať podľa vývoja zásahu, vetra a rozsahu uzáver.",
+      "Do zásahu boli nasadené stovky hasičov, vojaci a hasiace lietadlá. Viaceré obete sa podľa úradov pokúšali uniknúť mimo odporúčaných evakuačných trás, čo ukazuje, prečo je pri takýchto požiaroch dôležité riadiť sa pokynmi záchranných zložiek.",
+      "Zatiaľ nemáme potvrdené plošné obmedzenie turistických rezortov na celom pobreží Almeríe. Situáciu preto netreba zovšeobecňovať na celú Andalúziu, ale v dotknutej oblasti ju treba brať vážne.",
+    ],
+    tipTitle: "Bezpečnostné odporúčanie",
+    tip:
+      "Pri nariadenej evakuácii neodchádzajte vlastnou trasou, neskúšajte skratky cez vidiecke cesty a rešpektujte pokyny miestnych úradov, hasičov, polície, ubytovania alebo cestovnej kancelárie. Pred cestou sledujte miestne výstrahy a uzávery ciest.",
+    source:
+      "Zdroj: aktuálne správy miestnych úradov a zahraničných médií k požiaru v provincii Almería. Počet evakuovaných a nezvestných sa môže meniť, preto odporúčame pred cestou overiť situáciu v oficiálnych miestnych výstrahách.",
+  },
+  {
     id: "easyjet-sardinia-letiska-strajky-2026",
     label: "Taliansko • easyJet • Sardínia • štrajky",
     title: "Letíte 21. júla do Talianska? EasyJet a sardínske letiská čakajú štrajky",

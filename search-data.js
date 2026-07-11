@@ -99,6 +99,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Flash správa",
+    title: "Požiar v provincii Almería má najmenej 12 obetí",
+    description: "Bezpečnostné upozornenie pre cestujúcich do východnej Andalúzie: sledujte výstrahy, uzávery ciest a evakuačné pokyny v dotknutej časti provincie Almería.",
+    url: "spravy/almeria-poziar-evakuacia-2026.html",
+    keywords: "spanielsko španielsko almeria almería poziar požiar los gallardos bedar bédar andaluzia andalúzia evakuacia evakuácia hasiči hasici bezpečnosť bezpecnost dovolenkari dovolenkári",
+  },
+  {
+    type: "Flash správa",
     title: "EasyJet a sardínske letiská čakajú štrajky",
     description: "Praktické upozornenie pre cestujúcich do Talianska: 21. júla 2026 sú nahlásené štrajky easyJetu a pracovníkov letísk Olbia a Alghero.",
     url: "spravy/easyjet-sardinia-letiska-strajky-2026.html",
