@@ -99,6 +99,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Flash správa",
+    title: "Technická porucha narušila lety medzi Bratislavou a Zakynthosom",
+    description: "Let Smartwings QS1518 má približne 13-hodinové meškanie a cestujúcich zo Zakynthosu po čakaní odviezli späť do hotelov.",
+    url: "spravy/smartwings-zakynthos-bratislava-meskanie-2026.html",
+    keywords: "smartwings zakynthos zakyntos bratislava letisko qs1518 qs1519 ok-tvs technická porucha technicka porucha meškanie meskanie cestujúci cestujuci hotel kompenzácia kompenzacia eu261 flightradar24",
+  },
+  {
+    type: "Flash správa",
     title: "Požiar v provincii Almería má najmenej 12 obetí",
     description: "Bezpečnostné upozornenie pre cestujúcich do východnej Andalúzie: sledujte výstrahy, uzávery ciest a evakuačné pokyny v dotknutej časti provincie Almería.",
     url: "spravy/almeria-poziar-evakuacia-2026.html",
