@@ -99,6 +99,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Flash správa",
+    title: "Technická porucha lietadla narušila lety medzi Bratislavou a Zakynthosom",
+    description: "Potvrdená aktualizácia meškania Smartwings: QS1518 odletel o 17:59 a návratový QS1519 pristál v Bratislave o 22:51.",
+    url: "spravy/smartwings-zakynthos-bratislava-potvrdene-casy-2026.html",
+    keywords: "smartwings bratislava zakynthos zakyntos qs1518 qs1519 technická porucha technicka porucha meškanie meskanie 17:59 22:51 hotel poukážky poukazky burger king kompenzácia kompenzacia eu261 250 eur",
+  },
+  {
+    type: "Flash správa",
     title: "Technická porucha narušila lety medzi Bratislavou a Zakynthosom",
     description: "Let Smartwings QS1518 má približne 13-hodinové meškanie a cestujúcich zo Zakynthosu po čakaní odviezli späť do hotelov.",
     url: "spravy/smartwings-zakynthos-bratislava-meskanie-2026.html",

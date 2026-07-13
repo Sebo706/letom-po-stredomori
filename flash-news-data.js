@@ -1,5 +1,24 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "smartwings-zakynthos-bratislava-potvrdene-casy-2026",
+    label: "Bratislava • Zakynthos • Smartwings • aktualizácia",
+    title: "Technická porucha lietadla narušila lety medzi Bratislavou a Zakynthosom",
+    date: "13. júl 2026",
+    datetime: "2026-07-13",
+    image: "images/novinky/smartwings-zakynthos-bratislava-potvrdene-casy-2026.jpg",
+    imageAlt: "Meškanie letov Smartwings QS1518 a QS1519 medzi Bratislavou a Zakynthosom",
+    summary:
+      "Nedeľné lety Smartwings medzi Bratislavou a gréckym Zakynthosom poznačilo výrazné meškanie. Let QS1518 odletel o 17:59 a návratový QS1519 pristál v Bratislave o 22:51.",
+    body: [
+      "Nedeľné lety Smartwings medzi Bratislavou a gréckym Zakynthosom poznačilo výrazné meškanie. Let QS1518 z Bratislavy mal odletieť o 04:30, no podľa údajov Letiska Bratislava odletel až o 17:59.",
+      "Meškanie zasiahlo aj cestujúcich na Zakynthose, ktorí čakali na návratový let QS1519 do Bratislavy. Ten mal pôvodne pristáť v Bratislave o 09:30, no napokon pristál až o 22:51.",
+      "Podľa informácií od cestujúcich bola dôvodom technická porucha lietadla. Cestujúci na Zakynthose počas dňa čakali na letisku, následne boli odvezení späť do hotelov a neskôr opäť na letisko. Dostali poukážky na občerstvenie aj 20-eurové poukážky do Burger Kingu, ktoré napokon stihli využiť.",
+      "Pri takomto meškaní môže cestujúcim podľa pravidiel EÚ vzniknúť nárok na finančnú kompenzáciu. Keďže trasa Bratislava – Zakynthos má menej ako 1 500 kilometrov, základná kompenzácia môže byť 250 eur na cestujúceho, ak dopravca nepreukáže mimoriadne okolnosti.",
+    ],
+    source:
+      "Zdroj: údaje Letiska Bratislava a informácie priamo od cestujúcich na Zakynthose.",
+  },
+  {
     id: "smartwings-zakynthos-bratislava-meskanie-2026",
     label: "Bratislava • Zakynthos • Smartwings • meškanie",
     title: "Technická porucha výrazne narušila lety medzi Bratislavou a Zakynthosom. Cestujúcich z ostrova vrátili do hotelov",
