@@ -1,11 +1,31 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "wizz-air-bratislava-zmeny-zima-2026",
+    label: "Bratislava • Wizz Air • zima 2026/2027",
+    title: "Wizz Air mení lety z Bratislavy: dve linky končia, ďalšie tri budú sezónne",
+    date: "13. júl 2026",
+    datetime: "2026-07-13",
+    image: "images/novinky/wizz-air-bratislava-zmeny-zima-2026.webp",
+    imageAlt: "Lietadlo Wizz Air na Letisku Bratislava pri správe o zmenách liniek",
+    summary: "Wizz Air upravuje letový poriadok z Bratislavy. Dortmund a Plovdiv majú podľa aktuálnej ponuky skončiť po letnej sezóne, zatiaľ čo Nice, Ochrid a Lamezia Terme majú byť mimo zimného letového poriadku.",
+    body: [
+      "Wizz Air upravuje letový poriadok z Bratislavy. Podľa aktuálne dostupných údajov sa po skončení letnej sezóny 2026 prestane lietať do Dortmundu a Plovdivu. Posledné lety sú momentálne naplánované na 24. októbra 2026.",
+      "Ďalšie tri linky nezmiznú úplne, ale podľa aktuálneho predaja už nemajú lietať celoročne. Spojenia do Nice, Ochridu a Lamezie Terme sa majú zmeniť na sezónne a počas zimného letového poriadku nebudú dostupné.",
+      "Dobrou správou pre cestujúcich do Kalábrie je, že lety do Lamezie Terme má počas zimy ponúkať aj Ryanair.",
+      "Wizz Air zároveň od konca októbra plánuje z Bratislavy nové linky do Baku, Hurgady a Agadiru. Všetky tri majú premávať dvakrát týždenne.",
+      "Zmeny vychádzajú z aktuálneho letového poriadku a predajných systémov. Wizz Air zatiaľ nezverejnil samostatné oficiálne oznámenie k ukončeniu alebo sezónnosti uvedených piatich liniek, preto ešte nemožno vylúčiť ďalšie úpravy.",
+    ],
+    tipTitle: "Čo to znamená pre cestujúcich?",
+    tip: "Pri plánovaní zimných ciest do Dortmundu, Plovdivu, Nice, Ochridu alebo Lamezie Terme si treba skontrolovať aktuálnu ponuku priamo u dopravcu. Letový poriadok a dostupnosť spojov sa môžu ešte zmeniť.",
+    source: "Zdroje: aktuálna ponuka a predajný systém Wizz Air; oficiálne oznámenie Letiska Bratislava o nových linkách do Agadiru, Hurgady a Baku. Stav overený 13. júla 2026.",
+  },
+  {
     id: "smartwings-zakynthos-bratislava-potvrdene-casy-2026",
     label: "Bratislava • Zakynthos • Smartwings • aktualizácia",
     title: "Technická porucha lietadla narušila lety medzi Bratislavou a Zakynthosom",
     date: "13. júl 2026",
     datetime: "2026-07-13",
-    image: "images/novinky/smartwings-zakynthos-bratislava-potvrdene-casy-2026.jpg",
+    image: "images/novinky/smartwings-zakynthos-bratislava-potvrdene-casy-2026.webp",
     imageAlt: "Meškanie letov Smartwings QS1518 a QS1519 medzi Bratislavou a Zakynthosom",
     summary:
       "Nedeľné lety Smartwings medzi Bratislavou a gréckym Zakynthosom poznačilo výrazné meškanie. Let QS1518 odletel o 17:59 a návratový QS1519 pristál v Bratislave o 22:51.",
@@ -24,7 +44,7 @@
     title: "Technická porucha výrazne narušila lety medzi Bratislavou a Zakynthosom. Cestujúcich z ostrova vrátili do hotelov",
     date: "12. júl 2026",
     datetime: "2026-07-12",
-    image: "images/novinky/smartwings-zakynthos-bratislava-meskanie-2026.png",
+    image: "images/novinky/smartwings-zakynthos-bratislava-meskanie-2026.webp",
     imageAlt: "Lietadlo Smartwings a cestujúci čakajúci pre výrazné meškanie letov medzi Bratislavou a Zakynthosom",
     summary:
       "Let Smartwings QS1518 z Bratislavy na Zakynthos má približne 13-hodinové meškanie. Spiatočných cestujúcich zo Zakynthosu po čakaní odviezli späť do hotelov.",
@@ -66,7 +86,7 @@
     title: "Požiar v provincii Almería má už najmenej 12 obetí: dovolenkári musia rešpektovať evakuačné pokyny",
     date: "11. júl 2026",
     datetime: "2026-07-11",
-    image: "images/novinky/almeria-poziar-evakuacia-2026.png",
+    image: "images/novinky/almeria-poziar-evakuacia-2026.webp",
     imageAlt: "Požiar v provincii Almería a uzavretá cesta s bezpečnostným upozornením pre dovolenkárov",
     summary:
       "Počet potvrdených obetí požiaru v okolí Los Gallardos a Bédaru v provincii Almería stúpol najmenej na 12. Cestujúci vo východnej Andalúzii majú sledovať miestne výstrahy a rešpektovať evakuačné pokyny.",
@@ -89,7 +109,7 @@
     title: "Letíte 21. júla do Talianska? EasyJet a sardínske letiská čakajú štrajky",
     date: "10. júl 2026",
     datetime: "2026-07-10",
-    image: "images/novinky/taliansko-strajky-lety-trajekty-2026.png",
+    image: "images/novinky/taliansko-strajky-lety-trajekty-2026.webp",
     imageAlt: "Upozornenie na štrajky v Taliansku s letiskom a trajektom",
     summary:
       "Na 21. júla 2026 sú v Taliansku nahlásené štrajky, ktoré sa môžu dotknúť letov easyJet a prevádzky letísk Olbia a Alghero na Sardínii.",
@@ -114,7 +134,7 @@
     title: "Na menšie sicílske ostrovy môže 17. júla skomplikovať cestu štrajk trajektov",
     date: "10. júl 2026",
     datetime: "2026-07-10",
-    image: "images/novinky/taliansko-strajky-lety-trajekty-2026.png",
+    image: "images/novinky/taliansko-strajky-lety-trajekty-2026.webp",
     imageAlt: "Upozornenie na štrajky v Taliansku s trajektom a letiskom",
     summary:
       "Na 17. až 18. júla 2026 je nahlásený 24-hodinový štrajk personálu Caronte & Tourist Isole Minori, ktorý môže ovplyvniť cestu na menšie sicílske ostrovy.",
@@ -136,7 +156,7 @@
     title: "Na letisku Zakynthos núdzovo pristálo grécke F-16. Pilot je v poriadku",
     date: "9. júl 2026",
     datetime: "2026-07-09",
-    image: "images/novinky/zakynthos-f16-nudzove-pristatie-2026.jpg",
+    image: "images/novinky/zakynthos-f16-nudzove-pristatie-2026.webp",
     imageAlt: "Grécke F-16 po núdzovom pristátí na letisku Zakynthos so zásahom záchranných zložiek",
     summary:
       "Na gréckom ostrove Zakynthos dnes došlo k vážnemu incidentu na letisku. Grécke vojenské lietadlo F-16 muselo počas výcvikového letu núdzovo pristáť na letisku Zakynthos.",
@@ -160,7 +180,7 @@
     title: "Za 50 € autobusom k Jadranu: SAD Trenčín spúšťa jednodňové kúpanie pri mori",
     date: "9. júl 2026",
     datetime: "2026-07-09",
-    image: "images/novinky/sad-trencin-autobusom-k-moru-2026.jpg",
+    image: "images/novinky/sad-trencin-autobusom-k-moru-2026.webp",
     imageAlt: "Autobus pri chorvátskom pobreží ako tip na jednodňové kúpanie pri Jadrane",
     summary:
       "SAD Trenčín spúšťa predaj jednodňového zájazdu Kúpanie pri mori – Chorvátsko. Cena za obojsmernú jazdu je 50 € a termín je naplánovaný na 10. až 11. júla 2026.",
@@ -181,7 +201,7 @@
     title: "Etna ochromila letisko v Catanii: sopečný popol na 2 dni zastavil lety na Sicíliu",
     date: "8. júl 2026",
     datetime: "2026-07-08",
-    image: "images/novinky/etna-catania-letisko-popol-2026.png",
+    image: "images/novinky/etna-catania-letisko-popol-2026.webp",
     imageAlt: "Etna a letisko v Catanii so sopečným popolom ako letecké upozornenie pre Sicíliu",
     summary:
       "Letisko Catania malo 5. a 6. júla 2026 výrazne obmedzenú až pozastavenú prevádzku pre aktivitu Etny. Lety boli rušené alebo presmerované, najmä do Palerma.",
@@ -204,7 +224,7 @@
     title: "Dlhé rady na bratislavskom letisku skomplikovali cestujúcim začiatok dovolenky",
     date: "1. júl 2026",
     datetime: "2026-07-01",
-    image: "images/novinky/bratislava-letisko-dlhe-rady-2026.png",
+    image: "images/novinky/bratislava-letisko-dlhe-rady-2026.webp",
     imageAlt: "Dlhé rady cestujúcich na bratislavskom letisku počas dovolenkovej špičky",
     summary:
       "Na Letisku Bratislava sa 30. júna 2026 vytvoril nápor pri ranných a dopoludňajších odletoch. Pre cestujúcich je to pripomienka, že rezerva na letisku sa v dovolenkovej špičke oplatí.",
@@ -223,7 +243,7 @@
     title: "Ryanair posilňuje Bratislavu: novinkou bude Turín, ďalšie linky pokračujú aj v zime",
     date: "25. jún 2026",
     datetime: "2026-06-25",
-    image: "images/novinky/ryanair-bratislava-zima-2026.jpg",
+    image: "images/novinky/ryanair-bratislava-zima-2026.webp",
     imageAlt: "Lietadlo Ryanair a zimná letecká novinka z Bratislavy",
     summary:
       "Ryanair od zimy 2026/2027 posilní Bratislavu o štvrté bázované lietadlo a plánuje 23 zimných liniek. Úplnou novinkou bude priama linka do Turína.",
@@ -245,7 +265,7 @@
     title: "🚨 Navagio zostáva zatvorené aj v sezóne 2026",
     date: "24. jún 2026",
     datetime: "2026-06-24",
-    image: "images/novinky/flash-navagio-zatvorene-2026.webp.png",
+    image: "images/novinky/flash-navagio-zatvorene-2026.webp.webp",
     imageAlt: "Zátoka Navagio na Zakyntose s ikonickým vrakom lode",
     summary:
       "Jedna z najznámejších pláží v Stredomorí zostáva pre návštevníkov uzavretá minimálne do 31. októbra 2026.",
@@ -273,7 +293,7 @@
     title: "Košice – Malaga aj mimo leta?",
     date: "24. jún 2026",
     datetime: "2026-06-24",
-    image: "images/novinky/kosice-malaga-novinka.png",
+    image: "images/novinky/kosice-malaga-novinka.webp",
     imageAlt: "Malaga pri mori ako inšpirácia na let z Košíc",
     summary:
       "Priame spojenie z Košíc do Malagy môže byť zaujímavé hlavne pre cestovateľov z východu Slovenska.",
@@ -292,7 +312,7 @@
     title: "Cyprus: ceny a dovolenka v tieni napätia",
     date: "24. jún 2026",
     datetime: "2026-06-24",
-    image: "images/novinky/cyprus-nissi-beach-ceny-napatie-2026.png",
+    image: "images/novinky/cyprus-nissi-beach-ceny-napatie-2026.webp",
     imageAlt: "Nissi Beach na Cypre ako dovolenková pláž pri mori",
     summary:
       "Cyprus zostáva otvorený pre turistov a nie je priamo zasiahnutý vojnou na Blízkom východe. Napätie v regióne však môže ovplyvniť leteckú dopravu, ceny paliva, transfery alebo výlety.",
@@ -311,7 +331,7 @@
     title: "Viedeň má zrušiť 100 ml limit na tekutiny",
     date: "24. jún 2026",
     datetime: "2026-06-24",
-    image: "images/novinky/vieden-100ml-limit.png.png",
+    image: "images/novinky/vieden-100ml-limit.webp",
     imageAlt: "Flash správa o zmene pravidiel pre tekutiny na letisku vo Viedni",
     summary:
       "Podľa dostupných informácií sa má na letisku Viedeň-Schwechat zjednodušiť bezpečnostná kontrola pri odlete z Viedne.",
@@ -369,6 +389,5 @@
     ],
   },
 ];
-
 
 

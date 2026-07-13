@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Flash správa",
+    title: "Wizz Air mení lety z Bratislavy: dve linky končia, ďalšie tri budú sezónne",
+    description: "Dortmund a Plovdiv majú po lete skončiť; Nice, Ochrid a Lamezia Terme majú byť počas zimy mimo ponuky.",
+    url: "spravy/wizz-air-bratislava-zmeny-zima-2026.html",
+    keywords: "wizz air bratislava dortmund plovdiv nice ohrid lamezia terme zima 2026 2027 agadir hurgada hurghada baku letový poriadok linky",
+  },
+  {
     type: "Článok",
     title: "Čo si môžete priniesť z dovolenky v EÚ a mimo EÚ",
     description: "Praktický prehľad darčekov, colných limitov, potravín a suvenírov, ktoré môžu skončiť na colnici.",

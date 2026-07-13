@@ -67,4 +67,5 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Po dokonceni kazdej ulohy znovu skontrolovat tento subor a overit, ci vysledok neporusuje projektove pravidla.
 - Po dokonceni kazdej ulohy skontrolovat text `Posledna aktualizacia` v pate webu a nastavit ho na aktualny datum poslednej upravy, ak sa menil verejny obsah alebo verejne subory webu.
 - Pri kontrole textu `Posledna aktualizacia` overit aj mobilne zobrazenie, aby bol aktualny datum zmeneny a viditelny aj na mobile.
+- Po dokonceni kazdej ulohy pouzivatelovi pripomenut nasledujucich 5 cakajucich bodov zo suboru `WEBSITE_IMPROVEMENTS.md`.
 

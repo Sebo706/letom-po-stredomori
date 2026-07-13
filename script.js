@@ -59,6 +59,20 @@ document.addEventListener("click", (event) => {
   button.textContent = isExpanded ? collapsedLabel : expandedLabel;
 });
 
+const destinationExpandButton = document.querySelector(".destination-expand-toggle");
+const destinationsSection = document.querySelector(".destinations-section");
+
+destinationExpandButton?.addEventListener("click", () => {
+  if (!destinationsSection) {
+    return;
+  }
+
+  const isExpanded = destinationExpandButton.getAttribute("aria-expanded") === "true";
+  destinationExpandButton.setAttribute("aria-expanded", String(!isExpanded));
+  destinationExpandButton.textContent = isExpanded ? "Všetky destinácie" : "Zobraziť menej";
+  destinationsSection.classList.toggle("is-expanded", !isExpanded);
+});
+
 function normalizeSearchText(value) {
   return String(value || "")
     .toLowerCase()
@@ -158,7 +172,7 @@ const latestUpdates = [
     title: "Čo si môžete priniesť z dovolenky v EÚ a mimo EÚ",
     publishedAt: "2026-07-13T18:00:00",
     date: "Pridané 13. 7. 2026",
-    image: "images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/hero-co-si-priniest-z-dovolenky.jpg",
+    image: "images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/hero-co-si-priniest-z-dovolenky-thumb.webp",
     imageAlt: "Kufor a dovolenkové suveníry z EÚ a krajín mimo EÚ",
     description:
       "Praktický prehľad darčekov, colných limitov, potravín a suvenírov, ktoré môžu skončiť na colnici.",
@@ -201,7 +215,7 @@ const latestUpdates = [
     title: "Je plavba výletnou loďou po Stredomorí vhodná pre Slovákov?",
     publishedAt: "2026-07-10T12:00:00",
     date: "Pridané 10. 7. 2026",
-    image: "images/blog/plavba-vyletnou-lodou-stredomorie/hero-plavba-po-stredomori.png",
+    image: "images/blog/plavba-vyletnou-lodou-stredomorie/hero-plavba-po-stredomori-thumb.webp",
     imageAlt: "Výletná loď pláva popri stredomorskom pobreží",
     description:
       "Kompletný sprievodca pre Slovákov: ceny, doprava do prístavu, kajuty, strava, výlety aj skryté poplatky.",
@@ -214,7 +228,7 @@ const latestUpdates = [
     title: "Kos osobne: vietor, Poseidónov mobil a pláže",
     publishedAt: "2026-07-08",
     date: "Pridané 8. 7. 2026",
-    image: "images/blog/kos-osobne/hero-kos-osobne.png",
+    image: "images/blog/kos-osobne/hero-kos-osobne-thumb.webp",
     imageAlt: "Hlavný vizuál článku Kos osobne",
     description:
       "Osobná skúsenosť z Kosu z roku 2025: vietor, auto, horúce pramene, západné pláže a mobil, ktorý vrátilo more.",
@@ -227,7 +241,7 @@ const latestUpdates = [
     title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie",
     publishedAt: "2026-07-08",
     date: "Pridané 8. 7. 2026",
-    image: "images/blog/5-zaujimavosti-stredomoria-1/hero-5-zaujimavosti-stredomoria-1.png",
+    image: "images/blog/5-zaujimavosti-stredomoria-1/hero-5-zaujimavosti-stredomoria-1-thumb.webp",
     imageAlt: "Ilustračný vizuál k článku 5 zaujímavostí Stredomoria",
     description:
       "Prvá časť seriálu o menej známych príbehoch Stredomoria: rybárske dediny, Slovinsko, Menorca, Málaga a Apúlia.",
@@ -269,7 +283,7 @@ const latestUpdates = [
     title: "Zakynthos osobne: útesy, korytnačky a výhľady",
     publishedAt: "2026-07-01",
     date: "Pridané 1. 7. 2026",
-    image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne.png",
+    image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne-thumb.webp",
     imageAlt: "Hlavný vizuál článku o osobnej skúsenosti zo Zakynthosu",
     description:
       "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
@@ -282,7 +296,7 @@ const latestUpdates = [
     title: "Slováci po pandémii opäť lietajú viac",
     publishedAt: "2026-06-30",
     date: "Pridané 30. 6. 2026",
-    image: "images/blog/kolko-slovakov-lieta-do-stredomoria/hero-slovaci-lietanie-pandemia-stredomorie.png",
+    image: "images/blog/kolko-slovakov-lieta-do-stredomoria/hero-slovaci-lietanie-pandemia-stredomorie-thumb.webp",
     imageAlt: "Hlavný vizuál článku o tom, ako Slováci lietali pred pandémiou, počas nej a dnes",
     description:
       "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",
@@ -295,7 +309,7 @@ const latestUpdates = [
     title: "8 praktických rád pre dovolenku v Stredomorí",
     publishedAt: "2026-06-28",
     date: "Pridané 28. 6. 2026",
-    image: "images/blog/8-praktickych-rad-stredomorie/hero-8-praktickych-rad-stredomorie.png",
+    image: "images/blog/8-praktickych-rad-stredomorie/hero-8-praktickych-rad-stredomorie-thumb.webp",
     imageAlt: "Hlavný obrázok článku 8 praktických rád pre dovolenku v Stredomorí",
     description:
       "Menej známe tipy pre dovolenku v Stredomorí, ktoré ti môžu ušetriť stres, čas aj peniaze.",
@@ -308,7 +322,7 @@ const latestUpdates = [
     title: "Kde sa more mení na biele zlato",
     publishedAt: "2026-06-27",
     date: "Pridané 27. 6. 2026",
-    image: "images/blog/solne-panvy-stredomoria/hero-solne-panvy-stredomoria-hook.png",
+    image: "images/blog/solne-panvy-stredomoria/hero-solne-panvy-stredomoria-hook-thumb.webp",
     imageAlt: "Hlavný vizuál článku o soľných panvách Stredomoria so západom slnka, veterným mlynom a plameniakmi",
     description:
       "Objav soľné panvy Stredomoria, ružové lagúny, plameniaky a miesta, kde sa príroda mení na nezabudnuteľný zážitok.",
@@ -321,7 +335,7 @@ const latestUpdates = [
     title: "Malta v júli: koncerty, more a horúčavy",
     publishedAt: "2026-06-26",
     date: "Pridané 26. 6. 2026",
-    image: "images/blog/malta-jul-isle-of-mtv/katy-perry-malta-2026-nahlad.png",
+    image: "images/blog/malta-jul-isle-of-mtv/katy-perry-malta-2026-nahlad-thumb.webp",
     imageAlt: "Ilustračný náhľad ku koncertnej atmosfére Malta 2026 a tipom na cestu z Bratislavy",
     description:
       "Priama linka z Bratislavy, Isle of MTV, Valletta, Comino a praktické tipy na júlové horúčavy.",
@@ -334,7 +348,7 @@ const latestUpdates = [
     title: "5 najlepšie hodnotených pláží Stredomoria v EÚ",
     publishedAt: "2026-06-24",
     date: "Pridané 24. 6. 2026",
-    image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+    image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta-thumb.webp",
     imageAlt: "Elafonissi Beach na Kréte s ružovkastým pieskom a tyrkysovou vodou",
     description:
       "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
@@ -376,7 +390,7 @@ const latestUpdates = [
     title: "Amalfské pobrežie bez stresu",
     publishedAt: "2026-06-14",
     date: "Pridané 14. 6. 2026",
-    image: "images/blog/amalfi/amalfi-hero.webp",
+    image: "images/blog/amalfi/amalfi-hero-thumb.webp",
     imageAlt: "Amalfské pobrežie pri mori",
     description:
       "Praktický sprievodca od Neapola po Salerno s dopravou, Ravellom a 3-dňovým itinerárom.",
@@ -1182,7 +1196,7 @@ const praktickeRadyArticle = {
   description:
     "Menej známe tipy pre dovolenku v Stredomorí, ktoré ti môžu ušetriť stres, čas aj peniaze.",
   url: "blog/8-praktickych-rad-stredomorie.html",
-  image: "images/blog/8-praktickych-rad-stredomorie/hero-8-praktickych-rad-stredomorie.png",
+  image: "images/blog/8-praktickych-rad-stredomorie/hero-8-praktickych-rad-stredomorie-thumb.webp",
   date: "28. jún 2026",
 };
 
@@ -1191,7 +1205,7 @@ const plavbaLodouArticle = {
   description:
     "Kompletný sprievodca pre Slovákov: ceny, doprava do prístavu, kajuty, strava, výlety aj skryté poplatky.",
   url: "blog/plavba-vyletnou-lodou-stredomorie.html",
-  image: "images/blog/plavba-vyletnou-lodou-stredomorie/hero-plavba-po-stredomori.png",
+  image: "images/blog/plavba-vyletnou-lodou-stredomorie/hero-plavba-po-stredomori-thumb.webp",
   date: "10. júl 2026",
 };
 
@@ -1200,7 +1214,7 @@ const suveniryEuMimoEuArticle = {
   description:
     "Praktický prehľad darčekov, colných limitov, potravín a suvenírov, ktoré môžu skončiť na colnici.",
   url: "blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu.html",
-  image: "images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/hero-co-si-priniest-z-dovolenky.jpg",
+  image: "images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/hero-co-si-priniest-z-dovolenky-thumb.webp",
   date: "13. júl 2026",
 };
 
@@ -1209,7 +1223,7 @@ const slovaciLietanieArticle = {
   description:
     "Koľko Slovákov lietalo pred pandémiou, počas covidu a dnes – a aký podiel môže smerovať do Stredomoria.",
   url: "blog/kolko-slovakov-lieta-do-stredomoria.html",
-  image: "images/blog/kolko-slovakov-lieta-do-stredomoria/hero-slovaci-lietanie-pandemia-stredomorie.png",
+  image: "images/blog/kolko-slovakov-lieta-do-stredomoria/hero-slovaci-lietanie-pandemia-stredomorie-thumb.webp",
   date: "30. jún 2026",
 };
 
@@ -1218,7 +1232,7 @@ const solnePanvyArticle = {
   description:
     "Objav soľné panvy Stredomoria, ružové lagúny, plameniaky a miesta, kde sa príroda mení na nezabudnuteľný zážitok.",
   url: "blog/solne-panvy-stredomoria.html",
-  image: "images/blog/solne-panvy-stredomoria/hero-solne-panvy-stredomoria-hook.png",
+  image: "images/blog/solne-panvy-stredomoria/hero-solne-panvy-stredomoria-hook-thumb.webp",
   date: "27. jún 2026",
 };
 
@@ -1227,7 +1241,7 @@ const zakynthosOsobneArticle = {
   description:
     "Osobná skúsenosť zo Zakynthosu: Laganas, Navagio, Myzithres, Xigia, Dafni, Banana Beach, korytnačky a praktické rady.",
   url: "blog/zakynthos-osobne.html",
-  image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne.png",
+  image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne-thumb.webp",
   date: "1. júl 2026",
 };
 
@@ -1236,7 +1250,7 @@ const zaujimavostiStredomoriaArticle = {
   description:
     "Prvá časť seriálu o menej známych príbehoch Stredomoria: rybárske dediny, Slovinsko, Menorca, Málaga a Apúlia.",
   url: "blog/5-zaujimavosti-stredomoria-1.html",
-  image: "images/blog/5-zaujimavosti-stredomoria-1/hero-5-zaujimavosti-stredomoria-1.png",
+  image: "images/blog/5-zaujimavosti-stredomoria-1/hero-5-zaujimavosti-stredomoria-1-thumb.webp",
   date: "8. júl 2026",
 };
 
@@ -1245,7 +1259,7 @@ const kosOsobneArticle = {
   description:
     "Osobná skúsenosť z Kosu z roku 2025: vietor, auto, horúce pramene, západné pláže a mobil, ktorý vrátilo more.",
   url: "blog/kos-osobne.html",
-  image: "images/blog/kos-osobne/hero-kos-osobne.png",
+  image: "images/blog/kos-osobne/hero-kos-osobne-thumb.webp",
   date: "8. júl 2026",
 };
 
@@ -1265,7 +1279,7 @@ const articleLibrary = {
         description:
           "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
         url: "top-5-plazi-stredomoria-eu.html",
-        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta-thumb.webp",
         date: "24. jún 2026",
       },
       {
@@ -1273,7 +1287,7 @@ const articleLibrary = {
         description:
           "Praktický sprievodca pobrežím Amalfi, dopravou, bývaním, trajektmi, Ravellom a itinerárom na 3 dni.",
         url: "blog-amalfi-pobrezie.html",
-        image: "images/blog/amalfi/amalfi-hero.webp",
+        image: "images/blog/amalfi/amalfi-hero-thumb.webp",
         date: "13. jún 2026",
         audioUrl: "audio.html?krajina=taliansko",
       },
@@ -1295,7 +1309,7 @@ const articleLibrary = {
         description:
           "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
         url: "top-5-plazi-stredomoria-eu.html",
-        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta-thumb.webp",
         date: "24. jún 2026",
       },
     ],
@@ -1314,7 +1328,7 @@ const articleLibrary = {
         description:
           "AI cestovateľský prieskum pláží Elafonissi, Balos, La Pelosa, Falassarna a Playa de Muro.",
         url: "top-5-plazi-stredomoria-eu.html",
-        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta.png",
+        image: "images/blog/top-5-plazi-stredomoria-eu/01-elafonissi-beach-kreta-thumb.webp",
         date: "24. jún 2026",
       },
     ],
@@ -1344,7 +1358,7 @@ const articleLibrary = {
         description:
           "Priama linka z Bratislavy, Isle of MTV, Valletta, Comino a praktické tipy na júlové horúčavy.",
         url: "blog/malta-jul-isle-of-mtv-more-horucavy.html",
-        image: "images/blog/malta-jul-isle-of-mtv/katy-perry-malta-2026-nahlad.png",
+        image: "images/blog/malta-jul-isle-of-mtv/katy-perry-malta-2026-nahlad-thumb.webp",
         date: "26. jún 2026",
       },
     ],
