@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Čo si môžete priniesť z dovolenky v EÚ a mimo EÚ",
+    description: "Praktický prehľad darčekov, colných limitov, potravín a suvenírov, ktoré môžu skončiť na colnici.",
+    url: "blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu.html",
+    keywords: "suveníry suveniry darčeky darceky colnica clo limit EÚ EU mimo EÚ Turecko Egypt Tunisko Maroko alkohol tabak potraviny mäso maso syr rastliny mušle musle koraly CITES starožitnosti starozitnosti tekutiny príručná batožina batozina duty free dovolenka",
+  },
+  {
+    type: "Článok",
     title: "Je plavba výletnou loďou po Stredomorí vhodná pre Slovákov?",
     description: "Kompletný sprievodca pre Slovákov: ceny, doprava do prístavu, kajuty, strava, výlety aj skryté poplatky.",
     url: "blog/plavba-vyletnou-lodou-stredomorie.html",

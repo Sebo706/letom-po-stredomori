@@ -2368,6 +2368,48 @@ a {
   font-size: 0.92rem;
 }
 
+.article-collage-panel {
+  width: min(100%, 640px);
+  aspect-ratio: 1 / 1;
+  margin: 30px auto;
+  border-radius: 16px;
+  background-image: url("images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/suveniry-eu-mimo-eu-prehlad.jpg");
+  background-repeat: no-repeat;
+  background-size: 300% 200%;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.article-collage-panel-eu { background-position: 0 0; }
+.article-collage-panel-non-eu { background-position: 50% 0; }
+.article-collage-panel-baggage { background-position: 100% 0; }
+.article-collage-panel-customs { background-position: 0 100%; }
+.article-collage-panel-nature { background-position: 50% 100%; }
+.article-collage-panel-food { background-position: 100% 100%; }
+
+.article-data-table-compact {
+  min-width: 620px;
+}
+
+.article-checklist {
+  display: grid;
+  gap: 10px;
+  padding-left: 28px;
+}
+
+.article-checklist li {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(232, 250, 249, 0.58);
+}
+
+@media (max-width: 640px) {
+  .article-collage-panel {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
 .article-table-wrap {
   width: 100%;
   margin: 28px 0 32px;
@@ -3746,5 +3788,21 @@ a {
 @media (max-width: 360px) {
   .flight-meta {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .article-body .article-data-table,
+  .article-body .article-data-table-compact {
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 0.82rem;
+  }
+
+  .article-body .article-data-table th,
+  .article-body .article-data-table td {
+    padding: 9px 6px;
+    overflow-wrap: anywhere;
+    word-break: normal;
   }
 }

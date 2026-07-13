@@ -153,6 +153,19 @@ searchResults?.addEventListener("click", (event) => {
 
 const latestUpdates = [
   {
+    kind: "article",
+    type: "Nový článok",
+    title: "Čo si môžete priniesť z dovolenky v EÚ a mimo EÚ",
+    publishedAt: "2026-07-13T18:00:00",
+    date: "Pridané 13. 7. 2026",
+    image: "images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/hero-co-si-priniest-z-dovolenky.jpg",
+    imageAlt: "Kufor a dovolenkové suveníry z EÚ a krajín mimo EÚ",
+    description:
+      "Praktický prehľad darčekov, colných limitov, potravín a suvenírov, ktoré môžu skončiť na colnici.",
+    url: "blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu.html",
+    label: "Čítať článok",
+  },
+  {
     kind: "audio",
     type: "Nový podcast",
     title: "Kos osobne: Ostrov vetra, divokých pláží a príbehu s Poseidónom",
@@ -1182,6 +1195,15 @@ const plavbaLodouArticle = {
   date: "10. júl 2026",
 };
 
+const suveniryEuMimoEuArticle = {
+  title: "Čo si môžete priniesť z dovolenky v EÚ a mimo EÚ",
+  description:
+    "Praktický prehľad darčekov, colných limitov, potravín a suvenírov, ktoré môžu skončiť na colnici.",
+  url: "blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu.html",
+  image: "images/blog/co-si-mozete-priniest-z-dovolenky-eu-mimo-eu/hero-co-si-priniest-z-dovolenky.jpg",
+  date: "13. júl 2026",
+};
+
 const slovaciLietanieArticle = {
   title: "Slováci po pandémii opäť lietajú viac",
   description:
@@ -1232,6 +1254,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
@@ -1260,6 +1283,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       kosOsobneArticle,
       zaujimavostiStredomoriaArticle,
@@ -1280,6 +1304,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
@@ -1297,17 +1322,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
       slovaciLietanieArticle,
@@ -1326,12 +1352,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 
