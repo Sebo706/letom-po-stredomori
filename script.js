@@ -169,6 +169,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie: 2. časť",
+    publishedAt: "2026-07-14T10:00:00",
+    date: "Pridané 14. 7. 2026",
+    image: "images/blog/5-zaujimavosti-stredomoria-2/hero-5-zaujimavosti-stredomoria-2-thumb.webp",
+    imageAlt: "Koláž miest z druhej časti seriálu 5 zaujímavostí Stredomoria",
+    description:
+      "Zingaro na Sicílii, korytnačie pláže Zakynthosu, divoký Kos, sardínske dediny a Varosha na Cypre.",
+    url: "blog/5-zaujimavosti-stredomoria-2.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "Čo si môžete priniesť z dovolenky v EÚ a mimo EÚ",
     publishedAt: "2026-07-13T18:00:00",
     date: "Pridané 13. 7. 2026",
@@ -492,7 +505,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-13";
+  const siteLastUpdated = "2026-07-14";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1254,6 +1267,15 @@ const zaujimavostiStredomoriaArticle = {
   date: "8. júl 2026",
 };
 
+const zaujimavostiStredomoria2Article = {
+  title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie: 2. časť",
+  description:
+    "Zingaro na Sicílii, korytnačie pláže Zakynthosu, divoký Kos, sardínske dediny a Varosha na Cypre.",
+  url: "blog/5-zaujimavosti-stredomoria-2.html",
+  image: "images/blog/5-zaujimavosti-stredomoria-2/hero-5-zaujimavosti-stredomoria-2-thumb.webp",
+  date: "14. júl 2026",
+};
+
 const kosOsobneArticle = {
   title: "Kos osobne: vietor, Poseidónov mobil a pláže",
   description:
@@ -1268,6 +1290,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      zaujimavostiStredomoria2Article,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
@@ -1297,6 +1320,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      zaujimavostiStredomoria2Article,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       kosOsobneArticle,
@@ -1366,7 +1390,7 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
@@ -1971,5 +1995,3 @@ function renderFlights() {
 }
 
 renderFlights();
-
-

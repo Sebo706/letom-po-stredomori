@@ -1,6 +1,20 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Flash správa",
+    title: "Cyprus a Grécko patria medzi európsku špičku v kvalite vody",
+    description: "EEA: všetky sledované pobrežné vody na Cypre boli v roku 2025 výborné, v Grécku ich takto hodnotili 97,1 %.",
+    url: "spravy/cyprus-grecko-kvalita-vody-2026.html",
+    keywords: "cyprus grécko grecko kvalita vody more kúpanie kupanie EEA európska environmentálna agentúra pláže plaze e coli enterokoky teplota mora júl jul rodos kos kréta kreta zakynthos malta sicília sicilia chorvátsko chorvatsko mallorca costa del sol",
+  },
+  {
+    type: "Článok",
+    title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie: 2. časť",
+    description: "Zingaro na Sicílii, korytnačie pláže Zakynthosu, divoký Kos, sardínske dediny a Varosha na Cypre.",
+    url: "blog/5-zaujimavosti-stredomoria-2.html",
+    keywords: "stredomorie zaujímavosti zaujimavosti seriál serial 2 časť cast sicília sicilia zingaro monte monaco san vito lo capo zakynthos korytnačky korytnacky laganas marathonisi gerakas dafni kos cavo paradiso therma springs nisyros sardínia sardinia castelsardo bosa tinnura flussio cyprus ayia napa protaras cape greco varosha famagusta",
+  },
+  {
+    type: "Flash správa",
     title: "Wizz Air mení lety z Bratislavy: dve linky končia, ďalšie tri budú sezónne",
     description: "Dortmund a Plovdiv majú po lete skončiť; Nice, Ochrid a Lamezia Terme majú byť počas zimy mimo ponuky.",
     url: "spravy/wizz-air-bratislava-zmeny-zima-2026.html",

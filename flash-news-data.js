@@ -1,5 +1,28 @@
 ﻿window.LETOM_FLASH_NEWS = [
   {
+    id: "cyprus-grecko-kvalita-vody-2026",
+    label: "Cyprus • Grécko • kvalita mora",
+    title: "Cyprus a Grécko patria medzi európsku špičku v kvalite vody",
+    date: "14. júl 2026",
+    datetime: "2026-07-14",
+    image: "images/novinky/cyprus-grecko-kvalita-vody-2026.webp",
+    imageAlt: "Tyrkysové pobrežie ako hlavný vizuál správy o kvalite vody na Cypre a v Grécku",
+    summary:
+      "V hodnotení EEA za sezónu 2025 získali všetky sledované pobrežné vody na Cypre známku výborná. V Grécku takto hodnotili 97,1 % sledovaných vôd.",
+    body: [
+      "Dobrá správa pre dovolenkárov: podľa najnovšieho hodnotenia Európskej environmentálnej agentúry získalo všetkých 123 sledovaných pobrežných vôd na Cypre najvyššiu známku „výborná“. V Grécku dosiahlo rovnaké hodnotenie 97,1 % sledovaných vôd.",
+      "V celej EÚ bolo v hodnotení za sezónu 2025 ako výborných označených 87,4 % pobrežných lokalít a aspoň minimálne požiadavky splnilo 97,4 % z nich.",
+      "More je v polovici júla vo väčšine Stredomoria už príjemne teplé. Orientačne má pri Cypre 26 až 27 °C, pri Rodose a Kose približne 25 až 27 °C, pri Kréte a Zakynthose okolo 24 až 26 °C. Pri Malte, Sicílii a chorvátskom pobreží sa voda zvyčajne pohybuje približne medzi 24 a 26 °C, pri Mallorke okolo 24 až 25 °C. O niečo chladnejšia býva Costa del Sol, kde môže mať more približne 21 až 23 °C.",
+      "Uvedené teploty sú orientačné júlové hodnoty, nie aktuálne meranie pri každej pláži. Menia sa podľa vetra, prúdov, hĺbky a konkrétnej polohy pobrežia.",
+      "Najvyššie hodnotenie kvality vody zároveň neznamená, že more neobsahuje plasty alebo chemické látky. Európske hodnotenie sleduje najmä baktérie E. coli a črevné enterokoky, ktoré upozorňujú na možné fekálne znečistenie.",
+      "Po silných dažďoch alebo pri miestnom zákaze kúpania je preto vždy rozumné rešpektovať aktuálne upozornenia priamo na pláži.",
+    ],
+    tipTitle: "Prakticky na pláži",
+    tip: "Pred kúpaním sledujte vlajku, miestne oznamy a pokyny plavčíka. Aj na pláži s výborným dlhodobým hodnotením môže po daždi alebo mimoriadnej udalosti platiť dočasné obmedzenie.",
+    source:
+      "Zdroj: Európska environmentálna agentúra (EEA), European bathing water quality in 2025 a národné faktografické listy EEA pre Cyprus a Grécko. Hodnotenie vychádza z údajov sezóny 2025; teploty mora sú iba orientačné júlové hodnoty.",
+  },
+  {
     id: "wizz-air-bratislava-zmeny-zima-2026",
     label: "Bratislava • Wizz Air • zima 2026/2027",
     title: "Wizz Air mení lety z Bratislavy: dve linky končia, ďalšie tri budú sezónne",
@@ -389,5 +412,4 @@
     ],
   },
 ];
-
 
