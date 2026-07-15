@@ -1,5 +1,34 @@
-﻿window.LETOM_FLASH_NEWS = [
+window.LETOM_FLASH_NEWS = [
   {
+    id: "turisticke-pasce-leto-2026",
+    label: "Stredomorie • bezpečnosť • turistické pasce",
+    title: "Turistické pasce leta 2026: na týchto päť trikov si dajte pozor",
+    date: "15. júl 2026",
+    datetime: "2026-07-15",
+    image: "images/novinky/turisticke-pasce-leto-2026.webp",
+    imageAlt: "Ilustračný vizuál turistických pascí v dovolenkových destináciách Stredomoria",
+    summary:
+      "Dovolenková sezóna prináša aj staré podvody v novom balení. Pozor na taxíky bez taxametra, falošné petície, „darčeky zadarmo“, nejasné príplatky a podozrivo vysoké účty.",
+    body: [
+      "Dovolenková sezóna prináša aj staré podvody v novom balení. Turisti aktuálne hlásia problémy s predraženými taxíkmi, „darčekmi zadarmo“, falošnými zbierkami aj nečakanými položkami na účtoch.",
+      "Atény: jazda bez taxametra. V Aténach a pri prístave Pireus sa objavili prípady vodičov, ktorí odmietli zapnúť taxameter a od turistov požadovali výrazne vyššiu cenu. V máji bol zadržaný vodič, ktorý mal účtovať viac než dvojnásobok zákonného cestovného. V júli bol medializovaný ďalší prípad s požiadavkou 80 eur za cestu do Pirea.",
+      "Rada: Trvajte na taxametri, prípadne si objednajte vozidlo cez známu aplikáciu a vypýtajte si doklad.",
+      "Barcelona: falošná petícia. Pri atrakciách môže skupina ľudí požiadať turistu o podpis petície alebo príspevok na charitu. Kým sa venuje papieru, komplic sa môže dostať k mobilu, peňaženke alebo batohu. Bezpečnostné odporúčania upozorňujú, že zlodeji používajú rozptýlenie a často pracujú v tímoch.",
+      "Rada: Nezastavujte sa, nič nepodpisujte a batoh v dave noste pred sebou.",
+      "Rím: „darček“ nie je zadarmo. Pri Koloseu, Fontáne di Trevi a ďalších pamiatkach môže niekto turistovi nasadiť náramok, podať ružu alebo drobný suvenír. Následne začne požadovať peniaze a niekedy použije aj nátlak. Tento trik zároveň môže odvádzať pozornosť od vrecových zlodejov.",
+      "Rada: Predmet nepreberajte a nedovoľte, aby vám ho niekto nasadil na ruku.",
+      "Rím: neobjednané príplatky. Pozornosť vyvolal aj prípad dvoch zmrzlín za 44 eur, ku ktorým mali byť pridané väčšie porcie a drahé ozdoby. Podobnou pascou môžu byť jedlá ocenené podľa hmotnosti, automaticky pridané prílohy alebo nejasný poplatok za obsluhu. Konkrétny spor nemožno bez rozhodnutia úradu označiť za dokázaný podvod, no ukazuje riziko nejasných cien.",
+      "Rada: Ešte pred objednaním sa opýtajte na konečnú cenu, veľkosť porcie a všetky príplatky.",
+      "Chorvátsko: účet za stovky až tisíce eur. Oficiálne cestovné odporúčania upozorňujú na niektoré nočné a pánske kluby v pobrežných mestách, kde boli turistom vystavené extrémne vysoké účty. Pri odmietnutí zaplatiť sa podľa hlásení objavili aj vyhrážky alebo nátlak ochranky.",
+      "Rada: Neobjednávajte bez cenníka, priebežne kontrolujte účet a pri vyhrážkach volajte políciu na čísle 112.",
+      "Dôležité: Nejde o tvrdenie, že sú tieto destinácie nebezpečné. Väčšina návštev prebehne bez problémov. Podvodníci však vyhľadávajú miesta s davom, stresom a turistami, ktorí nepoznajú miestne ceny.",
+    ],
+    tipTitle: "Letom po Stredomorí tip",
+    tip:
+      "Najlepšia obrana je pokojné „nie“, jasná cena vopred a doklad o platbe. Pri nátlaku alebo vyhrážkach sa nepúšťajte do hádky a volajte miestnu políciu alebo číslo 112.",
+    source:
+      "Zdroje: Greek City Times a ďalšie medializované prípady v Aténach; bezpečnostné odporúčania GOV.UK pre Španielsko, Taliansko a Chorvátsko; The Times k sporu o cenu zmrzliny v Ríme. Overené 15. júla 2026.",
+  },  {
     id: "cyprus-grecko-kvalita-vody-2026",
     label: "Cyprus • Grécko • kvalita mora",
     title: "Cyprus a Grécko patria medzi európsku špičku v kvalite vody",

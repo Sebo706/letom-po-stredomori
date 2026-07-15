@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Flash správa",
+    title: "Turistické pasce leta 2026: na týchto päť trikov si dajte pozor",
+    description: "Pozor na taxíky bez taxametra, falošné petície, darčeky zadarmo, nejasné príplatky a podozrivo vysoké účty.",
+    url: "spravy/turisticke-pasce-leto-2026.html",
+    keywords: "turistické pasce turisticke pasce podvody dovolenka atény ateny taxík taxik taxameter pireus barcelona falošná petícia falosna peticia rím rim darček náramok naramok zmrzlina chorvátsko chorvatsko klub účet ucet 112 bezpečnosť cestovanie",
+  },
+  {
     type: "Článok",
     title: "Španielsko je vo finále MS: kde zažiť futbalovú noc",
     description: "Praktický sprievodca: veľké obrazovky, bary, doprava, horúčavy a krátky pobyt pri mori.",
