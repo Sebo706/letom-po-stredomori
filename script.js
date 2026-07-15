@@ -169,6 +169,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Dovolenka s cestovkou alebo bez nej? Veľké porovnanie ceny, pohodlia a slobody",
+    publishedAt: "2026-07-15T12:00:00",
+    date: "Pridané 15. 7. 2026",
+    image: "images/blog/dovolenka-s-cestovkou-alebo-bez-nej/hero-dovolenka-cestovkou-alebo-bez-nej-thumb.webp",
+    imageAlt: "Porovnanie oddychu v rezorte a individuálneho cestovania autom pri mori",
+    description:
+      "Porovnanie ceny, pohodlia a slobody pri dovolenke s cestovkou, bez cestovky, s all inclusive aj mimo hlavnej sezóny.",
+    url: "blog/dovolenka-s-cestovkou-alebo-bez-nej.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "Španielsko je vo finále MS: kde zažiť futbalovú noc",
     publishedAt: "2026-07-15T10:00:00",
     date: "Pridané 15. 7. 2026",
@@ -1298,6 +1311,15 @@ const spanielskoFinaleMsArticle = {
   date: "15. júl 2026",
 };
 
+const cestovkaArticle = {
+  title: "Dovolenka s cestovkou alebo bez nej? Veľké porovnanie ceny, pohodlia a slobody",
+  description:
+    "Porovnanie ceny, pohodlia a slobody pri dovolenke s cestovkou, bez cestovky, s all inclusive aj mimo hlavnej sezóny.",
+  url: "blog/dovolenka-s-cestovkou-alebo-bez-nej.html",
+  image: "images/blog/dovolenka-s-cestovkou-alebo-bez-nej/hero-dovolenka-cestovkou-alebo-bez-nej-thumb.webp",
+  date: "15. júl 2026",
+};
+
 const kosOsobneArticle = {
   title: "Kos osobne: vietor, Poseidónov mobil a pláže",
   description:
@@ -1312,6 +1334,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      cestovkaArticle,
       zaujimavostiStredomoria2Article,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
@@ -1342,6 +1365,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      cestovkaArticle,
       zaujimavostiStredomoria2Article,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
@@ -1364,6 +1388,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      cestovkaArticle,
       spanielskoFinaleMsArticle,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
@@ -1388,12 +1413,13 @@ const articleLibrary = {
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      cestovkaArticle,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
@@ -1413,7 +1439,7 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",

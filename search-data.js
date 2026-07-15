@@ -14,6 +14,13 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "španielsko spanielsko finále finale majstrovstvá sveta ms 2026 futbal madrid valencia alicante barcelona málaga malaga costa blanca costa del sol mallorca kanárske ostrovy kanarske ostrovy veľká obrazovka verejné premietanie verejne premietanie fanúšikovia fanusikovia dovolenka more krátky pobyt kratky pobyt lety zo slovenska",
   },
   {
+    type: "Článok",
+    title: "Dovolenka s cestovkou alebo bez nej? Veľké porovnanie ceny, pohodlia a slobody",
+    description: "Porovnanie ceny, pohodlia a slobody pri dovolenke s cestovkou, bez cestovky, s all inclusive aj mimo hlavnej sezóny.",
+    url: "blog/dovolenka-s-cestovkou-alebo-bez-nej.html",
+    keywords: "dovolenka cestovka cestovná kancelária bez cestovky individuálna dovolenka all inclusive transfer delegát letenka ubytovanie prenájom auta grécko cyprus taliansko sardínia malta španielsko chorvátsko cena pohodlie sloboda",
+  },
+  {
     type: "Flash správa",
     title: "Cyprus a Grécko patria medzi európsku špičku v kvalite vody",
     description: "EEA: všetky sledované pobrežné vody na Cypre boli v roku 2025 výborné, v Grécku ich takto hodnotili 97,1 %.",
