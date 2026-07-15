@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "Španielsko je vo finále MS: kde zažiť futbalovú noc",
+    description: "Praktický sprievodca: veľké obrazovky, bary, doprava, horúčavy a krátky pobyt pri mori.",
+    url: "blog/spanielsko-vo-finale-ms-2026.html",
+    keywords: "španielsko spanielsko finále finale majstrovstvá sveta ms 2026 futbal madrid valencia alicante barcelona málaga malaga costa blanca costa del sol mallorca kanárske ostrovy kanarske ostrovy veľká obrazovka verejné premietanie verejne premietanie fanúšikovia fanusikovia dovolenka more krátky pobyt kratky pobyt lety zo slovenska",
+  },
+  {
     type: "Flash správa",
     title: "Cyprus a Grécko patria medzi európsku špičku v kvalite vody",
     description: "EEA: všetky sledované pobrežné vody na Cypre boli v roku 2025 výborné, v Grécku ich takto hodnotili 97,1 %.",

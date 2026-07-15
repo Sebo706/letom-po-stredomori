@@ -169,6 +169,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Španielsko je vo finále MS: kde zažiť futbalovú noc",
+    publishedAt: "2026-07-15T10:00:00",
+    date: "Pridané 15. 7. 2026",
+    image: "images/blog/spanielsko-vo-finale-ms-2026/hero-spanielsko-vo-finale-ms-2026-thumb.webp",
+    imageAlt: "Ilustračný vizuál fanúšikov sledujúcich futbalovú noc v Španielsku",
+    description:
+      "Praktický sprievodca: veľké obrazovky, bary, doprava, horúčavy a krátky pobyt pri mori.",
+    url: "blog/spanielsko-vo-finale-ms-2026.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie: 2. časť",
     publishedAt: "2026-07-14T10:00:00",
     date: "Pridané 14. 7. 2026",
@@ -505,7 +518,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-14";
+  const siteLastUpdated = "2026-07-15";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1276,6 +1289,15 @@ const zaujimavostiStredomoria2Article = {
   date: "14. júl 2026",
 };
 
+const spanielskoFinaleMsArticle = {
+  title: "Španielsko je vo finále MS: kde zažiť futbalovú noc",
+  description:
+    "Praktický sprievodca: veľké obrazovky, bary, doprava, horúčavy a krátky pobyt pri mori.",
+  url: "blog/spanielsko-vo-finale-ms-2026.html",
+  image: "images/blog/spanielsko-vo-finale-ms-2026/hero-spanielsko-vo-finale-ms-2026-thumb.webp",
+  date: "15. júl 2026",
+};
+
 const kosOsobneArticle = {
   title: "Kos osobne: vietor, Poseidónov mobil a pláže",
   description:
@@ -1342,6 +1364,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      spanielskoFinaleMsArticle,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
       zaujimavostiStredomoriaArticle,
