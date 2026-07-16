@@ -13,13 +13,13 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Kazdy blogovy clanok, ktory sa tyka viacerych krajin alebo destinacii, musi byt priradeny ku vsetkym relevantnym krajinam v krajinskych filtroch, kartach a zoznamoch clankov, nie iba k jednej hlavnej teme.
 - Pri novom alebo upravenom verejnom obsahu, ktory ma byt dohladatelny na webe, aktualizovat vyhladavaci index `window.LETOM_SEARCH_INDEX` vlozeny v `index.html`; subor `letom-data.js` drzat ako zhodnu zaloznu kopiu indexu.
 - Pri pridani noveho videa alebo podcastu overit, ze je viditelny nielen v datovej kniznici, ale aj na mobilnej homepage v `Najnovsie na webe`, v prislusnej sekcii `YouTube` alebo `Najnovsie podcasty`, v karte krajiny v `Destinacie pri mori` a na podstranke `videa.html` alebo `audio.html`.
-- Flash spravy patria do sekcie `Letom v skratke: tipy a novinky`.
+- Flash spravy patria do sekcie `Stredomorské spravodajstvo - Letom v skratke`.
 - Starsie alebo dalsie flash spravy patria do archivu `spravy.html` cez tlacidlo `Dalsie spravy`.
 - Kazda flash sprava ma mat samostatnu detailovu podstranku so zdielatelnou URL; karty na homepage aj v archive maju smerovat na detail spravy, nie iba rozbalovat text v zozname.
 
 ## Flash spravy
 
-- Na homepage mozu byt v sekcii `Letom v skratke` iba 3 flash spravy.
+- Na homepage mozu byt v sekcii `Stredomorské spravodajstvo - Letom v skratke` iba 3 flash spravy.
 - Najnovsia flash sprava musi byt vzdy hore.
 - Starsie flash spravy sa posuvaju nizsie.
 - Ak pribudne nova flash sprava, najstarsia z troch homepage sprav sa presunie iba do archivu.
