@@ -1,5 +1,28 @@
 window.LETOM_FLASH_NEWS = [
   {
+    id: "avion-ikea-parkovanie-bratislava-2026",
+    label: "Bratislava • parkovanie • letisko",
+    title: "Avion a IKEA menia parkovanie: neobmedzené státie zadarmo končí",
+    date: "16. júl 2026",
+    datetime: "2026-07-16",
+    image: "images/novinky/avion-ikea-parkovanie-bratislava-2026.webp",
+    imageAlt:
+      "Parkovanie pri Avion Shopping Parku a IKEA Bratislava pri upozornení pre cestujúcich na letisko",
+    summary:
+      "Parkovanie pri Avione a IKEA už nebude možné využívať bezplatne bez časového obmedzenia. Prvé 3 hodiny cez pracovný týždeň a 5 hodín cez víkendy zostanú zdarma.",
+    body: [
+      "Parkovanie pri Avion Shopping Parku a IKEA Bratislava nebude úplne bezplatné bez časového obmedzenia. Nový systém je od 15. júla v skúšobnej prevádzke a naplno sa spustí 1. augusta 2026.",
+      "Bežných návštevníkov sa poplatok nemusí dotknúť. Od pondelka do piatka zostanú prvé 3 hodiny zdarma, počas víkendov a sviatkov až 5 hodín zdarma. Po prekročení limitu bude každá začatá hodina stáť 3,50 eura.",
+      "Systém bude bezlístkový a pri vjazde automaticky zaznamená evidenčné číslo vozidla. Platiť sa bude pri výjazdovej rampe kartou alebo mobilom, prípadne v parkomatoch kartou či hotovosťou. Bezplatný čas sa počas dňa sčítava, takže odchod a opätovný príchod jeho počítanie nevynuluje.",
+      "Regulácia bude platiť denne od 7.00 do 22.00 h. V čase od 22.00 do 7.00 nebude parkovanie povolené, výnimkou bude 15-minútové státie pri nočnom vyzdvihnutí objednávky z výdajných boxov IKEA.",
+    ],
+    tipTitle: "Čo to znamená pre cestujúcich?",
+    tip:
+      "Parkovisko pri Avione a IKEA už nebude vhodné ako bezplatné záchytné miesto pri odlete z bratislavského letiska. Práve dlhodobo odstavené autá, ktoré blokovali miesta zákazníkom, sú podľa prevádzkovateľov jedným z hlavných dôvodov zmeny. Stručne: parkovať zadarmo sa naďalej bude dať, ale iba 3 hodiny cez pracovný týždeň alebo 5 hodín cez víkendy a sviatky.",
+    source:
+      "Zdroj: Avion Shopping Park a IKEA Bratislava, informácie k novému systému parkovania. Skúšobná prevádzka od 15. júla 2026; plné spustenie 1. augusta 2026.",
+  },
+  {
     id: "turisticke-pasce-leto-2026",
     label: "Stredomorie • bezpečnosť • turistické pasce",
     title: "Turistické pasce leta 2026: na týchto päť trikov si dajte pozor",
@@ -441,4 +464,3 @@ window.LETOM_FLASH_NEWS = [
     ],
   },
 ];
-

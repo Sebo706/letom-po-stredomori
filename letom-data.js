@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Flash správa",
+    title: "Avion a IKEA menia parkovanie: neobmedzené státie zadarmo končí",
+    description: "Parkovanie pri Avione a IKEA už nebude bez časového obmedzenia zdarma. Prvé 3 hodiny cez pracovný týždeň a 5 hodín cez víkendy zostanú zdarma.",
+    url: "spravy/avion-ikea-parkovanie-bratislava-2026.html",
+    keywords: "avion ikea bratislava parkovanie letisko parkovisko zdarma tri 3 hodiny pat 5 vikend sviatok odlet auto cestovanie záchytné miesto regulácia rampe parkomat",
+  },
+  {
     type: "Článok",
     title: "Navagio chcú obnoviť do leta 2027. Otvorenie slávnej pláže však zatiaľ potvrdené nie je",
     description: "Plánované práce majú skončiť do leta 2027, o otvorení pláže však rozhodnú až bezpečnostné posudky.",
