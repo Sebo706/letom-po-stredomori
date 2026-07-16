@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "Navagio chcú obnoviť do leta 2027. Otvorenie slávnej pláže však zatiaľ potvrdené nie je",
+    description: "Plánované práce majú skončiť do leta 2027, o otvorení pláže však rozhodnú až bezpečnostné posudky.",
+    url: "blog/navagio-obnova-leto-2027.html",
+    keywords: "navagio zakynthos grécko grecko pláž plaz panagiotis vrak obnova leto 2027 otvorenie bezpečnosť bezpecnost útesy utesy zosuvy civilná ochrana civilna ochrana vyhliadka",
+  },
+  {
     type: "Flash správa",
     title: "Turistické pasce leta 2026: na týchto päť trikov si dajte pozor",
     description: "Pozor na taxíky bez taxametra, falošné petície, darčeky zadarmo, nejasné príplatky a podozrivo vysoké účty.",

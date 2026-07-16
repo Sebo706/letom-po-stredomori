@@ -169,6 +169,19 @@ const latestUpdates = [
   {
     kind: "article",
     type: "Nový článok",
+    title: "Navagio chcú obnoviť do leta 2027. Otvorenie slávnej pláže však zatiaľ potvrdené nie je",
+    publishedAt: "2026-07-16T10:00:00",
+    date: "Pridané 16. 7. 2026",
+    image: "images/blog/navagio-obnova-2027/hero-navagio-obnova-2027-thumb.webp",
+    imageAlt: "Ilustračný vizuál zátoky Navagio s informáciou o plánovanej obnove do leta 2027",
+    description:
+      "Plánované práce majú skončiť do leta 2027, o otvorení pláže však rozhodnú až bezpečnostné posudky.",
+    url: "blog/navagio-obnova-leto-2027.html",
+    label: "Čítať článok",
+  },
+  {
+    kind: "article",
+    type: "Nový článok",
     title: "Dovolenka s cestovkou alebo bez nej? Veľké porovnanie ceny, pohodlia a slobody",
     publishedAt: "2026-07-15T12:00:00",
     date: "Pridané 15. 7. 2026",
@@ -531,7 +544,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-15";
+  const siteLastUpdated = "2026-07-16";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1320,6 +1333,15 @@ const cestovkaArticle = {
   date: "15. júl 2026",
 };
 
+const navagioObnovaArticle = {
+  title: "Navagio chcú obnoviť do leta 2027. Otvorenie slávnej pláže však zatiaľ potvrdené nie je",
+  description:
+    "Plánované práce majú skončiť do leta 2027, o otvorení pláže však rozhodnú až bezpečnostné posudky.",
+  url: "blog/navagio-obnova-leto-2027.html",
+  image: "images/blog/navagio-obnova-2027/hero-navagio-obnova-2027-thumb.webp",
+  date: "16. júl 2026",
+};
+
 const kosOsobneArticle = {
   title: "Kos osobne: vietor, Poseidónov mobil a pláže",
   description:
@@ -1365,6 +1387,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      navagioObnovaArticle,
       cestovkaArticle,
       zaujimavostiStredomoria2Article,
       suveniryEuMimoEuArticle,
