@@ -11,6 +11,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Sekcia `Cestovatelsky blog` na homepage ma zobrazovat iba 2 clanky v rovnakom kartovom style ako teraz; dalsie blogy patria do archivu `blog.html` cez tlacidlo `Vsetky clanky`.
 - Pri kazdom novom blogovom clanku treba aktualizovat aj sekciu `Destinacie pri mori`: pri prislusnej krajine doplnit alebo upravit pocet clankov a odkaz na `clanky.html?krajina=...`.
 - Kazdy blogovy clanok, ktory sa tyka viacerych krajin alebo destinacii, musi byt priradeny ku vsetkym relevantnym krajinam v krajinskych filtroch, kartach a zoznamoch clankov, nie iba k jednej hlavnej teme.
+- Vseobecny podcast, ktory sa tyka celeho Stredomoria alebo porovnava cestovanie napriec destinaciami, musi byt priradeny ku vsetkym 8 krajinam webu a v celkovom archive podcastov sa nesmie duplicitne zobrazovat viackrat.
 - Pri novom alebo upravenom verejnom obsahu, ktory ma byt dohladatelny na webe, aktualizovat vyhladavaci index `window.LETOM_SEARCH_INDEX` vlozeny v `index.html`; subor `letom-data.js` drzat ako zhodnu zaloznu kopiu indexu.
 - Pri pridani noveho videa alebo podcastu overit, ze je viditelny nielen v datovej kniznici, ale aj na mobilnej homepage v `Najnovsie na webe`, v prislusnej sekcii `YouTube` alebo `Najnovsie podcasty`, v karte krajiny v `Destinacie pri mori` a na podstranke `videa.html` alebo `audio.html`.
 - Flash spravy patria do sekcie `Stredomorské spravodajstvo - Letom v skratke`.

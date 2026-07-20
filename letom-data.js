@@ -35,6 +35,13 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "dovolenka cestovka cestovná kancelária bez cestovky individuálna dovolenka all inclusive transfer delegát letenka ubytovanie prenájom auta grécko cyprus taliansko sardínia malta španielsko chorvátsko cena pohodlie sloboda",
   },
   {
+    type: "Podcast",
+    title: "Dovolenka s cestovkou alebo bez nej?",
+    description: "Podcast k článku o tom, kedy dáva zmysel cestovka, kedy individuálna cesta a ako porovnať cenu, pohodlie a slobodu.",
+    url: "audio.html",
+    keywords: "podcast spotify dovolenka cestovka cestovná kancelária bez cestovky individuálna dovolenka all inclusive transfer delegát letenka ubytovanie prenájom auta grécko cyprus taliansko sardínia malta španielsko chorvátsko francúzsko slovinsko cena pohodlie sloboda",
+  },
+  {
     type: "Flash správa",
     title: "Cyprus a Grécko patria medzi európsku špičku v kvalite vody",
     description: "EEA: všetky sledované pobrežné vody na Cypre boli v roku 2025 výborné, v Grécku ich takto hodnotili 97,1 %.",

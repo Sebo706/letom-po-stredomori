@@ -167,6 +167,19 @@ searchResults?.addEventListener("click", (event) => {
 
 const latestUpdates = [
   {
+    kind: "audio",
+    type: "Nový podcast",
+    title: "Dovolenka s cestovkou alebo bez nej?",
+    publishedAt: "2026-07-20T10:00:00",
+    date: "Pridané 20. 7. 2026",
+    image: "images/social/spotify.png",
+    imageAlt: "Spotify podcast Letom po Stredomorí",
+    description:
+      "Podcast k článku o tom, kedy dáva zmysel cestovka, kedy individuálna cesta a ako porovnať cenu, pohodlie a slobodu.",
+    url: "audio.html",
+    label: "Vypočuť podcast",
+  },
+  {
     kind: "article",
     type: "Nový článok",
     title: "Navagio chcú obnoviť do leta 2027. Otvorenie slávnej pláže však zatiaľ potvrdené nie je",
@@ -1161,11 +1174,20 @@ function getYouTubeThumbnail(url) {
   return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
 }
 
+const vseobecnyCestovkaPodcast = {
+  title: "Dovolenka s cestovkou alebo bez nej?",
+  description:
+    "Podcast k článku o tom, kedy dáva zmysel cestovka, kedy individuálna cesta a ako porovnať cenu, pohodlie a slobodu.",
+  spotifyUrl: "https://open.spotify.com/episode/4zNZn2Ia7eesPXG4KEKmhP?si=84c6a121d95f4060",
+  spotifyEmbedUrl: "https://open.spotify.com/embed/episode/4zNZn2Ia7eesPXG4KEKmhP",
+};
+
 const audioLibrary = {
   taliansko: {
     name: "Taliansko",
     description: "Spotify podcasty z Talianska, juhu krajiny, pobrežia a miest s dovolenkovou atmosférou.",
     audios: [
+      vseobecnyCestovkaPodcast,
       {
         title: "Amalfi - Ravello",
         description:
@@ -1179,6 +1201,7 @@ const audioLibrary = {
     name: "Grécko",
     description: "Spotify podcasty z Grécka, ostrovov, pláží a praktického cestovania.",
     audios: [
+      vseobecnyCestovkaPodcast,
       {
         title: "Kos osobne: Ostrov vetra, divokých pláží a príbehu s Poseidónom",
         description:
@@ -1199,6 +1222,7 @@ const audioLibrary = {
     name: "Španielsko",
     description: "Spotify podcasty zo Španielska, miest, pobrežia a dovolenkovej reality.",
     audios: [
+      vseobecnyCestovkaPodcast,
       {
         title: "Malaga – Španielsko",
         description:
@@ -1210,23 +1234,24 @@ const audioLibrary = {
   },
   francuzsko: {
     name: "Francúzsko",
-    description: "Podcasty z Francúzska pribudnú neskôr.",
-    audios: [],
+    description: "Podcasty z Francúzska a všeobecné cestovateľské epizódy pre Stredomorie.",
+    audios: [vseobecnyCestovkaPodcast],
   },
   chorvatsko: {
     name: "Chorvátsko",
-    description: "Podcasty z Chorvátska pribudnú neskôr.",
-    audios: [],
+    description: "Podcasty z Chorvátska a všeobecné cestovateľské epizódy pre Stredomorie.",
+    audios: [vseobecnyCestovkaPodcast],
   },
   malta: {
     name: "Malta",
-    description: "Podcasty z Malty pribudnú neskôr.",
-    audios: [],
+    description: "Podcasty z Malty a všeobecné cestovateľské epizódy pre Stredomorie.",
+    audios: [vseobecnyCestovkaPodcast],
   },
   cyprus: {
     name: "Cyprus",
     description: "Spotify podcasty z Cypru, zimného cestovania a aktívneho objavovania ostrova.",
     audios: [
+      vseobecnyCestovkaPodcast,
       {
         title: "Cyprus v januári – skrytý poklad pre aktívnych cestovateľov",
         description:
@@ -1238,8 +1263,8 @@ const audioLibrary = {
   },
   slovinsko: {
     name: "Slovinsko",
-    description: "Podcasty zo Slovinska pribudnú neskôr.",
-    audios: [],
+    description: "Podcasty zo Slovinska a všeobecné cestovateľské epizódy pre Stredomorie.",
+    audios: [vseobecnyCestovkaPodcast],
   },
 };
 
@@ -1557,6 +1582,8 @@ function renderCountryAudios() {
             countryKey: key,
             countryName: item.name,
           }))
+        ).filter((audio, index, audios) =>
+          audios.findIndex((item) => item.spotifyUrl === audio.spotifyUrl) === index
         ),
       }
     : audioLibrary[countryKey] || audioLibrary.taliansko;
