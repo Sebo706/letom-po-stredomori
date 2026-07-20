@@ -159,13 +159,27 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const pravaCestujucichLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "EÚ schválila nové práva cestujúcich",
+  publishedAt: "2026-07-20T12:00:00",
+  date: "Pridané 20. 7. 2026",
+  image: "images/blog/nove-prava-cestujucich-eu-2026/hero-nove-prava-cestujucich-eu-2026-thumb.webp",
+  imageAlt: "Ilustračný vizuál nových práv cestujúcich v leteckej doprave EÚ",
+  description:
+    "Čo sa mení pri meškaní, kompenzácii, batožine, sedení detí a kedy nové pravidlá začnú platiť.",
+  url: "blog/nove-prava-cestujucich-eu-2026.html",
+  label: "Čítať článok",
+};
+
 searchResults?.addEventListener("click", (event) => {
   if (event.target.closest("a")) {
     closeSearch();
   }
 });
 
-const latestUpdates = [
+const latestUpdates = [pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -557,7 +571,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-16";
+  const siteLastUpdated = "2026-07-20";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -629,6 +643,20 @@ function renderFlashDetail() {
     `
     : "";
   const bodyMarkup = (news.body || []).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
+  const sectionsMarkup = (news.sections || [])
+    .map((section) => {
+      const paragraphs = (section.paragraphs || [])
+        .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+        .join("");
+      const items = section.items?.length
+        ? `<ul>${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`
+        : "";
+      const afterItems = (section.afterItems || [])
+        .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+        .join("");
+      return `<section class="flash-detail-section"><h2>${escapeHtml(section.title)}</h2>${paragraphs}${items}${afterItems}</section>`;
+    })
+    .join("");
   const restrictionsMarkup = news.restrictions?.length
     ? `
       <h2>Pre návštevníkov platí</h2>
@@ -665,6 +693,7 @@ function renderFlashDetail() {
     </header>
     <div class="article-body">
       ${bodyMarkup}
+      ${sectionsMarkup}
       ${restrictionsMarkup}
       ${bodyAfterRestrictionsMarkup}
       ${tipMarkup}
@@ -1358,6 +1387,15 @@ const cestovkaArticle = {
   date: "15. júl 2026",
 };
 
+const pravaCestujucichEuArticle = {
+  title: "EÚ schválila nové práva cestujúcich",
+  description:
+    "Prehľad schválenej úpravy práv cestujúcich: kompenzácia, náhradná doprava, batožina, sedenie detí a kedy pravidlá začnú platiť.",
+  url: "blog/nove-prava-cestujucich-eu-2026.html",
+  image: "images/blog/nove-prava-cestujucich-eu-2026/hero-nove-prava-cestujucich-eu-2026-thumb.webp",
+  date: "20. júl 2026",
+};
+
 const navagioObnovaArticle = {
   title: "Navagio chcú obnoviť do leta 2027. Otvorenie slávnej pláže však zatiaľ potvrdené nie je",
   description:
@@ -1381,6 +1419,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      pravaCestujucichEuArticle,
       cestovkaArticle,
       zaujimavostiStredomoria2Article,
       suveniryEuMimoEuArticle,
@@ -1412,6 +1451,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      pravaCestujucichEuArticle,
       navagioObnovaArticle,
       cestovkaArticle,
       zaujimavostiStredomoria2Article,
@@ -1436,6 +1476,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      pravaCestujucichEuArticle,
       cestovkaArticle,
       spanielskoFinaleMsArticle,
       suveniryEuMimoEuArticle,
@@ -1456,17 +1497,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      pravaCestujucichEuArticle,
       cestovkaArticle,
       suveniryEuMimoEuArticle,
       plavbaLodouArticle,
@@ -1487,12 +1529,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 

@@ -1,5 +1,55 @@
 window.LETOM_FLASH_NEWS = [
   {
+    id: "solvex-platobna-neschopnost-2026",
+    label: "Slovensko • cestovné kancelárie • dôležité upozornenie",
+    title: "Ďalšia slovenská cestovka končí: Solvex vyhlásil platobnú neschopnosť",
+    date: "20. júl 2026",
+    datetime: "2026-07-20",
+    image: "images/novinky/solvex-platobna-neschopnost-2026.webp",
+    imageAlt: "Ilustračný vizuál k správe o platobnej neschopnosti cestovnej kancelárie Solvex",
+    summary:
+      "Solvex po 26 rokoch oznámil platobnú neschopnosť. Klienti v zahraničí majú pri problémoch kontaktovať asistenčnú službu, tí pred odchodom poisťovňu Colonnade.",
+    body: [
+      "Slovenská cestovná kancelária Solvex po 26 rokoch končí. V pondelok 20. júla 2026 o 16.00 h oznámila, že sa dostala do platobnej neschopnosti a už nedokáže plniť záväzky voči klientom ani obchodným partnerom. Informáciu potvrdila samotná cestovná kancelária, poisťovňa Colonnade aj ďalšie spravodajské zdroje.",
+      "Solvex ako dôvody uvádza výrazný rast cien palív a služieb v cestovnom ruchu, tlak na udržanie nízkych cien zájazdov a úpadok jedného z významných zahraničných obchodných partnerov. Ide však o vysvetlenie samotnej cestovnej kancelárie – podrobné ekonomické príčiny zatiaľ nezávisle potvrdené nie sú.",
+    ],
+    sections: [
+      {
+        title: "Čo majú urobiť klienti Solvexu?",
+        paragraphs: [
+          "Cestovná kancelária bola poistená proti úpadku v poisťovni Colonnade Insurance, pričom poistná zmluva má byť platná do 31. mája 2027.",
+          "Klienti, ktorí sa už nachádzajú v zahraničí a dostanú sa do problémov s ubytovaním alebo návratom, majú kontaktovať asistenčnú službu Global Assistance na čísle +421 911 803 500.",
+          "Ľudia, ktorí ešte nevycestovali, si majú čo najskôr uplatniť nárok v poisťovni Colonnade. Potrebovať budú najmä zmluvu o zájazde, doklad o zaplatení, doklad totožnosti a prípadné doklady o ďalších vzniknutých nákladoch. Číslo poistnej zmluvy Solvexu je 8-893-015952.",
+        ],
+      },
+      {
+        title: "Prečo cestovky často skrachujú práve v lete?",
+        paragraphs: [
+          "Nie je pravda, že cestovné kancelárie krachujú výlučne v lete. Hlavná sezóna je však pre ne najväčším finančným testom.",
+          "Počas zimy a jari cestovky prijímajú zálohy a doplatky za budúce dovolenky. V lete však musia vo veľkom uhrádzať hotely, letecké kapacity, transfery, delegátov a ďalšie služby. Ak boli zájazdy predané príliš lacno, náklady nečakane vzrástli alebo sa nepredalo dostatok miest, práve počas sezóny sa môže ukázať, že cestovke chýbajú peniaze na aktuálne záväzky.",
+          "To je všeobecné ekonomické vysvetlenie, nie potvrdený opis hospodárenia Solvexu. Pri tejto cestovke zatiaľ vieme iba to, že uvádza rast nákladov, cenový tlak a krach zahraničného partnera.",
+        ],
+      },
+      {
+        title: "Ako si vyberať cestovnú kanceláriu bezpečnejšie?",
+        paragraphs: ["Pred zaplatením zájazdu si overte:"],
+        items: [
+          "kto je skutočným organizátorom zájazdu – cestovná agentúra môže byť iba predajcom,",
+          "či je cestovná kancelária uvedená v aktuálnom zozname Slovenskej obchodnej inšpekcie,",
+          "názov poisťovne, číslo poistnej zmluvy, platnosť poistenia a poistnú sumu,",
+          "či údaje na zmluve zodpovedajú údajom firmy a platba smeruje na firemný účet,",
+          "staršie aj najnovšie skúsenosti klientov, najmä správy o rušení hotelov, nevracaní peňazí alebo problémoch s komunikáciou.",
+        ],
+        afterItems: [
+          "Varovaním môžu byť neobvykle nízke ceny, výrazné zľavy bez jasného dôvodu, chýbajúce údaje o organizátorovi alebo nátlak na rýchlu platbu.",
+          "Ani dlhoročné pôsobenie cestovnej kancelárie nie je absolútnou zárukou. Solvex bol na slovenskom trhu 26 rokov. Poistenie proti úpadku je preto úplný základ, hoci ani ono nemusí znamenať okamžité vrátenie peňazí – vybavovanie nárokov môže trvať a pri prekročení poistného limitu môže vzniknúť problém s úplným odškodnením.",
+        ],
+      },
+    ],
+    source:
+      "Zdroje: oznámenie CK Solvex, Colonnade Insurance a spravodajské zdroje SITA, Startitup a Techbyte. Stav overený 20. júla 2026.",
+  },
+  {
     id: "avion-ikea-parkovanie-bratislava-2026",
     label: "Bratislava • parkovanie • letisko",
     title: "Avion a IKEA menia parkovanie: neobmedzené státie zadarmo končí",

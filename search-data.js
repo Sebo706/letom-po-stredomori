@@ -1,6 +1,20 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Flash správa",
+    title: "Ďalšia slovenská cestovka končí: Solvex vyhlásil platobnú neschopnosť",
+    description: "Solvex po 26 rokoch oznámil platobnú neschopnosť. Praktický postup pre klientov v zahraničí aj pred odchodom.",
+    url: "spravy/solvex-platobna-neschopnost-2026.html",
+    keywords: "solvex cestovná kancelária cestovna kancelaria platobná neschopnosť platobna neschopnost colonnade poistenie proti úpadku poistenie proti upadku global assistance 421 911 803 500 8-893-015952 klienti zájazd reklamácia odškodnenie dovolenka",
+  },
+  {
+    type: "Článok",
+    title: "EÚ schválila nové práva cestujúcich",
+    description: "Čo sa mení pri meškaní, kompenzácii, batožine, sedení detí a kedy nové pravidlá začnú platiť.",
+    url: "blog/nove-prava-cestujucich-eu-2026.html",
+    keywords: "eú eu práva cestujúcich prava cestujucich lietadlo letecká doprava letecka doprava meškanie meskanie kompenzácia kompenzacia batožina batozina príručná batožina prirucna batozina sedenie detí sedadlá refundácia voucher náhradná doprava palubný lístok eu261 nariadenie 261/2004",
+  },
+  {
+    type: "Flash správa",
     title: "Avion a IKEA menia parkovanie: neobmedzené státie zadarmo končí",
     description: "Parkovanie pri Avione a IKEA už nebude bez časového obmedzenia zdarma. Prvé 3 hodiny cez pracovný týždeň a 5 hodín cez víkendy zostanú zdarma.",
     url: "spravy/avion-ikea-parkovanie-bratislava-2026.html",
