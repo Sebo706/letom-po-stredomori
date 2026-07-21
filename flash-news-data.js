@@ -1,5 +1,37 @@
 window.LETOM_FLASH_NEWS = [
   {
+    id: "grecke-ostrovy-nedostatok-vody-2026",
+    label: "Grécko • ostrovy • voda",
+    title: "Sedem gréckych ostrovov rieši vážny nedostatok vody",
+    date: "21. júl 2026",
+    datetime: "2026-07-21",
+    image: "images/novinky/grecke-ostrovy-nedostatok-vody-2026.webp",
+    imageAlt: "Grécky ostrov s vodnou nádržou počas sucha",
+    summary:
+      "Sedem gréckych ostrovov je v administratívnom núdzovom režime pre nedostatok vody. Pre turistov nejde o dôvod rušiť dovolenku, no oplatí sa overiť podmienky v ubytovaní.",
+    body: [
+      "Grécko zaradilo ostrovy Astypalaia, Tinos, Alonnisos, Leros, Patmos, Symi a Karpathos do núdzového režimu pre nedostatok vody.",
+      "Nejde však o zákaz cestovania ani o stav núdze spojený s evakuáciou. Ide o administratívne opatrenie, ktoré umožňuje rýchlejšie opravovať vodovody, budovať odsoľovacie zariadenia a financovať ďalšie vodohospodárske projekty.",
+      "Najvážnejšia situácia je podľa dostupných informácií na Astypalaii, kde sú zásoby v hlavnej nádrži výrazne nižšie a počas letnej sezóny prudko rastie spotreba. Problémy s kapacitou alebo kvalitou vody riešia aj Leros, Symi a Patmos. Na Tinose, Alonnisose a Karpathose má režim zatiaľ najmä preventívny charakter.",
+      "Pre turistov to momentálne neznamená, že majú dovolenku rušiť. Môžu sa však objaviť miestne obmedzenia, slabší tlak vody alebo požiadavky hotelov na šetrenie.",
+    ],
+    sections: [
+      {
+        title: "Pred cestou je vhodné overiť si v ubytovaní:",
+        items: [
+          "či sú plánované odstávky,",
+          "či je voda z vodovodu pitná,",
+          "či má hotel vlastnú rezervnú nádrž.",
+        ],
+        afterItems: [
+          "Správa, že sedem gréckych ostrovov „zostáva bez vody“, je preto prehnaná. Nedostatok vody je však reálny a v niektorých lokalitách môže ovplyvniť aj turistickú sezónu.",
+        ],
+      },
+    ],
+    source:
+      "Zdroj: Reuters a dostupné informácie o gréckych opatreniach pre vodnú infraštruktúru. Stav overený 21. júla 2026.",
+  },
+  {
     id: "taliansko-letecky-strajk-easyjet-2026",
     label: "Taliansko • letecká doprava • štrajk",
     title: "Taliansko dnes zasiahne letecký štrajk, easyJet už ruší niektoré lety",

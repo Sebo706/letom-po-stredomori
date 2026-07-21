@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Flash správa",
+    title: "Sedem gréckych ostrovov rieši vážny nedostatok vody",
+    description: "Sedem gréckych ostrovov je v administratívnom núdzovom režime pre nedostatok vody. Praktické odporúčanie pre turistov pred cestou.",
+    url: "spravy/grecke-ostrovy-nedostatok-vody-2026.html",
+    keywords: "grécko grecko ostrovy voda nedostatok vody sucho astypalaia tinos alonnisos leros patmos symi karpathos hotel vodovod odsoľovanie obmedzenia dovolenka",
+  },
+  {
+    type: "Flash správa",
     title: "Taliansko dnes zasiahne letecký štrajk, easyJet už ruší niektoré lety",
     description: "Letecký štrajk v Taliansku môže 21. júla ovplyvniť lety easyJetu aj ďalších dopravcov. Praktické odporúčanie pre cestujúcich.",
     url: "spravy/taliansko-letecky-strajk-easyjet-2026.html",
