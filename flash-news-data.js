@@ -1,5 +1,40 @@
 window.LETOM_FLASH_NEWS = [
   {
+    id: "taliansko-letecky-strajk-easyjet-2026",
+    label: "Taliansko • letecká doprava • štrajk",
+    title: "Taliansko dnes zasiahne letecký štrajk, easyJet už ruší niektoré lety",
+    date: "21. júl 2026",
+    datetime: "2026-07-21",
+    image: "images/novinky/taliansko-letecky-strajk-easyjet-2026.webp",
+    imageAlt: "Lietadlo easyJet pri letisku v Taliansku a informačná tabuľa zrušených letov",
+    summary:
+      "Letecký štrajk v Taliansku môže 21. júla ovplyvniť lety easyJetu aj ďalších dopravcov. Stav letu si skontrolujte ešte pred cestou na letisko.",
+    body: [
+      "Cestujúcich smerujúcich dnes, 21. júla 2026, do Talianska čakajú možné komplikácie. Palubný personál spoločnosti easyJet štrajkuje počas celého dňa a dopravca už oznámil zrušenie niektorých letov do a z letísk Miláno Malpensa, Miláno Linate, Rím Fiumicino a Neapol. Úplný zoznam zrušených spojov zatiaľ nezverejnil.",
+      "K protestu sa pridávajú zamestnanci pozemnej obsluhy na letiskách Malpensa, Neapol, Salerno, Lamezia Terme, Olbia a Alghero. Meškania alebo rušenia preto môžu postihnúť aj lety iných spoločností.",
+      "Chránené sú odlety naplánované medzi 7:00 – 10:00 a 18:00 – 21:00, ani v týchto časoch však nemožno úplne vylúčiť následné meškania.",
+    ],
+    tipTitle: "Čo majú cestujúci urobiť?",
+    tip:
+      "Stav letu si skontrolujte priamo v aplikácii alebo na stránke dopravcu ešte pred cestou na letisko. Pri zrušení letu máte právo vybrať si medzi vrátením ceny letenky a náhradným spojením.",
+    source:
+      "Stav informácie: Konanie štrajku a jeho rozsah sú potvrdené talianskymi úradmi a viacerými zdrojmi. Rušenie niektorých letov oznámil priamo easyJet, presný počet však zatiaľ nie je známy. Zdroje: Overené 21. júla 2026.",
+    sourceLinks: [
+      {
+        label: "easyJet – aktuálne informácie",
+        url: "https://www.easyjet.com/it/centro-assistenza/prima-di-volare/ultime-informazioni-di-viaggio",
+      },
+      {
+        label: "ENAC – garantované lety",
+        url: "https://www.enac.gov.it/news/voli-garantiti-sciopero-dat-e-easy-jet-del-21-luglio-2026/",
+      },
+      {
+        label: "Fanpage – prehľad štrajku",
+        url: "https://www.fanpage.it/attualita/sciopero-il-21-luglio-2026-si-fermano-gli-aerei-fino-a-24-ore-orari-voli-garantiti-e-compagnie-interessate/",
+      },
+    ],
+  },
+  {
     id: "solvex-platobna-neschopnost-2026",
     label: "Slovensko • cestovné kancelárie • dôležité upozornenie",
     title: "Ďalšia slovenská cestovka končí: Solvex vyhlásil platobnú neschopnosť",

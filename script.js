@@ -571,7 +571,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-20";
+  const siteLastUpdated = "2026-07-21";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -676,8 +676,16 @@ function renderFlashDetail() {
       </aside>
     `
     : "";
-  const sourceMarkup = news.source
-    ? `<p class="brief-source">${escapeHtml(news.source)}</p>`
+  const sourceLinksMarkup = Array.isArray(news.sourceLinks) && news.sourceLinks.length
+    ? news.sourceLinks
+        .map(
+          (link) =>
+            `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener">${escapeHtml(link.label)}</a>`
+        )
+        .join(" • ")
+    : "";
+  const sourceMarkup = news.source || sourceLinksMarkup
+    ? `<p class="brief-source">${escapeHtml(news.source || "Zdroje:")}${sourceLinksMarkup ? ` ${sourceLinksMarkup}` : ""}</p>`
     : "";
 
   detail.innerHTML = `

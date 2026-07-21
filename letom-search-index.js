@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Flash správa",
+    title: "Taliansko dnes zasiahne letecký štrajk, easyJet už ruší niektoré lety",
+    description: "Letecký štrajk v Taliansku môže 21. júla ovplyvniť lety easyJetu aj ďalších dopravcov. Praktické odporúčanie pre cestujúcich.",
+    url: "spravy/taliansko-letecky-strajk-easyjet-2026.html",
+    keywords: "taliansko letecký štrajk letecky strajk easyjet 21 júl 2026 miláno malpensa linate rím fiumicino neapol salerno lamezia terme olbia alghero zrušené lety meskanie garantované lety enac",
+  },
+  {
+    type: "Flash správa",
     title: "Ďalšia slovenská cestovka končí: Solvex vyhlásil platobnú neschopnosť",
     description: "Solvex po 26 rokoch oznámil platobnú neschopnosť. Praktický postup pre klientov v zahraničí aj pred odchodom.",
     url: "spravy/solvex-platobna-neschopnost-2026.html",

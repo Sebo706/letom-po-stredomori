@@ -3143,6 +3143,29 @@ a {
     overflow: visible;
   }
 
+  .article-page .nav-shell,
+  .flash-detail-page .nav-shell {
+    gap: 10px;
+  }
+
+  .article-page .nav-panel.nav-panel-static > a:not(.nav-cta),
+  .flash-detail-page .nav-panel.nav-panel-static > a:not(.nav-cta) {
+    display: none;
+  }
+
+  .article-page .nav-panel.nav-panel-static,
+  .flash-detail-page .nav-panel.nav-panel-static {
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  .article-page .nav-cta,
+  .flash-detail-page .nav-cta {
+    margin-top: 0;
+    padding-inline: 15px;
+    white-space: nowrap;
+  }
+
   .nav-panel a {
     padding: 12px 10px;
     border-radius: 14px;
