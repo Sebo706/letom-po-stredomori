@@ -159,6 +159,20 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const lefkadaAutomLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Lefkada autom: 3 ubytovania v Agios Nikitas",
+  publishedAt: "2026-07-22T12:00:00",
+  date: "Pridané 22. 7. 2026",
+  image: "images/blog/lefkada-autom-agios-nikitas/hero-lefkada-autom-agios-nikitas-thumb.webp",
+  imageAlt: "Lefkada: západné pobrežie, vila s bazénom a auto na ceste",
+  description:
+    "Porovnanie troch možností pre štyroch dospelých: cena, poloha pri plážach, stravovanie a praktické kompromisy.",
+  url: "blog/lefkada-autom-3-ubytovania-agios-nikitas.html",
+  label: "Čítať článok",
+};
+
 const zaujimavostiStredomoria3LatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -193,7 +207,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1391,6 +1405,15 @@ const zaujimavostiStredomoria2Article = {
   date: "14. júl 2026",
 };
 
+const lefkadaAutomArticle = {
+  title: "Lefkada autom: 3 ubytovania v Agios Nikitas",
+  description:
+    "Porovnanie troch možností pre štyroch dospelých: cena, poloha pri plážach, stravovanie a praktické kompromisy.",
+  url: "blog/lefkada-autom-3-ubytovania-agios-nikitas.html",
+  image: "images/blog/lefkada-autom-agios-nikitas/hero-lefkada-autom-agios-nikitas-thumb.webp",
+  date: "22. júl 2026",
+};
+
 const zaujimavostiStredomoria3Article = {
   title: "5 zaujímavostí zo Stredomoria, o ktorých nie každý vie – 3. časť",
   description:
@@ -1483,6 +1506,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      lefkadaAutomArticle,
       zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
       navagioObnovaArticle,

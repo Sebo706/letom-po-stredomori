@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Lefkada autom: 3 ubytovania v Agios Nikitas",
+    description: "Porovnanie troch možností pre štyroch dospelých: cena, poloha pri plážach, stravovanie a praktické kompromisy.",
+    url: "blog/lefkada-autom-3-ubytovania-agios-nikitas.html",
+    keywords: "lefkada agios nikitas ubytovanie auto autom anthia melikiron milos paradise mylos kathisma pláže grécko grecko vila apartmán štúdio studio bazén cestovanie autom",
+  },
+  {
+    type: "Článok",
     title: "5 zaujímavostí zo Stredomoria, o ktorých nie každý vie – 3. časť",
     description: "Tajomstvá Ríma, Barcelony, Palerma, Atén a Dubrovníka: pyramída, Eixample, qanat, Anafiotika a Lazareti.",
     url: "blog/5-zaujimavosti-stredomoria-3.html",

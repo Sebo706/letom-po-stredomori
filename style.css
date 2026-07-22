@@ -2096,7 +2096,7 @@ a {
 }
 
 .article-hero {
-  width: min(100% - 36px, var(--max-width));
+  width: min(calc(100% - 36px), var(--max-width));
   margin: 0 auto;
   padding: clamp(42px, 6vw, 72px) 0 34px;
 }
@@ -3657,7 +3657,7 @@ a {
 
   .article-hero,
   .article-body {
-    width: min(100% - 28px, var(--max-width));
+    width: min(calc(100% - 28px), var(--max-width));
   }
 
   .article-hero {
