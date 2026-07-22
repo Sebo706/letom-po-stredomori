@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "5 zaujímavostí zo Stredomoria, o ktorých nie každý vie – 3. časť",
+    description: "Tajomstvá Ríma, Barcelony, Palerma, Atén a Dubrovníka: pyramída, Eixample, qanat, Anafiotika a Lazareti.",
+    url: "blog/5-zaujimavosti-stredomoria-3.html",
+    keywords: "5 zaujímavostí stredomoria zaujimavosti seriál 3 časť rím rim cestiova pyramída cestiova pyramida barcelona eixample palermo qanat atény ateny anafiotika dubrovník dubrovnik lazareti taliansko španielsko spanielsko grécko grecko chorvátsko chorvatsko",
+  },
+  {
     type: "Flash správa",
     title: "Sedem gréckych ostrovov rieši vážny nedostatok vody",
     description: "Sedem gréckych ostrovov je v administratívnom núdzovom režime pre nedostatok vody. Praktické odporúčanie pre turistov pred cestou.",

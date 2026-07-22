@@ -159,6 +159,20 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const zaujimavostiStredomoria3LatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "5 zaujímavostí zo Stredomoria, o ktorých nie každý vie – 3. časť",
+  publishedAt: "2026-07-22T10:00:00",
+  date: "Pridané 22. 7. 2026",
+  image: "images/blog/5-zaujimavosti-stredomoria-3/hero-5-zaujimavosti-stredomoria-3-thumb.webp",
+  imageAlt: "Koláž miest z tretej časti seriálu 5 zaujímavostí zo Stredomoria",
+  description:
+    "Tajomstvá Ríma, Barcelony, Palerma, Atén a Dubrovníka: pyramída, Eixample, qanat, Anafiotika a Lazareti.",
+  url: "blog/5-zaujimavosti-stredomoria-3.html",
+  label: "Čítať článok",
+};
+
 const pravaCestujucichLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -179,7 +193,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [pravaCestujucichLatestUpdate,
+const latestUpdates = [zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1377,6 +1391,15 @@ const zaujimavostiStredomoria2Article = {
   date: "14. júl 2026",
 };
 
+const zaujimavostiStredomoria3Article = {
+  title: "5 zaujímavostí zo Stredomoria, o ktorých nie každý vie – 3. časť",
+  description:
+    "Tajomstvá Ríma, Barcelony, Palerma, Atén a Dubrovníka: pyramída, Eixample, qanat, Anafiotika a Lazareti.",
+  url: "blog/5-zaujimavosti-stredomoria-3.html",
+  image: "images/blog/5-zaujimavosti-stredomoria-3/hero-5-zaujimavosti-stredomoria-3-thumb.webp",
+  date: "22. júl 2026",
+};
+
 const spanielskoFinaleMsArticle = {
   title: "Španielsko je vo finále MS: kde zažiť futbalovú noc",
   description:
@@ -1427,6 +1450,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
       cestovkaArticle,
       zaujimavostiStredomoria2Article,
@@ -1459,6 +1483,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
       navagioObnovaArticle,
       cestovkaArticle,
@@ -1484,6 +1509,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
       cestovkaArticle,
       spanielskoFinaleMsArticle,
@@ -1510,7 +1536,7 @@ const articleLibrary = {
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
