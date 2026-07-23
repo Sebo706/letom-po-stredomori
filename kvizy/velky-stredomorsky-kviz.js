@@ -159,6 +159,8 @@
     level: document.querySelector("#quiz-level"),
     resultCopy: document.querySelector("#quiz-result-copy"),
     bestScore: document.querySelector("#quiz-best-score"),
+    reviewSummary: document.querySelector("#quiz-review-summary"),
+    reviewList: document.querySelector("#quiz-review-list"),
     restart: document.querySelector("#quiz-restart"),
     share: document.querySelector("#quiz-share"),
     shareFeedback: document.querySelector("#quiz-share-feedback"),
@@ -169,6 +171,7 @@
   let currentIndex = 0;
   let score = 0;
   let answered = false;
+  let selectedAnswers = [];
 
   function safeReadBestScore() {
     try {
@@ -197,6 +200,7 @@
     currentIndex = 0;
     score = 0;
     answered = false;
+    selectedAnswers = [];
     elements.shareFeedback.hidden = true;
     elements.shareFallback.hidden = true;
     showScreen(elements.play);
@@ -237,6 +241,7 @@
 
     const item = questions[currentIndex];
     const isCorrect = selectedIndex === item.correct;
+    selectedAnswers[currentIndex] = selectedIndex;
     if (isCorrect) score += 1;
 
     [...elements.answers.querySelectorAll("button")].forEach((button, index) => {
@@ -267,6 +272,44 @@
     return ["Stredomorský začiatočník", "Každá dobrá cesta sa začína prvým krokom. Skúste si kvíz ešte raz a popri tom objavujte naše tipy."];
   }
 
+  function renderAnswerReview() {
+    elements.reviewSummary.textContent = `${score} správnych z ${questions.length}`;
+    elements.reviewList.innerHTML = "";
+
+    questions.forEach((item, index) => {
+      const selectedIndex = selectedAnswers[index];
+      const isCorrect = selectedIndex === item.correct;
+      const reviewItem = document.createElement("li");
+      reviewItem.className = `quiz-review-item ${isCorrect ? "is-correct" : "is-incorrect"}`;
+
+      const title = document.createElement("h4");
+      title.textContent = `${index + 1}. ${item.question}`;
+
+      const status = document.createElement("p");
+      status.className = "quiz-review-status";
+      status.textContent = isCorrect ? "Správne" : "Nesprávne";
+
+      const selected = document.createElement("p");
+      selected.className = "quiz-review-answer";
+      selected.innerHTML = `<strong>Vaša odpoveď:</strong> ${item.answers[selectedIndex] || "Bez odpovede"}`;
+
+      reviewItem.append(title, status, selected);
+
+      if (!isCorrect) {
+        const correct = document.createElement("p");
+        correct.className = "quiz-review-answer quiz-review-correct-answer";
+        correct.innerHTML = `<strong>Správna odpoveď:</strong> ${item.answers[item.correct]}`;
+        reviewItem.appendChild(correct);
+      }
+
+      const explanation = document.createElement("p");
+      explanation.className = "quiz-review-explanation";
+      explanation.textContent = item.explanation;
+      reviewItem.appendChild(explanation);
+      elements.reviewList.appendChild(reviewItem);
+    });
+  }
+
   function showResult() {
     const percent = Math.round((score / questions.length) * 100);
     const [level, copy] = levelForScore(score);
@@ -285,6 +328,7 @@
     elements.bestScore.hidden = false;
     elements.shareFeedback.hidden = true;
     elements.shareFallback.hidden = true;
+    renderAnswerReview();
     showScreen(elements.result);
     elements.result.querySelector("h2").focus({ preventScroll: true });
   }

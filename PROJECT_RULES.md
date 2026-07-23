@@ -70,4 +70,5 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Pri kontrole textu `Posledna aktualizacia` overit aj mobilne zobrazenie, aby bol aktualny datum zmeneny a viditelny aj na mobile.
 - Po pridani noveho verejneho obsahu pouzivatelovi pripomenut vetu na zdielanie: `Sledujte Letom po Stredomori pre dalsie tipy, cestovatelske skusenosti a aktualne spravy zo Stredomoria. Na YouTube, Facebooku, Spotify a samozrejme na webe https://sebo706.github.io/letom-po-stredomori/index.html#domov`.
 - Po dokonceni kazdej ulohy pouzivatelovi pripomenut nasledujucich 5 cakajucich bodov zo suboru `WEBSITE_IMPROVEMENTS.md`.
+- Pri kazdom novom kvíze po dokončení zobrazit prehlad vsetkych otazok: odpoved pouzivatela, spravnu odpoved a kratke vysvetlenie. Prehlad musi jasne rozlisovat spravne a nespravne odpovede a byt citatelny na mobile aj desktope.
 

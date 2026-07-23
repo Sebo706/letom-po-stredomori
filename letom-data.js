@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Mapa",
+    title: "Mapa Stredomoria",
+    description: "Interaktívna mapa krajín, ostrovov, miest, článkov, videí, podcastov, trás a aktuálnych upozornení.",
+    url: "mapa.html",
+    keywords: "mapa stredomorie krajiny ostrovy mestá clanky články videá videa podcasty itineráre itinerare lety upozornenia lefkada kos zakynthos",
+  },
+  {
     type: "Článok",
     title: "Lefkada autom: 3 ubytovania v Agios Nikitas",
     description: "Porovnanie troch možností pre štyroch dospelých: cena, poloha pri plážach, stravovanie a praktické kompromisy.",

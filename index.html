@@ -36,6 +36,7 @@
 
         <div class="nav-panel" id="primary-menu">
           <a href="#domov">Domov</a>
+          <a href="mapa.html">Mapa</a>
           <a href="#destinacie">Destinácie</a>
           <a href="lety.html">Lety</a>
           <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
@@ -310,7 +311,18 @@
             Ďalšie správy
           </a>
         </aside>
-          <section class="section destinations-section" id="destinacie">
+        <section class="section map-teaser-section" aria-labelledby="map-teaser-title">
+          <div class="map-teaser-copy">
+            <p class="eyebrow">Nové na webe</p>
+            <h2 id="map-teaser-title">Objavte Stredomorie na mape</h2>
+            <p>Vyberte krajinu, ostrov alebo mesto a otvorte si články, videá, podcasty, itineráre aj aktuálne upozornenia.</p>
+            <a class="button button-primary" href="mapa.html">Otvoriť interaktívnu mapu</a>
+          </div>
+          <a class="map-teaser-media" href="mapa.html" aria-label="Otvoriť interaktívnu mapu Stredomoria">
+            <img src="images/blog/5-zaujimavosti-stredomoria-3/hero-5-zaujimavosti-stredomoria-3-thumb.webp" alt="Pohľady na miesta Stredomoria" loading="lazy" />
+          </a>
+        </section>
+        <section class="section destinations-section" id="destinacie">
         <div class="section-heading">
           <p class="eyebrow">Destinácie pri mori</p>
           <h2>Stredomorské krajiny EÚ</h2>
@@ -953,6 +965,7 @@
         </a>
 
         <div class="footer-links" aria-label="Odkazy v pätičke">
+          <a href="mapa.html">Mapa</a>
           <a href="#destinacie">Destinácie</a>
           <a href="lety.html">Lety</a>
           <a href="#ako-tvorim-obsah">Ako tvorím obsah</a>
@@ -971,12 +984,19 @@
 
         <p class="copyright">© 2026 Letom po Stredomorí</p>
         <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
-        <p class="last-updated">Posledná aktualizácia: 22. júl 2026</p>
+        <p class="last-updated">Posledná aktualizácia: 23. júl 2026</p>
       </div>
     </footer>
 
     <script>
 window.LETOM_SEARCH_INDEX = [
+  {
+    type: "Mapa",
+    title: "Mapa Stredomoria",
+    description: "Interaktívna mapa krajín, ostrovov, miest, článkov, videí, podcastov, trás a aktuálnych upozornení.",
+    url: "mapa.html",
+    keywords: "mapa stredomorie krajiny ostrovy mestá clanky články videá videa podcasty itineráre itinerare lety upozornenia lefkada kos zakynthos",
+  },
   {
     type: "Kvíz",
     title: "Veľký stredomorský kvíz",
@@ -1392,6 +1412,6 @@ window.LETOM_SEARCH_INDEX = [
 
     </script>
     <script src="search-data.js?v=20260722-lefkada-1"></script>
-    <script src="script.js?v=20260722-lefkada-1"></script>
+    <script src="script.js?v=20260723-last-update-1"></script>
   </body>
 </html>
