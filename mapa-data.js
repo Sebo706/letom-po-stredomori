@@ -6,7 +6,7 @@ window.LETOM_MAP_DATA = {
       country: "Grécko",
       countryId: "greece",
       coordinates: [36.891, 27.287],
-      status: "personal",
+      personal: { visitedYear: "2025" },
       summary: "Ostrov vetra, termálnych prameňov, pláží a výletov autom.",
       image: "images/blog/kos-osobne/hero-kos-osobne-thumb.webp",
       imageAlt: "Kos s morom, ruinami a pobrežím",
@@ -23,7 +23,7 @@ window.LETOM_MAP_DATA = {
       country: "Grécko",
       countryId: "greece",
       coordinates: [36.713, 26.994],
-      status: "personal",
+      personal: { visitedYear: "2025" },
       summary: "Odľahlá pláž na západe Kosu, kde je súčasťou zážitku aj cesta.",
       image: "images/blog/5-zaujimavosti-stredomoria-2/04-cavo-paradiso-kos-thumb.webp",
       imageAlt: "Tyrkysové more pri Cavo Paradiso na Kose",
@@ -36,7 +36,7 @@ window.LETOM_MAP_DATA = {
       country: "Grécko",
       countryId: "greece",
       coordinates: [37.787, 20.899],
-      status: "personal",
+      personal: { visitedYear: "2026" },
       summary: "Ostrov útesov, korytnačiek, pláží a osobných cestovateľských poznámok.",
       image: "images/blog/zakynthos-osobne/hero-zakynthos-osobne-thumb.webp",
       imageAlt: "Zakynthos s tyrkysovým morom a pobrežím",
@@ -49,14 +49,21 @@ window.LETOM_MAP_DATA = {
       country: "Grécko",
       countryId: "greece",
       coordinates: [37.859, 20.624],
-      status: "research",
+      personal: { visitedYear: "2026" },
       summary: "Ikonická zátoka so zrúteným vrakom; aktuálne bezpečnostné obmedzenia treba vždy overiť.",
       image: "images/blog/navagio-obnova-2027/hero-navagio-obnova-2027-thumb.webp",
       imageAlt: "Pohľad na zátoku Navagio na Zakynthose",
       keywords: "navagio lodny vrak bezpecnost uzavera",
       content: [
         { type: "article", label: "Článok", title: "Navagio chcú obnoviť do leta 2027", url: "blog/navagio-obnova-leto-2027.html" },
-        { type: "alert", label: "Upozornenie", title: "Navagio zostáva zatvorené v sezóne 2026", url: "spravy/navagio-zatvorene-2026.html" }
+      ],
+      flash: [
+        {
+          title: "Navagio zostáva zatvorené v sezóne 2026",
+          url: "spravy/navagio-zatvorene-2026.html",
+          publishedAt: "2026-06-24",
+          description: "Bezpečnostné obmedzenia pri návšteve zátoky Navagio. Pred cestou si vždy overte aktuálny stav."
+        }
       ]
     },
     {
@@ -65,7 +72,6 @@ window.LETOM_MAP_DATA = {
       country: "Grécko",
       countryId: "greece",
       coordinates: [38.707, 20.641],
-      status: "research",
       summary: "Praktický tip na Lefkadu autom: kde bývať pri Agios Nikitas a čo zohľadniť pri výbere.",
       image: "images/blog/lefkada-autom-agios-nikitas/hero-lefkada-autom-agios-nikitas-thumb.webp",
       imageAlt: "Lefkada s útesmi a tyrkysovým morom",
@@ -78,7 +84,6 @@ window.LETOM_MAP_DATA = {
       country: "Grécko",
       countryId: "greece",
       coordinates: [37.984, 23.728],
-      status: "research",
       summary: "Athény majú aj tichšie zákutia, napríklad štvrť Anafiotika pod Akropolou.",
       image: "images/blog/5-zaujimavosti-stredomoria-3/04-ateny-anafiotika.webp",
       imageAlt: "Biele uličky pod Akropolou v Aténach",
@@ -91,7 +96,6 @@ window.LETOM_MAP_DATA = {
       country: "Taliansko",
       countryId: "italy",
       coordinates: [41.902, 12.496],
-      status: "research",
       summary: "Mesto s menej známou modernou pyramídou pri bráne Porta San Paolo.",
       image: "images/blog/5-zaujimavosti-stredomoria-3/01-rim-cestiova-pyramida.webp",
       imageAlt: "Cestiova pyramída v Ríme",
@@ -104,7 +108,6 @@ window.LETOM_MAP_DATA = {
       country: "Taliansko",
       countryId: "italy",
       coordinates: [38.116, 13.363],
-      status: "research",
       summary: "Pod mestom sa ukrýva qanat, historický vodný systém spojený s dejinami Palerma.",
       image: "images/blog/5-zaujimavosti-stredomoria-3/03-palermo-qanat.webp",
       imageAlt: "Podzemný vodný kanál qanat v Palerme",
@@ -117,7 +120,7 @@ window.LETOM_MAP_DATA = {
       country: "Taliansko",
       countryId: "italy",
       coordinates: [38.177, 12.733],
-      status: "research",
+      personal: {},
       summary: "Severozápad Sicílie spája Monte Monaco, San Vito Lo Capo a chránené pobrežie Zingaro.",
       image: "images/blog/5-zaujimavosti-stredomoria-2/01-monte-monaco-san-vito-lo-capo-thumb.webp",
       imageAlt: "Monte Monaco nad San Vito Lo Capo na Sicílii",
@@ -130,7 +133,7 @@ window.LETOM_MAP_DATA = {
       country: "Taliansko",
       countryId: "italy",
       coordinates: [40.298, 8.497],
-      status: "research",
+      personal: {},
       summary: "Farebné sardínske mestečko pri rieke Temo s hradom, históriou a remeslami.",
       image: "images/blog/5-zaujimavosti-stredomoria-2/07-bosa-farebne-mesto-thumb.webp",
       imageAlt: "Farebné mesto Bosa na Sardínii",
@@ -143,7 +146,6 @@ window.LETOM_MAP_DATA = {
       country: "Španielsko",
       countryId: "spain",
       coordinates: [41.387, 2.17],
-      status: "research",
       summary: "Barcelona je viac než Sagrada Família: zhora ju prezrádza neobyčajná šachovnicová štvrť Eixample.",
       image: "images/blog/5-zaujimavosti-stredomoria-3/02-barcelona-eixample.webp",
       imageAlt: "Letecký pohľad na štvrť Eixample v Barcelone",
@@ -156,7 +158,6 @@ window.LETOM_MAP_DATA = {
       country: "Španielsko",
       countryId: "spain",
       coordinates: [36.721, -4.421],
-      status: "research",
       summary: "Málaga je praktická kombinácia mesta, pláže a Andalúzie počas väčšej časti roka.",
       image: "images/blog/5-zaujimavosti-stredomoria-1/04-malaga-mesto-more-thumb.webp",
       imageAlt: "Málaga s mestom a morom",
@@ -169,7 +170,6 @@ window.LETOM_MAP_DATA = {
       country: "Francúzsko",
       countryId: "france",
       coordinates: [43.296, 5.369],
-      status: "research",
       summary: "Francúzske stredomorské pobrežie v archíve článkov a cestovateľských tipov.",
       image: "images/destinacie/francuzsko-thumb.webp",
       imageAlt: "Francúzske stredomorské pobrežie",
@@ -182,7 +182,6 @@ window.LETOM_MAP_DATA = {
       country: "Chorvátsko",
       countryId: "croatia",
       coordinates: [42.65, 18.094],
-      status: "research",
       summary: "Za hradbami Dubrovníka sa ukrýva aj Lazareti, historický priestor pri mori.",
       image: "images/blog/5-zaujimavosti-stredomoria-3/05-dubrovnik-lazareti.webp",
       imageAlt: "Lazareti pri pobreží Dubrovníka",
@@ -195,7 +194,6 @@ window.LETOM_MAP_DATA = {
       country: "Malta",
       countryId: "malta",
       coordinates: [35.899, 14.514],
-      status: "research",
       summary: "Malta ponúka kompaktné mestá, pobrežie a praktické možnosti aj mimo hlavnej sezóny.",
       image: "images/blog/malta-jul-isle-of-mtv/malta-sliema-promenada-valletta-thumb.webp",
       imageAlt: "Promenáda pri Vallette na Malte",
@@ -208,7 +206,7 @@ window.LETOM_MAP_DATA = {
       country: "Cyprus",
       countryId: "cyprus",
       coordinates: [34.916, 33.635],
-      status: "research",
+      personal: {},
       summary: "Larnaka spája pobrežie s prírodným príbehom soľných panví a plameniakov.",
       image: "images/blog/solne-panvy-stredomoria/larnaka-salt-lake-flamingos-thumb.webp",
       imageAlt: "Soľné jazero pri Larnake",
@@ -221,7 +219,7 @@ window.LETOM_MAP_DATA = {
       country: "Cyprus",
       countryId: "cyprus",
       coordinates: [34.988, 34.001],
-      status: "research",
+      personal: {},
       summary: "Východný Cyprus spája pláže, Cape Greco a náročnejší príbeh Varoshy.",
       image: "images/destinacie/cyprus-thumb.webp",
       imageAlt: "Pobrežie Cypru",
@@ -234,30 +232,11 @@ window.LETOM_MAP_DATA = {
       country: "Slovinsko",
       countryId: "slovenia",
       coordinates: [45.527, 13.568],
-      status: "research",
       summary: "Slovinské pobrežie je krátke, ale praktické pre spojenie mora, miest a výletov autom.",
       image: "images/destinacie/slovinsko-thumb.webp",
       imageAlt: "Slovinské pobrežie pri Pirane",
       keywords: "slovinsko slovinské piran more",
       content: [{ type: "article", label: "Archív", title: "Články o Slovinsku", url: "clanky.html?krajina=slovinsko" }]
-    }
-  ],
-  routes: [
-    {
-      id: "kos-route",
-      label: "Kos autom: mesto Kos, Asklepion, Therma Springs a Kefalos",
-      destinationIds: ["kos", "cavo-paradiso"],
-      status: "personal",
-      url: "blog/kos-osobne.html"
-    }
-  ],
-  alerts: [
-    {
-      destinationId: "navagio",
-      title: "Navagio zostáva pre návštevníkov uzavreté",
-      url: "spravy/navagio-zatvorene-2026.html",
-      publishedAt: "2026-06-24",
-      expiresAt: "2026-10-31"
     }
   ]
 };

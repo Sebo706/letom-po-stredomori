@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Interaktívna mapa Letom po Stredomorí: objavujte články, videá, podcasty, itineráre a praktické upozornenia podľa miest a krajín." />
+    <meta name="description" content="Interaktívna mapa Letom po Stredomorí: objavujte moje cesty, obsah na webe a flash správy podľa miest a krajín." />
     <meta property="og:title" content="Objavte Stredomorie na mape | Letom po Stredomorí" />
     <meta property="og:description" content="Kliknite na krajiny, ostrovy alebo mestá a objavte cestovateľský obsah Letom po Stredomorí." />
     <meta property="og:type" content="website" />
@@ -12,7 +12,7 @@
     <title>Objavte Stredomorie na mape | Letom po Stredomorí</title>
     <link rel="stylesheet" href="style.css?v=20260723-mapa-1" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-    <link rel="stylesheet" href="mapa.css?v=20260723-mapa-2" />
+<link rel="stylesheet" href="mapa.css?v=20260723-mapa-3" />
   </head>
   <body class="map-page">
     <header class="site-header">
@@ -28,20 +28,16 @@
       <header class="map-intro">
         <p class="eyebrow">Interaktívna mapa</p>
         <h1>Objavte Stredomorie na mape</h1>
-        <p>Kliknite na krajiny, ostrovy alebo mestá a objavte články, videá, podcasty, itineráre a cestovateľské tipy.</p>
+        <p>Kliknite na krajiny, ostrovy alebo mestá a objavte moje cesty, články, videá, podcasty a flash správy.</p>
         <p class="map-work-notice"><strong>Mapa je momentálne vo vývoji</strong><span>Postupne dopĺňame ďalšie miesta, praktické filtre a prepojenia na obsah.</span></p>
-        <p class="map-intro-note">Mapa rozlišuje osobné skúsenosti, AI prieskum a ilustračnú vizuálnu inšpiráciu. Pri časovo citlivých informáciách vždy otvorte pôvodný obsah a overte aktuálny stav.</p>
+          <p class="map-intro-note">Zlaté body označujú potvrdené osobné cesty, tyrkysové body obsah na webe a oranžové flash správy. Pri časovo citlivých informáciách vždy otvorte pôvodný obsah a overte aktuálny stav.</p>
       </header>
       <section class="map-section" aria-label="Interaktívna mapa Stredomoria">
         <div class="map-toolbar" role="toolbar" aria-label="Filter obsahu mapy">
           <button class="map-filter is-active" type="button" data-map-filter="all" aria-pressed="true">Všetko</button>
           <button class="map-filter" type="button" data-map-filter="trips" aria-pressed="false">Moje cesty</button>
-          <button class="map-filter" type="button" data-map-filter="article" aria-pressed="false">Články</button>
-          <button class="map-filter" type="button" data-map-filter="video" aria-pressed="false">Videá</button>
-          <button class="map-filter" type="button" data-map-filter="podcast" aria-pressed="false">Podcasty</button>
-          <button class="map-filter" type="button" data-map-filter="itinerary" aria-pressed="false">Itineráre</button>
-          <button class="map-filter" type="button" data-map-filter="flights" aria-pressed="false">Letecké linky</button>
-          <button class="map-filter" type="button" data-map-filter="alerts" aria-pressed="false">Aktuálne upozornenia</button>
+<button class="map-filter" type="button" data-map-filter="content" aria-pressed="false">Obsah</button>
+<button class="map-filter" type="button" data-map-filter="flash" aria-pressed="false">Flash správy</button>
         </div>
         <div class="map-subtoolbar">
           <label class="map-search"><span class="sr-only">Hľadať miesto na mape</span><input id="map-search" type="search" placeholder="Hľadať miesto, krajinu alebo ostrov" autocomplete="off" /><div class="map-search-results" id="map-search-results" aria-live="polite"></div></label>
@@ -50,17 +46,17 @@
         </div>
         <div class="map-shell">
           <div id="mediterranean-map" aria-label="Mapa Stredomoria s označenými miestami" role="application"></div>
-          <aside class="map-legend" aria-label="Legenda mapy"><strong>Legenda</strong><span>Osobná skúsenosť</span><span class="research">AI prieskum</span><span class="visual">Vizuálna inšpirácia</span><span class="alert">Aktuálne upozornenie</span></aside>
+<aside class="map-legend" aria-label="Legenda mapy"><strong>Legenda</strong><span class="trip">Zlatá – Moje cesty</span><span class="content">Tyrkysová – Obsah na webe</span><span class="flash">Oranžová – Flash správy</span></aside>
           <p class="map-tile-fallback" id="map-tile-fallback" hidden>Podklad mapy sa nenačítal. Odkazy na obsah a vyhľadávanie fungujú aj bez neho.</p>
           <p class="map-message" id="map-results-summary" aria-live="polite"></p>
           <p class="map-empty-state" id="map-empty-state" hidden>Pre tento výber zatiaľ nemáme bod na mape. Skúste iný filter alebo si pozrite archív obsahu.</p>
-          <aside class="map-detail-panel" id="map-detail-panel" hidden aria-live="polite"><button class="map-detail-close" id="map-detail-close" type="button" aria-label="Zavrieť detail miesta">×</button><img class="map-detail-image" id="map-detail-image" src="images/destinacie/grecko-thumb.webp" alt="" /><p class="map-detail-country" id="map-detail-country"></p><h2 id="map-detail-title"></h2><p class="map-detail-summary" id="map-detail-summary"></p><span class="map-status" id="map-detail-badge"></span><div class="map-detail-actions" id="map-detail-actions"></div></aside>
+<aside class="map-detail-panel" id="map-detail-panel" hidden aria-live="polite"><button class="map-detail-close" id="map-detail-close" type="button" aria-label="Zavrieť detail miesta">×</button><img class="map-detail-image" id="map-detail-image" src="images/destinacie/grecko-thumb.webp" alt="" /><p class="map-detail-country" id="map-detail-country"></p><h2 id="map-detail-title"></h2><p class="map-detail-summary" id="map-detail-summary"></p><div class="map-detail-badges" id="map-detail-badge"></div><div class="map-detail-actions" id="map-detail-actions"></div></aside>
         </div>
       </section>
       <noscript><section class="map-fallback"><h2>Obsah mapy</h2><p>Pre interaktívnu mapu je potrebný JavaScript. Najdôležitejšie odkazy nájdete priamo v archívoch.</p><ul><li><a href="blog/kos-osobne.html">Kos osobne</a></li><li><a href="blog/zakynthos-osobne.html">Zakynthos osobne</a></li><li><a href="blog/lefkada-autom-3-ubytovania-agios-nikitas.html">Lefkada autom</a></li><li><a href="spravy/navagio-zatvorene-2026.html">Upozornenie pre Navagio</a></li></ul></section></noscript>
     </main>
     <footer class="site-footer"><div class="footer-content"><a class="footer-brand" href="index.html#domov"><img src="images/logo/logo.png" alt="Logo Letom po Stredomorí" /><div><strong>Letom po Stredomorí</strong><p>Cestovateľský magazín spájajúci osobné skúsenosti, praktický prieskum a vizuálnu inšpiráciu.</p></div></a><div class="footer-links"><a href="mapa.html">Mapa</a><a href="index.html#destinacie">Destinácie</a><a href="lety.html">Lety</a><a href="itinerar.html">Itineráre</a><a href="spravy.html">Správy</a><a href="audio.html">Podcasty</a><a href="blog.html">Blog</a></div><p class="ai-note">Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume, štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a publikovanie robím ručne.</p><p class="copyright">© 2026 Letom po Stredomorí</p><!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu --><p class="last-updated">Posledná aktualizácia: 23. júl 2026</p></div></footer>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-    <script src="mapa-data.js?v=20260723-mapa-1"></script><script src="script.js?v=20260723-last-update-1"></script><script src="mapa.js?v=20260723-mapa-1"></script>
+<script src="mapa-data.js?v=20260723-mapa-2"></script><script src="script.js?v=20260723-last-update-1"></script><script src="mapa.js?v=20260723-mapa-2"></script>
   </body>
 </html>

@@ -72,3 +72,10 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Po dokonceni kazdej ulohy pouzivatelovi pripomenut nasledujucich 5 cakajucich bodov zo suboru `WEBSITE_IMPROVEMENTS.md`.
 - Pri kazdom novom kvíze po dokončení zobrazit prehlad vsetkych otazok: odpoved pouzivatela, spravnu odpoved a kratke vysvetlenie. Prehlad musi jasne rozlisovat spravne a nespravne odpovede a byt citatelny na mobile aj desktope.
 
+## Interaktivna mapa
+
+- Miesto sa moze oznacit ako `Moje cesty` iba po vyslovnom potvrdeni pouzivatela; nikdy nie podla clanku, videa, podcastu, nazvu suboru ani predchadzajucej domnienky.
+- Mapa pouziva iba filtre `Vsetko`, `Moje cesty`, `Obsah` a `Flash spravy`. Jeden bod ma jednu spolocnu kartu, aby sa pri rovnakej destinacii nevytvarali duplicitne markery.
+- Flash spravu zaradit na mapu iba pri jasne geograficky urcitelnom mieste. V karte ma byt viditelny datum publikovania; datum aktualizacie uviest iba pri skutocnej obsahovej aktualizacii spravy.
+- Pred rozsirenim mapy o dalsie destinacie alebo neisté priradenia najprv predlozit pouzivatelovi zoznam na potvrdenie.
+
