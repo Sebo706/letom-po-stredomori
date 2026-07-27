@@ -14,13 +14,13 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Vseobecny podcast, ktory sa tyka celeho Stredomoria alebo porovnava cestovanie napriec destinaciami, musi byt priradeny ku vsetkym 8 krajinam webu a v celkovom archive podcastov sa nesmie duplicitne zobrazovat viackrat.
 - Pri novom alebo upravenom verejnom obsahu, ktory ma byt dohladatelny na webe, aktualizovat vyhladavaci index `window.LETOM_SEARCH_INDEX` vlozeny v `index.html`; subor `letom-data.js` drzat ako zhodnu zaloznu kopiu indexu.
 - Pri pridani noveho videa alebo podcastu overit, ze je viditelny nielen v datovej kniznici, ale aj na mobilnej homepage v `Najnovsie na webe`, v prislusnej sekcii `YouTube` alebo `Najnovsie podcasty`, v karte krajiny v `Destinacie pri mori` a na podstranke `videa.html` alebo `audio.html`.
-- Flash spravy patria do sekcie `Stredomorské spravodajstvo - Letom v skratke`.
+- Flash spravy patria do sekcie `Bleskove spravy`.
 - Starsie alebo dalsie flash spravy patria do archivu `spravy.html` cez tlacidlo `Dalsie spravy`.
 - Kazda flash sprava ma mat samostatnu detailovu podstranku so zdielatelnou URL; karty na homepage aj v archive maju smerovat na detail spravy, nie iba rozbalovat text v zozname.
 
 ## Flash spravy
 
-- Na homepage mozu byt v sekcii `Stredomorské spravodajstvo - Letom v skratke` iba 3 flash spravy.
+- Na homepage mozu byt v sekcii `Bleskove spravy` iba 3 flash spravy.
 - Najnovsia flash sprava musi byt vzdy hore.
 - Starsie flash spravy sa posuvaju nizsie.
 - Ak pribudne nova flash sprava, najstarsia z troch homepage sprav sa presunie iba do archivu.
@@ -33,7 +33,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Poradie sekcii na homepage ma byt logicke podla dolezitosti pre navstevnika: najprv najnovsi obsah a aktualne cestovatelske spravy, potom hlavne navigacne a obsahove sekcie ako destinacie a lety, az potom archivne alebo doplnkove sekcie ako blog, videa, podcasty, itinerar, hlasovanie, informacie o tvorbe a socialne siete.
 - PC verzia homepage moze byt plnsia a magazinova, ale mobilna homepage ma byt kratsia, rychla a viac ako rozcestnik.
 - Pri dlhsich sekciach na mobile pouzivat kratky teaser alebo hlavnu kartu s jasnym tlacidlom na prislusnu podstranku/archiv.
-- Na mobile skracovat najma archivne alebo opakovane sekcie, napriklad `Letom v skratke`, podcasty, blog a itinerar; PC verzia moze pri tychto sekciach ostat detailnejsia.
+- Na mobile skracovat najma archivne alebo opakovane sekcie, napriklad `Bleskove spravy`, podcasty, blog a itinerar; PC verzia moze pri tychto sekciach ostat detailnejsia.
 - Mobilna homepage ma stale zachovat jasne odkazy na kompletne podstranky: `spravy.html`, `audio.html`, `blog.html`, `itinerar.html`, `lety.html` a dalsie relevantne archivy.
 - Sekcia `Lety zo Slovenska k Stredomoriu` ma byt na homepage iba ako kratka uputavka s tlacidlom na `lety.html`.
 - Kompletny modul letov patri na samostatnu podstranku `lety.html`.
