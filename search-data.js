@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Letenky zo Slovenska zlacneli o 45 %. Stredomorie je však ešte zaujímavejší príbeh",
+    description: "Ceny leteckej dopravy na Slovensku v júni 2026 medziročne klesli o 45,1 %. Čo to znamená pre lety do Stredomoria?",
+    url: "blog/letenky-slovensko-zlacneli-45-percent.html",
+    keywords: "letenky slovensko slovaci letecká doprava letecka doprava eurostat ceny zlacnenie 45,1 percenta bratislava letisko konkurencia ryanair wizz air smartwings stredomorie taliansko španielsko spanielsko grécko grecko cyprus turecko sicília sicilia barcelona malaga alicante neapol palermo atény ateny larnaka antalya košice kosice",
+  },
+  {
+    type: "Článok",
     title: "Lefkada autom: 3 ubytovania v Agios Nikitas",
     description: "Porovnanie troch možností pre štyroch dospelých: cena, poloha pri plážach, stravovanie a praktické kompromisy.",
     url: "blog/lefkada-autom-3-ubytovania-agios-nikitas.html",

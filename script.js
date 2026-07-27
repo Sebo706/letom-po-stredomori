@@ -159,6 +159,20 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const letenkySlovenskoLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Letenky zo Slovenska zlacneli o 45 %. Stredomorie je však ešte zaujímavejší príbeh",
+  publishedAt: "2026-07-27T12:00:00",
+  date: "Pridané 27. 7. 2026",
+  image: "images/blog/letenky-slovensko-zlacneli-45-percent/hero-letenky-slovensko-zlacneli-45-percent.png",
+  imageAlt: "Lietadlo pri letisku Bratislava a letové spojenia smerom do Stredomoria",
+  description:
+    "Ceny leteckej dopravy na Slovensku v júni 2026 medziročne klesli o 45,1 %. Čo to znamená pre lety do Stredomoria?",
+  url: "blog/letenky-slovensko-zlacneli-45-percent.html",
+  label: "Čítať článok",
+};
+
 const lefkadaAutomLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -207,7 +221,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -599,7 +613,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-07-23";
+  const siteLastUpdated = "2026-07-27";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1369,6 +1383,15 @@ const slovaciLietanieArticle = {
   date: "30. jún 2026",
 };
 
+const letenkySlovenskoArticle = {
+  title: "Letenky zo Slovenska zlacneli o 45 %. Stredomorie je však ešte zaujímavejší príbeh",
+  description:
+    "Ceny leteckej dopravy na Slovensku v júni 2026 medziročne klesli o 45,1 %. Čo to znamená pre lety do Stredomoria?",
+  url: "blog/letenky-slovensko-zlacneli-45-percent.html",
+  image: "images/blog/letenky-slovensko-zlacneli-45-percent/hero-letenky-slovensko-zlacneli-45-percent.png",
+  date: "27. júl 2026",
+};
+
 const solnePanvyArticle = {
   title: "Kde sa more mení na biele zlato",
   description:
@@ -1473,6 +1496,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      letenkySlovenskoArticle,
       zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
       cestovkaArticle,
@@ -1506,6 +1530,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      letenkySlovenskoArticle,
       lefkadaAutomArticle,
       zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
@@ -1533,6 +1558,7 @@ const articleLibrary = {
     name: "Španielsko",
     description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
     articles: [
+      letenkySlovenskoArticle,
       zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
       cestovkaArticle,
@@ -1587,7 +1613,7 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
