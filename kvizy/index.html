@@ -6,9 +6,9 @@
     <meta name="description" content="Interaktívne cestovateľské kvízy Letom po Stredomorí." />
     <title>Kvízy | Letom po Stredomorí</title>
     <link rel="stylesheet" href="../style.css?v=20260728-destination-quiz-1" />
-    <link rel="stylesheet" href="kvizy.css?v=20260728-destination-quiz-1" />
+    <link rel="stylesheet" href="kvizy.css?v=20260728-quiz-directory-2" />
   </head>
-  <body class="article-page quiz-page">
+  <body class="article-page quiz-page quiz-directory-page">
     <header class="site-header">
       <nav class="nav-shell" aria-label="Hlavná navigácia">
         <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov">
@@ -20,6 +20,7 @@
           <a href="../lety.html">Lety</a>
           <a href="../spravy.html">Správy</a>
           <a href="../blog.html">Blog</a>
+          <a href="index.html" aria-current="page">Kvízy</a>
           <a class="nav-cta" href="../index.html#domov">Späť na domov</a>
         </div>
       </nav>
@@ -27,8 +28,8 @@
     <main class="med-quiz quiz-index-page">
       <section class="quiz-shell quiz-index-intro">
         <p class="eyebrow">Interaktívne kvízy</p>
-        <h1>Otestujte svoje cestovateľské znalosti</h1>
-        <p>Krátke kvízy o krajinách, ostrovoch, mestách a zážitkoch európskeho Stredomoria.</p>
+        <h1>Kvízy o Stredomorí</h1>
+        <p>Vyberte si vlastné tempo: vedomostné otázky alebo pátranie podľa postupne odhaľovaných indícií.</p>
       </section>
       <section class="quiz-shell quiz-index-grid" aria-label="Dostupné kvízy">
         <article class="quiz-index-card">
@@ -38,7 +39,16 @@
             <p class="quiz-kicker">15 destinácií · približne 6 minút</p>
             <h2>Uhádnite stredomorskú destináciu podľa troch indícií</h2>
             <p>Odhaľujte stopy postupne. Čím skôr miesto spoznáte, tým viac bodov získate.</p>
-            <a class="button button-primary" href="uhadni-stredomorsku-destinaciu.html">Spustiť kvíz</a>
+            <div class="quiz-directory-actions">
+              <a class="button button-primary" href="uhadni-stredomorsku-destinaciu.html">Spustiť kvíz</a>
+              <button
+                class="button quiz-directory-share"
+                type="button"
+                data-quiz-share
+                data-quiz-title="Uhádnite stredomorskú destináciu podľa troch indícií"
+                data-quiz-url="uhadni-stredomorsku-destinaciu.html"
+              >Zdieľať kvíz</button>
+            </div>
           </div>
         </article>
         <article class="quiz-index-card">
@@ -47,10 +57,24 @@
             <p class="quiz-kicker">15 otázok · približne 5 minút</p>
             <h2>Veľký stredomorský kvíz</h2>
             <p>Ako dobre poznáte európske Stredomorie? Zistíte to bez registrácie.</p>
-            <a class="button button-primary" href="velky-stredomorsky-kviz.html">Spustiť kvíz</a>
+            <div class="quiz-directory-actions">
+              <a class="button button-primary" href="velky-stredomorsky-kviz.html">Spustiť kvíz</a>
+              <button
+                class="button quiz-directory-share"
+                type="button"
+                data-quiz-share
+                data-quiz-title="Veľký stredomorský kvíz"
+                data-quiz-url="velky-stredomorsky-kviz.html"
+              >Zdieľať kvíz</button>
+            </div>
           </div>
         </article>
       </section>
+      <div id="quiz-directory-share-feedback" class="quiz-directory-share-feedback" aria-live="polite" hidden></div>
+      <label id="quiz-directory-share-fallback" class="quiz-directory-share-fallback" hidden>
+        Skopírujte si odkaz na zdieľanie
+        <input id="quiz-directory-share-url" type="text" readonly />
+      </label>
     </main>
     <footer class="site-footer">
       <div class="footer-content">
@@ -58,11 +82,12 @@
           <img src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" />
           <div><strong>Letom po Stredomorí</strong><p>Cestovateľský magazín plný tipov, príbehov a praktických informácií.</p></div>
         </a>
-        <div class="footer-links"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a></div>
+        <div class="footer-links"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html">Kvízy</a></div>
         <p class="copyright">© 2026 Letom po Stredomorí</p>
         <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
         <p class="last-updated">Posledná aktualizácia: 28. júl 2026</p>
       </div>
     </footer>
+    <script src="kvizy-directory.js?v=20260728-quiz-directory-1"></script>
   </body>
 </html>

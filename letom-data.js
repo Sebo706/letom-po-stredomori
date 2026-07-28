@@ -412,6 +412,27 @@ window.LETOM_SEARCH_INDEX = [
     url: "blog.html",
     keywords: "blog články clanky cestovateľský magazín",
   },
+  {
+    type: "Kvíz",
+    title: "Kvízy o Stredomorí",
+    description: "Prehľad interaktívnych kvízov o európskom Stredomorí: vedomostné otázky aj pátranie podľa indícií.",
+    url: "kvizy/index.html",
+    keywords: "kvízy kvizy stredomorie vedomostný kvíz kviz destinácie destinacie indície indicie otázky otazky",
+  },
+  {
+    type: "Kvíz",
+    title: "Veľký stredomorský kvíz",
+    description: "15 otázok o krajinách, ostrovoch, mestách, jedle a prírode európskeho Stredomoria.",
+    url: "kvizy/velky-stredomorsky-kviz.html",
+    keywords: "kvíz kviz stredomorie otázky otazky grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko cyprus malta francúzsko francuzsko slovinsko ostrovy mestá mesta príroda priroda jedlo",
+  },
+  {
+    type: "Kvíz",
+    title: "Uhádnite stredomorskú destináciu podľa troch indícií",
+    description: "Spoznajte 15 ostrovov, miest a pobreží Stredomoria podľa postupne odhaľovaných stôp.",
+    url: "kvizy/uhadni-stredomorsku-destinaciu.html",
+    keywords: "kvíz kviz destinácia destinacie indície indicie hádanie hadanie ostrovy mestá mesta pobrežie stredomorie",
+  },
 ];
 
 
