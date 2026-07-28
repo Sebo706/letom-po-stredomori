@@ -159,6 +159,20 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const malorkaNaBicykliLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Malorka na bicykli: kompletný sprievodca pre cykloturistov",
+  publishedAt: "2026-07-28T12:00:00",
+  date: "Pridané 28. 7. 2026",
+  image: "images/blog/malorka-na-bicykli/hero-malorka-na-bicykli.webp",
+  imageAlt: "Ilustračný vizuál cyklistov na pobrežnej ceste Malorky",
+  description:
+    "Kedy vyraziť, kde sa ubytovať, ktoré trasy zvládnu rekreační cyklisti a kedy sa oplatí vziať vlastný bicykel lietadlom?",
+  url: "blog/malorka-na-bicykli.html",
+  label: "Čítať článok",
+};
+
 const letenkySlovenskoLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -221,7 +235,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1383,6 +1397,15 @@ const slovaciLietanieArticle = {
   date: "30. jún 2026",
 };
 
+const malorkaNaBicykliArticle = {
+  title: "Malorka na bicykli: kompletný sprievodca pre cykloturistov",
+  description:
+    "Kedy vyraziť, kde sa ubytovať, ktoré trasy zvládnu rekreační cyklisti a kedy sa oplatí vziať vlastný bicykel lietadlom?",
+  url: "blog/malorka-na-bicykli.html",
+  image: "images/blog/malorka-na-bicykli/hero-malorka-na-bicykli.webp",
+  date: "28. júl 2026",
+};
+
 const letenkySlovenskoArticle = {
   title: "Letenky zo Slovenska zlacneli o 45 %. Stredomorie je však ešte zaujímavejší príbeh",
   description:
@@ -1556,8 +1579,9 @@ const articleLibrary = {
   },
   spanielsko: {
     name: "Španielsko",
-    description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
-    articles: [
+  description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
+  articles: [
+      malorkaNaBicykliArticle,
       letenkySlovenskoArticle,
       zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,

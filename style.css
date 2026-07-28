@@ -2159,6 +2159,13 @@ a {
   aspect-ratio: 16 / 8;
 }
 
+.article-mallorca-cycling .article-cover img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--color-surface);
+}
+
 .article-cover figcaption {
   padding: 10px 14px 12px;
   color: var(--color-muted);

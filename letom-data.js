@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Malorka na bicykli: kompletný sprievodca pre cykloturistov",
+    description: "Kedy vyraziť, kde sa ubytovať, ktoré trasy zvládnu rekreační cyklisti a kedy sa oplatí vziať vlastný bicykel lietadlom?",
+    url: "blog/malorka-na-bicykli.html",
+    keywords: "malorka mallorca bicykel cyklistika cykloturistika španielsko spanielsko serra de tramuntana sa calobra cap de formentor port de pollença alcúdia požičovňa bicyklov ebike gravel ryanair austrian smartwings",
+  },
+  {
+    type: "Článok",
     title: "Letenky zo Slovenska zlacneli o 45 %. Stredomorie je však ešte zaujímavejší príbeh",
     description: "Ceny leteckej dopravy na Slovensku v júni 2026 medziročne klesli o 45,1 %. Čo to znamená pre lety do Stredomoria?",
     url: "blog/letenky-slovensko-zlacneli-45-percent.html",
