@@ -64,6 +64,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 ## Praca s pravidlami
 
 - Ked pouzivatel oznami nove pravidlo pre projekt, doplnit ho do tohto suboru.
+- Pracuj iba s priamo dotknutými súbormi a nevykonávaj kontroly, ktoré nesúvisia s touto úpravou.
 - Pred vacsimi obsahovymi alebo strukturalnymi upravami skontrolovat tento subor.
 - Po dokonceni kazdej ulohy znovu skontrolovat tento subor a overit, ci vysledok neporusuje projektove pravidla.
 - Po dokonceni kazdej ulohy skontrolovat text `Posledna aktualizacia` v pate webu a nastavit ho na aktualny datum poslednej upravy, ak sa menil verejny obsah alebo verejne subory webu.

@@ -465,6 +465,7 @@
     renderAnswerReview();
     showScreen(elements.result);
     elements.result.querySelector("h2").focus({ preventScroll: true });
+    elements.result.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   async function shareResult() {
