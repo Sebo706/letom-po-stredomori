@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interaktívny kvíz s 15 stredomorskými destináciami. Odhadnite ich podľa troch postupne odhaľovaných indícií."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Uhádnite stredomorskú destináciu podľa troch indícií" />
+    <meta
+      property="og:description"
+      content="Ostrovy, mestá a pobrežia. Koľko z nich spoznáte už po prvej stope?"
+    />
+    <meta property="og:url" content="https://sebo706.github.io/letom-po-stredomori/kvizy/uhadni-stredomorsku-destinaciu.html" />
+    <!-- TODO: Po dodaní finálneho hero obrázka zmeniť src a og:image na images/kvizy/uhadni-stredomorsku-destinaciu-hero.png -->
+    <meta
+      property="og:image"
+      content="https://sebo706.github.io/letom-po-stredomori/images/kvizy/velky-stredomorsky-kviz-hero.png"
+    />
+    <link rel="canonical" href="https://sebo706.github.io/letom-po-stredomori/kvizy/uhadni-stredomorsku-destinaciu.html" />
+    <title>Uhádnite stredomorskú destináciu podľa troch indícií | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="../style.css?v=20260728-destination-quiz-1" />
+    <link rel="stylesheet" href="kvizy.css?v=20260728-destination-quiz-1" />
+  </head>
+  <body class="article-page quiz-page destination-clue-quiz">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov">
+          <img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <span>Letom po Stredomorí</span>
+        </a>
+        <div class="nav-panel nav-panel-static">
+          <a href="../index.html#destinacie">Destinácie</a>
+          <a href="../lety.html">Lety</a>
+          <a href="../spravy.html">Správy</a>
+          <a href="../blog.html">Blog</a>
+          <a href="index.html" aria-current="page">Kvízy</a>
+          <a class="nav-cta" href="../index.html#domov">Domov</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="med-quiz" id="main-content">
+      <section class="quiz-hero" aria-labelledby="quiz-page-title">
+        <!-- TODO: Po dodaní finálneho hero obrázka zmeniť src a og:image na images/kvizy/uhadni-stredomorsku-destinaciu-hero.png -->
+        <img
+          src="../images/kvizy/velky-stredomorsky-kviz-hero.png"
+          alt="Dočasný ilustračný vizuál pobrežia Stredomoria pre kvíz o destináciách"
+          class="quiz-hero-image"
+        />
+        <div class="quiz-hero-overlay"></div>
+        <div class="quiz-shell quiz-hero-content">
+          <p class="eyebrow">Interaktívny kvíz</p>
+          <h1 id="quiz-page-title">Uhádnite stredomorskú destináciu podľa troch indícií</h1>
+          <p>Ostrovy, mestá a pobrežia. Koľko z nich spoznáte už po prvej stope?</p>
+        </div>
+      </section>
+
+      <section class="quiz-shell quiz-stage" aria-labelledby="quiz-stage-title">
+        <section class="quiz-screen quiz-intro" id="quiz-intro" aria-labelledby="quiz-stage-title">
+          <div class="quiz-intro-copy">
+            <p class="quiz-kicker">Pátranie po Stredomorí</p>
+            <h2 id="quiz-stage-title">Spojte indície s miestom na mape</h2>
+            <p>
+              Pri každej destinácii sa najprv zobrazí iba jedna indícia. Čím skôr miesto spoznáte,
+              tým viac bodov získate. Čaká vás 15 ostrovov, miest a pobreží Stredomoria.
+            </p>
+            <ul class="quiz-facts" aria-label="Informácie o kvíze">
+              <li><strong>15</strong><span>destinácií</span></li>
+              <li><strong>3</strong><span>indície</span></li>
+              <li><strong>45</strong><span>bodov max.</span></li>
+            </ul>
+            <button class="button button-primary quiz-start" type="button" id="destination-quiz-start">Spustiť pátranie</button>
+            <p class="quiz-intro-note">Bez registrácie. Najlepší výsledok sa uloží iba v tomto prehliadači.</p>
+          </div>
+        </section>
+
+        <section class="quiz-screen quiz-play" id="destination-quiz-play" hidden aria-labelledby="destination-quiz-question">
+          <div class="quiz-progress-head">
+            <p id="destination-quiz-counter" class="quiz-counter">Destinácia 1 z 15</p>
+            <p id="destination-quiz-type" class="quiz-category"></p>
+          </div>
+          <div class="quiz-progress" aria-hidden="true"><span id="destination-quiz-progress-fill"></span></div>
+          <div class="quiz-question-card">
+            <div class="destination-quiz-question-meta">
+              <span id="destination-quiz-points" class="destination-quiz-points">Hráte o 3 body</span>
+              <span id="destination-quiz-difficulty" class="quiz-difficulty"></span>
+            </div>
+            <h2 id="destination-quiz-question" tabindex="-1">Ktorú destináciu hľadáme?</h2>
+            <div id="destination-quiz-clues" class="destination-quiz-clues" aria-label="Viditeľné indície"></div>
+            <button class="button destination-quiz-reveal" type="button" id="destination-quiz-reveal">Ukázať 2. indíciu</button>
+            <div id="destination-quiz-answers" class="quiz-answers" role="group" aria-label="Možnosti odpovede"></div>
+            <div id="destination-quiz-feedback" class="quiz-feedback" aria-live="polite" hidden></div>
+            <div class="quiz-next-wrap">
+              <button class="button button-primary" type="button" id="destination-quiz-next" hidden>Ďalšia destinácia</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="quiz-screen quiz-result" id="destination-quiz-result" hidden aria-labelledby="destination-quiz-result-title">
+          <p class="quiz-kicker">Výsledok</p>
+          <h2 id="destination-quiz-result-title" tabindex="-1">Vaše stredomorské skóre</h2>
+          <div class="quiz-score" aria-live="polite">
+            <strong id="destination-quiz-score-number">0 z 45</strong>
+            <span id="destination-quiz-score-percent">0 %</span>
+          </div>
+          <p id="destination-quiz-correct-count" class="destination-quiz-correct-count">0 správne uhádnutých destinácií z 15</p>
+          <p id="destination-quiz-level" class="quiz-level"></p>
+          <p id="destination-quiz-result-copy" class="quiz-result-copy"></p>
+          <p id="destination-quiz-best-score" class="quiz-best-score" hidden></p>
+          <section class="quiz-review" aria-labelledby="destination-quiz-review-title">
+            <div class="quiz-review-heading">
+              <div>
+                <p class="quiz-kicker">Prehľad odpovedí</p>
+                <h3 id="destination-quiz-review-title">Ako ste pátrali</h3>
+              </div>
+              <span id="destination-quiz-review-summary" class="quiz-review-summary"></span>
+            </div>
+            <ol id="destination-quiz-review-list" class="quiz-review-list"></ol>
+          </section>
+          <div class="quiz-result-actions">
+            <button class="button button-primary" type="button" id="destination-quiz-restart">Skúsiť znova</button>
+            <button class="button quiz-share" type="button" id="destination-quiz-share">Zdieľať výsledok</button>
+            <a class="button quiz-secondary-link" href="../index.html#destinacie">Objaviť destinácie</a>
+          </div>
+          <div id="destination-quiz-share-feedback" class="quiz-share-feedback" aria-live="polite" hidden></div>
+          <label id="destination-quiz-share-fallback" class="quiz-share-fallback" hidden>
+            Skopírujte si text a odkaz na zdieľanie
+            <input id="destination-quiz-share-url" type="text" readonly />
+          </label>
+        </section>
+      </section>
+
+      <section class="quiz-shell quiz-after" aria-labelledby="quiz-after-title">
+        <div>
+          <p class="eyebrow">Pokračujte v objavovaní</p>
+          <h2 id="quiz-after-title">Kvíz je začiatok, nie cieľ.</h2>
+          <p>Prejdite si články, videá a podcasty o miestach, ktoré vás v indíciách zaujali.</p>
+        </div>
+        <div class="quiz-after-actions">
+          <a class="button button-primary" href="../blog.html">Čítať články</a>
+          <a class="button quiz-secondary-link" href="../audio.html">Počúvať podcasty</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a class="footer-brand" href="../index.html#domov" aria-label="Späť hore na domov">
+          <img src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <div>
+            <strong>Letom po Stredomorí</strong>
+            <p>Cestovateľský magazín spájajúci osobné skúsenosti, praktický prieskum a vizuálnu inšpiráciu.</p>
+          </div>
+        </a>
+        <div class="footer-links" aria-label="Odkazy v pätičke">
+          <a href="../index.html#destinacie">Destinácie</a>
+          <a href="../lety.html">Lety</a>
+          <a href="../spravy.html">Správy</a>
+          <a href="../blog.html">Blog</a>
+          <a href="index.html">Kvízy</a>
+          <a href="../audio.html">Podcast</a>
+        </div>
+        <p class="ai-note">Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume, štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a publikovanie robím ručne.</p>
+        <p class="copyright">© 2026 Letom po Stredomorí</p>
+        <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
+        <p class="last-updated">Posledná aktualizácia: 28. júl 2026</p>
+      </div>
+    </footer>
+
+    <script src="uhadni-stredomorsku-destinaciu.js?v=20260728-destination-quiz-1"></script>
+  </body>
+</html>
