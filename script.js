@@ -159,6 +159,19 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const francuzskaRivieraLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Francúzska riviéra bez milionárskeho rozpočtu: Nice, Cannes, Menton aj dedinky nad morom",
+  publishedAt: "2026-07-29T12:00:00",
+  date: "Pridané 29. 7. 2026",
+  image: "images/blog/francuzska-riviera-bez-milionarskeho-rozpoctu/hero-francuzska-riviera.png",
+  imageAlt: "Ilustračný vizuál Nice a Francúzskej riviéry",
+  description: "Ako sa tam dostať zo Slovenska, kde sa ubytovať a čo vidieť za 5 až 7 dní.",
+  url: "blog/francuzska-riviera-bez-milionarskeho-rozpoctu.html",
+  label: "Čítať článok",
+};
+
 const malorkaNaBicykliLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -235,7 +248,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1397,6 +1410,14 @@ const slovaciLietanieArticle = {
   date: "30. jún 2026",
 };
 
+const francuzskaRivieraArticle = {
+  title: "Francúzska riviéra bez milionárskeho rozpočtu: Nice, Cannes, Menton aj dedinky nad morom",
+  description: "Ako sa tam dostať zo Slovenska, kde sa ubytovať a čo vidieť za 5 až 7 dní.",
+  url: "blog/francuzska-riviera-bez-milionarskeho-rozpoctu.html",
+  image: "images/blog/francuzska-riviera-bez-milionarskeho-rozpoctu/hero-francuzska-riviera.png",
+  date: "29. júl 2026",
+};
+
 const malorkaNaBicykliArticle = {
   title: "Malorka na bicykli: kompletný sprievodca pre cykloturistov",
   description:
@@ -1605,7 +1626,7 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",

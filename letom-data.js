@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "Francúzska riviéra bez milionárskeho rozpočtu: Nice, Cannes, Menton aj dedinky nad morom",
+    description: "Ako sa tam dostať zo Slovenska, kde sa ubytovať a čo vidieť za 5 až 7 dní.",
+    url: "blog/francuzska-riviera-bez-milionarskeho-rozpoctu.html",
+    keywords: "francúzska riviéra francuzska riviera côte d’azur nice cannes menton antibes èze monako bratislava wizz air vlak francúzsko francuzsko",
+  },
+  {
     type: "Kvíz",
     title: "Kam k moru? Nájdite destináciu aj štýl dovolenky pre vás",
     description: "Osobnostný cestovateľský kvíz podľa pláží, jedla, prírody, miest, tempa a štýlu dovolenky od all inclusive po cestu na vlastnú päsť.",
