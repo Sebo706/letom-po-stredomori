@@ -1,5 +1,85 @@
 window.LETOM_FLASH_NEWS = [
   {
+    id: "poziare-vychod-stredomoria-2026",
+    label: "BLESKOVÁ SPRÁVA",
+    title: "Požiare už zasahujú aj východ Stredomoria. Kde je situácia najhoršia a čo majú urobiť dovolenkári?",
+    date: "Aktualizované 29. júla 2026",
+    datetime: "2026-07-29",
+    image: "images/novinky/poziare-vychod-stredomoria-2026.jpg",
+    imageAlt: "Ilustračný vizuál požiaru pri pobreží Stredomoria a dovolenkárov sledujúcich situáciu",
+    summary:
+      "Po ničivých požiaroch vo Francúzsku a Španielsku pribudli vážne ohniská aj na gréckych ostrovoch Paros a Kréta.",
+    body: [
+      "Po ničivých požiaroch vo Francúzsku a Španielsku pribudli vážne ohniská aj na gréckych ostrovoch Paros a Kréta. Európsky systém informácií o lesných požiaroch (EFFIS) upozornil, že pás najvyššieho rizika sa v najbližších dňoch posúva smerom ku Grécku, Taliansku a strednej Európe.",
+      "Neznamená to, že sa jeden požiar presúva naprieč kontinentom. Ide o kombináciu horúčav, sucha a vetra, ktorá vytvára vhodné podmienky na vznik nových požiarov čoraz viac na východe. Ide o aktuálnu prognózu rizika, nie o potvrdenie, že vo všetkých uvedených oblastiach už horí.",
+    ],
+    sections: [
+      {
+        title: "Španielsko: Sierra de Espadán zostáva nebezpečná",
+        paragraphs: [
+          "Požiar pri La Vall d’Uixó v provincii Castellón zasiahol približne 9 300 hektárov a jeho obvod dosahuje asi 81 kilometrov. Približne 10 000 ľudí zostáva evakuovaných a oheň stále nebol vyhlásený za stabilizovaný.",
+          "Cestovatelia by sa nemali vyberať do prírodného parku Sierra de Espadán ani do okolia Artany, Eslidy, Tales, Aínu a Alcúdie de Veo. Nižší údaj o zhorenej ploche oproti skoršiemu odhadu 10 000 hektárov je výsledkom presnejšieho mapovania, nie ústupu požiaru.",
+        ],
+      },
+      {
+        title: "Francúzsko: najväčší požiar je mimo Stredomoria",
+        paragraphs: [
+          "Najhoršia situácia vo Francúzsku zostáva v Gironde a Landes pri Bordeaux, teda na atlantickom pobreží. Požiar zasiahol približne 42 000 hektárov a na vrchole krízy muselo svoje domovy alebo ubytovania opustiť okolo 220 000 ľudí. Hasiči dosiahli čiastočný pokrok, ale horúčava a vietor stále prinášajú riziko opätovného rozhorenia.",
+          "Na stredomorskom juhu Francúzska označila prefektúra požiar Gros Bessillon vo Var za ohraničený. Vstup do lesných masívov však môže byť naďalej obmedzený podľa dennej úrovne rizika.",
+        ],
+      },
+      {
+        title: "Paros: bez súvislého frontu, ale riziko návratu plameňov zostáva",
+        paragraphs: [
+          "Po nočných evakuáciách sa situácia na Parose zlepšila. Požiar už nemá súvislý aktívny front, v ohraničenej oblasti však zostávajú menšie ohniská a zadymené miesta. Silný vietor ich môže opäť rozhorieť.",
+          "Cestovatelia by mali naďalej vynechať juh ostrova medzi Aliki, Agkairiou, Trypiti, Aspro Chorio, Glyfou a Driosom. Pobyt na celom Parose zatiaľ netreba automaticky rušiť, ale návrat do evakuovaných lokalít je bezpečný až po oficiálnom zrušení pokynov systému 112.",
+        ],
+      },
+      {
+        title: "Kréta: najvážnejšie nové ohnisko na východe Stredomoria",
+        paragraphs: [
+          "Podstatne vážnejšia je situácia na južnej Kréte v oblasti Rethymna. Požiar pri Krya Vrysi sa pre silný vietor rozdelil na viacero frontov. Evakuačné pokyny zasiahli dediny aj turistické oblasti Saktouria, Melampes, Agios Georgios, Agios Pavlos a Triopetra. Pri zásahu zahynuli dvaja hasiči.",
+          "Cestovatelia by sa mali vyhnúť južnému pobrežiu medzi Agia Galini, Agios Pavlos a Triopetrou. Severného pobrežia, mesta Rethymno ani krétskych letísk sa podľa doterajších informácií obmedzenia priamo netýkajú. Situácia sa však môže rýchlo zmeniť.",
+        ],
+      },
+      {
+        title: "Čo urobiť, ak požiar zasiahne vašu dovolenku",
+        items: [
+          "Pokyn na evakuáciu cez systém 112 neignorujte a odíďte okamžite určeným smerom. Nečakajte na vlastné posúdenie situácie.",
+          "Nejazdite autom smerom k plameňom ani cez hustý dym. Cesta môže byť neprejazdná a viditeľnosť sa môže zhoršiť v priebehu niekoľkých minút.",
+          "Ak úrady nariadia zostať v budove, zatvorte okná a dvere, vypnite prívod vonkajšieho vzduchu a klimatizáciu nastavte na vnútornú cirkuláciu.",
+          "Majte pri sebe telefón, nabíjačku alebo powerbanku, doklady, lieky, vodu a pevnú obuv.",
+          "Pri dyme obmedzte pobyt vonku. Deti, seniori, tehotné ženy a ľudia s ochoreniami srdca alebo dýchacích ciest sú ohrození viac.",
+          "Nevracajte sa do hotela, apartmánu ani k zaparkovanému autu bez povolenia záchranných zložiek.",
+          "V bezprostrednom ohrození volajte 112. Číslo je bezplatné a funguje vo všetkých štátoch EÚ.",
+        ],
+        afterItems: [
+          "Najdôležitejšie pre dovolenkárov: požiar v jednej časti ostrova alebo regiónu automaticky neznamená, že treba zrušiť celý pobyt. Rozhodujúca je presná poloha ubytovania, miestne výstrahy, uzávery ciest a pokyny civilnej ochrany. Situáciu si preto overte priamo u ubytovateľa ešte pred cestou, nie iba podľa fotografií a videí na sociálnych sieťach.",
+        ],
+      },
+    ],
+    source:
+      "Zdroje: AP, Reuters, Euronews, ERT News, Proto Thema, El País, Cadena SER, Prefektúra Var, Európsky systém informácií o lesných požiaroch (EFFIS), Európska komisia, Grécka civilná ochrana a Červený kríž. Stav k 29. júlu 2026.",
+    sourceLinks: [
+      {
+        label: "AP – požiare v Grécku a Francúzsku",
+        url: "https://apnews.com/article/c3d9c45cdbf57d19bbec46d49e5237de",
+      },
+      {
+        label: "ERT News – požiar na Parose a správy systému 112",
+        url: "https://www.ertnews.gr/perifereia/fotia-stin-paro-minyma-112-gia-apomakrynsi-katoikon-enisxyontai-synexos-oi-pyrosvestikes-dynameis/",
+      },
+      {
+        label: "EFFIS/Copernicus – aktuálna situácia a predpoveď rizika požiarov",
+        url: "https://joint-research-centre.ec.europa.eu/projects-and-activities/natural-and-man-made-hazards/forest-fires/current-wildfire-situation-europe_en",
+      },
+      {
+        label: "Európska komisia – tiesňové číslo 112",
+        url: "https://digital-strategy.ec.europa.eu/en/policies/112",
+      },
+    ],
+  },
+  {
     id: "ryanair-24-hodinovy-vypredaj-2026",
     label: "BLESKOVÁ SPRÁVA | 29. júl 2026",
     title: "Ryanair spustil 24-hodinový výpredaj: z Bratislavy k moru približne od 15 eur",

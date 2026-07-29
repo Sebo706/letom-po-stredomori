@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Požiare už zasahujú aj východ Stredomoria",
+    description: "Aktuálne informácie o požiaroch na Parose, Kréte, v Španielsku a Francúzsku aj praktické pokyny pre dovolenkárov.",
+    url: "spravy/poziare-vychod-stredomoria-2026.html",
+    keywords: "požiare Grécko Paros Kréta Rethymno Španielsko Francúzsko 112 evakuácia bezpečnosť"
+  },
+  {
+    type: "Blesková správa",
     title: "Ryanair spustil 24-hodinový výpredaj: z Bratislavy k moru približne od 15 eur",
     description: "Krátky „pay day“ výpredaj leteniek do prímorských destinácií. Akcia sa podľa oznámenia končí 29. júla o 23:59.",
     url: "spravy/ryanair-24-hodinovy-vypredaj-2026.html",
