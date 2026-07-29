@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Kvíz",
+    title: "Kam k moru? Nájdite destináciu aj štýl dovolenky pre vás",
+    description: "Osobnostný cestovateľský kvíz podľa pláží, jedla, prírody, miest, tempa a štýlu dovolenky od all inclusive po cestu na vlastnú päsť.",
+    url: "kvizy/ktora-stredomorska-destinacia-je-pre-vas.html",
+    keywords: "kvíz kviz osobnostný osobnostny destinácia destinacia dovolenka all inclusive na vlastnú päsť vlastnu pest more pláže plaze jedlo príroda priroda grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko malta cyprus"
+  },
+  {
     type: "Blesková správa",
     title: "Požiare už zasahujú aj východ Stredomoria",
     description: "Aktuálne informácie o požiaroch na Parose, Kréte, v Španielsku a Francúzsku aj praktické pokyny pre dovolenkárov.",
