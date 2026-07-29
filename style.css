@@ -1664,6 +1664,60 @@ a {
     inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
+.country-flag-media {
+  display: block;
+}
+
+.country-flag-media img {
+  display: block;
+}
+
+.destination-card .card-body {
+  position: relative;
+}
+
+.destination-card.country-italy .card-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)), linear-gradient(90deg, #009246 0 33.333%, #ffffff 33.333% 66.666%, #ce2b37 66.666%);
+}
+
+.destination-card.country-spain .card-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), linear-gradient(180deg, #aa151b 0 25%, #f1bf00 25% 75%, #aa151b 75%);
+}
+
+.destination-card.country-cyprus .card-body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.68)),
+    radial-gradient(ellipse 17% 8% at 50% 41%, #d5782b 0 72%, transparent 74%),
+    radial-gradient(ellipse 7% 2% at 44% 55%, #4f8a58 0 70%, transparent 73%),
+    radial-gradient(ellipse 7% 2% at 56% 55%, #4f8a58 0 70%, transparent 73%),
+    #ffffff;
+}
+
+.destination-card.country-greece .card-body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76)),
+    linear-gradient(90deg, transparent 40%, #ffffff 40% 60%, transparent 60%) left top / 37% 55.556% no-repeat,
+    linear-gradient(0deg, transparent 40%, #ffffff 40% 60%, transparent 60%) left top / 37% 55.556% no-repeat,
+    linear-gradient(#0d5eaf 0 0) left top / 37% 55.556% no-repeat,
+    repeating-linear-gradient(180deg, #0d5eaf 0 11.111%, #ffffff 11.111% 22.222%);
+}
+
+.destination-card.country-croatia .card-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), linear-gradient(180deg, #ff0000 0 33.333%, #ffffff 33.333% 66.666%, #171796 66.666%);
+}
+
+.destination-card.country-france .card-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)), linear-gradient(90deg, #002654 0 33.333%, #ffffff 33.333% 66.666%, #ed2939 66.666%);
+}
+
+.destination-card.country-malta .card-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)), linear-gradient(90deg, #ffffff 0 50%, #cf142b 50%);
+}
+
+.destination-card.country-slovenia .card-body {
+  background: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), linear-gradient(180deg, #ffffff 0 33.333%, #005ce6 33.333% 66.666%, #ed1c24 66.666%);
+}
+
 .destination-card a::before {
   content: "";
   position: absolute;
