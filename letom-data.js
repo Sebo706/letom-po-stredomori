@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Blesková správa",
+    title: "Ryanair spustil 24-hodinový výpredaj: z Bratislavy k moru približne od 15 eur",
+    description: "Krátky „pay day“ výpredaj leteniek do prímorských destinácií. Akcia sa podľa oznámenia končí 29. júla o 23:59.",
+    url: "spravy/ryanair-24-hodinovy-vypredaj-2026.html",
+    keywords: "Ryanair výpredaj letenky Bratislava Korfu Malta Zadar Košice batožina"
+  },
+  {
     type: "Článok",
     title: "Malorka na bicykli: kompletný sprievodca pre cykloturistov",
     description: "Kedy vyraziť, kde sa ubytovať, ktoré trasy zvládnu rekreační cyklisti a kedy sa oplatí vziať vlastný bicykel lietadlom?",
@@ -453,6 +460,13 @@ window.LETOM_SEARCH_INDEX = [
     description: "16 otázok o jedlách, nápojoch, syroch, dezertoch a miestnych špecialitách Stredomoria.",
     url: "kvizy/chute-stredomoria.html",
     keywords: "kvíz kviz chute jedlo jedlá jedla nápoje napoje syry dezerty špeciality arancini focaccia paella souvlaki cannoli pašticada pasticada ensaimada bouillabaisse halloumi pastizzi stredomorie",
+  },
+  {
+    type: "Kvíz",
+    title: "Dohovorili by ste sa na dovolenke?",
+    description: "16 otázok o pozdravoch, poďakovaní a praktických cestovateľských frázach v jazykoch Stredomoria.",
+    url: "kvizy/dohovorili-by-ste-sa.html",
+    keywords: "kvíz kviz jazyky frázy frazy dovolenka cestovanie taliančina taliancina gréčtina grectina španielčina spanielcina chorvátčina chorvatcina francúzština francuzstina maltčina maltcina slovinčina slovincina ciao grazie hola gracias hvala",
   },
 ];
 

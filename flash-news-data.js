@@ -1,5 +1,51 @@
 window.LETOM_FLASH_NEWS = [
   {
+    id: "ryanair-24-hodinovy-vypredaj-2026",
+    label: "BLESKOVÁ SPRÁVA | 29. júl 2026",
+    title: "Ryanair spustil 24-hodinový výpredaj: z Bratislavy k moru približne od 15 eur",
+    date: "29. júl 2026",
+    datetime: "2026-07-29",
+    image: "images/novinky/ryanair-payday-vypredaj-2026.jpg",
+    imageAlt: "Ilustračný vizuál lietadla Ryanair a výpredaja letov z Bratislavy k moru",
+    summary:
+      "Ryanair dnes spustil krátky „pay day“ výpredaj leteniek do prímorských destinácií. Akcia sa podľa oznámenia končí dnes, 29. júla, o 23:59 a zahŕňa cesty od augusta do konca októbra 2026.",
+    body: [
+      "Ryanair dnes spustil krátky „pay day“ výpredaj leteniek do prímorských destinácií. Akcia sa podľa oznámenia končí dnes, 29. júla, o 23:59 a zahŕňa cesty od augusta do konca októbra 2026.",
+      "Najzaujímavejšie ceny sa momentálne objavujú najmä mimo hlavnej sezóny:",
+    ],
+    sections: [
+      {
+        items: [
+          "Bratislava – Korfu: 18. októbra od 14,99 €",
+          "Bratislava – Malta: 6. októbra približne od 15 €",
+          "Bratislava – Zadar: 26. augusta od 18 €",
+          "Košice – Zadar: 30. septembra približne od 19 €",
+        ],
+        afterItems: [
+          "Pri spiatočných kombináciách boli dostupné napríklad letenky z Bratislavy na Maltu alebo Korfu približne od 38 € za osobu.",
+          "Dôležité upozornenie: uvedené sumy sú jednosmerné základné ceny a rýchlo sa menia podľa dostupnosti. V cene je len malá osobná taška do rozmerov 40 × 30 × 20 cm pod sedadlo; väčšia batožina, výber sedadla a ďalšie služby sa priplácajú.",
+          "Pre slovenských cestovateľov sú najzaujímavejšie najmä októbrové termíny na Malte a Korfu, kde môže byť stále príjemné dovolenkové počasie, menej turistov a lacnejšie ubytovanie než počas augusta. Ceny treba pred zaplatením skontrolovať priamo na stránke alebo v aplikácii Ryanair.",
+        ],
+      },
+    ],
+    source:
+      "Zdroje uvedené v podklade: Dromedar; Ryanair; Ryanair Pomoc. Uvedené ceny, termíny a čas ukončenia ponuky sú stavom z 29. júla 2026.",
+    sourceLinks: [
+      {
+        label: "Ryanair – lety z Bratislavy na Korfu",
+        url: "https://www.ryanair.com/flights/gb/en/flights-from-bratislava-to-corfu",
+      },
+      {
+        label: "Ryanair – lety z Bratislavy do Zadaru",
+        url: "https://www.ryanair.com/flights/ie/en/flights-from-bratislava-to-zadar",
+      },
+      {
+        label: "Ryanair Pomoc – pravidlá batožiny",
+        url: "https://help.ryanair.com/hc/en-gb/categories/12489112419089-Bag-Rules",
+      },
+    ],
+  },
+  {
     id: "grecke-ostrovy-nedostatok-vody-2026",
     label: "Grécko • ostrovy • voda",
     title: "Sedem gréckych ostrovov rieši vážny nedostatok vody",
