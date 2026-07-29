@@ -159,6 +159,19 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const stredomorieVlajkaLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Má Stredomorie vlastnú vlajku? Takto by jeho symbol a vlajka vyzerali podľa AI",
+  publishedAt: "2026-07-29T13:00:00",
+  date: "Pridané 29. 7. 2026",
+  image: "images/blog/ma-stredomorie-vlastnu-vlajku/hero-stredomorie-vlastna-vlajka.png",
+  imageAlt: "AI vizuál hypotetickej vlajky Stredomoria pri pobreží",
+  description: "Skúmali sme, či existuje spoločný symbol Stredomoria – a ako by jeho vlajka a znak mohli vyzerať podľa AI.",
+  url: "blog/ma-stredomorie-vlastnu-vlajku.html",
+  label: "Čítať článok",
+};
+
 const francuzskaRivieraLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -248,7 +261,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1410,6 +1423,14 @@ const slovaciLietanieArticle = {
   date: "30. jún 2026",
 };
 
+const stredomorieVlajkaArticle = {
+  title: "Má Stredomorie vlastnú vlajku? Takto by jeho symbol a vlajka vyzerali podľa AI",
+  description: "Skúmali sme, či existuje spoločný symbol Stredomoria – a ako by jeho vlajka a znak mohli vyzerať podľa AI.",
+  url: "blog/ma-stredomorie-vlastnu-vlajku.html",
+  image: "images/blog/ma-stredomorie-vlastnu-vlajku/hero-stredomorie-vlastna-vlajka.png",
+  date: "29. júl 2026",
+};
+
 const francuzskaRivieraArticle = {
   title: "Francúzska riviéra bez milionárskeho rozpočtu: Nice, Cannes, Menton aj dedinky nad morom",
   description: "Ako sa tam dostať zo Slovenska, kde sa ubytovať a čo vidieť za 5 až 7 dní.",
@@ -1540,6 +1561,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      stredomorieVlajkaArticle,
       letenkySlovenskoArticle,
       zaujimavostiStredomoria3Article,
       pravaCestujucichEuArticle,
@@ -1574,6 +1596,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      stredomorieVlajkaArticle,
       letenkySlovenskoArticle,
       lefkadaAutomArticle,
       zaujimavostiStredomoria3Article,
@@ -1602,6 +1625,7 @@ const articleLibrary = {
     name: "Španielsko",
   description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
   articles: [
+      stredomorieVlajkaArticle,
       malorkaNaBicykliArticle,
       letenkySlovenskoArticle,
       zaujimavostiStredomoria3Article,
@@ -1626,17 +1650,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      stredomorieVlajkaArticle,
       pravaCestujucichEuArticle,
       cestovkaArticle,
       suveniryEuMimoEuArticle,
@@ -1658,12 +1683,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 

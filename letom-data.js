@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Má Stredomorie vlastnú vlajku? Takto by jeho symbol a vlajka vyzerali podľa AI",
+    description: "Skúmali sme, či existuje spoločný symbol Stredomoria – a ako by jeho vlajka a znak mohli vyzerať podľa AI.",
+    url: "blog/ma-stredomorie-vlastnu-vlajku.html",
+    keywords: "stredomorie vlajka symbol znak únia pre stredomorie ufm stredomorské hry olivovník oliva more slnko ai umelá inteligencia",
+  },
+  {
+    type: "Článok",
     title: "Francúzska riviéra bez milionárskeho rozpočtu: Nice, Cannes, Menton aj dedinky nad morom",
     description: "Ako sa tam dostať zo Slovenska, kde sa ubytovať a čo vidieť za 5 až 7 dní.",
     url: "blog/francuzska-riviera-bez-milionarskeho-rozpoctu.html",
