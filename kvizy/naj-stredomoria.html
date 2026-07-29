@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interaktívny NAJ kvíz o Stredomorí: najväčšie ostrovy, najvyššie vrchy a najstaršie pamiatky v 16 otázkach." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NAJ kvíz o Stredomorí | Letom po Stredomorí" />
+    <meta property="og:description" content="Poznáte najväčšie ostrovy, najvyššie vrchy a najstaršie pamiatky Stredomoria?" />
+    <meta property="og:url" content="https://sebo706.github.io/letom-po-stredomori/kvizy/naj-stredomoria.html" />
+    <meta property="og:image" content="https://sebo706.github.io/letom-po-stredomori/images/kvizy/velky-stredomorsky-kviz-hero.png" />
+    <link rel="canonical" href="https://sebo706.github.io/letom-po-stredomori/kvizy/naj-stredomoria.html" />
+    <title>NAJ kvíz o Stredomorí | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="../style.css?v=20260728-destination-quiz-1" />
+    <link rel="stylesheet" href="kvizy.css?v=20260728-quiz-directory-2" />
+  </head>
+  <body class="article-page quiz-page destination-clue-quiz">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov">
+          <img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <span>Letom po Stredomorí</span>
+        </a>
+        <div class="nav-panel nav-panel-static">
+          <a href="../index.html#destinacie">Destinácie</a>
+          <a href="../lety.html">Lety</a>
+          <a href="../spravy.html">Správy</a>
+          <a href="../blog.html">Blog</a>
+          <a href="index.html" aria-current="page">Kvízy</a>
+          <a class="nav-cta" href="../index.html#domov">Domov</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="med-quiz" id="main-content">
+      <section class="quiz-hero" aria-labelledby="quiz-page-title">
+        <img src="../images/kvizy/velky-stredomorsky-kviz-hero.png" alt="Ilustračný vizuál pobrežia Stredomoria pre vedomostný kvíz" class="quiz-hero-image" />
+        <div class="quiz-hero-overlay"></div>
+        <div class="quiz-shell quiz-hero-content">
+          <a class="quiz-directory-return" href="index.html">Späť na všetky kvízy</a>
+          <p class="eyebrow">Interaktívny kvíz</p>
+          <h1 id="quiz-page-title">NAJ kvíz o Stredomorí</h1>
+          <p>Najväčšie ostrovy, najvyššie vrchy a pamiatky s najdlhšou históriou. Koľko rekordov poznáte už po prvej stope?</p>
+        </div>
+      </section>
+
+      <section class="quiz-shell quiz-stage" aria-labelledby="quiz-stage-title">
+        <section class="quiz-screen quiz-intro" id="quiz-intro" aria-labelledby="quiz-stage-title">
+          <div class="quiz-intro-copy">
+            <p class="quiz-kicker">Stredomorské rekordy</p>
+            <h2 id="quiz-stage-title">Zistite, čo je v Stredomorí NAJ</h2>
+            <p>Pri každej otázke sa najprv zobrazí iba jedna indícia. Čím skôr správnu odpoveď vyberiete, tým viac bodov získate.</p>
+            <ul class="quiz-facts" aria-label="Informácie o kvíze">
+              <li><strong>16</strong><span>otázok</span></li>
+              <li><strong>3</strong><span>indície</span></li>
+              <li><strong>48</strong><span>bodov max.</span></li>
+            </ul>
+            <button class="button button-primary quiz-start" type="button" id="naj-quiz-start">Spustiť NAJ kvíz</button>
+            <p class="quiz-intro-note">Bez registrácie. Najlepší výsledok sa uloží iba v tomto prehliadači.</p>
+          </div>
+        </section>
+
+        <section class="quiz-screen quiz-play" id="naj-quiz-play" hidden aria-labelledby="naj-quiz-question">
+          <div class="quiz-progress-head">
+            <p id="naj-quiz-counter" class="quiz-counter">Otázka 1 zo 16</p>
+            <p id="naj-quiz-type" class="quiz-category"></p>
+          </div>
+          <div class="quiz-progress" aria-hidden="true"><span id="naj-quiz-progress-fill"></span></div>
+          <div class="quiz-question-card">
+            <div class="destination-quiz-question-meta">
+              <span id="naj-quiz-points" class="destination-quiz-points">Hráte o 3 body</span>
+              <span id="naj-quiz-difficulty" class="quiz-difficulty"></span>
+            </div>
+            <h2 id="naj-quiz-question" tabindex="-1">Ktorá odpoveď je správna?</h2>
+            <div id="naj-quiz-clues" class="destination-quiz-clues" aria-label="Viditeľné indície"></div>
+            <button class="button destination-quiz-reveal" type="button" id="naj-quiz-reveal">Ukázať 2. indíciu</button>
+            <div id="naj-quiz-answers" class="quiz-answers" role="group" aria-label="Možnosti odpovede"></div>
+            <div id="naj-quiz-feedback" class="quiz-feedback" aria-live="polite" hidden></div>
+            <div class="quiz-next-wrap"><button class="button button-primary" type="button" id="naj-quiz-next" hidden>Ďalšia otázka</button></div>
+          </div>
+        </section>
+
+        <section class="quiz-screen quiz-result" id="naj-quiz-result" hidden aria-labelledby="naj-quiz-result-title">
+          <p class="quiz-kicker">Výsledok</p>
+          <h2 id="naj-quiz-result-title" tabindex="-1">Vaše skóre v NAJ kvíze</h2>
+          <div class="quiz-score" aria-live="polite"><strong id="naj-quiz-score-number">0 z 48</strong><span id="naj-quiz-score-percent">0 %</span></div>
+          <p id="naj-quiz-correct-count" class="destination-quiz-correct-count">0 správnych odpovedí zo 16</p>
+          <p id="naj-quiz-level" class="quiz-level"></p>
+          <p id="naj-quiz-result-copy" class="quiz-result-copy"></p>
+          <p id="naj-quiz-best-score" class="quiz-best-score" hidden></p>
+          <section class="quiz-review" aria-labelledby="naj-quiz-review-title">
+            <div class="quiz-review-heading"><div><p class="quiz-kicker">Prehľad odpovedí</p><h3 id="naj-quiz-review-title">Ako ste si viedli</h3></div><span id="naj-quiz-review-summary" class="quiz-review-summary"></span></div>
+            <ol id="naj-quiz-review-list" class="quiz-review-list"></ol>
+          </section>
+          <div class="quiz-result-actions">
+            <button class="button button-primary" type="button" id="naj-quiz-restart">Skúsiť znova</button>
+            <button class="button quiz-share" type="button" id="naj-quiz-share">Zdieľať výsledok</button>
+            <a class="button quiz-secondary-link" href="../index.html#destinacie">Objaviť destinácie</a>
+          </div>
+          <div id="naj-quiz-share-feedback" class="quiz-share-feedback" aria-live="polite" hidden></div>
+          <label id="naj-quiz-share-fallback" class="quiz-share-fallback" hidden>Skopírujte si text a odkaz na zdieľanie<input id="naj-quiz-share-url" type="text" readonly /></label>
+        </section>
+      </section>
+
+      <section class="quiz-shell quiz-after" aria-labelledby="quiz-after-title">
+        <div><p class="eyebrow">Pokračujte v objavovaní</p><h2 id="quiz-after-title">Každý rekord je pozvánkou na cestu.</h2><p>Prejdite si články, videá a podcasty o miestach, ktoré vás v kvíze zaujali.</p></div>
+        <div class="quiz-after-actions"><a class="button button-primary" href="../blog.html">Čítať články</a><a class="button quiz-secondary-link" href="../audio.html">Počúvať podcasty</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a class="footer-brand" href="../index.html#domov" aria-label="Späť hore na domov"><img src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" /><div><strong>Letom po Stredomorí</strong><p>Cestovateľský magazín spájajúci osobné skúsenosti, praktický prieskum a vizuálnu inšpiráciu.</p></div></a>
+        <div class="footer-links" aria-label="Odkazy v pätičke"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html">Kvízy</a><a href="../audio.html">Podcast</a></div>
+        <p class="ai-note">Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume, štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a publikovanie robím ručne.</p>
+        <p class="copyright">© 2026 Letom po Stredomorí</p>
+        <p class="last-updated">Posledná aktualizácia: 29. júl 2026</p>
+      </div>
+    </footer>
+    <script src="naj-stredomoria.js?v=20260729-naj-quiz-1"></script>
+  </body>
+</html>

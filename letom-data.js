@@ -440,6 +440,20 @@ window.LETOM_SEARCH_INDEX = [
     url: "kvizy/uhadni-stredomorsku-destinaciu.html",
     keywords: "kvíz kviz destinácia destinacie indície indicie hádanie hadanie ostrovy mestá mesta pobrežie stredomorie",
   },
+  {
+    type: "Kvíz",
+    title: "NAJ kvíz o Stredomorí",
+    description: "16 otázok o najväčších ostrovoch, najvyšších vrchoch a najstarších pamiatkach Stredomoria.",
+    url: "kvizy/naj-stredomoria.html",
+    keywords: "kvíz kviz naj stredomorie najväčší najvacsi najmenší najmensi najvyšší najvyssi najstarší najstarsi ostrovy vrchy pamiatky grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko malta cyprus francúzsko francuzsko slovinsko",
+  },
+  {
+    type: "Kvíz",
+    title: "Viete, čo si objednávate? Kvíz o chutiach Stredomoria",
+    description: "16 otázok o jedlách, nápojoch, syroch, dezertoch a miestnych špecialitách Stredomoria.",
+    url: "kvizy/chute-stredomoria.html",
+    keywords: "kvíz kviz chute jedlo jedlá jedla nápoje napoje syry dezerty špeciality arancini focaccia paella souvlaki cannoli pašticada pasticada ensaimada bouillabaisse halloumi pastizzi stredomorie",
+  },
 ];
 
 
