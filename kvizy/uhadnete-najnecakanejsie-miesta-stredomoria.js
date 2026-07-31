@@ -31,6 +31,14 @@
   function saveBest(value) { try { localStorage.setItem(storageKey, String(value)); } catch (_) {} }
 
   function startQuiz() { currentIndex = 0; score = 0; results = []; elements.shareFeedback.hidden = true; elements.shareFallback.hidden = true; show(elements.play); renderQuestion(); }
+  function shuffledAnswers(item) {
+    const options = item.answers.map((label, index) => ({ label, index }));
+    for (let index = options.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      [options[index], options[randomIndex]] = [options[randomIndex], options[index]];
+    }
+    return options;
+  }
   function renderQuestion() {
     const item = questions[currentIndex]; answered = false; revealedCount = 1;
     elements.counter.textContent = `Miesto ${currentIndex + 1} z ${questions.length}`; elements.type.textContent = item.type; elements.difficulty.textContent = item.difficulty; elements.progress.style.width = `${((currentIndex + 1) / questions.length) * 100}%`;
@@ -38,12 +46,12 @@
     renderClues(item); renderAnswers(item); window.setTimeout(() => elements.question.focus({ preventScroll: true }), 0);
   }
   function renderClues(item) { elements.clues.replaceChildren(); item.clues.slice(0, revealedCount).forEach((clue, index) => { const card = document.createElement("article"); card.className = "destination-quiz-clue"; card.append(text("span", "destination-quiz-clue-label", `${index + 1}. indícia`), text("p", "", clue)); elements.clues.append(card); }); }
-  function renderAnswers(item) { elements.answers.replaceChildren(); item.answers.forEach((answerLabel, index) => { const button = document.createElement("button"); button.className = "quiz-answer"; button.type = "button"; button.append(text("span", "quiz-answer-letter", String.fromCharCode(65 + index)), text("span", "", answerLabel)); button.addEventListener("click", () => answer(index)); elements.answers.append(button); }); }
+  function renderAnswers(item) { elements.answers.replaceChildren(); shuffledAnswers(item).forEach((option, index) => { const button = document.createElement("button"); button.className = "quiz-answer"; button.type = "button"; button.dataset.answerIndex = String(option.index); button.append(text("span", "quiz-answer-letter", String.fromCharCode(65 + index)), text("span", "", option.label)); button.addEventListener("click", () => answer(option.index)); elements.answers.append(button); }); }
   function reveal() { if (answered || revealedCount === 3) return; revealedCount += 1; renderClues(questions[currentIndex]); const points = 4 - revealedCount; elements.points.textContent = `Hráte o ${points} ${points === 1 ? "bod" : "body"}`; if (revealedCount === 2) elements.reveal.textContent = "Ukázať 3. indíciu"; else elements.reveal.hidden = true; }
   function answer(selectedIndex) {
     if (answered) return; answered = true; const item = questions[currentIndex]; const earnedPoints = selectedIndex === item.correct ? 4 - revealedCount : 0; const isCorrect = earnedPoints > 0; score += earnedPoints; results[currentIndex] = { selectedIndex, isCorrect, earnedPoints };
     elements.reveal.hidden = true;
-    [...elements.answers.querySelectorAll("button")].forEach((button, index) => { button.disabled = true; if (index === item.correct) { button.classList.add("is-correct"); button.append(text("span", "quiz-answer-status", "Správne")); } else if (index === selectedIndex) { button.classList.add("is-incorrect"); button.append(text("span", "quiz-answer-status", "Nesprávne")); } });
+    [...elements.answers.querySelectorAll("button")].forEach((button) => { const originalIndex = Number(button.dataset.answerIndex); button.disabled = true; if (originalIndex === item.correct) { button.classList.add("is-correct"); button.append(text("span", "quiz-answer-status", "Správne")); } else if (originalIndex === selectedIndex) { button.classList.add("is-incorrect"); button.append(text("span", "quiz-answer-status", "Nesprávne")); } });
     elements.feedback.className = `quiz-feedback ${isCorrect ? "is-correct" : "is-incorrect"}`; elements.feedback.append(text("strong", "", isCorrect ? `Správne. Získavate ${earnedPoints} ${earnedPoints === 1 ? "bod" : "body"}.` : "Nesprávne. Získavate 0 bodov."), text("p", "destination-quiz-correct-answer", `Správna odpoveď: ${item.answers[item.correct]} (${item.country}).`), text("p", "", item.explanation)); elements.feedback.hidden = false; elements.next.hidden = false; elements.next.focus({ preventScroll: true });
   }
   function getLevel(percent) { if (percent >= 90) return ["Stredomorský objaviteľ", "Výborne – prekvapivé miesta Stredomoria vás len tak nezaskočia."]; if (percent >= 70) return ["Lovec nezvyčajných miest", "Skvelý výsledok. Váš ďalší výlet môže pokojne viesť mimo klasických pohľadníc."]; if (percent >= 50) return ["Zvedavý cestovateľ", "Máte dobrý základ. Stredomorie ukrýva ešte veľa nečakaných kontrastov."]; return ["Začínajúci objaviteľ", "Tento kvíz je dobrá mapa k miestam, ktoré stoja za ďalšie objavovanie."]; }
