@@ -477,6 +477,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Kvíz",
+    title: "Uhádnete najnečakanejšie miesta Stredomoria?",
+    description: "15 prekvapivých miest Stredomoria podľa troch indícií: púšť, sneh, ružové saliny, sopky aj jazykové ostrovy.",
+    url: "kvizy/uhadnete-najnecakanejsie-miesta-stredomoria.html",
+    keywords: "kvíz kviz najnečakanejšie miesta stredomorie indície indicie púšť tabernas troodos ružové saliny sopky elafonissi stromboli",
+  },
+  {
+    type: "Kvíz",
     title: "NAJ kvíz o Stredomorí",
     description: "16 otázok o najväčších ostrovoch, najvyšších vrchoch a najstarších pamiatkach Stredomoria.",
     url: "kvizy/naj-stredomoria.html",

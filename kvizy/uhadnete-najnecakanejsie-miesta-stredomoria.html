@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interaktívny kvíz o púšti, sopkách, ružových salinách a ďalších nečakaných miestach Stredomoria. Uhádnite ich podľa troch indícií." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Uhádnete najnečakanejšie miesta Stredomoria?" />
+    <meta property="og:description" content="Púšť, sneh, ružové saliny aj gréčtina v talianskom regióne. Objavte 15 prekvapivých miest podľa troch indícií." />
+    <meta property="og:url" content="https://sebo706.github.io/letom-po-stredomori/kvizy/uhadnete-najnecakanejsie-miesta-stredomoria.html" />
+    <meta property="og:image" content="https://sebo706.github.io/letom-po-stredomori/images/kvizy/velky-stredomorsky-kviz-hero.png" />
+    <link rel="canonical" href="https://sebo706.github.io/letom-po-stredomori/kvizy/uhadnete-najnecakanejsie-miesta-stredomoria.html" />
+    <title>Uhádnete najnečakanejšie miesta Stredomoria? | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="../style.css?v=20260731-surprising-places-quiz-1" />
+    <link rel="stylesheet" href="kvizy.css?v=20260731-surprising-places-quiz-1" />
+  </head>
+  <body class="article-page quiz-page destination-clue-quiz">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov"><img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" /><span>Letom po Stredomorí</span></a>
+        <div class="nav-panel nav-panel-static">
+          <a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html" aria-current="page">Kvízy</a><a class="nav-cta" href="../index.html#domov">Domov</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="med-quiz" id="main-content">
+      <section class="quiz-hero" aria-labelledby="quiz-page-title">
+        <img src="../images/kvizy/velky-stredomorsky-kviz-hero.png" alt="Ilustračný vizuál stredomorského pobrežia pre kvíz" class="quiz-hero-image" />
+        <div class="quiz-hero-overlay"></div>
+        <div class="quiz-shell quiz-hero-content">
+          <a class="quiz-directory-return" href="index.html">Späť na všetky kvízy</a>
+          <p class="eyebrow">Interaktívny kvíz</p>
+          <h1 id="quiz-page-title">Uhádnete najnečakanejšie miesta Stredomoria?</h1>
+          <p>Púšť, sneh, ružové saliny, sopky aj jazykové ostrovy. Spoznáte ich už po prvej stope?</p>
+        </div>
+      </section>
+
+      <section class="quiz-shell quiz-stage" aria-labelledby="quiz-stage-title">
+        <section class="quiz-screen quiz-intro" id="quiz-intro" aria-labelledby="quiz-stage-title">
+          <div class="quiz-intro-copy">
+            <p class="quiz-kicker">Stredomorie inak</p>
+            <h2 id="quiz-stage-title">Čaká vás viac než pláž a promenáda</h2>
+            <p>Pri každom mieste uvidíte najprv iba jednu indíciu. Čím skôr ho spoznáte, tým viac bodov získate. Vybrali sme 15 prekvapivých zákutí krajín okolo Stredozemného mora.</p>
+            <ul class="quiz-facts" aria-label="Informácie o kvíze"><li><strong>15</strong><span>miest</span></li><li><strong>3</strong><span>indície</span></li><li><strong>45</strong><span>bodov max.</span></li></ul>
+            <button class="button button-primary quiz-start" type="button" id="surprise-quiz-start">Spustiť kvíz</button>
+            <p class="quiz-intro-note">Bez registrácie. Najlepší výsledok sa uloží iba v tomto prehliadači.</p>
+          </div>
+        </section>
+
+        <section class="quiz-screen quiz-play" id="surprise-quiz-play" hidden aria-labelledby="surprise-quiz-question">
+          <div class="quiz-progress-head"><p id="surprise-quiz-counter" class="quiz-counter">Miesto 1 z 15</p><p id="surprise-quiz-type" class="quiz-category"></p></div>
+          <div class="quiz-progress" aria-hidden="true"><span id="surprise-quiz-progress-fill"></span></div>
+          <div class="quiz-question-card">
+            <div class="destination-quiz-question-meta"><span id="surprise-quiz-points" class="destination-quiz-points">Hráte o 3 body</span><span id="surprise-quiz-difficulty" class="quiz-difficulty"></span></div>
+            <h2 id="surprise-quiz-question" tabindex="-1">Ktoré miesto hľadáme?</h2>
+            <div id="surprise-quiz-clues" class="destination-quiz-clues" aria-label="Viditeľné indície"></div>
+            <button class="button destination-quiz-reveal" type="button" id="surprise-quiz-reveal">Ukázať 2. indíciu</button>
+            <div id="surprise-quiz-answers" class="quiz-answers" role="group" aria-label="Možnosti odpovede"></div>
+            <div id="surprise-quiz-feedback" class="quiz-feedback" aria-live="polite" hidden></div>
+            <div class="quiz-next-wrap"><button class="button button-primary" type="button" id="surprise-quiz-next" hidden>Ďalšie miesto</button></div>
+          </div>
+        </section>
+
+        <section class="quiz-screen quiz-result" id="surprise-quiz-result" hidden aria-labelledby="surprise-quiz-result-title">
+          <p class="quiz-kicker">Výsledok</p><h2 id="surprise-quiz-result-title" tabindex="-1">Vaše stredomorské skóre</h2>
+          <div class="quiz-score" aria-live="polite"><strong id="surprise-quiz-score-number">0 z 45</strong><span id="surprise-quiz-score-percent">0 %</span></div>
+          <p id="surprise-quiz-correct-count" class="destination-quiz-correct-count">0 správne uhádnutých miest z 15</p><p id="surprise-quiz-level" class="quiz-level"></p><p id="surprise-quiz-result-copy" class="quiz-result-copy"></p><p id="surprise-quiz-best-score" class="quiz-best-score" hidden></p>
+          <section class="quiz-review" aria-labelledby="surprise-quiz-review-title"><div class="quiz-review-heading"><div><p class="quiz-kicker">Prehľad odpovedí</p><h3 id="surprise-quiz-review-title">Ako ste objavovali</h3></div><span id="surprise-quiz-review-summary" class="quiz-review-summary"></span></div><ol id="surprise-quiz-review-list" class="quiz-review-list"></ol></section>
+          <div class="quiz-result-actions"><button class="button button-primary" type="button" id="surprise-quiz-restart">Skúsiť znova</button><button class="button quiz-share" type="button" id="surprise-quiz-share">Zdieľať výsledok</button><a class="button quiz-secondary-link" href="../index.html#destinacie">Objaviť destinácie</a></div>
+          <div id="surprise-quiz-share-feedback" class="quiz-share-feedback" aria-live="polite" hidden></div><label id="surprise-quiz-share-fallback" class="quiz-share-fallback" hidden>Skopírujte si text a odkaz na zdieľanie<input id="surprise-quiz-share-url" type="text" readonly /></label>
+        </section>
+      </section>
+
+      <section class="quiz-shell quiz-after" aria-labelledby="quiz-after-title"><div><p class="eyebrow">Pokračujte v objavovaní</p><h2 id="quiz-after-title">Najlepšie prekvapenia čakajú naživo.</h2><p>Prejdite si články, videá a podcasty o miestach, ktoré vás v kvíze zaujali.</p></div><div class="quiz-after-actions"><a class="button button-primary" href="../blog.html">Čítať články</a><a class="button quiz-secondary-link" href="../audio.html">Počúvať podcasty</a></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-content"><a class="footer-brand" href="../index.html#domov" aria-label="Späť hore na domov"><img src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" /><div><strong>Letom po Stredomorí</strong><p>Cestovateľský magazín spájajúci osobné skúsenosti, praktický prieskum a vizuálnu inšpiráciu.</p></div></a><div class="footer-links" aria-label="Odkazy v pätičke"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html">Kvízy</a><a href="../audio.html">Podcast</a></div><p class="ai-note">Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume, štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a publikovanie robím ručne.</p><p class="copyright">© 2026 Letom po Stredomorí</p><p class="last-updated">Posledná aktualizácia: 31. júl 2026</p></div></footer>
+    <script src="uhadnete-najnecakanejsie-miesta-stredomoria.js?v=20260731-surprising-places-quiz-2"></script>
+  </body>
+</html>
