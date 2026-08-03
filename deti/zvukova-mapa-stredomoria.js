@@ -82,8 +82,9 @@
 
   let soundEnabled = true;
   let audioReady = false;
-  const audioVersion = "20260803-audio-v5";
+  const audioVersion = "20260803-audio-v6";
   let activeAudio = null;
+  let pendingAudioTimer = null;
   const audioPlayers = Object.fromEntries(Object.entries(audioClips).map(([key, source]) => {
     const player = new Audio(`${source}?v=${audioVersion}`);
     player.preload = "auto";
@@ -119,18 +120,23 @@
   function isAdventureComplete() { return stampCount() === Object.keys(destinations).length; }
 
   function stopCurrentClip() {
+    if (pendingAudioTimer !== null) { window.clearTimeout(pendingAudioTimer); pendingAudioTimer = null; }
     if (!activeAudio) return;
     activeAudio.pause();
     activeAudio.currentTime = 0;
     activeAudio = null;
   }
-  function playClip(key) {
+  function playClip(key, delay = 0) {
     if (!audioReady || !soundEnabled || !audioPlayers[key]) return;
     stopCurrentClip();
     const player = audioPlayers[key];
-    activeAudio = player;
-    player.currentTime = 0;
-    player.play().catch(() => { if (activeAudio === player) activeAudio = null; });
+    const start = () => {
+      pendingAudioTimer = null;
+      activeAudio = player;
+      player.currentTime = 0;
+      player.play().catch(() => { if (activeAudio === player) activeAudio = null; });
+    };
+    if (delay) pendingAudioTimer = window.setTimeout(start, delay); else start();
   }
   function setFeedback(text, success = false) { elements.feedback.textContent = text; elements.feedback.classList.toggle("is-success", success); }
   function celebrate() { elements.game.classList.remove("is-celebrating"); window.requestAnimationFrame(() => elements.game.classList.add("is-celebrating")); window.setTimeout(() => elements.game.classList.remove("is-celebrating"), 760); }
@@ -222,17 +228,17 @@
     const buttons = Array.from(elements.answers.querySelectorAll("button"));
     const selected = buttons[index];
     if (index !== question.correct) {
-      selected.classList.add("is-try-again"); setFeedback("Takmer! Skús ešte jeden obrázok."); playClip("almost"); window.setTimeout(() => selected.classList.remove("is-try-again"), 650); return;
+      selected.classList.add("is-try-again"); setFeedback("Takmer! Skús ešte jeden obrázok."); playClip("almost", 160); window.setTimeout(() => selected.classList.remove("is-try-again"), 650); return;
     }
     buttons.forEach((button) => { button.disabled = true; }); selected.classList.add("is-correct");
     countryProgress.completedRounds = [...new Set([...countryProgress.completedRounds, activeRound])]; saveProgress(); celebrate();
     const nextRound = firstOpenRound(activeCountry);
     if (nextRound !== -1) {
-      setFeedback("Výborne! Ešte jeden obrázok a získaš pečiatku.", true); playClip("next"); elements.next.hidden = false; return;
+      setFeedback("Výborne! Ešte jeden obrázok a získaš pečiatku.", true); playClip("next", 160); elements.next.hidden = false; return;
     }
     updatePassport();
     const message = isAdventureComplete() ? "Výborne! Stal si sa Malým objaviteľom Stredomoria!" : `Výborne! Získavaš pečiatku za ${destinations[activeCountry].name}!`;
-    setFeedback(message, true); playClip(isAdventureComplete() ? "complete" : "stamp");
+    setFeedback(message, true); playClip(isAdventureComplete() ? "complete" : "stamp", 160);
   }
 
   elements.countryButtons.forEach((button) => button.addEventListener("click", () => chooseCountry(button.dataset.country)));
