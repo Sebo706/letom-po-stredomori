@@ -464,7 +464,7 @@ window.LETOM_SEARCH_INDEX = [
   {
     type: "Sekcia",
     title: "Malí cestovatelia",
-    description: "Hravá zvuková mapa s ôsmimi krajinami a pečiatkami pre malých objaviteľov.",
+    description: "Hravá zvuková mapa s ôsmimi krajinami, piatimi ľahkými otázkami v každej a pečiatkami.",
     url: "deti/index.html",
     keywords: "deti detski malí mali cestovatelia cestovanie pre deti zvuková zvukova mapa hra stredomorie",
   },

@@ -1,48 +1,74 @@
 (() => {
   "use strict";
 
-  const storageKey = "letom-po-stredomori-deti-zvukova-mapa-v2";
+  const storageKey = "letom-po-stredomori-deti-zvukova-mapa-v3";
   const femaleVoicePattern = /(zuzana|laura|helena|katarina|katka|maria|mária|natasha|susan|female|woman)/i;
   const destinations = {
     italy: { name: "Taliansko", icon: "🍕", questions: [
       { prompt: "Vitaj v Taliansku! Nájdeš jedlo, ktoré sa volá pizza?", answers: [{ icon: "🍕", label: "Pizza" }, { icon: "🍎", label: "Jablko" }, { icon: "🥕", label: "Mrkva" }], correct: 0, explanation: "Pizza je známe talianske jedlo." },
       { prompt: "Výborne! A teraz nájdeš studenú dobrotu, ktorá sa volá gelato?", answers: [{ icon: "🍦", label: "Zmrzlina" }, { icon: "🥦", label: "Brokolica" }, { icon: "🥖", label: "Pečivo" }], correct: 0, explanation: "Gelato je talianska zmrzlina." },
+      { prompt: "Aké je hlavné mesto Talianska?", answers: [{ icon: "🏛️", label: "Rím" }, { icon: "🗼", label: "Paríž" }, { icon: "🏰", label: "Madrid" }], correct: 0, explanation: "Hlavné mesto Talianska je Rím." },
+      { prompt: "Ktorá veža v Taliansku sa nakláňa do strany?", answers: [{ icon: "🗼", label: "Šikmá veža v Pise" }, { icon: "🗽", label: "Socha slobody" }, { icon: "🗿", label: "Veľká socha" }], correct: 0, explanation: "V meste Pisa stojí slávna šikmá veža." },
+      { prompt: "V ktorom talianskom meste sa môžeme odviezť čiernou gondolou po vode?", answers: [{ icon: "🛶", label: "Benátky" }, { icon: "🏔️", label: "Alpy" }, { icon: "🏜️", label: "Púšť" }], correct: 0, explanation: "Benátky sú známe kanálmi a gondolami." },
     ] },
     greece: { name: "Grécko", icon: "⛵", questions: [
       { prompt: "Vitaj v Grécku! Nájdeš loďku, ktorá nás odvezie na ostrov?", answers: [{ icon: "⛵", label: "Loď" }, { icon: "🚌", label: "Autobus" }, { icon: "🚲", label: "Bicykel" }], correct: 0, explanation: "Loďkou sa môžeme plaviť medzi gréckymi ostrovmi." },
       { prompt: "Ešte jeden obrázok! Ktorý plod rastie na olivovníku?", answers: [{ icon: "🫒", label: "Oliva" }, { icon: "🍓", label: "Jahoda" }, { icon: "🥔", label: "Zemiak" }], correct: 0, explanation: "Olivy rastú na stromoch a sú obľúbené aj v Grécku." },
+      { prompt: "Aké je hlavné mesto Grécka?", answers: [{ icon: "🏛️", label: "Atény" }, { icon: "🍕", label: "Rím" }, { icon: "🗼", label: "Paríž" }], correct: 0, explanation: "Hlavné mesto Grécka sú Atény." },
+      { prompt: "Ako sa volajú veľké staré športové hry, ktoré začali v Grécku?", answers: [{ icon: "🏃", label: "Olympijské hry" }, { icon: "🎪", label: "Cirkus" }, { icon: "🎄", label: "Vianoce" }], correct: 0, explanation: "Prvé olympijské hry sa konali v starom Grécku." },
+      { prompt: "Ktorý chrám s vysokými stĺpmi stojí v Aténach?", answers: [{ icon: "🏛️", label: "Parthenón" }, { icon: "🏰", label: "Rozprávkový zámok" }, { icon: "🛖", label: "Domček" }], correct: 0, explanation: "Parthenón je slávny starý chrám v Aténach." },
     ] },
     spain: { name: "Španielsko", icon: "🧢", questions: [
       { prompt: "Vitaj v Španielsku! Čo nás ochráni pred silným slnkom?", answers: [{ icon: "🧢", label: "Čiapka" }, { icon: "🧤", label: "Zimné rukavice" }, { icon: "🥾", label: "Gumáky" }], correct: 0, explanation: "Čiapka chráni hlavu pred slnkom." },
       { prompt: "A ktorý sladký plod má farbu slnka?", answers: [{ icon: "🍊", label: "Pomaranč" }, { icon: "🍇", label: "Hrozno" }, { icon: "🫐", label: "Čučoriedka" }], correct: 0, explanation: "Pomaranče rastú v teplých španielskych krajoch." },
+      { prompt: "Aké je hlavné mesto Španielska?", answers: [{ icon: "🏰", label: "Madrid" }, { icon: "🏛️", label: "Atény" }, { icon: "🗼", label: "Paríž" }], correct: 0, explanation: "Hlavné mesto Španielska je Madrid." },
+      { prompt: "Ktorý tanec s farebnými šatami a tlieskaním je známy v Španielsku?", answers: [{ icon: "💃", label: "Flamenco" }, { icon: "⛸️", label: "Korčuľovanie" }, { icon: "🏊", label: "Plávanie" }], correct: 0, explanation: "Flamenco je známy španielsky tanec." },
+      { prompt: "Ktorý šport je v Španielsku veľmi obľúbený?", answers: [{ icon: "⚽", label: "Futbal" }, { icon: "🏒", label: "Hokej" }, { icon: "🎿", label: "Lyžovanie" }], correct: 0, explanation: "Futbal je v Španielsku veľmi obľúbený." },
     ] },
     croatia: { name: "Chorvátsko", icon: "🐬", questions: [
       { prompt: "Vitaj v Chorvátsku! Ktoré zvieratko môžeme stretnúť v mori?", answers: [{ icon: "🐬", label: "Delfín" }, { icon: "🐄", label: "Krava" }, { icon: "🐓", label: "Kohút" }], correct: 0, explanation: "Delfíny žijú v mori." },
       { prompt: "Pozri na pláž. Čo môžeš nájsť pri vode?", answers: [{ icon: "🐚", label: "Mušľa" }, { icon: "🧸", label: "Medvedík" }, { icon: "🚂", label: "Vláčik" }], correct: 0, explanation: "Mušle môžeme nájsť na pláži pri mori." },
+      { prompt: "Aké je hlavné mesto Chorvátska?", answers: [{ icon: "🏙️", label: "Záhreb" }, { icon: "🏛️", label: "Rím" }, { icon: "🗼", label: "Paríž" }], correct: 0, explanation: "Hlavné mesto Chorvátska je Záhreb." },
+      { prompt: "Ako sa volá more pri chorvátskom pobreží?", answers: [{ icon: "🌊", label: "Jadranské more" }, { icon: "❄️", label: "Ľadové more" }, { icon: "🏜️", label: "Púšť" }], correct: 0, explanation: "Chorvátsko leží pri Jadranskom mori." },
+      { prompt: "Ktoré staré mesto pri mori má vysoké hradby a volá sa Dubrovník?", answers: [{ icon: "🏰", label: "Dubrovník" }, { icon: "🗼", label: "Paríž" }, { icon: "🏛️", label: "Atény" }], correct: 0, explanation: "Dubrovník je známe chorvátske mesto pri mori." },
     ] },
     cyprus: { name: "Cyprus", icon: "🍋", questions: [
       { prompt: "Vitaj na Cypre! Nájdeš žltý kyslý plod?", answers: [{ icon: "🍋", label: "Citrón" }, { icon: "🍒", label: "Čerešňa" }, { icon: "🥥", label: "Kokos" }], correct: 0, explanation: "Citróny dozrievajú v teplom podnebí." },
       { prompt: "A čo si otvoríme nad hlavou na slnečnej pláži?", answers: [{ icon: "⛱️", label: "Slnečník" }, { icon: "🪥", label: "Zubná kefka" }, { icon: "🧦", label: "Ponožka" }], correct: 0, explanation: "Slnečník nám na pláži robí tieň." },
+      { prompt: "Aké je hlavné mesto Cypru?", answers: [{ icon: "🏙️", label: "Nikózia" }, { icon: "🏛️", label: "Atény" }, { icon: "🏰", label: "Madrid" }], correct: 0, explanation: "Hlavné mesto Cypru je Nikózia." },
+      { prompt: "Cyprus je veľký ostrov. Ktorý obrázok ukazuje ostrov?", answers: [{ icon: "🏝️", label: "Ostrov" }, { icon: "🏔️", label: "Hora" }, { icon: "🚂", label: "Vláčik" }], correct: 0, explanation: "Cyprus je ostrov v Stredozemnom mori." },
+      { prompt: "Ktorá bohyňa z dávnych príbehov je spojená s Cyprom?", answers: [{ icon: "🕊️", label: "Afrodita" }, { icon: "🎅", label: "Mikuláš" }, { icon: "🧙", label: "Čarodej" }], correct: 0, explanation: "V dávnych príbehoch sa Afrodita spája s Cyprom." },
     ] },
     france: { name: "Francúzsko", icon: "🥐", questions: [
       { prompt: "Vitaj vo Francúzsku pri mori! Nájdeš pečivo v tvare mesiačika?", answers: [{ icon: "🥐", label: "Croissant" }, { icon: "🍔", label: "Hamburger" }, { icon: "🍉", label: "Melón" }], correct: 0, explanation: "Croissant je známe francúzske pečivo." },
       { prompt: "Čo si vezmeme na výlet, aby sme videli ďaleko?", answers: [{ icon: "🔭", label: "Ďalekohľad" }, { icon: "🍴", label: "Vidlička" }, { icon: "🎈", label: "Balón" }], correct: 0, explanation: "Ďalekohľad nám priblíži vzdialené lode a vtáky." },
+      { prompt: "Aké je hlavné mesto Francúzska?", answers: [{ icon: "🗼", label: "Paríž" }, { icon: "🏛️", label: "Rím" }, { icon: "🏰", label: "Madrid" }], correct: 0, explanation: "Hlavné mesto Francúzska je Paríž." },
+      { prompt: "Ktorá vysoká veža stojí v Paríži?", answers: [{ icon: "🗼", label: "Eiffelova veža" }, { icon: "🗿", label: "Kamenná hlava" }, { icon: "⛩️", label: "Brána" }], correct: 0, explanation: "Eiffelova veža je slávny symbol Paríža." },
+      { prompt: "Ktorý maliar maľoval lekná a bol z Francúzska?", answers: [{ icon: "🎨", label: "Claude Monet" }, { icon: "🚀", label: "Astronaut" }, { icon: "👨‍🍳", label: "Kuchár" }], correct: 0, explanation: "Claude Monet bol známy francúzsky maliar." },
     ] },
     malta: { name: "Malta", icon: "🐢", questions: [
       { prompt: "Vitaj na Malte! Ktoré zvieratko môže plávať dlho v mori?", answers: [{ icon: "🐢", label: "Korytnačka" }, { icon: "🐴", label: "Kôň" }, { icon: "🐔", label: "Sliepka" }], correct: 0, explanation: "Morské korytnačky žijú vo vode." },
       { prompt: "Čím sa bezpečne plavíme po modrej vode?", answers: [{ icon: "⛵", label: "Loďka" }, { icon: "🚜", label: "Traktor" }, { icon: "🚀", label: "Raketa" }], correct: 0, explanation: "Loďka sa plaví po mori." },
+      { prompt: "Aké je hlavné mesto Malty?", answers: [{ icon: "🏰", label: "Valletta" }, { icon: "🏛️", label: "Atény" }, { icon: "🏙️", label: "Záhreb" }], correct: 0, explanation: "Hlavné mesto Malty sa volá Valletta." },
+      { prompt: "Malta je krajina na ostrovoch. Ktorý obrázok ukazuje ostrov?", answers: [{ icon: "🏝️", label: "Ostrov" }, { icon: "🏔️", label: "Hora" }, { icon: "🚂", label: "Vláčik" }], correct: 0, explanation: "Malta je ostrovná krajina v Stredozemnom mori." },
+      { prompt: "Ktoré staré stavby z veľkých kameňov nájdeme na Malte?", answers: [{ icon: "🏛️", label: "Chrámy" }, { icon: "🎢", label: "Horskú dráhu" }, { icon: "🚦", label: "Semafor" }], correct: 0, explanation: "Na Malte stoja veľmi staré kamenné chrámy." },
     ] },
     slovenia: { name: "Slovinsko", icon: "🪨", questions: [
       { prompt: "Vitaj v Slovinsku! Nájdeš miesto pod zemou s kamennými kvapkami?", answers: [{ icon: "🪨", label: "Jaskyňa" }, { icon: "🏠", label: "Dom" }, { icon: "🎪", label: "Stan" }], correct: 0, explanation: "V jaskyniach rastú kamenné kvaple." },
       { prompt: "A ktorým obrázkom pozdravíme malé rybky pri mori?", answers: [{ icon: "🐟", label: "Ryba" }, { icon: "🐕", label: "Psík" }, { icon: "🦋", label: "Motýľ" }], correct: 0, explanation: "Ryby žijú vo vode." },
+      { prompt: "Aké je hlavné mesto Slovinska?", answers: [{ icon: "🐉", label: "Ľubľana" }, { icon: "🏛️", label: "Rím" }, { icon: "🏰", label: "Madrid" }], correct: 0, explanation: "Hlavné mesto Slovinska je Ľubľana." },
+      { prompt: "Ktoré more je pri malom slovinskom pobreží?", answers: [{ icon: "🌊", label: "Jadranské more" }, { icon: "❄️", label: "Ľadové more" }, { icon: "🏜️", label: "Púšť" }], correct: 0, explanation: "Slovinsko má krátke pobrežie pri Jadranskom mori." },
+      { prompt: "Ktoré krásne jazero v Slovinsku má malý ostrovček?", answers: [{ icon: "🏞️", label: "Bledské jazero" }, { icon: "🏜️", label: "Púšť" }, { icon: "🌋", label: "Sopka" }], correct: 0, explanation: "Bledské jazero je známe malým ostrovčekom." },
     ] },
   };
 
   const elements = {
-    game: document.querySelector(".kids-game"), stampCount: document.querySelector("#stamp-count"), stampStrip: document.querySelector("#passport-stamps"), soundToggle: document.querySelector("#sound-toggle"), soundLabel: document.querySelector("#sound-toggle-label"), countryName: document.querySelector("#country-name"), questionTitle: document.querySelector("#question-title"), questionStep: document.querySelector("#question-step"), questionText: document.querySelector("#question-text"), answers: document.querySelector("#answer-options"), feedback: document.querySelector("#game-feedback"), repeat: document.querySelector("#repeat-prompt"), next: document.querySelector("#next-round"), completion: document.querySelector("#kids-complete"), summary: document.querySelector("#adventure-summary"), summaryList: document.querySelector("#summary-list"), diploma: document.querySelector("#kids-diploma"), print: document.querySelector("#print-diploma"), restart: document.querySelector("#restart-game"), countryButtons: Array.from(document.querySelectorAll("[data-country]")),
+    game: document.querySelector(".kids-game"), stampCount: document.querySelector("#stamp-count"), stampStrip: document.querySelector("#passport-stamps"), soundToggle: document.querySelector("#sound-toggle"), soundLabel: document.querySelector("#sound-toggle-label"), audioWelcome: document.querySelector("#audio-welcome"), audioStart: document.querySelector("#audio-start"), audioSkip: document.querySelector("#audio-skip"), countryName: document.querySelector("#country-name"), questionTitle: document.querySelector("#question-title"), questionStep: document.querySelector("#question-step"), questionText: document.querySelector("#question-text"), answers: document.querySelector("#answer-options"), feedback: document.querySelector("#game-feedback"), repeat: document.querySelector("#repeat-prompt"), next: document.querySelector("#next-round"), completion: document.querySelector("#kids-complete"), summary: document.querySelector("#adventure-summary"), summaryList: document.querySelector("#summary-list"), diploma: document.querySelector("#kids-diploma"), print: document.querySelector("#print-diploma"), restart: document.querySelector("#restart-game"), countryButtons: Array.from(document.querySelectorAll("[data-country]")),
   };
 
   let soundEnabled = true;
+  let audioReady = false;
+  let audioContext = null;
   let activeCountry = null;
   let activeRound = null;
   let voices = [];
@@ -74,12 +100,19 @@
 
   function loadVoices() { voices = "speechSynthesis" in window ? window.speechSynthesis.getVoices() : []; }
   function preferredVoice() { const slovak = voices.filter((voice) => /^sk([-_]|$)/i.test(voice.lang)); return slovak.find((voice) => femaleVoicePattern.test(voice.name)) || slovak[0] || voices.find((voice) => femaleVoicePattern.test(voice.name)) || null; }
-  function say(text) { if (!soundEnabled || !("speechSynthesis" in window)) return; const utterance = new SpeechSynthesisUtterance(text); utterance.lang = "sk-SK"; utterance.rate = 0.84; utterance.pitch = 1.16; const voice = preferredVoice(); if (voice) utterance.voice = voice; window.speechSynthesis.cancel(); window.speechSynthesis.speak(utterance); }
+  function prepareAudioContext() {
+    if (audioContext || !(window.AudioContext || window.webkitAudioContext)) return;
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    audioContext = new AudioContextClass();
+    if (audioContext.state === "suspended") audioContext.resume();
+  }
+  function say(text) { if (!audioReady || !soundEnabled || !("speechSynthesis" in window)) return; const utterance = new SpeechSynthesisUtterance(text); utterance.lang = "sk-SK"; utterance.rate = 0.84; utterance.pitch = 1.16; const voice = preferredVoice(); if (voice) utterance.voice = voice; window.speechSynthesis.cancel(); window.speechSynthesis.speak(utterance); }
   function setFeedback(text, success = false) { elements.feedback.textContent = text; elements.feedback.classList.toggle("is-success", success); }
   function playSuccessChime() {
-    if (!soundEnabled || !(window.AudioContext || window.webkitAudioContext)) return;
-    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    const context = new AudioContextClass();
+    if (!audioReady || !soundEnabled || !(window.AudioContext || window.webkitAudioContext)) return;
+    prepareAudioContext();
+    const context = audioContext;
+    if (!context) return;
     [523.25, 659.25].forEach((frequency, index) => {
       const oscillator = context.createOscillator();
       const gain = context.createGain();
@@ -92,7 +125,6 @@
       oscillator.start(context.currentTime + index * 0.08);
       oscillator.stop(context.currentTime + index * 0.08 + 0.27);
     });
-    window.setTimeout(() => context.close(), 420);
   }
   function celebrate() { elements.game.classList.remove("is-celebrating"); window.requestAnimationFrame(() => elements.game.classList.add("is-celebrating")); window.setTimeout(() => elements.game.classList.remove("is-celebrating"), 760); }
 
@@ -197,17 +229,20 @@
   }
 
   elements.countryButtons.forEach((button) => button.addEventListener("click", () => chooseCountry(button.dataset.country)));
+  function setSoundControl(enabled) { soundEnabled = enabled; elements.soundToggle.setAttribute("aria-pressed", String(enabled)); elements.soundToggle.setAttribute("aria-label", enabled ? "Vypnúť zvuk" : "Zapnúť zvuk"); elements.soundLabel.textContent = enabled ? "Zvuk zapnutý" : "Zvuk vypnutý"; elements.soundToggle.querySelector("span").textContent = enabled ? "🔊" : "🔇"; }
+  function unlockAudio() { loadVoices(); audioReady = true; prepareAudioContext(); elements.audioWelcome.hidden = true; setSoundControl(true); say("Ahoj! Som Čajka Leto. Začíname hru. Vyber si krajinu a nájdi správny obrázok."); }
+  elements.audioStart.addEventListener("click", unlockAudio);
+  elements.audioSkip.addEventListener("click", () => { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); elements.audioWelcome.hidden = true; setSoundControl(false); setFeedback("Hráš bez hlasu. Všetky pokyny vidíš na obrazovke."); });
   elements.repeat.addEventListener("click", () => { if (activeCountry && activeRound !== null) say(destinations[activeCountry].questions[activeRound].prompt); });
   elements.next.addEventListener("click", () => { if (activeCountry) showRound(activeCountry, firstOpenRound(activeCountry)); });
-  elements.soundToggle.addEventListener("click", () => { soundEnabled = !soundEnabled; if (!soundEnabled && "speechSynthesis" in window) window.speechSynthesis.cancel(); elements.soundToggle.setAttribute("aria-pressed", String(soundEnabled)); elements.soundToggle.setAttribute("aria-label", soundEnabled ? "Vypnúť zvuk" : "Zapnúť zvuk"); elements.soundLabel.textContent = soundEnabled ? "Zvuk zapnutý" : "Zvuk vypnutý"; elements.soundToggle.querySelector("span").textContent = soundEnabled ? "🔊" : "🔇"; if (soundEnabled) say("Zvuk je zapnutý."); });
+  elements.soundToggle.addEventListener("click", () => { if (!audioReady) { unlockAudio(); return; } if (soundEnabled) { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); setSoundControl(false); } else { setSoundControl(true); say("Zvuk je zapnutý."); } });
   elements.print.addEventListener("click", () => { elements.diploma.hidden = false; window.print(); });
   elements.restart.addEventListener("click", () => {
     if (!window.confirm("Naozaj chceš začať dobrodružstvo odznova? Všetkých osem pečiatok sa vymaže.")) return;
     progress = blankProgress(); activeCountry = null; activeRound = null; try { window.localStorage.removeItem(storageKey); } catch (_) { /* Bez úložiska netreba nič mazať. */ }
-    elements.countryButtons.forEach((button) => button.classList.remove("is-active")); elements.countryName.textContent = "Čajka Leto čaká"; elements.questionTitle.textContent = "Vyber si krajinu na mape"; elements.questionStep.textContent = "V každej krajine nájdeš dva obrázky."; elements.questionText.textContent = "Potom ti Čajka Leto ukáže tri veľké možnosti."; elements.answers.replaceChildren(); elements.repeat.disabled = true; elements.next.hidden = true; elements.diploma.hidden = true; setFeedback("Pečiatky sú pripravené na nové dobrodružstvo."); updatePassport(); say("Poďme na nové dobrodružstvo!");
+    elements.countryButtons.forEach((button) => button.classList.remove("is-active")); elements.countryName.textContent = "Čajka Leto čaká"; elements.questionTitle.textContent = "Vyber si krajinu na mape"; elements.questionStep.textContent = "V každej krajine nájdeš päť obrázkov."; elements.questionText.textContent = "Potom ti Čajka Leto ukáže tri veľké možnosti."; elements.answers.replaceChildren(); elements.repeat.disabled = true; elements.next.hidden = true; elements.diploma.hidden = true; setFeedback("Pečiatky sú pripravené na nové dobrodružstvo."); updatePassport(); say("Poďme na nové dobrodružstvo!");
   });
 
   if ("speechSynthesis" in window) { loadVoices(); window.speechSynthesis.addEventListener("voiceschanged", loadVoices); }
   updatePassport();
-  window.setTimeout(() => say("Ahoj! Som Čajka Leto. Vyber si krajinu a nájdi správny obrázok."), 350);
 })();

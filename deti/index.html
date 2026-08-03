@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Dobrodružná zvuková mapa Stredomoria pre malých cestovateľov." />
     <title>Malí cestovatelia | Letom po Stredomorí</title>
-    <link rel="stylesheet" href="../style.css?v=20260803-kids-map-2" />
-    <link rel="stylesheet" href="deti.css?v=20260803-kids-map-2" />
+    <link rel="stylesheet" href="../style.css?v=20260803-kids-map-4" />
+    <link rel="stylesheet" href="deti.css?v=20260803-kids-map-4" />
   </head>
   <body class="article-page kids-page">
     <header class="site-header">
@@ -49,6 +49,19 @@
         </div>
         <div id="passport-stamps" class="passport-stamps" aria-label="Získané pečiatky"></div>
 
+        <section id="audio-welcome" class="audio-welcome" aria-labelledby="audio-welcome-title">
+          <img src="cajka-leto.png" alt="Čajka Leto" />
+          <div>
+            <p class="kids-overline">Ahoj, malý objaviteľ</p>
+            <h2 id="audio-welcome-title">Ťukni a začni hru s Čajkou Leto</h2>
+            <p>Čajka Leto ťa bude pri hre sprevádzať hlasom.</p>
+          </div>
+          <div class="audio-welcome-actions">
+            <button id="audio-start" class="audio-start-button" type="button" aria-label="Začať hru s Čajkou Leto"><span aria-hidden="true">▶️</span> Začať hru</button>
+            <button id="audio-skip" class="audio-skip-button" type="button" aria-label="Hrať bez hlasu">Hrať bez hlasu</button>
+          </div>
+        </section>
+
         <div class="kids-map-card">
           <div class="kids-map-heading">
             <div><p class="kids-overline">Vyber krajinu</p><h2>Kam poletíme?</h2></div>
@@ -73,7 +86,7 @@
             <div><p id="country-name" class="kids-overline">Čajka Leto čaká</p><h2 id="question-title" tabindex="-1">Vyber si krajinu na mape</h2></div>
             <button id="repeat-prompt" class="kids-repeat-button" type="button" aria-label="Zopakovať hlasový pokyn" disabled><span aria-hidden="true">🔊</span><span>Zopakovať</span></button>
           </div>
-          <p id="question-step" class="kids-question-step">V každej krajine nájdeš dva obrázky.</p>
+          <p id="question-step" class="kids-question-step">V každej krajine nájdeš päť obrázkov.</p>
           <p id="question-text" class="kids-question-text">Potom ti Čajka Leto ukáže tri veľké možnosti.</p>
           <div id="answer-options" class="kids-answers" role="group" aria-label="Obrázkové možnosti odpovede"></div>
           <p id="game-feedback" class="kids-feedback" aria-live="polite" aria-atomic="true"></p>
@@ -113,6 +126,6 @@
         <p class="last-updated">Posledná aktualizácia: 3. august 2026</p>
       </div>
     </footer>
-    <script src="zvukova-mapa-stredomoria.js?v=20260803-kids-map-2"></script>
+    <script src="zvukova-mapa-stredomoria.js?v=20260803-kids-map-4"></script>
   </body>
 </html>
