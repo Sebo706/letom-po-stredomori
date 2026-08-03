@@ -463,10 +463,10 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Sekcia",
-    title: "Detskí cestovatelia",
-    description: "Pripravovaná sekcia Letom po Stredomorí s hravým cestovateľským obsahom pre deti.",
-    url: "detski-cestovatelia/index.html",
-    keywords: "deti detský cestovatelia cestovanie pre deti kvízy hry stredomorie",
+    title: "Malí cestovatelia",
+    description: "Hravá zvuková mapa s ôsmimi krajinami a pečiatkami pre malých objaviteľov.",
+    url: "deti/index.html",
+    keywords: "deti detski malí mali cestovatelia cestovanie pre deti zvuková zvukova mapa hra stredomorie",
   },
   {
     type: "Kvíz",
