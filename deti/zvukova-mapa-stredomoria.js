@@ -82,7 +82,7 @@
 
   let soundEnabled = true;
   let audioReady = false;
-  const audioVersion = "20260803-audio-v3";
+  const audioVersion = "20260803-audio-v5";
   let activeAudio = null;
   const audioPlayers = Object.fromEntries(Object.entries(audioClips).map(([key, source]) => {
     const player = new Audio(`${source}?v=${audioVersion}`);
