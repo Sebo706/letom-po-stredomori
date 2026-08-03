@@ -2,7 +2,6 @@
   "use strict";
 
   const storageKey = "letom-po-stredomori-deti-zvukova-mapa-v3";
-  const femaleVoicePattern = /(zuzana|laura|helena|katarina|katka|maria|mária|natasha|susan|female|woman)/i;
   const destinations = {
     italy: { name: "Taliansko", icon: "🍕", questions: [
       { prompt: "Vitaj v Taliansku! Nájdeš jedlo, ktoré sa volá pizza?", answers: [{ icon: "🍕", label: "Pizza" }, { icon: "🍎", label: "Jablko" }, { icon: "🥕", label: "Mrkva" }], correct: 0, explanation: "Pizza je známe talianske jedlo." },
@@ -61,6 +60,21 @@
       { prompt: "Ktoré krásne jazero v Slovinsku má malý ostrovček?", answers: [{ icon: "🏞️", label: "Bledské jazero" }, { icon: "🏜️", label: "Púšť" }, { icon: "🌋", label: "Sopka" }], correct: 0, explanation: "Bledské jazero je známe malým ostrovčekom." },
     ] },
   };
+  const audioClips = {
+    intro: "audio/intro.mp3",
+    almost: "audio/almost.mp3",
+    next: "audio/next.mp3",
+    stamp: "audio/stamp.mp3",
+    complete: "audio/complete.mp3",
+    already: "audio/already.mp3",
+    restart: "audio/restart.mp3",
+    "sound-on": "audio/sound-on.mp3",
+  };
+  Object.keys(destinations).forEach((countryId) => {
+    destinations[countryId].questions.forEach((_, index) => {
+      audioClips[`${countryId}-${index + 1}`] = `audio/${countryId}-${index + 1}.mp3`;
+    });
+  });
 
   const elements = {
     game: document.querySelector(".kids-game"), stampCount: document.querySelector("#stamp-count"), stampStrip: document.querySelector("#passport-stamps"), soundToggle: document.querySelector("#sound-toggle"), soundLabel: document.querySelector("#sound-toggle-label"), audioWelcome: document.querySelector("#audio-welcome"), audioStart: document.querySelector("#audio-start"), audioSkip: document.querySelector("#audio-skip"), countryName: document.querySelector("#country-name"), questionTitle: document.querySelector("#question-title"), questionStep: document.querySelector("#question-step"), questionText: document.querySelector("#question-text"), answers: document.querySelector("#answer-options"), feedback: document.querySelector("#game-feedback"), repeat: document.querySelector("#repeat-prompt"), next: document.querySelector("#next-round"), completion: document.querySelector("#kids-complete"), summary: document.querySelector("#adventure-summary"), summaryList: document.querySelector("#summary-list"), diploma: document.querySelector("#kids-diploma"), print: document.querySelector("#print-diploma"), restart: document.querySelector("#restart-game"), countryButtons: Array.from(document.querySelectorAll("[data-country]")),
@@ -68,10 +82,16 @@
 
   let soundEnabled = true;
   let audioReady = false;
-  let audioContext = null;
+  const audioVersion = "20260803-audio-v3";
+  let activeAudio = null;
+  const audioPlayers = Object.fromEntries(Object.entries(audioClips).map(([key, source]) => {
+    const player = new Audio(`${source}?v=${audioVersion}`);
+    player.preload = "auto";
+    player.addEventListener("ended", () => { if (activeAudio === player) activeAudio = null; });
+    return [key, player];
+  }));
   let activeCountry = null;
   let activeRound = null;
-  let voices = [];
   let progress = readProgress();
 
   function blankCountryProgress() { return { completedRounds: [], attempts: {} }; }
@@ -98,34 +118,21 @@
   function firstOpenRound(id) { return destinations[id].questions.findIndex((_, round) => !getCountryProgress(id).completedRounds.includes(round)); }
   function isAdventureComplete() { return stampCount() === Object.keys(destinations).length; }
 
-  function loadVoices() { voices = "speechSynthesis" in window ? window.speechSynthesis.getVoices() : []; }
-  function preferredVoice() { const slovak = voices.filter((voice) => /^sk([-_]|$)/i.test(voice.lang)); return slovak.find((voice) => femaleVoicePattern.test(voice.name)) || slovak[0] || voices.find((voice) => femaleVoicePattern.test(voice.name)) || null; }
-  function prepareAudioContext() {
-    if (audioContext || !(window.AudioContext || window.webkitAudioContext)) return;
-    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    audioContext = new AudioContextClass();
-    if (audioContext.state === "suspended") audioContext.resume();
+  function stopCurrentClip() {
+    if (!activeAudio) return;
+    activeAudio.pause();
+    activeAudio.currentTime = 0;
+    activeAudio = null;
   }
-  function say(text) { if (!audioReady || !soundEnabled || !("speechSynthesis" in window)) return; const utterance = new SpeechSynthesisUtterance(text); utterance.lang = "sk-SK"; utterance.rate = 0.84; utterance.pitch = 1.16; const voice = preferredVoice(); if (voice) utterance.voice = voice; window.speechSynthesis.cancel(); window.speechSynthesis.speak(utterance); }
+  function playClip(key) {
+    if (!audioReady || !soundEnabled || !audioPlayers[key]) return;
+    stopCurrentClip();
+    const player = audioPlayers[key];
+    activeAudio = player;
+    player.currentTime = 0;
+    player.play().catch(() => { if (activeAudio === player) activeAudio = null; });
+  }
   function setFeedback(text, success = false) { elements.feedback.textContent = text; elements.feedback.classList.toggle("is-success", success); }
-  function playSuccessChime() {
-    if (!audioReady || !soundEnabled || !(window.AudioContext || window.webkitAudioContext)) return;
-    prepareAudioContext();
-    const context = audioContext;
-    if (!context) return;
-    [523.25, 659.25].forEach((frequency, index) => {
-      const oscillator = context.createOscillator();
-      const gain = context.createGain();
-      oscillator.type = "sine";
-      oscillator.frequency.value = frequency;
-      gain.gain.setValueAtTime(0.0001, context.currentTime + index * 0.08);
-      gain.gain.exponentialRampToValueAtTime(0.08, context.currentTime + index * 0.08 + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + index * 0.08 + 0.25);
-      oscillator.connect(gain).connect(context.destination);
-      oscillator.start(context.currentTime + index * 0.08);
-      oscillator.stop(context.currentTime + index * 0.08 + 0.27);
-    });
-  }
   function celebrate() { elements.game.classList.remove("is-celebrating"); window.requestAnimationFrame(() => elements.game.classList.add("is-celebrating")); window.setTimeout(() => elements.game.classList.remove("is-celebrating"), 760); }
 
   function updatePassport() {
@@ -174,7 +181,7 @@
     elements.next.hidden = true;
     setFeedback("Počúvaj Čajku Leto a vyber obrázok.");
     renderAnswers(question);
-    say(question.prompt);
+    playClip(`${countryId}-${round + 1}`);
     window.setTimeout(() => elements.questionTitle.focus(), 0);
   }
 
@@ -187,8 +194,8 @@
       elements.questionStep.textContent = "Krajina je hotová";
       elements.questionText.textContent = "Vyber si ďalšiu krajinu na mape.";
       elements.answers.replaceChildren(); elements.repeat.disabled = true; elements.next.hidden = true;
-      setFeedback("Výborne! Už máš všetky dva obrázky z tejto krajiny.", true);
-      say("Výborne! Túto krajinu už máš v pase.");
+      setFeedback("Výborne! Už máš všetkých päť obrázkov z tejto krajiny.", true);
+      playClip("already");
       return;
     }
     showRound(countryId, firstOpenRound(countryId));
@@ -215,34 +222,33 @@
     const buttons = Array.from(elements.answers.querySelectorAll("button"));
     const selected = buttons[index];
     if (index !== question.correct) {
-      selected.classList.add("is-try-again"); setFeedback("Takmer! Skús ešte jeden obrázok."); say("Takmer! Skús ešte jeden obrázok."); window.setTimeout(() => selected.classList.remove("is-try-again"), 650); return;
+      selected.classList.add("is-try-again"); setFeedback("Takmer! Skús ešte jeden obrázok."); playClip("almost"); window.setTimeout(() => selected.classList.remove("is-try-again"), 650); return;
     }
     buttons.forEach((button) => { button.disabled = true; }); selected.classList.add("is-correct");
-    countryProgress.completedRounds = [...new Set([...countryProgress.completedRounds, activeRound])]; saveProgress(); celebrate(); playSuccessChime();
+    countryProgress.completedRounds = [...new Set([...countryProgress.completedRounds, activeRound])]; saveProgress(); celebrate();
     const nextRound = firstOpenRound(activeCountry);
     if (nextRound !== -1) {
-      setFeedback("Výborne! Ešte jeden obrázok a získaš pečiatku.", true); say("Výborne! Ešte jeden obrázok a získaš pečiatku."); elements.next.hidden = false; return;
+      setFeedback("Výborne! Ešte jeden obrázok a získaš pečiatku.", true); playClip("next"); elements.next.hidden = false; return;
     }
     updatePassport();
     const message = isAdventureComplete() ? "Výborne! Stal si sa Malým objaviteľom Stredomoria!" : `Výborne! Získavaš pečiatku za ${destinations[activeCountry].name}!`;
-    setFeedback(message, true); say(message);
+    setFeedback(message, true); playClip(isAdventureComplete() ? "complete" : "stamp");
   }
 
   elements.countryButtons.forEach((button) => button.addEventListener("click", () => chooseCountry(button.dataset.country)));
   function setSoundControl(enabled) { soundEnabled = enabled; elements.soundToggle.setAttribute("aria-pressed", String(enabled)); elements.soundToggle.setAttribute("aria-label", enabled ? "Vypnúť zvuk" : "Zapnúť zvuk"); elements.soundLabel.textContent = enabled ? "Zvuk zapnutý" : "Zvuk vypnutý"; elements.soundToggle.querySelector("span").textContent = enabled ? "🔊" : "🔇"; }
-  function unlockAudio() { loadVoices(); audioReady = true; prepareAudioContext(); elements.audioWelcome.hidden = true; setSoundControl(true); say("Ahoj! Som Čajka Leto. Začíname hru. Vyber si krajinu a nájdi správny obrázok."); }
+  function unlockAudio() { audioReady = true; elements.audioWelcome.hidden = true; setSoundControl(true); playClip("intro"); }
   elements.audioStart.addEventListener("click", unlockAudio);
-  elements.audioSkip.addEventListener("click", () => { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); elements.audioWelcome.hidden = true; setSoundControl(false); setFeedback("Hráš bez hlasu. Všetky pokyny vidíš na obrazovke."); });
-  elements.repeat.addEventListener("click", () => { if (activeCountry && activeRound !== null) say(destinations[activeCountry].questions[activeRound].prompt); });
+  elements.audioSkip.addEventListener("click", () => { stopCurrentClip(); elements.audioWelcome.hidden = true; setSoundControl(false); setFeedback("Hráš bez hlasu. Všetky pokyny vidíš na obrazovke."); });
+  elements.repeat.addEventListener("click", () => { if (activeCountry && activeRound !== null) playClip(`${activeCountry}-${activeRound + 1}`); });
   elements.next.addEventListener("click", () => { if (activeCountry) showRound(activeCountry, firstOpenRound(activeCountry)); });
-  elements.soundToggle.addEventListener("click", () => { if (!audioReady) { unlockAudio(); return; } if (soundEnabled) { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); setSoundControl(false); } else { setSoundControl(true); say("Zvuk je zapnutý."); } });
+  elements.soundToggle.addEventListener("click", () => { if (!audioReady) { unlockAudio(); return; } if (soundEnabled) { stopCurrentClip(); setSoundControl(false); } else { setSoundControl(true); playClip("sound-on"); } });
   elements.print.addEventListener("click", () => { elements.diploma.hidden = false; window.print(); });
   elements.restart.addEventListener("click", () => {
     if (!window.confirm("Naozaj chceš začať dobrodružstvo odznova? Všetkých osem pečiatok sa vymaže.")) return;
     progress = blankProgress(); activeCountry = null; activeRound = null; try { window.localStorage.removeItem(storageKey); } catch (_) { /* Bez úložiska netreba nič mazať. */ }
-    elements.countryButtons.forEach((button) => button.classList.remove("is-active")); elements.countryName.textContent = "Čajka Leto čaká"; elements.questionTitle.textContent = "Vyber si krajinu na mape"; elements.questionStep.textContent = "V každej krajine nájdeš päť obrázkov."; elements.questionText.textContent = "Potom ti Čajka Leto ukáže tri veľké možnosti."; elements.answers.replaceChildren(); elements.repeat.disabled = true; elements.next.hidden = true; elements.diploma.hidden = true; setFeedback("Pečiatky sú pripravené na nové dobrodružstvo."); updatePassport(); say("Poďme na nové dobrodružstvo!");
+    elements.countryButtons.forEach((button) => button.classList.remove("is-active")); elements.countryName.textContent = "Čajka Leto čaká"; elements.questionTitle.textContent = "Vyber si krajinu na mape"; elements.questionStep.textContent = "V každej krajine nájdeš päť obrázkov."; elements.questionText.textContent = "Potom ti Čajka Leto ukáže tri veľké možnosti."; elements.answers.replaceChildren(); elements.repeat.disabled = true; elements.next.hidden = true; elements.diploma.hidden = true; setFeedback("Pečiatky sú pripravené na nové dobrodružstvo."); updatePassport(); playClip("restart");
   });
 
-  if ("speechSynthesis" in window) { loadVoices(); window.speechSynthesis.addEventListener("voiceschanged", loadVoices); }
   updatePassport();
 })();

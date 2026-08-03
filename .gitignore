@@ -4,5 +4,9 @@ audio/
 *.mp3
 *.wav
 
+# Published sound prompts for the children's map.
+!deti/audio/
+!deti/audio/*.mp3
+
 # Local preview/runtime files.
 .preview-server.pid
