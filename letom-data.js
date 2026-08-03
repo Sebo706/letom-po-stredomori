@@ -462,6 +462,13 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "kvízy kvizy stredomorie vedomostný kvíz kviz destinácie destinacie indície indicie otázky otazky",
   },
   {
+    type: "Sekcia",
+    title: "Detskí cestovatelia",
+    description: "Pripravovaná sekcia Letom po Stredomorí s hravým cestovateľským obsahom pre deti.",
+    url: "detski-cestovatelia/index.html",
+    keywords: "deti detský cestovatelia cestovanie pre deti kvízy hry stredomorie",
+  },
+  {
     type: "Kvíz",
     title: "Veľký stredomorský kvíz",
     description: "15 otázok o krajinách, ostrovoch, mestách, jedle a prírode európskeho Stredomoria.",
