@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "Sardínia, ktorú treba zažiť autom: od Alghera cez La Maddalenu až po tyrkysové pláže San Teodora",
+    description: "Osemdňový roadtrip priamym letom z Bratislavy, kompletný itinerár aj rozpočet pre štyroch dospelých.",
+    url: "blog/sardinia-roadtrip-alghero-la-maddalena-san-teodoro.html",
+    keywords: "sardínia sardinia alghero castelsardo palau la maddalena caprera san teodoro roadtrip auto bratislava ryanair taliansko pláže rozpočet",
+  },
+  {
     type: "Blesková správa",
     title: "Štrajk v Barcelone už ruší lety, lietadlá odleteli bez batožiny",
     description: "Najmenej 16 letov bolo do poludnia zrušených; ďalšie dve lietadlá odleteli bez podanej batožiny.",

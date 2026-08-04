@@ -159,6 +159,19 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const sardiniaRoadtripLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Sardínia, ktorú treba zažiť autom: od Alghera cez La Maddalenu až po tyrkysové pláže San Teodora",
+  publishedAt: "2026-08-04T13:00:00",
+  date: "Pridané 4. 8. 2026",
+  image: "images/blog/sardinia-roadtrip-2026/hero-sardinia-roadtrip-2026.png",
+  imageAlt: "Ilustračný vizuál roadtripu po severe Sardínie",
+  description: "Osemdňový roadtrip priamym letom z Bratislavy, kompletný itinerár aj rozpočet pre štyroch dospelých.",
+  url: "blog/sardinia-roadtrip-alghero-la-maddalena-san-teodoro.html",
+  label: "Čítať článok",
+};
+
 const poziareStredomorieLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -274,7 +287,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -666,7 +679,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-03";
+  const siteLastUpdated = "2026-08-04";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1582,6 +1595,13 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      {
+        title: "Sardínia, ktorú treba zažiť autom: od Alghera cez La Maddalenu až po tyrkysové pláže San Teodora",
+        description: "Osemdňový roadtrip priamym letom z Bratislavy, kompletný itinerár aj rozpočet pre štyroch dospelých.",
+        url: "blog/sardinia-roadtrip-alghero-la-maddalena-san-teodoro.html",
+        image: "images/blog/sardinia-roadtrip-2026/hero-sardinia-roadtrip-2026.png",
+        date: "4. august 2026",
+      },
       poziareStredomorieArticle,
       stredomorieVlajkaArticle,
       letenkySlovenskoArticle,

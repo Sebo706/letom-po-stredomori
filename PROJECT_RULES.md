@@ -9,6 +9,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - V sekcii `Najnovsie na webe` maju byt najnovsie videa, podcasty a blogy.
 - V sekcii `Najnovsie na webe` ma byt na desktope najnovsi obsah ako velka karta vlavo a druhy a treti najnovsi obsah vpravo; nahladove obrazky mensich clankov nemaju byt uzke bocne nahlady, ale siroke horne nahlady podobne ako pri videach.
 - Sekcia `Cestovatelsky blog` na homepage ma zobrazovat iba 2 clanky v rovnakom kartovom style ako teraz; dalsie blogy patria do archivu `blog.html` cez tlacidlo `Vsetky clanky`.
+- Novy blogovy clanok musi byt po pridani na homepage vzdy prvy v sekcii `Cestovatelsky blog`; predchadzajuce clanky sa posuvaju nizsie.
 - Pri kazdom novom blogovom clanku treba aktualizovat aj sekciu `Destinacie pri mori`: pri prislusnej krajine doplnit alebo upravit pocet clankov a odkaz na `clanky.html?krajina=...`.
 - Kazdy blogovy clanok, ktory sa tyka viacerych krajin alebo destinacii, musi byt priradeny ku vsetkym relevantnym krajinam v krajinskych filtroch, kartach a zoznamoch clankov, nie iba k jednej hlavnej teme.
 - Vseobecny podcast, ktory sa tyka celeho Stredomoria alebo porovnava cestovanie napriec destinaciami, musi byt priradeny ku vsetkym 8 krajinam webu a v celkovom archive podcastov sa nesmie duplicitne zobrazovat viackrat.
@@ -23,6 +24,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Na homepage mozu byt v sekcii `Bleskove spravy` iba 3 flash spravy.
 - Najnovsia flash sprava musi byt vzdy hore.
 - Starsie flash spravy sa posuvaju nizsie.
+- Nova flash sprava musi byt po pridani na homepage vzdy prva v sekcii `Bleskove spravy`; vsetky predchadzajuce flash spravy sa posuvaju nizsie.
 - Ak pribudne nova flash sprava, najstarsia z troch homepage sprav sa presunie iba do archivu.
 - Pri leteckych spravach presne rozlisovat, co je uplna novinka a co je pokracovanie, zimne pokracovanie alebo posilnenie uz existujucej alebo skor oznamenej linky.
 - Flash spravy maju posobit prakticky, cestovatelsky, doveryhodne a nie bulvarne.
@@ -69,6 +71,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Po dokonceni kazdej ulohy znovu skontrolovat tento subor a overit, ci vysledok neporusuje projektove pravidla.
 - Po dokonceni kazdej ulohy skontrolovat text `Posledna aktualizacia` v pate webu a nastavit ho na aktualny datum poslednej upravy, ak sa menil verejny obsah alebo verejne subory webu.
 - Pri kontrole textu `Posledna aktualizacia` overit aj mobilne zobrazenie, aby bol aktualny datum zmeneny a viditelny aj na mobile.
+- Pri clankoch, bleskovych spravach, texte `Posledna aktualizacia` a vsade, kde sa na webe zobrazuje datum publikovania alebo aktualizacie, uvadzat datum aj cas v casovom pasme Europe/Bratislava.
 - Po pridani noveho verejneho obsahu pouzivatelovi pripomenut vetu na zdielanie: `Sledujte Letom po Stredomori pre dalsie tipy, cestovatelske skusenosti a aktualne spravy zo Stredomoria. Na YouTube, Facebooku, Spotify a samozrejme na webe https://sebo706.github.io/letom-po-stredomori/index.html#domov`.
 - Po dokonceni kazdej ulohy pouzivatelovi pripomenut nasledujucich 5 cakajucich bodov zo suboru `WEBSITE_IMPROVEMENTS.md`.
 - Pri kazdom novom kvíze po dokončení zobrazit prehlad vsetkych otazok: odpoved pouzivatela, spravnu odpoved a kratke vysvetlenie. Prehlad musi jasne rozlisovat spravne a nespravne odpovede a byt citatelny na mobile aj desktope.
