@@ -49,6 +49,13 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "letenky slovensko slovaci letecká doprava letecka doprava eurostat ceny zlacnenie 45,1 percenta bratislava letisko konkurencia ryanair wizz air smartwings stredomorie taliansko španielsko spanielsko grécko grecko cyprus turecko sicília sicilia barcelona malaga alicante neapol palermo atény ateny larnaka antalya košice kosice",
   },
   {
+    type: "Sekcia",
+    title: "Pre deti: Nájdi ukryté predmety",
+    description: "Jemná prázdninová hra s Čajkou Leto pre malých objaviteľov.",
+    url: "deti/index.html",
+    keywords: "deti hra ukryte predmety čajka leto pláž letisko prístav",
+  },
+  {
     type: "Mapa",
     title: "Mapa Stredomoria",
     description: "Interaktívna mapa krajín, ostrovov, miest, článkov, videí, podcastov, trás a aktuálnych upozornení.",
@@ -460,13 +467,6 @@ window.LETOM_SEARCH_INDEX = [
     description: "Prehľad interaktívnych kvízov o európskom Stredomorí: vedomostné otázky aj pátranie podľa indícií.",
     url: "kvizy/index.html",
     keywords: "kvízy kvizy stredomorie vedomostný kvíz kviz destinácie destinacie indície indicie otázky otazky",
-  },
-  {
-    type: "Sekcia",
-    title: "Malí cestovatelia",
-    description: "Hravá zvuková mapa s ôsmimi krajinami, piatimi ľahkými otázkami v každej a pečiatkami.",
-    url: "deti/index.html",
-    keywords: "deti detski malí mali cestovatelia cestovanie pre deti zvuková zvukova mapa hra stredomorie",
   },
   {
     type: "Kvíz",
