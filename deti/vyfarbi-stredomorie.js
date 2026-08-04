@@ -6,8 +6,10 @@
     { title: 'Maják pri mori', x: '0%', y: '100%' }, { title: 'Ostrov s palmou', x: '100%', y: '100%' },
   ];
   const palette = [
-    ['Modrá', '#3b9ed1'], ['Tyrkysová', '#47c4c1'], ['Žltá', '#f4c84f'], ['Oranžová', '#f39a4a'], ['Červená', '#e96e64'],
-    ['Zelená', '#77b969'], ['Ružová', '#ed91ae'], ['Fialová', '#a786d1'], ['Hnedá', '#a66c43'], ['Čierna', '#263b45'],
+    ['Modrá', '#3b9ed1'], ['Námornícka', '#176da5'], ['Tyrkysová', '#47c4c1'], ['Mätová', '#85d8a8'],
+    ['Žltá', '#f4c84f'], ['Zlatá', '#f3aa31'], ['Oranžová', '#f39a4a'], ['Koralová', '#ef7d68'],
+    ['Červená', '#e9565d'], ['Ružová', '#ed91ae'], ['Fialová', '#a786d1'], ['Lila', '#c5a1e9'],
+    ['Zelená', '#77b969'], ['Hnedá', '#a66c43'], ['Sivá', '#84949b'], ['Čierna', '#263b45'],
   ];
   const storageKey = 'letom-po-stredomori-deti-vyfarbi-v1';
   const introText = 'Ahoj, malý cestovateľ! Vyber si obrázok, farbu a vymaľuj si Stredomorie po svojom!';
@@ -18,6 +20,15 @@
   const paletteGrid = document.getElementById('color-palette');
   const canvas = document.getElementById('coloring-canvas');
   const context = canvas.getContext('2d', { willReadFrequently: true });
+  const praiseElement = document.getElementById('canvas-praise');
+  const printButton = document.createElement('button');
+  printButton.className = 'coloring-control';
+  printButton.type = 'button';
+  printButton.id = 'print-picture';
+  printButton.setAttribute('aria-label', 'Vytlačiť omaľovánku');
+  printButton.innerHTML = '🖨 <span>Tlačiť obrázok</span>';
+  document.querySelector('.studio-controls').appendChild(printButton);
+  praiseElement.textContent = '✦ Výborne! ✦';
   const pictureImage = new Image();
   let selectedPicture = 0;
   let selectedColor = palette[0];
@@ -58,7 +69,7 @@
     originalImageData = context.getImageData(0, 0, canvas.width, canvas.height);
     paintedActions = 0;
     praised = false;
-    document.getElementById('canvas-praise').hidden = true;
+    praiseElement.hidden = true;
   };
   const openPicture = (index) => { selectedPicture = index; document.getElementById('studio-title').textContent = pictures[index].title; drawPicture(); switchTo('studio'); };
   const isClose = (data, position, target) => Math.abs(data[position] - target[0]) < 48 && Math.abs(data[position + 1] - target[1]) < 48 && Math.abs(data[position + 2] - target[2]) < 48 && Math.abs(data[position + 3] - target[3]) < 48;
@@ -74,14 +85,15 @@
     while (head < queue.length && changed < 250000) { const [x, y] = queue[head++]; if (x < 0 || y < 0 || x >= canvas.width || y >= canvas.height) continue; const position = (y * canvas.width + x) * 4; if (!isClose(data, position, target)) continue; data[position] = replacement[0]; data[position + 1] = replacement[1]; data[position + 2] = replacement[2]; data[position + 3] = 255; changed += 1; queue.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]); }
     if (!changed) return;
     context.putImageData(imageData, 0, 0); paintedActions += 1; tone(false);
-    if (paintedActions >= 9 && !praised) { praised = true; const praise = document.getElementById('canvas-praise'); praise.hidden = false; tone(true); }
+    if (paintedActions >= 9 && !praised) { praised = true; praiseElement.hidden = false; tone(true); }
   };
   canvas.addEventListener('click', (event) => { const rect = canvas.getBoundingClientRect(); const x = Math.floor((event.clientX - rect.left) * (canvas.width / rect.width)); const y = Math.floor((event.clientY - rect.top) * (canvas.height / rect.height)); fillAt(x, y); });
   document.getElementById('open-gallery').addEventListener('click', () => switchTo('gallery'));
   document.getElementById('gallery-back').addEventListener('click', () => switchTo('intro'));
   document.getElementById('back-to-gallery').addEventListener('click', () => switchTo('gallery'));
   document.getElementById('next-picture').addEventListener('click', () => openPicture((selectedPicture + 1) % pictures.length));
-  document.getElementById('clear-picture').addEventListener('click', () => { context.putImageData(originalImageData, 0, 0); paintedActions = 0; praised = false; document.getElementById('canvas-praise').hidden = true; });
+  printButton.addEventListener('click', () => window.print());
+  document.getElementById('clear-picture').addEventListener('click', () => { context.putImageData(originalImageData, 0, 0); paintedActions = 0; praised = false; praiseElement.hidden = true; });
   document.getElementById('repeat-coloring-intro').addEventListener('click', speakIntro);
   document.getElementById('coloring-sound-toggle').addEventListener('click', toggleSound);
   document.getElementById('studio-sound-toggle').addEventListener('click', toggleSound);
