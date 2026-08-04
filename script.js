@@ -670,7 +670,9 @@ function formatSiteDate(dateValue) {
     "december",
   ];
 
-  return `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}`;
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  return `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}, ${hours}:${minutes}`;
 }
 
 function renderLastUpdated() {
@@ -679,7 +681,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-04";
+  const siteLastUpdated = "2026-08-04T21:21:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];

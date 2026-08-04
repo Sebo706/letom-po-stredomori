@@ -3,6 +3,9 @@ audio/
 *.m4a
 *.mp3
 *.wav
+!deti/audio/
+!deti/audio/maly-jazykovy-hrdina/
+!deti/audio/maly-jazykovy-hrdina/*.mp3
 
 # Local preview/runtime files.
 .preview-server.pid
