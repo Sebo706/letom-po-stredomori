@@ -708,3 +708,20 @@ window.LETOM_FLASH_NEWS = [
     ],
   },
 ];
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "barcelona-groundforce-rusenie-letov-2026",
+  label: "BLESKOVÁ SPRÁVA | 4. august 2026",
+  title: "Štrajk v Barcelone už ruší lety, lietadlá odleteli bez batožiny",
+  date: "4. august 2026",
+  datetime: "2026-08-04",
+  image: "images/novinky/barcelona-groundforce-strajk-2026-update.jpg",
+  imageAlt: "Ilustračný vizuál zrušených letov a radov na letisku v Barcelone",
+  summary: "Neobmedzený štrajk Groundforce už priniesol zrušené lety, odlety bez podanej batožiny a rady pri odbavení.",
+  body: [
+    "Neobmedzený štrajk zamestnancov spoločnosti Groundforce na letisku Barcelona-El Prat už priniesol prvé vážne komplikácie. V utorok 4. augusta bolo do poludnia zrušených najmenej 16 letov – osem príletov a osem odletov. Ďalšie dve lietadlá odleteli bez podanej batožiny a pri odbavovacích priehradkách sa tvoria rady.",
+    "Údaje zatiaľ zverejnili odbory CGT; konečná oficiálna bilancia letiska ešte nemusí byť úplná. Cestujúci by si mali pred odchodom overiť stav letu priamo u aerolinky, prísť na letisko s dostatočnou rezervou a podľa možnosti cestovať iba s príručnou batožinou."
+  ],
+  source: "Zdroj predbežných čísel: odbory CGT. Ilustračný vizuál nezobrazuje konkrétnu situáciu na letisku.",
+  sourceLinks: [{ label: "Letisko Barcelona-El Prat", url: "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html" }]
+});

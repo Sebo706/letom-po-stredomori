@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Blesková správa",
+    title: "Štrajk v Barcelone už ruší lety, lietadlá odleteli bez batožiny",
+    description: "Najmenej 16 letov bolo do poludnia zrušených; ďalšie dve lietadlá odleteli bez podanej batožiny.",
+    url: "spravy/barcelona-groundforce-rusenie-letov-2026.html",
+    keywords: "Barcelona El Prat Groundforce štrajk zrušené lety batožina CGT meškanie",
+  },
+  {
     type: "Článok",
     title: "Požiare v Stredomorí 2026: obete, evakuovaní turisti a sezóna, ktorá sa ešte nekončí",
     description: "Kde zasiahli turistov, čo sa deje teraz a čo môže priniesť zvyšok sezóny.",
