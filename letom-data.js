@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Požiare v Stredomorí 2026: obete, evakuovaní turisti a sezóna, ktorá sa ešte nekončí",
+    description: "Kde zasiahli turistov, čo sa deje teraz a čo môže priniesť zvyšok sezóny.",
+    url: "blog/poziare-v-stredomori-2026.html",
+    keywords: "požiare 2026 stredomorie evakuácia turisti grécko taliansko španielsko francúzsko bezpečnosť",
+  },
+  {
+    type: "Článok",
     title: "Má Stredomorie vlastnú vlajku? Takto by jeho symbol a vlajka vyzerali podľa AI",
     description: "Skúmali sme, či existuje spoločný symbol Stredomoria – a ako by jeho vlajka a znak mohli vyzerať podľa AI.",
     url: "blog/ma-stredomorie-vlastnu-vlajku.html",
@@ -50,9 +57,23 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Sekcia",
-    title: "Pre deti: Nájdi ukryté predmety",
-    description: "Jemná prázdninová hra s Čajkou Leto pre malých objaviteľov.",
+    title: "Hry pre deti",
+    description: "Pokojné prázdninové hry s Čajkou Leto pre malých objaviteľov.",
     url: "deti/index.html",
+    keywords: "deti hry čajka leto omaľovánka ukryte predmety",
+  },
+  {
+    type: "Hra pre deti",
+    title: "Vyfarbi Stredomorie",
+    description: "Jednoduchá digitálna omaľovánka so šiestimi stredomorskými obrázkami.",
+    url: "deti/vyfarbi-stredomorie.html",
+    keywords: "deti omaľovánka vyfarbi stredomorie lietadlo delfín pláž loďka maják ostrov",
+  },
+  {
+    type: "Hra pre deti",
+    title: "Nájdi ukryté predmety",
+    description: "Jemná prázdninová hra s Čajkou Leto pre malých objaviteľov.",
+    url: "deti/ukryte-predmety.html",
     keywords: "deti hra ukryte predmety čajka leto pláž letisko prístav",
   },
   {

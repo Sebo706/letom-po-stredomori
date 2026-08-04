@@ -159,6 +159,19 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const poziareStredomorieLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Požiare v Stredomorí 2026: obete, evakuovaní turisti a sezóna, ktorá sa ešte nekončí",
+  publishedAt: "2026-08-04T12:00:00",
+  date: "Pridané 4. 8. 2026",
+  image: "images/blog/poziare-stredomorie-2026/hero-poziare-stredomorie-2026.jpg",
+  imageAlt: "Ilustračná vizualizácia požiaru nad stredomorským pobrežím",
+  description: "Kde zasiahli turistov, čo sa deje teraz a čo môže priniesť zvyšok sezóny.",
+  url: "blog/poziare-v-stredomori-2026.html",
+  label: "Čítať článok",
+};
+
 const stredomorieVlajkaLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -261,7 +274,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1423,6 +1436,14 @@ const slovaciLietanieArticle = {
   date: "30. jún 2026",
 };
 
+const poziareStredomorieArticle = {
+  title: "Požiare v Stredomorí 2026: obete, evakuovaní turisti a sezóna, ktorá sa ešte nekončí",
+  description: "Kde zasiahli turistov, čo sa deje teraz a čo môže priniesť zvyšok sezóny.",
+  url: "blog/poziare-v-stredomori-2026.html",
+  image: "images/blog/poziare-stredomorie-2026/hero-poziare-stredomorie-2026.jpg",
+  date: "4. august 2026",
+};
+
 const stredomorieVlajkaArticle = {
   title: "Má Stredomorie vlastnú vlajku? Takto by jeho symbol a vlajka vyzerali podľa AI",
   description: "Skúmali sme, či existuje spoločný symbol Stredomoria – a ako by jeho vlajka a znak mohli vyzerať podľa AI.",
@@ -1561,6 +1582,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      poziareStredomorieArticle,
       stredomorieVlajkaArticle,
       letenkySlovenskoArticle,
       zaujimavostiStredomoria3Article,
@@ -1596,6 +1618,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      poziareStredomorieArticle,
       stredomorieVlajkaArticle,
       letenkySlovenskoArticle,
       lefkadaAutomArticle,
@@ -1625,6 +1648,7 @@ const articleLibrary = {
     name: "Španielsko",
   description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
   articles: [
+      poziareStredomorieArticle,
       stredomorieVlajkaArticle,
       malorkaNaBicykliArticle,
       letenkySlovenskoArticle,
@@ -1650,7 +1674,7 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",

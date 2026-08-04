@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nájdi ukryté predmety – pokojná hra pre malých objaviteľov Stredomoria." />
+    <title>Nájdi ukryté predmety | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="../style.css?v=20260804-kids-game-1" />
+    <link rel="stylesheet" href="deti.css?v=20260804-hidden-objects-1" />
+  </head>
+  <body class="kids-page">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov">
+          <img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" />
+          <span>Letom po Stredomorí</span>
+        </a>
+        <div class="nav-panel nav-panel-static">
+          <a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a>
+          <a href="index.html">Pre deti</a><a class="nav-cta" href="../index.html#domov">Späť na domov</a>
+        </div>
+      </nav>
+    </header>
+    <main class="kids-adventure" id="kids-adventure">
+      <div class="sun-glow" aria-hidden="true"></div>
+      <section class="welcome-card" id="welcome-screen" aria-labelledby="game-title">
+        <div class="welcome-copy">
+          <p class="kids-kicker">Malé prázdninové dobrodružstvo</p>
+          <h1 id="game-title">Nájdi ukryté predmety</h1>
+          <p class="welcome-text">Pozri sa do obrázka a nájdi tri veselé veci.</p>
+          <div class="welcome-actions">
+            <button class="kids-button kids-button-primary" id="start-game" type="button" aria-label="Spustiť hru Nájdi ukryté predmety"><span aria-hidden="true">▶</span> Spustiť hru</button>
+            <button class="round-control" id="repeat-intro" type="button" aria-label="Zopakovať úvodné vysvetlenie"><span aria-hidden="true">🔊</span><span class="control-text">Zopakovať</span></button>
+            <button class="round-control" id="sound-toggle" type="button" aria-pressed="true" aria-label="Vypnúť zvuk"><span aria-hidden="true">🔊</span><span class="control-text" id="sound-label">Zvuk</span></button>
+          </div>
+          <p class="parent-note">Pre malých objaviteľov od 2 rokov. Bez registrácie a bez čítania.</p>
+        </div>
+        <figure class="leto-portrait"><img src="cajka-leto-hra.png" alt="Usmiata Čajka Leto so šatkou" /><figcaption>Čajka Leto</figcaption></figure>
+      </section>
+
+      <section class="game-board" id="game-screen" hidden aria-labelledby="scene-title">
+        <header class="game-topbar">
+          <div><p class="scene-counter" id="scene-counter">Dobrodružstvo 1 z 3</p><h1 id="scene-title">Slnečná pláž</h1></div>
+          <div class="top-controls"><button class="round-control" id="game-sound-toggle" type="button" aria-pressed="true" aria-label="Vypnúť zvuk">🔊</button><button class="round-control" id="restart-game" type="button" aria-label="Začať hru odznova">↻ <span class="control-text">Odznova</span></button></div>
+        </header>
+        <section class="target-panel" aria-label="Nájdi tieto tri predmety"><div class="target-title"><span aria-hidden="true">🔎</span> Nájdi</div><div class="targets" id="targets"></div><p class="target-progress" id="target-progress">0/3</p></section>
+        <div class="scene-wrap"><div class="scene" id="scene" role="application" aria-label="Ilustrovaná scéna na hľadanie predmetov" tabindex="0"></div></div>
+        <div class="game-status" id="game-status" aria-live="polite">Ťukni na jeden z ukrytých predmetov.</div>
+      </section>
+
+      <section class="celebration-card" id="scene-complete" hidden aria-live="polite">
+        <div class="confetti" aria-hidden="true">✦ ✧ ★ ✦</div><img src="cajka-leto-hra.png" alt="Čajka Leto gratuluje" />
+        <p class="kids-kicker">Výborne!</p><h2 id="complete-title">Všetko je nájdené.</h2><p id="complete-text">Čaká ťa ďalšia krásna scéna.</p>
+        <button class="kids-button kids-button-primary" id="next-scene" type="button" aria-label="Pokračovať na ďalšiu scénu">Ďalšia scéna <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section class="final-card" id="final-screen" hidden aria-live="polite">
+        <div class="medal" aria-hidden="true">★</div><img src="cajka-leto-hra.png" alt="Čajka Leto s gratuláciou" />
+        <p class="kids-kicker">Medaila pre teba</p><h2>Malý objaviteľ Stredomoria</h2><p>Výborne! Našiel si všetky ukryté predmety!</p>
+        <button class="kids-button kids-button-primary" id="play-again" type="button" aria-label="Zahrať hru znova">Zahrať znova</button>
+      </section>
+    </main>
+    <script src="skryte-predmety.js?v=20260804-hidden-objects-1"></script>
+  </body>
+</html>
