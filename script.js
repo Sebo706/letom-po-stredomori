@@ -159,6 +159,18 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const cyprusLarnakaParalimniLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Leto, ktoré sa nechce skončiť: čo objaviť medzi Larnakou a Paralimni",
+  publishedAt: "2026-08-06T18:44:00",
+  date: "Pridané 6. 8. 2026, 18:44",
+  image: "images/blog/cyprus-larnaka-paralimni-2026/hero-cyprus-larnaka-paralimni.png",
+  imageAlt: "Tyrkysové cyperské pobrežie",
+  description: "Objavujeme Stredomorie · 1. časť: pláže, Cape Greco, Varoša aj praktické tipy z cesty po východnom Cypre.",
+  url: "blog/cyprus-larnaka-paralimni-objavujeme-stredomorie-1.html",
+  label: "Čítať článok",
+};
 const osemPribehovStredomoriaLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -299,7 +311,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -1604,6 +1616,14 @@ const kosOsobneArticle = {
   date: "8. júl 2026",
 };
 
+const cyprusLarnakaParalimniArticle = {
+  title: "Leto, ktoré sa nechce skončiť: čo objaviť medzi Larnakou a Paralimni",
+  description: "Objavujeme Stredomorie · 1. časť: pláže, Cape Greco, Varoša aj praktické tipy z cesty po východnom Cypre.",
+  url: "blog/cyprus-larnaka-paralimni-objavujeme-stredomorie-1.html",
+  image: "images/blog/cyprus-larnaka-paralimni-2026/hero-cyprus-larnaka-paralimni.png",
+  date: "6. august 2026, 18:44",
+};
+
 const osemPribehovStredomoriaArticle = {
   title: "Sardínia sa bála mora, Neapol chráni vajce: 8 neuveriteľných príbehov Stredomoria",
   description: "Osem historických faktov, miestnych tradícií a legiend od Sardínie po Dubrovník.",
@@ -1752,7 +1772,7 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [cyprusLarnakaParalimniArticle, stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",

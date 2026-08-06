@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Leto, ktoré sa nechce skončiť: čo objaviť medzi Larnakou a Paralimni",
+    description: "Objavujeme Stredomorie · 1. časť: pláže, Cape Greco, Varoša aj praktické tipy z cesty po východnom Cypre.",
+    url: "blog/cyprus-larnaka-paralimni-objavujeme-stredomorie-1.html",
+    keywords: "cyprus larnaka paralimni ayia napa nissi beach cape greco protaras varoša varosha famagusta korytnačky musan pláže doprava autobus objavujeme stredomorie",
+  },
+  {
+    type: "Článok",
     title: "Sardínia sa bála mora, Neapol chráni vajce: 8 neuveriteľných príbehov Stredomoria",
     description: "Bezcenné pobrežie, magické vajce, karanténa aj najstarší analógový počítač v ôsmich príbehoch Stredomoria.",
     url: "blog/8-neuveritelnych-pribehov-stredomoria.html",
@@ -105,6 +112,55 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "mapa stredomorie krajiny ostrovy mestá clanky články videá videa podcasty itineráre itinerare lety upozornenia lefkada kos zakynthos",
   },
   {
+    type: "Kvíz",
+    title: "Kvízy o Stredomorí",
+    description: "Prehľad interaktívnych kvízov o európskom Stredomorí: vedomostné otázky aj pátranie podľa indícií.",
+    url: "kvizy/index.html",
+    keywords: "kvízy kvizy stredomorie vedomostný kvíz kviz destinácie destinacie indície indicie otázky otazky",
+  },
+  {
+    type: "Kvíz",
+    title: "Veľký stredomorský kvíz",
+    description: "15 otázok o krajinách, ostrovoch, mestách, jedle a prírode európskeho Stredomoria.",
+    url: "kvizy/velky-stredomorsky-kviz.html",
+    keywords: "kvíz kviz stredomorie otázky otazky grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko cyprus malta francúzsko francuzsko slovinsko ostrovy mestá mesta príroda priroda jedlo",
+  },
+  {
+    type: "Kvíz",
+    title: "Uhádnite stredomorskú destináciu podľa troch indícií",
+    description: "Spoznajte 15 ostrovov, miest a pobreží Stredomoria podľa postupne odhaľovaných stôp.",
+    url: "kvizy/uhadni-stredomorsku-destinaciu.html",
+    keywords: "kvíz kviz destinácia destinacie indície indicie hádanie hadanie ostrovy mestá mesta pobrežie stredomorie",
+  },
+  {
+    type: "Kvíz",
+    title: "Uhádnete najnečakanejšie miesta Stredomoria?",
+    description: "15 prekvapivých miest Stredomoria podľa troch indícií: púšť, sneh, ružové saliny, sopky aj jazykové ostrovy.",
+    url: "kvizy/uhadnete-najnecakanejsie-miesta-stredomoria.html",
+    keywords: "kvíz kviz najnečakanejšie miesta stredomorie indície indicie púšť tabernas troodos ružové saliny sopky elafonissi stromboli",
+  },
+  {
+    type: "Kvíz",
+    title: "NAJ kvíz o Stredomorí",
+    description: "16 otázok o najväčších ostrovoch, najvyšších vrchoch a najstarších pamiatkach Stredomoria.",
+    url: "kvizy/naj-stredomoria.html",
+    keywords: "kvíz kviz naj stredomorie najväčší najvacsi najmenší najmensi najvyšší najvyssi najstarší najstarsi ostrovy vrchy pamiatky grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko malta cyprus francúzsko francuzsko slovinsko",
+  },
+  {
+    type: "Kvíz",
+    title: "Viete, čo si objednávate? Kvíz o chutiach Stredomoria",
+    description: "16 otázok o jedlách, nápojoch, syroch, dezertoch a miestnych špecialitách Stredomoria.",
+    url: "kvizy/chute-stredomoria.html",
+    keywords: "kvíz kviz chute jedlo jedlá jedla nápoje napoje syry dezerty špeciality arancini focaccia paella souvlaki cannoli pašticada pasticada ensaimada bouillabaisse halloumi pastizzi stredomorie",
+  },
+  {
+    type: "Kvíz",
+    title: "Dohovorili by ste sa na dovolenke?",
+    description: "16 otázok o pozdravoch, poďakovaní a praktických cestovateľských frázach v jazykoch Stredomoria.",
+    url: "kvizy/dohovorili-by-ste-sa.html",
+    keywords: "kvíz kviz jazyky frázy frazy dovolenka cestovanie taliančina taliancina gréčtina grectina španielčina spanielcina chorvátčina chorvatcina francúzština francuzstina maltčina maltcina slovinčina slovincina ciao grazie hola gracias hvala",
+  },
+  {
     type: "Článok",
     title: "Lefkada autom: 3 ubytovania v Agios Nikitas",
     description: "Porovnanie troch možností pre štyroch dospelých: cena, poloha pri plážach, stravovanie a praktické kompromisy.",
@@ -133,18 +189,18 @@ window.LETOM_SEARCH_INDEX = [
     keywords: "taliansko letecký štrajk letecky strajk easyjet 21 júl 2026 miláno malpensa linate rím fiumicino neapol salerno lamezia terme olbia alghero zrušené lety meskanie garantované lety enac",
   },
   {
-    type: "Flash správa",
-    title: "Ďalšia slovenská cestovka končí: Solvex vyhlásil platobnú neschopnosť",
-    description: "Solvex po 26 rokoch oznámil platobnú neschopnosť. Praktický postup pre klientov v zahraničí aj pred odchodom.",
-    url: "spravy/solvex-platobna-neschopnost-2026.html",
-    keywords: "solvex cestovná kancelária cestovna kancelaria platobná neschopnosť platobna neschopnost colonnade poistenie proti úpadku poistenie proti upadku global assistance 421 911 803 500 8-893-015952 klienti zájazd reklamácia odškodnenie dovolenka",
-  },
-  {
     type: "Článok",
     title: "EÚ schválila nové práva cestujúcich",
     description: "Čo sa mení pri meškaní, kompenzácii, batožine, sedení detí a kedy nové pravidlá začnú platiť.",
     url: "blog/nove-prava-cestujucich-eu-2026.html",
     keywords: "eú eu práva cestujúcich prava cestujucich lietadlo letecká doprava letecka doprava meškanie meskanie kompenzácia kompenzacia batožina batozina príručná batožina prirucna batozina sedenie detí sedadlá refundácia voucher náhradná doprava palubný lístok eu261 nariadenie 261/2004",
+  },
+  {
+    type: "Flash správa",
+    title: "Ďalšia slovenská cestovka končí: Solvex vyhlásil platobnú neschopnosť",
+    description: "Solvex po 26 rokoch oznámil platobnú neschopnosť. Praktický postup pre klientov v zahraničí aj pred odchodom.",
+    url: "spravy/solvex-platobna-neschopnost-2026.html",
+    keywords: "solvex cestovná kancelária cestovna kancelaria platobná neschopnosť platobna neschopnost colonnade poistenie proti úpadku poistenie proti upadku global assistance 421 911 803 500 8-893-015952 klienti zájazd reklamácia odškodnenie dovolenka",
   },
   {
     type: "Flash správa",
@@ -200,7 +256,7 @@ window.LETOM_SEARCH_INDEX = [
     title: "5 zaujímavostí Stredomoria, o ktorých nie každý vie: 2. časť",
     description: "Zingaro na Sicílii, korytnačie pláže Zakynthosu, divoký Kos, sardínske dediny a Varosha na Cypre.",
     url: "blog/5-zaujimavosti-stredomoria-2.html",
-    keywords: "stredomorie zaujímavosti zaujimavosti seriál serial 2 časť cast sicília sicilia zingaro monte monaco san vito lo capo zakynthos korytnačky korytnacky laganas marathonisi gerakas dafni kos cavo paradiso therma springs nisyros sardínia sardinia castelsardo bosa tinnura flussio cyprus ayia napa protaras cape greco varosha famagusta",
+    keywords: "stredomorie zaujímavosti zaujimavosti seriál serial druhá časť druha cast sicília sicilia zingaro san vito lo capo monte monaco zakynthos zakyntos korytnačky korytnacky laganas caretta caretta kos cavo paradiso therma springs nisyros sardínia sardinia castelsardo bosa tinnura flussio cyprus ayia napa protaras cape greco varosha famagusta",
   },
   {
     type: "Flash správa",
@@ -492,9 +548,9 @@ window.LETOM_SEARCH_INDEX = [
   {
     type: "Podstránka",
     title: "Všetky flash správy",
-    description: "Archív krátkych cestovateľských správ Letom v skratke.",
+    description: "Archív bleskových cestovateľských správ.",
     url: "spravy.html",
-    keywords: "správy spravy flash letom v skratke novinky upozornenia",
+    keywords: "správy spravy flash bleskove spravy bleskové správy novinky upozornenia",
   },
   {
     type: "Podstránka",
@@ -503,58 +559,4 @@ window.LETOM_SEARCH_INDEX = [
     url: "blog.html",
     keywords: "blog články clanky cestovateľský magazín",
   },
-  {
-    type: "Kvíz",
-    title: "Kvízy o Stredomorí",
-    description: "Prehľad interaktívnych kvízov o európskom Stredomorí: vedomostné otázky aj pátranie podľa indícií.",
-    url: "kvizy/index.html",
-    keywords: "kvízy kvizy stredomorie vedomostný kvíz kviz destinácie destinacie indície indicie otázky otazky",
-  },
-  {
-    type: "Kvíz",
-    title: "Veľký stredomorský kvíz",
-    description: "15 otázok o krajinách, ostrovoch, mestách, jedle a prírode európskeho Stredomoria.",
-    url: "kvizy/velky-stredomorsky-kviz.html",
-    keywords: "kvíz kviz stredomorie otázky otazky grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko cyprus malta francúzsko francuzsko slovinsko ostrovy mestá mesta príroda priroda jedlo",
-  },
-  {
-    type: "Kvíz",
-    title: "Uhádnite stredomorskú destináciu podľa troch indícií",
-    description: "Spoznajte 15 ostrovov, miest a pobreží Stredomoria podľa postupne odhaľovaných stôp.",
-    url: "kvizy/uhadni-stredomorsku-destinaciu.html",
-    keywords: "kvíz kviz destinácia destinacie indície indicie hádanie hadanie ostrovy mestá mesta pobrežie stredomorie",
-  },
-  {
-    type: "Kvíz",
-    title: "Uhádnete najnečakanejšie miesta Stredomoria?",
-    description: "15 prekvapivých miest Stredomoria podľa troch indícií: púšť, sneh, ružové saliny, sopky aj jazykové ostrovy.",
-    url: "kvizy/uhadnete-najnecakanejsie-miesta-stredomoria.html",
-    keywords: "kvíz kviz najnečakanejšie miesta stredomorie indície indicie púšť tabernas troodos ružové saliny sopky elafonissi stromboli",
-  },
-  {
-    type: "Kvíz",
-    title: "NAJ kvíz o Stredomorí",
-    description: "16 otázok o najväčších ostrovoch, najvyšších vrchoch a najstarších pamiatkach Stredomoria.",
-    url: "kvizy/naj-stredomoria.html",
-    keywords: "kvíz kviz naj stredomorie najväčší najvacsi najmenší najmensi najvyšší najvyssi najstarší najstarsi ostrovy vrchy pamiatky grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko malta cyprus francúzsko francuzsko slovinsko",
-  },
-  {
-    type: "Kvíz",
-    title: "Viete, čo si objednávate? Kvíz o chutiach Stredomoria",
-    description: "16 otázok o jedlách, nápojoch, syroch, dezertoch a miestnych špecialitách Stredomoria.",
-    url: "kvizy/chute-stredomoria.html",
-    keywords: "kvíz kviz chute jedlo jedlá jedla nápoje napoje syry dezerty špeciality arancini focaccia paella souvlaki cannoli pašticada pasticada ensaimada bouillabaisse halloumi pastizzi stredomorie",
-  },
-  {
-    type: "Kvíz",
-    title: "Dohovorili by ste sa na dovolenke?",
-    description: "16 otázok o pozdravoch, poďakovaní a praktických cestovateľských frázach v jazykoch Stredomoria.",
-    url: "kvizy/dohovorili-by-ste-sa.html",
-    keywords: "kvíz kviz jazyky frázy frazy dovolenka cestovanie taliančina taliancina gréčtina grectina španielčina spanielcina chorvátčina chorvatcina francúzština francuzstina maltčina maltcina slovinčina slovincina ciao grazie hola gracias hvala",
-  },
 ];
-
-
-
-
-
