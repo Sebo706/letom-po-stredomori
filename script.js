@@ -159,6 +159,18 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const osemPribehovStredomoriaLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Sardínia sa bála mora, Neapol chráni vajce: 8 neuveriteľných príbehov Stredomoria",
+  publishedAt: "2026-08-06T08:54:00",
+  date: "Pridané 6. 8. 2026, 08:54",
+  image: "images/blog/8-neuveritelnych-pribehov-stredomoria/hero-8-pribehov-stredomoria.jpg",
+  imageAlt: "Koláž historických a legendárnych príbehov zo Stredomoria",
+  description: "Bezcenné pobrežie, magické vajce, karanténa aj najstarší analógový počítač v ôsmich príbehoch Stredomoria.",
+  url: "blog/8-neuveritelnych-pribehov-stredomoria.html",
+  label: "Čítať článok",
+};
 const sardiniaRoadtripLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -287,7 +299,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -681,7 +693,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-04T21:21:00";
+  const siteLastUpdated = "2026-08-06T08:54:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1592,11 +1604,20 @@ const kosOsobneArticle = {
   date: "8. júl 2026",
 };
 
+const osemPribehovStredomoriaArticle = {
+  title: "Sardínia sa bála mora, Neapol chráni vajce: 8 neuveriteľných príbehov Stredomoria",
+  description: "Osem historických faktov, miestnych tradícií a legiend od Sardínie po Dubrovník.",
+  url: "blog/8-neuveritelnych-pribehov-stredomoria.html",
+  image: "images/blog/8-neuveritelnych-pribehov-stredomoria/hero-8-pribehov-stredomoria.jpg",
+  date: "6. august 2026, 08:54",
+};
+
 const articleLibrary = {
   taliansko: {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      osemPribehovStredomoriaArticle,
       {
         title: "Sardínia, ktorú treba zažiť autom: od Alghera cez La Maddalenu až po tyrkysové pláže San Teodora",
         description: "Osemdňový roadtrip priamym letom z Bratislavy, kompletný itinerár aj rozpočet pre štyroch dospelých.",
@@ -1640,6 +1661,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      osemPribehovStredomoriaArticle,
       poziareStredomorieArticle,
       stredomorieVlajkaArticle,
       letenkySlovenskoArticle,
@@ -1670,6 +1692,7 @@ const articleLibrary = {
     name: "Španielsko",
   description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
   articles: [
+      osemPribehovStredomoriaArticle,
       poziareStredomorieArticle,
       stredomorieVlajkaArticle,
       malorkaNaBicykliArticle,
@@ -1701,7 +1724,7 @@ const articleLibrary = {
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",

@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Sardínia sa bála mora, Neapol chráni vajce: 8 neuveriteľných príbehov Stredomoria",
+    description: "Bezcenné pobrežie, magické vajce, karanténa aj najstarší analógový počítač v ôsmich príbehoch Stredomoria.",
+    url: "blog/8-neuveritelnych-pribehov-stredomoria.html",
+    keywords: "sardínia costa smeralda malorka prak neapol vajce spinalonga dubrovník karanténa antikythéra pompeje colobraro história legendy stredomorie",
+  },
+  {
+    type: "Článok",
     title: "Sardínia, ktorú treba zažiť autom: od Alghera cez La Maddalenu až po tyrkysové pláže San Teodora",
     description: "Osemdňový roadtrip priamym letom z Bratislavy, kompletný itinerár aj rozpočet pre štyroch dospelých.",
     url: "blog/sardinia-roadtrip-alghero-la-maddalena-san-teodoro.html",
