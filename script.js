@@ -163,8 +163,8 @@ const cyprusLarnakaParalimniLatestUpdate = {
   kind: "article",
   type: "Nový článok",
   title: "Leto, ktoré sa nechce skončiť: čo objaviť medzi Larnakou a Paralimni",
-  publishedAt: "2026-08-06T18:44:00",
-  date: "Pridané 6. 8. 2026, 18:44",
+  publishedAt: "2026-08-07T10:28:00",
+  date: "Pridané 7. 8. 2026, 10:28",
   image: "images/blog/cyprus-larnaka-paralimni-2026/hero-cyprus-larnaka-paralimni.png",
   imageAlt: "Tyrkysové cyperské pobrežie",
   description: "Objavujeme Stredomorie · 1. časť: pláže, Cape Greco, Varoša aj praktické tipy z cesty po východnom Cypre.",
@@ -705,7 +705,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-06T08:54:00";
+  const siteLastUpdated = "2026-08-07T10:35:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1621,7 +1621,7 @@ const cyprusLarnakaParalimniArticle = {
   description: "Objavujeme Stredomorie · 1. časť: pláže, Cape Greco, Varoša aj praktické tipy z cesty po východnom Cypre.",
   url: "blog/cyprus-larnaka-paralimni-objavujeme-stredomorie-1.html",
   image: "images/blog/cyprus-larnaka-paralimni-2026/hero-cyprus-larnaka-paralimni.png",
-  date: "6. august 2026, 18:44",
+  date: "7. august 2026, 10:28",
 };
 
 const osemPribehovStredomoriaArticle = {
