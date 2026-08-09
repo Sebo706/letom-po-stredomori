@@ -705,7 +705,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-09T10:39:00";
+  const siteLastUpdated = "2026-08-09T11:26:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];

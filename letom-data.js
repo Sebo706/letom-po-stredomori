@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Kvíz",
+    title: "Čo si nalejete pri mori? Kvíz o tradičnom alkohole Stredomoria",
+    description: "12 otázok, v ktorých podľa tradičných likérov, destilátov a vín hádate destináciu Stredomoria.",
+    url: "kvizy/tradicny-alkohol-stredomoria.html",
+    keywords: "kvíz kviz alkohol tradície tradicie nápoje napoje ouzo grécko grecko raki kréta kreta mastiha chios limoncello amalfi sorrento mirto sardínia sardinia rakija chorvátsko chorvatsko maraschino zadar bajtra malta zivania cyprus pastis provence marseille sangria španielsko spanielsko teran slovinský kras stredomorie",
+  },
+  {
+    type: "Kvíz",
     title: "Kde v Stredomorí sa nakrúcal Bond, Krstný otec či Star Wars?",
     description: "12 otázok o konkrétnych filmových lokáciách Stredomoria, vždy s tromi postupne odhaľovanými indíciami.",
     url: "kvizy/filmove-lokacie-stredomoria.html",
