@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Kvíz",
+    title: "Kde v Stredomorí sa nakrúcal Bond, Krstný otec či Star Wars?",
+    description: "12 otázok o konkrétnych filmových lokáciách Stredomoria, vždy s tromi postupne odhaľovanými indíciami.",
+    url: "kvizy/filmove-lokacie-stredomoria.html",
+    keywords: "kvíz kviz filmy seriály serialy nakrúcanie nakrucanie lokácie lokacie bond no time to die matera krstný otec krstny otec savoca delá z navarone dela z navarone rodos mamma mia vis hra o trony split talented mr ripley ischia bourne mykonos biely lotos taormina indiana jones popeye malta il postino salina the tourist benatky stredomorie",
+  },
+  {
     type: "Článok",
     title: "Leto, ktoré sa nechce skončiť: čo objaviť medzi Larnakou a Paralimni",
     description: "Objavujeme Stredomorie · 1. časť: pláže, Cape Greco, Varoša aj praktické tipy z cesty po východnom Cypre.",
