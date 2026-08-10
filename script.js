@@ -159,6 +159,19 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const pracovneMinutyLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Talian pracuje na kávu 11 minút, Slovák 23. A Grék? Prekvapivé porovnanie Stredomoria",
+  publishedAt: "2026-08-10T23:49:00",
+  date: "Pridané 10. 8. 2026, 23:49",
+  image: "images/blog/kava-pivo-obed-pracovne-minuty-2026/hero-kava-pivo-obed.png",
+  imageAlt: "Porovnanie pracovného času na kávu, pivo a obed v Stredomorí",
+  description: "Koľko pracovného času stojí cappuccino, pivo a obed? Porovnanie cien cez výplatu ukáže Stredomorie inak.",
+  url: "blog/talian-pracuje-na-kavu-11-minut-slovak-23-a-grek.html",
+  label: "Čítať článok",
+};
+
 const cyprusLarnakaParalimniLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -311,7 +324,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -705,7 +718,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-09T11:26:00";
+  const siteLastUpdated = "2026-08-10T23:53:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1624,6 +1637,15 @@ const cyprusLarnakaParalimniArticle = {
   date: "7. august 2026, 10:28",
 };
 
+const pracovneMinutyArticle = {
+  title: "Talian pracuje na kávu 11 minút, Slovák 23. A Grék? Prekvapivé porovnanie Stredomoria",
+  description:
+    "Porovnanie cien cappuccina, piva a bežného obeda cez počet minút práce v krajinách Stredomoria a na Slovensku.",
+  url: "blog/talian-pracuje-na-kavu-11-minut-slovak-23-a-grek.html",
+  image: "images/blog/kava-pivo-obed-pracovne-minuty-2026/hero-kava-pivo-obed.png",
+  date: "10. august 2026, 23:30",
+};
+
 const osemPribehovStredomoriaArticle = {
   title: "Sardínia sa bála mora, Neapol chráni vajce: 8 neuveriteľných príbehov Stredomoria",
   description: "Osem historických faktov, miestnych tradícií a legiend od Sardínie po Dubrovník.",
@@ -1637,6 +1659,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,
       {
         title: "Sardínia, ktorú treba zažiť autom: od Alghera cez La Maddalenu až po tyrkysové pláže San Teodora",
@@ -1681,6 +1704,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,
       poziareStredomorieArticle,
       stredomorieVlajkaArticle,
@@ -1712,6 +1736,7 @@ const articleLibrary = {
     name: "Španielsko",
   description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
   articles: [
+      pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,
       poziareStredomorieArticle,
       stredomorieVlajkaArticle,
@@ -1739,17 +1764,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [pracovneMinutyArticle, poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [pracovneMinutyArticle, osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      pracovneMinutyArticle,
       stredomorieVlajkaArticle,
       pravaCestujucichEuArticle,
       cestovkaArticle,
@@ -1772,12 +1798,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [cyprusLarnakaParalimniArticle, stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [pracovneMinutyArticle, cyprusLarnakaParalimniArticle, stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [pracovneMinutyArticle, stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 

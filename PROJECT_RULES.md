@@ -7,6 +7,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 
 - Sekcia `Najnovsie na webe` nesmie obsahovat flash spravy.
 - V sekcii `Najnovsie na webe` maju byt najnovsie videa, podcasty a blogy.
+- Novy blogovy clanok musi byt po pridani vzdy prvy aj v sekcii `Najnovsie na webe` na homepage; predchadzajuci obsah sa posuva nizsie.
 - V sekcii `Najnovsie na webe` ma byt na desktope najnovsi obsah ako velka karta vlavo a druhy a treti najnovsi obsah vpravo; nahladove obrazky mensich clankov nemaju byt uzke bocne nahlady, ale siroke horne nahlady podobne ako pri videach.
 - Sekcia `Cestovatelsky blog` na homepage ma zobrazovat iba 2 clanky v rovnakom kartovom style ako teraz; dalsie blogy patria do archivu `blog.html` cez tlacidlo `Vsetky clanky`.
 - Novy blogovy clanok musi byt po pridani na homepage vzdy prvy v sekcii `Cestovatelsky blog`; predchadzajuce clanky sa posuvaju nizsie.
@@ -58,6 +59,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Pri vkladani alebo oprave slovenskych textov nikdy nespoliehat iba na terminalovy vypis. Po uprave spustit kontrolu verejnych HTML/JS/CSS/MD suborov na typicke mojibake znaky a aspon dotknutu stranku overit v prehliadaci.
 - Dlhe slovenske texty nevkladat cez nastroje alebo prikazy, ktore mozu zmenit kodovanie. Pouzivat iba postup, ktory zachova UTF-8, a po ulozeni overit diakritiku v samotnej stranke.
 - Pri akejkolvek uprave verejnych stranok skontrolovat zarovnanie, centrovanie a vyrez obrazkov na mobile aj desktope. Obrazky nesmu posobit posunute mimo stred, mat nechcene bocne odsadenie ani orezavat dolezitu cast motivu.
+- Infografiky, tabulky a obrazky s textom v clankoch sa musia zobrazit cele bez orezania na mobile aj desktope.
 - Pri mobilnych upravach skontrolovat, ze nevznika horizontalny posuvnik a ze skryty obsah ma dostupnu cestu cez viditelne tlacidlo na podstranku alebo archiv.
 - Nepridavat externe kniznice, ak to nie je vyslovene dohodnute.
 - Bezpecne a funkcne tlacidla mimo sekcie `Destinacie pri mori` drzat vizualne zjednotene v tyrkysovom style.

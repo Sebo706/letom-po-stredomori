@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "Talian pracuje na kávu 11 minút, Slovák 23. A Grék? Prekvapivé porovnanie Stredomoria",
+    description: "Porovnanie cien cappuccina, piva a bežného obeda cez počet minút práce v krajinách Stredomoria a na Slovensku.",
+    url: "blog/talian-pracuje-na-kavu-11-minut-slovak-23-a-grek.html",
+    keywords: "káva kava cappuccino pivo obed ceny mzdy platy pracovný čas taliansko španielsko francúzsko slovinsko malta chorvátsko cyprus slovensko grécko numbeo eurostat",
+  },
+  {
     type: "Kvíz",
     title: "Čo si nalejete pri mori? Kvíz o tradičnom alkohole Stredomoria",
     description: "12 otázok, v ktorých podľa tradičných likérov, destilátov a vín hádate destináciu Stredomoria.",
