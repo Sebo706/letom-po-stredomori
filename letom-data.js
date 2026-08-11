@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Druhý požiar na Zakynthose: z oblasti Elies už nariadili evakuáciu smerom na Volimes",
+    description: "Po rannom ohnisku pri Marathiase vypukol krátko pred 13:00 ďalší požiar v oblasti Volimes na severe Zakynthosu.",
+    url: "spravy/zakynthos-druhy-poziar-volimes-evakuacia-2026.html",
+    keywords: "zakynthos zante druhy poziar volimes elies evakuacia 112 marathias keri grecko hasici emode",
+  },
+  {
+    type: "Blesková správa",
     title: "Požiar na Zakynthose. Obyvateľom a turistom prišla výstraha 112",
     description: "Na gréckom ostrove Zakynthos vypukol dnes ráno lesný požiar v oblasti Marathias pri Keri na juhozápade ostrova.",
     url: "spravy/zakynthos-poziar-marathias-112-2026.html",

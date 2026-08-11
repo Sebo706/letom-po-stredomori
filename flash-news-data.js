@@ -873,3 +873,51 @@ window.LETOM_FLASH_NEWS.unshift({
   ],
   source: "Zdroje: grécka verejnoprávna ERT, grécky hasičský zbor/112 Greece sprostredkované CNN Greece a To Vima, grécke Ministerstvo klimatickej krízy a civilnej ochrany."
 });
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "zakynthos-druhy-poziar-volimes-evakuacia-2026",
+  label: "Kategória: požiare · Grécko/Zakynthos",
+  title: "Druhý požiar na Zakynthose: z oblasti Elies už nariadili evakuáciu smerom na Volimes",
+  date: "Aktualizované: 11. augusta 2026, približne 13:15",
+  datetime: "2026-08-11T13:15:00+02:00",
+  image: "images/novinky/zakynthos-druhy-poziar-volimes-evakuacia-2026.jpg",
+  imageAlt: "Druhý požiar na Zakynthose pri Volimes a evakuácia z oblasti Elies. Ilustračný vizuál.",
+  summary: "Zakynthos bojuje v priebehu niekoľkých hodín už s druhým lesným požiarom. Po rannom ohnisku pri Marathiase na juhu ostrova vypukol krátko pred 13:00 ďalší požiar v oblasti Volimes na severe Zakynthosu.",
+  body: [
+    "Do zásahu bolo nasadených 20 hasičov, jedna pozemná jednotka 17. EMODE, šesť hasičských vozidiel, dobrovoľníci, štyri lietadlá a dva vrtuľníky. Pomáhajú aj miestne cisterny s vodou."
+  ],
+  sections: [
+    {
+      title: "⚠️ 112 už nariadilo odchod z Elies",
+      paragraphs: [
+        "Prvá správa systému 112 vyzývala ľudí v oblasti Elies iba na pripravenosť. Situácia sa však následne zmenila.",
+        "Novšia výstraha 112 už vyzýva všetkých, ktorí sa nachádzajú v oblasti Elies, aby sa presunuli smerom na Volimes a riadili sa pokynmi úradov.",
+        "To znamená, že už nejde iba o preventívnu pohotovosť, ale o potvrdený pokyn na evakuáciu z ohrozenej oblasti."
+      ]
+    },
+    {
+      title: "Ranný požiar pri Marathiase sa podarilo obmedziť",
+      paragraphs: [
+        "Dobrou správou je vývoj na juhu ostrova. Ranný požiar v oblasti Marathias pri Keri má podľa miestnych zdrojov výrazne lepší obraz a hasiči ho dostali pod kontrolu alebo výrazne obmedzili jeho šírenie. Na mieste však zostávajú jednotky pre riziko opätovného rozhorenia.",
+        "Podľa prvotných informácií mohol ranný požiar vzniknúť po tom, čo sa v ťažko dostupnom teréne vznietilo štvorkolesové vozidlo typu beach buggy. Otec so synom, ktorí sa vo vozidle nachádzali, ho stihli opustiť. Plamene sa potom za silného vetra preniesli na okolitú vegetáciu. Presné okolnosti stále preverujú úrady."
+      ]
+    },
+    {
+      title: "Pre slovenského cestovateľa",
+      paragraphs: [
+        "Ak sa nachádzate na severe Zakynthosu v okolí Elies alebo Volimes, sledujte predovšetkým správy systému 112 a pokyny polície a hasičov. Ľudia v Elies majú aktuálne pokyn presunúť sa smerom na Volimes.",
+        "Nevstupujte na lesné a vedľajšie cesty v zasiahnutej oblasti ani v snahe požiar obísť alebo fotografovať. Situácia sa môže pri vetre meniť veľmi rýchlo.",
+        "V oblasti Marathias a Keri je situácia priaznivejšia, no aj tam zostáva potrebná opatrnosť a rešpektovanie prípadných uzáver."
+      ]
+    },
+    {
+      title: "Prečo je táto správa dôležitá",
+      paragraphs: [
+        "Zakynthos dnes zaznamenal dve samostatné ohniská na opačných stranách ostrova v priebehu niekoľkých hodín. Nový požiar pri Volimes teda nie je pokračovaním ranného požiaru pri Keri.",
+        "Zatiaľ nie je spoľahlivo potvrdená rozloha požiaru pri Volimes ani to, koľko ľudí musí oblasť Elies opustiť.",
+        "Stav overenia: samotný požiar, nasadenie pozemných a leteckých síl aj evakuačný pokyn 112 sú potvrdené viacerými gréckymi zdrojmi. Rozsah požiaru a príčina druhého ohniska zatiaľ známe nie sú."
+      ]
+    }
+  ],
+  source: "Ilustračný vizuál."
+});
