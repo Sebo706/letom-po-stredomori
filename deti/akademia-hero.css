@@ -1,0 +1,19 @@
+.academy-intro {
+  position: relative;
+  isolation: isolate;
+  min-height: 610px;
+  overflow: hidden;
+  border: 2px solid #ffffff88;
+  border-radius: 32px;
+  background: #063b67 url('akademia-buducnosti-scena.png') center / contain no-repeat;
+  box-shadow: 0 18px 36px #06375d42;
+}
+.academy-intro::before { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, #062e54c4 0%, #0633562b 48%, #062d4db5 100%); }
+.academy-intro > * { position: relative; }
+.academy-intro .academy-robot-wrap { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.academy-intro .academy-kicker { margin-top: 280px; text-shadow: 0 2px 5px #042441; }
+.academy-intro-copy { padding: 10px 15px; border-radius: 15px; background: #042d50ba; box-shadow: 0 5px 14px #04244155; }
+.academy-intro .academy-small-note { padding: 4px 9px; border-radius: 9px; background: #042d50a8; }
+.academy-intro .academy-sky { display: none; }
+@media (max-width: 650px) { .academy-intro { min-height: 520px; background-position: center top; } .academy-intro .academy-kicker { margin-top: 245px; } }
+@media (max-width: 380px) { .academy-intro { min-height: 480px; } .academy-intro .academy-kicker { margin-top: 218px; } }

@@ -85,3 +85,15 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Flash spravu zaradit na mapu iba pri jasne geograficky urcitelnom mieste. V karte ma byt viditelny datum publikovania; datum aktualizacie uviest iba pri skutocnej obsahovej aktualizacii spravy.
 - Pred rozsirenim mapy o dalsie destinacie alebo neisté priradenia najprv predlozit pouzivatelovi zoznam na potvrdenie.
 
+## Interaktivne hry pre deti
+
+- Detske hry vytvarat ako samostatne staticke stranky iba s HTML, CSS a vanilla JavaScriptom; bez externych kniznic, registracie, reklamy alebo zberu osobnych udajov.
+- Hru pripravit datovo: levely a misie drzat v prehladnej strukture, aby sa dali doplnat bez prepisovania hernej logiky.
+- Pri hre s postupom spristupnit dalsiu misiu hned po uspesnom dokonceni predchadzajucej; dalsi level odomknut po dokonceni jeho celej serie misií.
+- Narocnost zvysovat postupne po leveloch a v kazdom novom leveli pridat najviac jednu novu mechaniku. Chyba dietata nesmie znamenat stratu postupu ani trest; ponuknut dalsi pokus a zrozumitelnu napovedu.
+- Pre deti, ktore este necitaju, pouzivat velke dotykove prvky, jasne obrazky, kratke slovenske hlasove pokyny, viditelnu spatnu vazbu a samostatne vypnutie zvuku.
+- Postup hry ukladat lokalne do `localStorage`; ak je vhodne, moze hra po prvom nacitani fungovat offline cez jednoduchy service worker.
+- Rodicovske nastavenia, reset postupu alebo podobne akcie oddelit jednoduchou rodicovskou brankou a zretelne ich oznacit.
+- Pre hero obrazok hry a nahladovu kartu pouzit samostatne, zmysluplne vizualy bez doleziteho textu vlozeneho priamo v obrazku. Hlavny motiv musi byt pri mobilnom aj desktopovom zobrazeni cely; pouzit bezpecnu kompoziciu a `object-fit: contain` alebo `background-size: contain`, nie orezavajuci rezim `cover`.
+- Pri generovanych obrazkoch najprv vizualne overit, ze nemaju nahodne napisy, loga, vodotlace ani orezane postavy. Finalne obrazky vzdy ulozit priamo do priecinka projektu.
+

@@ -141,6 +141,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Hra pre deti",
+    title: "Akadémia budúcnosti",
+    description: "Veselá robotická hra pre malých objaviteľov: 30 misií v piatich leveloch od laboratória po dielňu vynálezov pri mori.",
+    url: "deti/akademia-buducnosti.html",
+    keywords: "deti hra akademia buducnosti robot nova lietadlo elektricke auto dron pristav more stredomorie misie",
+  },
+  {
+    type: "Hra pre deti",
     title: "Vyfarbi Stredomorie",
     description: "Jednoduchá digitálna omaľovánka so šiestimi stredomorskými obrázkami.",
     url: "deti/vyfarbi-stredomorie.html",

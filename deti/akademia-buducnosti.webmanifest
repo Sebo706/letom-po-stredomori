@@ -1,0 +1,10 @@
+{
+  "name": "Akadémia budúcnosti",
+  "short_name": "Akadémia",
+  "lang": "sk",
+  "start_url": "./akademia-buducnosti.html",
+  "display": "standalone",
+  "background_color": "#0c8fab",
+  "theme_color": "#127d9b",
+  "description": "Veselá hra s robotom Novom pre malých objaviteľov."
+}

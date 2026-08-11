@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#127d9b" />
+    <meta name="description" content="Akadémia budúcnosti – veselá hra s robotom Novom pre malých objaviteľov." />
+    <title>Akadémia budúcnosti | Letom po Stredomorí</title>
+    <link rel="manifest" href="akademia-buducnosti.webmanifest" />
+    <link rel="stylesheet" href="../style.css?v=20260811-academy-1" />
+    <link rel="stylesheet" href="akademia-buducnosti.css?v=20260811-academy-1" />
+    <link rel="stylesheet" href="akademia-hero.css?v=20260811-academy-1" />
+  </head>
+  <body class="academy-page">
+    <header class="site-header academy-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov"><img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" /><span>Letom po Stredomorí</span></a>
+        <div class="nav-panel nav-panel-static"><a href="index.html">Pre deti</a><a class="nav-cta" href="index.html">Späť na hry</a></div>
+      </nav>
+    </header>
+
+    <main class="academy-app" id="academy-app">
+      <div class="academy-topbar">
+        <a class="academy-back" href="index.html" aria-label="Späť na hry pre deti">← <span>Hry</span></a>
+        <div class="academy-energy" aria-label="Nazbierané hviezdičky"><span aria-hidden="true">⭐</span> <strong data-stars>0</strong></div>
+        <button class="academy-icon-button" type="button" data-sound-toggle aria-label="Vypnúť zvuk" aria-pressed="true">🔊</button>
+        <button class="academy-parent-button" type="button" data-parent-trigger aria-label="Nastavenia pre rodiča">⚙️</button>
+      </div>
+
+      <p class="academy-live" data-live aria-live="polite"></p>
+
+      <section class="academy-screen academy-intro" data-screen="intro">
+        <div class="academy-sky" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span></div>
+        <div class="academy-robot-wrap" aria-hidden="true"><div class="academy-robot">🤖</div><div class="academy-orbit orbit-one"></div><div class="academy-orbit orbit-two"></div></div>
+        <p class="academy-kicker">Letom po Stredomorí uvádza</p>
+        <h1>Akadémia<br />budúcnosti</h1>
+        <p class="academy-intro-copy">Pomôž robotovi Novovi objavovať laboratórium, lietajúce stroje a prístav pri azúrovom mori.</p>
+        <button class="academy-main-button" type="button" data-start-game><span aria-hidden="true">🚀</span> Začať dobrodružstvo</button>
+        <p class="academy-small-note">Stačí ťukať na veľké obrázky. Robot Nova ti všetko povie.</p>
+      </section>
+
+      <section class="academy-screen academy-map" data-screen="map" hidden aria-labelledby="academy-map-title">
+        <div class="academy-map-heading"><p class="academy-kicker">Tvoja výprava</p><h1 id="academy-map-title">Kam pôjde Nova?</h1><p>Za každú misiu získáš hviezdičku.</p></div>
+        <div class="academy-worlds" data-worlds></div>
+      </section>
+
+      <section class="academy-screen academy-mission" data-screen="mission" hidden aria-labelledby="mission-title">
+        <div class="academy-mission-top"><div class="academy-level" data-level>1 / 6</div><button class="academy-help-button" type="button" data-help aria-label="Robot Nova poradí">🤖 <span>Pomôž mi</span></button></div>
+        <div class="academy-mission-card" data-mission-card>
+          <div class="academy-scene" data-scene aria-hidden="true"></div>
+          <p class="academy-world-name" data-world-name>Robotické laboratórium</p>
+          <h1 id="mission-title" data-mission-title>Nova má úlohu</h1>
+          <p class="academy-spoken-prompt" data-prompt>Počúvaj robota a vyber správny obrázok.</p>
+          <div class="academy-task" data-task></div>
+          <p class="academy-feedback" data-feedback aria-live="assertive"></p>
+          <button class="academy-next-button" type="button" data-next hidden>Ďalšia misia <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="academy-progress" data-progress aria-label="Postup v laboratóriu"></div>
+      </section>
+
+      <section class="academy-screen academy-finish" data-screen="finish" hidden aria-labelledby="finish-title">
+        <div class="academy-trophy" aria-hidden="true">🏆</div>
+        <p class="academy-kicker">Výborne!</p>
+        <h1 id="finish-title">Si mladý objaviteľ budúcnosti!</h1>
+        <p>Spoločne ste zvládli všetkých 30 misií a nazbierali ste <strong data-finish-stars>30</strong> hviezdičiek.</p>
+        <div class="academy-finish-badges" aria-hidden="true"><span>🤖</span><span>✈️</span><span>⚓</span><span>🌊</span></div>
+        <button class="academy-main-button" type="button" data-back-map>Prezrieť mapu levelov</button>
+        <a class="academy-link-button" href="index.html">Späť na hry pre deti</a>
+      </section>
+
+      <section class="academy-parent-modal" data-parent-modal hidden aria-label="Nastavenia pre rodiča" role="dialog" aria-modal="true">
+        <div class="academy-modal-card">
+          <button class="academy-modal-close" type="button" data-parent-close aria-label="Zavrieť nastavenia">×</button>
+          <div data-parent-gate><p class="academy-kicker">Pre rodiča</p><h2>Koľko je 5 + 3?</h2><p>Vyber správnu odpoveď, aby sa otvorili nastavenia.</p><div class="academy-gate-options"><button type="button" data-gate-answer="7">7</button><button type="button" data-gate-answer="8">8</button><button type="button" data-gate-answer="9">9</button></div></div>
+          <div data-parent-panel hidden><p class="academy-kicker">Pre rodiča</p><h2>Pokrok v Akadémii</h2><p class="academy-parent-stats" data-parent-stats></p><div class="academy-parent-actions"><button type="button" data-parent-unlock>Dokončiť všetky misie</button><button type="button" data-parent-reset>Vymazať pokrok</button></div><p class="academy-parent-note">Postup je uložený len v tomto zariadení.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="academy-footer">Letom po Stredomorí · Posledná aktualizácia: 11. august 2026, 21:57</footer>
+    <script src="akademia-buducnosti.js?v=20260811-academy-1"></script>
+  </body>
+</html>

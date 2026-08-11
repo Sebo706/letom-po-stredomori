@@ -1,0 +1,5 @@
+.academy-card-art {
+  background: #063b67 url('akademia-buducnosti-karta.png') center / contain no-repeat;
+}
+.academy-card-art::before { background: linear-gradient(90deg, #063b6717, transparent 50%, #063b6717); }
+.academy-card-art span { display: none; }
