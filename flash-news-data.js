@@ -832,3 +832,44 @@ window.LETOM_FLASH_NEWS.unshift({
     }
   ]
 });
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "zakynthos-poziar-marathias-112-2026",
+  label: "BLESKOVÁ SPRÁVA",
+  title: "🔴 BLESKOVÁ SPRÁVA: Požiar na Zakynthose. Obyvateľom a turistom prišla výstraha 112",
+  date: "Zakynthos, Grécko – 11. august 2026",
+  datetime: "2026-08-11",
+  image: "images/novinky/zakynthos-poziar-marathias-112-2026.jpg",
+  imageAlt: "Požiar na Zakynthose a varovanie 112 pre oblasť Marathias. Ilustračný vizuál.",
+  summary: "Na gréckom ostrove Zakynthos vypukol dnes ráno lesný požiar v oblasti Marathias pri Keri na juhozápade ostrova. Grécky systém civilnej ochrany 112 už rozoslal varovanie ľuďom nachádzajúcim sa v oblasti, aby zostali v pohotovosti a riadili sa pokynmi úradov. Informáciu potvrdzujú grécka verejnoprávna ERT, CNN Greece aj To Vima.",
+  sections: [
+    {
+      title: "Hasiči nasadili aj lietadlá a vrtuľníky",
+      paragraphs: [
+        "Požiar horí v lesnom a ťažko prístupnom teréne. Pôvodne bolo nasadených 22 hasičov, osem vozidiel, dve lietadlá a vrtuľník. Hasičské sily však boli následne posilnené na 32 hasičov, 11 vozidiel, štyri hasiace lietadlá a dva vrtuľníky. Pomáhajú aj dobrovoľníci a miestne cisterny s vodou."
+      ]
+    },
+    {
+      title: "⚠️ Zatiaľ nejde o príkaz na evakuáciu",
+      paragraphs: [
+        "Toto je pre dovolenkárov veľmi dôležité: správa systému 112 momentálne vyzýva ľudí, aby zostali pripravení, nie aby oblasť okamžite opustili. K tejto chvíli nemáme z dôveryhodných zdrojov potvrdenú evakuáciu hotelov ani turistických oblastí.",
+        "Grécka civilná ochrana zároveň pre dnešok eviduje zvýšené až veľmi vysoké riziko požiarov vo viacerých častiach krajiny. Samotný Zakynthos bol podľa ERT zaradený do kategórie rizika 3 – vysoké riziko vzniku požiaru."
+      ]
+    },
+    {
+      title: "🇸🇰 Čo to znamená pre slovenských turistov na Zakynthose",
+      paragraphs: [
+        "Ak ste momentálne na ostrove, najmä v okolí Marathias a Keri, sledujte správy systému 112, pokyny hotela a miestnych úradov. Do oblasti požiaru sa nevydávajte ani kvôli fotografiám či videám a neblokujte prístupové cesty hasičom.",
+        "Ak príde ďalšia správa 112 s pokynom na presun alebo evakuáciu, riaďte sa presne uvedeným smerom. Súčasná výstraha znamená „zostaňte v pohotovosti“."
+      ]
+    },
+    {
+      title: "Čo zatiaľ nevieme",
+      paragraphs: [
+        "Nie je zatiaľ potvrdené, že by požiar zasiahol hotely, pláže alebo obývané turistické strediská. Rovnako zatiaľ nie sú potvrdené zranenia ani obete. Situácia je čerstvá a môže sa meniť podľa vývoja požiaru a vetra.",
+        "Letom po Stredomorí bude situáciu sledovať a správu aktualizujeme, ak grécke úrady vydajú nové pokyny alebo nariadia evakuáciu."
+      ]
+    }
+  ],
+  source: "Zdroje: grécka verejnoprávna ERT, grécky hasičský zbor/112 Greece sprostredkované CNN Greece a To Vima, grécke Ministerstvo klimatickej krízy a civilnej ochrany."
+});

@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Požiar na Zakynthose. Obyvateľom a turistom prišla výstraha 112",
+    description: "Na gréckom ostrove Zakynthos vypukol dnes ráno lesný požiar v oblasti Marathias pri Keri na juhozápade ostrova.",
+    url: "spravy/zakynthos-poziar-marathias-112-2026.html",
+    keywords: "zakynthos zante poziar marathias keri grecko vystraha 112 evakuacia hasiči lietadla vrtulniky",
+  },
+  {
+    type: "Blesková správa",
     title: "Etna komplikuje lety v Catanii. Požiare v Stredomorí: aktuálna situácia",
     description: "Sopečný popol z Etny narušil prevádzku letiska Catania. V Španielsku pokračuje rozsiahly požiar pri Niebla, grécke ostrovy zostávajú vo veľmi vysokom stupni požiarneho rizika a Francúzsko preventívne uzavrelo štyri lesné oblasti vo Var.",
     url: "spravy/etna-catania-poziare-aktualna-situacia-2026.html",
