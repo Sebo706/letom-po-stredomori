@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Blesková správa",
+    title: "Etna komplikuje lety v Catanii. Požiare v Stredomorí: aktuálna situácia",
+    description: "Sopečný popol z Etny narušil prevádzku letiska Catania. V Španielsku pokračuje rozsiahly požiar pri Niebla, grécke ostrovy zostávajú vo veľmi vysokom stupni požiarneho rizika a Francúzsko preventívne uzavrelo štyri lesné oblasti vo Var.",
+    url: "spravy/etna-catania-poziare-aktualna-situacia-2026.html",
+    keywords: "etna catania sicilia sopka popol lety letisko poziare niebla huelva tirig castellon grecko poziarne riziko var francuzsko gros bessillon",
+  },
+  {
     type: "Hra",
     title: "Cesta za miliónom zážitkov | Majster Stredomoria",
     description: "15 otázok, tri nápovedy a cesta až k miliónu stredomorských míľ.",

@@ -725,3 +725,110 @@ window.LETOM_FLASH_NEWS.unshift({
   source: "Zdroj predbežných čísel: odbory CGT. Ilustračný vizuál nezobrazuje konkrétnu situáciu na letisku.",
   sourceLinks: [{ label: "Letisko Barcelona-El Prat", url: "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html" }]
 });
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "etna-catania-poziare-aktualna-situacia-2026",
+  label: "BLESKOVÁ SPRÁVA",
+  title: "Etna komplikuje lety v Catanii. Požiare v Stredomorí: aktuálna situácia",
+  date: "Aktualizované 11. augusta 2026 o 8:35",
+  datetime: "2026-08-11T08:35:00+02:00",
+  image: "images/novinky/etna-catania-poziare-aktualna-situacia-2026.jpg",
+  imageAlt: "Etna opäť komplikuje lety v Catanii, zatiaľ čo Španielsko bojuje s rozsiahlym požiarom, grécke ostrovy zostávajú vo vysokom stupni rizika a Francúzsko preventívne uzatvára lesné oblasti. Ilustračná AI vizualizácia.",
+  summary: "Sopečný popol z Etny narušil prevádzku letiska Catania. V Španielsku pokračuje rozsiahly požiar pri Niebla, grécke ostrovy zostávajú vo veľmi vysokom stupni požiarneho rizika a Francúzsko preventívne uzavrelo štyri lesné oblasti vo Var. Situácia sa však v jednotlivých dovolenkových regiónoch výrazne líši.",
+  source: "Ilustračná AI vizualizácia.",
+  sections: [
+    {
+      title: "Catania po 6:00 stále bez potvrdenia plnej prevádzky",
+      paragraphs: [
+        "Letisko Catania malo po nočnom zastavení príletov aj odletov obnoviť prevádzku v utorok 11. augusta o 6:00. K času poslednej kontroly však prevádzkovateľ SAC nezverejnil jednoznačné potvrdenie, že všetky lety opäť fungujú bez obmedzení.",
+        "Dôvodom uzávery bola pokračujúca aktivita Etny. Sopečný popol sa dostal do vzdušného priestoru aj na pristávaciu dráhu. Letisko preto v pondelok najskôr zastavilo prílety a následne aj všetky odlety.",
+        "Aj po prípadnom obnovení prevádzky treba počítať s následnými meškaniami, rušením letov alebo presmerovaním lietadiel na iné sicílske letiská."
+      ]
+    },
+    {
+      title: "Čo majú urobiť cestujúci",
+      paragraphs: [
+        "Na letisko nechoďte iba podľa pôvodného času odletu. Stav konkrétneho spoja si overte priamo u leteckej spoločnosti. Presun cez Palermo alebo Comiso riešte až po dohode s dopravcom, najmä ak očakávate náhradnú dopravu alebo preplatenie nákladov.",
+        "Stav overenia: Potvrdené je úplné nočné zastavenie príletov aj odletov do 6:00. Stav po 6:00 zostáva predbežný. Chýbajúce nové oznámenie samo osebe neznamená, že letisko zostalo zatvorené.",
+        "Zdroje: Letisko Catania – SAC, Sky TG24, La Sicilia, prehľad odletov letiska Catania"
+      ]
+    },
+    {
+      title: "Španielsko: najväčší aktívny požiar je pri Niebla",
+      paragraphs: [
+        "Najvážnejšia potvrdená situácia zostáva v Španielsku. Požiar pri meste Niebla v provincii Huelva zasiahol viac než 20 000 hektárov a podľa posledných dostupných informácií ešte nebol stabilizovaný.",
+        "Evakuované zostávajú stovky ľudí a niektoré ďalšie obce boli vypratané preventívne. Silný vietor komplikuje zásah a podporuje šírenie plameňov.",
+        "Niebla leží na juhozápade Španielska, mimo hlavných stredomorských letovísk. Požiar preto neznamená obmedzenie dovolenky na celom španielskom pobreží.",
+        "Zdroje: Reuters, RTVE"
+      ]
+    },
+    {
+      title: "Castellón: požiar pri Tírigu je stabilizovaný",
+      paragraphs: [
+        "Pri stredomorskom pobreží Španielska je situácia priaznivejšia. Požiar pri Tírigu v provincii Castellón bol po troch dňoch stabilizovaný.",
+        "Zasiahol približne 734 hektárov a obyvatelia obce Catí sa mohli vrátiť domov. Označenie „stabilizovaný“ však ešte neznamená úplné uhasenie. Hasiči musia naďalej kontrolovať požiarisko a možné skryté ohniská.",
+        "Zdroje: Europa Press, RTVE"
+      ]
+    },
+    {
+      title: "Grécke ostrovy zostávajú vo veľmi vysokom stupni rizika",
+      paragraphs: ["V Grécku platí v utorok 11. augusta veľmi vysoké požiarne riziko – stupeň 4 z 5. Výstraha sa týka:"],
+      items: [
+        "Atiky vrátane ostrova Kythira,",
+        "Korintie, Argolidy a Lakónie,",
+        "Eubóje a Skyrosu,",
+        "Kyklád,",
+        "Lesbosu, Chiosu, Samosu a Ikarie,",
+        "Boiótie a častí Fthiotidy."
+      ],
+      afterItems: [
+        "Silnejší severný vietor môže spôsobiť rýchle rozšírenie aj malého ohniska. Výstraha však neznamená, že vo všetkých uvedených oblastiach už horí.",
+        "Cestovatelia by mali vynechať lesné chodníky, rokliny a výlety do suchého vnútrozemia. Pri lodných výletoch je vhodné overiť si prevádzku pre silnejší vietor.",
+        "Zdroje: Grécka civilná ochrana, ERT News"
+      ]
+    },
+    {
+      title: "Kouvaras pri Aténach: požiar je pod kontrolou",
+      paragraphs: [
+        "Požiar pri Kouvarase vo východnej Atike bol podľa poslednej aktualizácie dostaný pod kontrolu. Hasiči naďalej strážia dymiace miesta pre riziko opätovného vzplanutia.",
+        "Úplné uhasenie zatiaľ potvrdené nebolo. Cestujúci v okolí juhovýchodnej Atiky by preto mali sledovať prípadné miestne dopravné obmedzenia.",
+        "Zdroj: ERT News"
+      ]
+    },
+    {
+      title: "Francúzska riviéra uzavrela štyri lesné oblasti",
+      paragraphs: ["Pre veľmi vysoké riziko požiarov sú v utorok 11. augusta úplne uzavreté štyri lesné masívy v departemente Var:"],
+      items: ["Sainte-Baume,", "Haut-Var,", "Maures,", "Centre-Var."],
+      afterItems: [
+        "Vstup, prechádzky aj prejazd cez tieto oblasti sú zakázané.",
+        "V ďalších piatich oblastiach vrátane ostrovov Hyères a Estérelu je vstup dôrazne neodporúčaný. Podľa dostupných informácií zostávajú pláže a pobrežné chodníky vo Var otvorené.",
+        "Cestovatelia by nemali plánovať túry vo vnútrozemí medzi Toulonom, Saint-Tropez a Fréjus. Denné rozhodnutia o uzáverách sa môžu meniť podľa vetra, teploty a vlhkosti.",
+        "Stav overenia: Potvrdené oficiálnou mapou prefektúry a dvoma regionálnymi zdrojmi.",
+        "Zdroje: Prefektúra Var – mapa prístupu, Presse Agence, Fréquence Sud"
+      ]
+    },
+    {
+      title: "Veľký požiar Gros Bessillon sa už nerozširuje",
+      paragraphs: [
+        "Rozsiahly požiar Gros Bessillon vo francúzskom departemente Var je po 18 dňoch označený ako „fixovaný“. To znamená, že jeho obvod sa už ďalej nerozširuje.",
+        "Oheň zasiahol približne 6 300 hektárov a zničil 41 domov. Hasiči však ešte pokračujú v likvidácii ohnísk a kontrole rozsiahleho požiariska. Úplné uhasenie preto zatiaľ nemožno považovať za potvrdené.",
+        "Zdroje: Prefektúra Var, Le Monde, Le Parisien"
+      ]
+    },
+    {
+      title: "Taliansko: hasiči kontrolujú ohniská na Krasovej planine",
+      paragraphs: [
+        "Na Krasovej planine medzi Monfalcone a Duinom pri severnom Jadrane pokračovalo hasenie a kontrola horúcich miest. Podľa poslednej dostupnej aktualizácie neboli hlásené evakuácie turistických oblastí.",
+        "Tento údaj zostáva predbežný, pretože podrobnú aktuálnu bilanciu priniesol iba jeden dostupný dôveryhodný zdroj.",
+        "Zdroj: ANSA"
+      ]
+    },
+    {
+      title: "Čo z toho vyplýva pre dovolenkárov",
+      paragraphs: [
+        "Požiar alebo vysoký stupeň rizika v jednej oblasti automaticky neznamenajú obmedzenia v celej krajine. Rozhodujúce je presné miesto pobytu a plánovaná trasa výletu.",
+        "V Grécku a vo francúzskom Var dnes vynechajte uzavreté lesné oblasti a suché vnútrozemie. V Španielsku sa vyhnite okoliu Niebla a rešpektujte evakuačné pokyny. Pri letoch cez Cataniu sledujte stav konkrétneho spoja priamo u dopravcu."
+      ]
+    }
+  ]
+});
