@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Hra",
+    title: "Cesta za miliónom zážitkov | Majster Stredomoria",
+    description: "15 otázok, tri nápovedy a cesta až k miliónu stredomorských míľ.",
+    url: "kvizy/majster-stredomoria.html",
+    keywords: "majster stredomoria cesta za milionom zazitkov hra vedomostna sutaz kvíz kviz 15 otazok napovedy stredomorie",
+  },
+  {
     type: "Článok",
     title: "Talian pracuje na kávu 11 minút, Slovák 23. A Grék? Prekvapivé porovnanie Stredomoria",
     description: "Porovnanie cien cappuccina, piva a bežného obeda cez počet minút práce v krajinách Stredomoria a na Slovensku.",
