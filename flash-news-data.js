@@ -946,3 +946,42 @@ if (latestEtnaPopolSiciliaMalta) {
   window.LETOM_FLASH_NEWS.splice(window.LETOM_FLASH_NEWS.indexOf(latestEtnaPopolSiciliaMalta), 1);
   window.LETOM_FLASH_NEWS.unshift(latestEtnaPopolSiciliaMalta);
 }
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "kosice-rim-treti-let-zima-2026",
+  label: "Kategória: letecká doprava · Slovensko/Košice – Taliansko/Rím",
+  title: "V zime častejšie do Ríma: na linke z Košíc pribúda tretí let týždenne",
+  date: "Aktualizované: 12. augusta 2026, 13:00",
+  datetime: "2026-08-12T13:00:00+02:00",
+  image: "images/novinky/kosice-rim-treti-let-zima-2026.jpg",
+  imageAlt: "Vizuál priamej linky medzi Košicami a Rímom s lietadlom nad trasou. Ilustračný vizuál.",
+  summary: "Dobrá správa pre cestujúcich z východného Slovenska. V aktuálnych rezervačných dátach sa na priamej linke Wizz Air Košice – Rím objavujú počas zimného letového poriadku už tri lety týždenne. K doterajším utorkom a sobotám má pribudnúť aj štvrtok. Štvrtkové priame spojenia sú už viditeľné napríklad aj pri termínoch v januári a marci 2027.",
+  body: [
+    "Linku medzi Košicami a rímskym letiskom Fiumicino spustil Wizz Air 31. marca 2026. Oficiálne bola predstavená ako celoročné spojenie dvakrát týždenne – v utorok a sobotu."
+  ],
+  sections: [
+    {
+      title: "Čo sa má zmeniť",
+      paragraphs: [
+        "Podľa aktuálne zverejnených termínov má byť počas zimnej sezóny frekvencia zvýšená na:",
+        "utorok · štvrtok · sobota",
+        "Zvýšená frekvencia sa má týkať obdobia od konca októbra 2026 približne do konca marca 2027. Pre letnú sezónu 2027 zatiaľ dostupné letové poriadky opäť ukazujú najmä utorky a soboty."
+      ]
+    },
+    {
+      title: "Prečo teraz",
+      paragraphs: [
+        "Nové štvrtkové termíny sa začali objavovať v predajných a rezervačných systémoch. Wizz Air ani Letisko Košice však k 12. augustu zatiaľ nezverejnili samostatnú tlačovú správu, ktorá by zvýšenie frekvencie oficiálne oznámila. Posledné oficiálne informácie Letiska Košice stále hovoria o dvoch letoch týždenne."
+      ]
+    },
+    {
+      title: "Pre slovenského cestovateľa",
+      paragraphs: [
+        "Ak nový rozpis zostane zachovaný, je to veľmi dobrá správa najmä pre Košický a Prešovský kraj. Tri lety týždenne znamenajú väčší výber termínov a jednoduchšie plánovanie krátkych pobytov v Ríme bez prestupu či presunu na letisko do Bratislavy, Viedne alebo Budapešti.",
+        "Priamy let Košice – Rím Fiumicino trvá približne 2 hodiny a 5 minút.",
+        "Letom po Stredomorí bude ďalšie zmeny letového poriadku sledovať."
+      ]
+    }
+  ],
+  source: "Ilustračný vizuál."
+});

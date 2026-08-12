@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "V zime častejšie do Ríma: na linke z Košíc pribúda tretí let týždenne",
+    description: "V aktuálnych rezervačných dátach sa na priamej linke Wizz Air Košice – Rím objavujú počas zimného letového poriadku už tri lety týždenne.",
+    url: "spravy/kosice-rim-treti-let-zima-2026.html",
+    keywords: "kosice rim wizz air fiumicino zimny letovy poriadok stvrtok utorok sobota treti let tyzdenne",
+  },
+  {
+    type: "Blesková správa",
     title: "Popol z Etny ochromuje lety na Sicílii aj Malte. Catania predĺžila stopku až do 18:00",
     description: "Sopečný popol z Etny výrazne komplikuje lety cez Cataniu, Comiso aj Maltu; Catania zastavila prílety a odlety do 18:00.",
     url: "spravy/etna-popol-sicilia-malta-2026.html",
