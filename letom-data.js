@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Popol z Etny ochromuje lety na Sicílii aj Malte. Catania predĺžila stopku až do 18:00",
+    description: "Sopečný popol z Etny výrazne komplikuje lety cez Cataniu, Comiso aj Maltu; Catania zastavila prílety a odlety do 18:00.",
+    url: "spravy/etna-popol-sicilia-malta-2026.html",
+    keywords: "etna popol catania comiso malta sicilia lety letisko zrusene meskanie 18:00 vona sopecny popol",
+  },
+  {
+    type: "Blesková správa",
     title: "Druhý požiar na Zakynthose: z oblasti Elies už nariadili evakuáciu smerom na Volimes",
     description: "Po rannom ohnisku pri Marathiase vypukol krátko pred 13:00 ďalší požiar v oblasti Volimes na severe Zakynthosu.",
     url: "spravy/zakynthos-druhy-poziar-volimes-evakuacia-2026.html",

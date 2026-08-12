@@ -710,6 +710,25 @@ window.LETOM_FLASH_NEWS = [
 ];
 
 window.LETOM_FLASH_NEWS.unshift({
+  id: "etna-popol-sicilia-malta-2026",
+  label: "Kategória: letecká doprava · Taliansko/Sicília · Malta",
+  title: "Popol z Etny ochromuje lety na Sicílii aj Malte. Catania predĺžila stopku až do 18:00",
+  date: "Aktualizované: 12. augusta 2026, 09:54",
+  datetime: "2026-08-12T09:54:00+02:00",
+  image: "images/novinky/etna-popul-sicilia-malta-2026.jpg",
+  imageAlt: "Etna chrlí popol nad Sicíliou, lietadlá a odletová tabuľa upozorňujú na narušenú leteckú dopravu. Ilustračný vizuál.",
+  summary: "Sopečný popol z Etny naďalej výrazne komplikuje leteckú dopravu v centrálnej časti Stredomoria. Letisko Catania dnes predĺžilo úplné zastavenie príletov a odletov až do 18:00. Dôvodom je pokračujúca aktivita Etny a aktuálny smer vetra, ktorý zanáša sopečný popol do priestoru využívaného lietadlami.",
+  sections: [
+    { title: "Problémy na Sicílii aj Malte", paragraphs: ["Problémy sa pritom netýkajú iba Catanie. Letisko Comiso na juhovýchode Sicílie pozastavilo pre sopečný popol prevádzku najmenej do 10:00."] },
+    { title: "Popol doletel až nad Maltu", paragraphs: ["Komplikácie pokračujú aj približne 220 kilometrov južne od Etny. Na Malte bolo v utorok zrušených 19 letov a viacero ďalších výrazne meškalo. Malta International Airport potvrdil, že príčinou sú oblaky sopečného popola pochádzajúce z Etny.", "Situácia sa úplne neupokojila ani v stredu ráno. Times of Malta informuje o ďalších zrušených letoch a meškaniach a niektoré lietadlá museli meniť svoju obvyklú trasu pri prílete na ostrov. Aktuálny letový poriadok maltského letiska zároveň stále upozorňuje cestujúcich na možné komplikácie spôsobené sopečným popolom."] },
+    { title: "Prečo práve teraz?", paragraphs: ["Etna je opäť v aktívnej eruptívnej fáze a množstvo popola, ktoré sa dostane do letových trás, závisí nielen od samotnej sopky, ale aj od smeru a sily vetra. Preto sa môžu obmedzenia meniť aj v priebehu niekoľkých hodín.", "Už v pondelok musela Catania pre popol obmedziť leteckú prevádzku a taliansky Národný inštitút geofyziky a vulkanológie udržiaval najvyšší, červený stupeň leteckého varovania VONA."] },
+    { title: "✈️ Čo má urobiť slovenský cestovateľ", paragraphs: ["Ak dnes alebo v najbližších hodinách letíte do alebo z Catanie, Comisa či Malty, nespoliehajte sa iba na pôvodný čas odletu.", "Pred cestou na letisko si skontrolujte let priamo v aplikácii alebo na stránke svojej leteckej spoločnosti. Letiská zároveň odporúčajú cestujúcim, aby pri zrušenom alebo výrazne oneskorenom lete nechodili na letisko, pokiaľ ich k tomu aerolinka nevyzve.", "Pri zrušení letu v dôsledku sopečného popola ide spravidla o mimoriadnu okolnosť, takže paušálna finančná kompenzácia podľa pravidiel EÚ zvyčajne nevzniká. Tým však práva cestujúceho nekončia. Aerolinka musí ponúknuť vrátenie ceny letenky alebo presmerovanie a počas čakania máte podľa okolností nárok aj na primeranú starostlivosť, napríklad jedlo či ubytovanie.", "Ak si musíte nevyhnutnú starostlivosť zabezpečiť sami, uschovajte si všetky účtenky."] },
+    { title: "Stav k ránu 12. augusta", paragraphs: ["🔴 Catania: prílety aj odlety pozastavené do 18:00", "🟠 Comiso: prevádzka pozastavená najmenej do 10:00", "🟠 Malta: letisko funguje, ale pokračujú rušenia a meškania letov", "🌋 Príčina: sopečný popol z aktívnej Etny a jeho presun podľa smeru vetra", "Situácia sa môže počas dňa rýchlo meniť."] }
+  ],
+  source: "Ilustračný vizuál."
+});
+
+window.LETOM_FLASH_NEWS.unshift({
   id: "barcelona-groundforce-rusenie-letov-2026",
   label: "BLESKOVÁ SPRÁVA | 4. august 2026",
   title: "Štrajk v Barcelone už ruší lety, lietadlá odleteli bez batožiny",
@@ -921,3 +940,9 @@ window.LETOM_FLASH_NEWS.unshift({
   ],
   source: "Ilustračný vizuál."
 });
+
+const latestEtnaPopolSiciliaMalta = window.LETOM_FLASH_NEWS.find((item) => item.id === "etna-popol-sicilia-malta-2026");
+if (latestEtnaPopolSiciliaMalta) {
+  window.LETOM_FLASH_NEWS.splice(window.LETOM_FLASH_NEWS.indexOf(latestEtnaPopolSiciliaMalta), 1);
+  window.LETOM_FLASH_NEWS.unshift(latestEtnaPopolSiciliaMalta);
+}
