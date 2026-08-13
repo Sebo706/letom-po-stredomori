@@ -985,3 +985,55 @@ window.LETOM_FLASH_NEWS.unshift({
   ],
   source: "Ilustračný vizuál."
 });
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "etna-catania-stopka-piatok-2026",
+  label: "Kategória: letecká doprava · Taliansko/Sicília – Catania",
+  title: "Etna nepovoľuje. Catania predĺžila úplnú stopku letov až do piatka 02:00",
+  date: "Aktualizované: 13. augusta 2026, 11:39",
+  datetime: "2026-08-13T11:39:00+02:00",
+  image: "images/novinky/etna-catania-stopka-piatok-2026.jpg",
+  imageAlt: "Etna chrlí popol nad letiskom Catania a tabuľa odletov upozorňuje na zrušené a meškajúce lety. Ilustračný vizuál.",
+  summary: "Situácia na Sicílii sa opäť zhoršila. Letisko Catania predĺžilo úplné pozastavenie všetkých príletov a odletov až do piatka 14. augusta do 02:00.",
+  body: [
+    "Ešte predtým sa počítalo s obnovením prevádzky vo štvrtok 13. augusta o 16:00. Najnovšie rozhodnutie tak znamená ďalšie desaťhodinové predĺženie uzávery."
+  ],
+  sections: [
+    {
+      title: "🌋 Etna stále chrlí popol",
+      paragraphs: [
+        "Letisko zverejnilo nové oznámenie v stredu 12. augusta o 21:30. Dôvodom je pokračujúca eruptívna aktivita Etny, emisia sopečného popola a rozšírenie uzávery vzdušného priestoru na sektor B3.",
+        "SAC, prevádzkovateľ letiska, cestujúcich opäť vyzval, aby pred cestou na letisko kontrolovali stav svojho letu priamo u leteckej spoločnosti.",
+        "Aj vo štvrtok dopoludnia zostáva Etna aktívna. Podľa aktuálnych informácií popol stále smeruje do atmosféry a nedá sa spoľahlivo predpovedať, kedy sa erupčná aktivita skončí. Ďalšie predĺženie obmedzení preto nemožno vylúčiť."
+      ]
+    },
+    {
+      title: "✈️ Problém už nie je iba Catania",
+      paragraphs: [
+        "Náhradné letisko Comiso je opäť v prevádzke, no celý sicílsky systém je pod veľkým tlakom. Lety z Catanie sú presúvané predovšetkým do Comisa, Palerma a Trapani.",
+        "Len v stredu bolo medzi Palermo, Trapani a Comiso presunutých viac ako 50 letov. Od začiatku súčasných problémov prevzalo samotné Comiso viac ako 140 letov.",
+        "Rozsah komplikácií je už mimoriadny. Od 8. do 11. augusta bolo v Catanii zrušených, neuskutočnených alebo presmerovaných približne 700 letov a problémy zasiahli desaťtisíce cestujúcich."
+      ]
+    },
+    {
+      title: "🇸🇰 Čo to znamená pre slovenského cestovateľa",
+      paragraphs: [
+        "Ak máte vo štvrtok 13. augusta let do Catanie alebo z Catanie, počítajte s tým, že let plánovaný počas uzávery nemôže štandardne pristáť ani odletieť z Fontanarossy. Aerolinka ho môže zrušiť, presunúť na neskôr alebo zabezpečiť let cez iné letisko.",
+        "Na letisko Catania nechoďte bez potvrdenia svojej aerolinky.",
+        "Ak vám dopravca ponúkne Palermo, Trapani alebo Comiso, najskôr si s ním potvrďte aj spôsob ďalšej dopravy. Náhradnú letenku, autobus, vlak, taxi či hotel si nekupujte bezhlavo – najprv kontaktujte dopravcu a všetky účtenky si uschovajte.",
+        "Pri zrušení letu máte podľa pravidiel EÚ právo vybrať si medzi vrátením ceny letenky a presmerovaním. Právo na primeranú starostlivosť zostáva zachované aj pri mimoriadnych okolnostiach; paušálna finančná kompenzácia však pri okolnostiach mimo kontroly aerolinky spravidla nevzniká."
+      ]
+    },
+    {
+      title: "⚡ Aktuálny stav",
+      paragraphs: [
+        "🔴 Catania: všetky prílety a odlety pozastavené do 14. augusta 02:00",
+        "🟢 Comiso: opäť v prevádzke",
+        "🟠 Palermo a Trapani: zvýšené zaťaženie pre presmerované lety",
+        "🌋 Etna: erupčná aktivita pokračuje, ďalšie predĺženie uzávery nemožno vylúčiť",
+        "Stav overenia: POTVRDENÉ – oficiálne oznámenie letiska Catania + Rai News + Sky TG24 + ANSA a ďalšie talianske zdroje."
+      ]
+    }
+  ],
+  source: "Ilustračný vizuál."
+});

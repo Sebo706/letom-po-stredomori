@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Etna nepovoľuje. Catania predĺžila úplnú stopku letov až do piatka 02:00",
+    description: "Letisko Catania predĺžilo úplné pozastavenie všetkých príletov a odletov až do piatka 14. augusta do 02:00.",
+    url: "spravy/etna-catania-stopka-piatok-2026.html",
+    keywords: "etna catania popol sicilia letisko stopka lety 14 august 02:00 comiso palermo trapani fontanarossa",
+  },
+  {
+    type: "Blesková správa",
     title: "V zime častejšie do Ríma: na linke z Košíc pribúda tretí let týždenne",
     description: "V aktuálnych rezervačných dátach sa na priamej linke Wizz Air Košice – Rím objavujú počas zimného letového poriadku už tri lety týždenne.",
     url: "spravy/kosice-rim-treti-let-zima-2026.html",
