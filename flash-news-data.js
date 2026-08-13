@@ -987,6 +987,28 @@ window.LETOM_FLASH_NEWS.unshift({
 });
 
 window.LETOM_FLASH_NEWS.unshift({
+  id: "siviri-evakuacia-more-2026",
+  label: "Kategória: požiar a evakuácia · Grécko/Chalkidiki – Siviri",
+  title: "Pobrežná stráž potvrdila: zo Siviri evakuovali po mori vyše 300 ľudí",
+  date: "13. augusta 2026, 20:57",
+  datetime: "2026-08-13T20:57:00+02:00",
+  image: "images/novinky/siviri-evakuacia-more-2026.jpg",
+  imageAlt: "Evakuácia pri pobreží Chalkidiki počas požiaru. Ilustračný vizuál.",
+  summary: "Grécka pobrežná stráž potvrdila, že hliadkové, hasičské a rybárske plavidlá odviezli zo Siviri už viac než 300 obyvateľov a dovolenkárov. Miestne médiá uvádzajú 347 ľudí, presný konečný počet však úrady ešte nezverejnili. Požiar naďalej zasahuje lesy aj rekreačné objekty.",
+  body: [
+    "Prečo teraz: Predošlý údaj o viac než 200 evakuovaných bol iba predbežný; teraz je rozsah operácie potvrdený pobrežnou strážou.",
+    "Pre slovenského cestovateľa: Siviri, Fourke a priľahlým úsekom západnej Kassandry sa naďalej vyhnite. Evakuovaní hostia sa nemajú vracať do ubytovania bez výslovného súhlasu úradov alebo ubytovateľa.",
+    "Stav overenia: Viac než 300 evakuovaných je potvrdených pobrežnou strážou. Údaj 347 je zatiaľ predbežný."
+  ],
+  source: "Zdroje:",
+  sourceLinks: [
+    { label: "Reuters", url: "https://www.reuters.com/" },
+    { label: "The Guardian", url: "https://www.theguardian.com/uk/2006/aug/23/world.travelnews" },
+    { label: "In.gr", url: "https://www.in.gr/2006/08/22/greece/pyrini-kolasi-stin-kassandra-xalkidikis-me-ena-nekro/" }
+  ]
+});
+
+window.LETOM_FLASH_NEWS.unshift({
   id: "etna-catania-stopka-piatok-2026",
   label: "Kategória: letecká doprava · Taliansko/Sicília – Catania",
   title: "Etna nepovoľuje. Catania predĺžila úplnú stopku letov až do piatka 02:00",
@@ -1037,3 +1059,11 @@ window.LETOM_FLASH_NEWS.unshift({
   ],
   source: "Ilustračný vizuál."
 });
+
+const siviriNewsIndex = window.LETOM_FLASH_NEWS.findIndex(
+  (item) => item.id === "siviri-evakuacia-more-2026"
+);
+if (siviriNewsIndex > -1) {
+  const [siviriNews] = window.LETOM_FLASH_NEWS.splice(siviriNewsIndex, 1);
+  window.LETOM_FLASH_NEWS.unshift(siviriNews);
+}

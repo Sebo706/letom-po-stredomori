@@ -78,6 +78,17 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Po dokonceni kazdej ulohy pouzivatelovi pripomenut nasledujucich 5 cakajucich bodov zo suboru `WEBSITE_IMPROVEMENTS.md`.
 - Pri kazdom novom kvíze po dokončení zobrazit prehlad vsetkych otazok: odpoved pouzivatela, spravnu odpoved a kratke vysvetlenie. Prehlad musi jasne rozlisovat spravne a nespravne odpovede a byt citatelny na mobile aj desktope.
 
+## Séria Majster Stredomoria
+
+- Novy tematicky diel serie vytvarat z existujuceho vzoru `kvizy/majster-stredomoria.html` a jeho prislusnych CSS/JavaScript suborov. Povodnu hru nemenit, ak nejde o spolocnu opravu alebo pouzivatel vyslovne neziada jej zmenu.
+- Zachovat vizualnu identitu, televiznu atmosferu, responzivne rozlozenie, rebricek 15 otazok, bezpecne hranice, animacie, zvuky, pristupnost a vsetky tri zoliky. Tematicky diel ma posobit ako dalsia cast rovnakej serie, nie ako novy formularovy kviz.
+- Pre dalsi diel vytvorit samostatnu HTML stranku a samostatny datovy JavaScript subor. Pre nastavenie zvuku pouzit vlastny `localStorage` kluc; nemiesat stav novej hry so stavom povodnej hry.
+- Otazky drzat v rovnakej datovej strukture ako vzorova hra. Kazda otazka musi mat styri moznosti, presne jednu spravnu odpoved, vlastnu napovedu, obtiaznost, ferovu simulovanu napovedu cestovatelov so suctom 100 % a kratke vysvetlenie pre zaverecny prehlad.
+- Otazky rozlozit od lahkych po tazke, tematicky ich spestrit a pouzivat iba stabilne, jednoznacne overitelne fakty. Vyhnut sa aktualnym cenam, sezonnym obmedzeniam, letovym poriadkom a nejasnym alebo chytakovym formulaciam.
+- Zachovat nahodne poradie zobrazenia odpovedi, aby spravna moznost nebola systematicky na rovnakej pozicii. Pred dokoncenim overit, ze vsetky spravne odpovede, napovedy a vysvetlenia zodpovedaju zobrazovanym moznostiam.
+- Novy diel zaradit kartou do `kvizy/index.html` v existujucej strukture. Ak ide o verejny obsah, pridat ho aj do vyhladavacieho indexu zhodne v `index.html` aj `letom-data.js` a aktualizovat `Posledna aktualizacia` podla tychto pravidiel.
+- Pred odovzdanim skontrolovat syntax zmenenych JavaScript suborov, fungovanie vsetkych troch zolikov, bezpecne hranice, nahodne odpovede, navigaciu, mobilne rozlozenie bez horizontalneho posuvu a `prefers-reduced-motion`. Ak to prostredie umozni, dotknutu stranku otvorit v prehliadaci; neobchadzat bezpecnostne blokovanie lokalneho suboru.
+
 ## Interaktivna mapa
 
 - Miesto sa moze oznacit ako `Moje cesty` iba po vyslovnom potvrdeni pouzivatela; nikdy nie podla clanku, videa, podcastu, nazvu suboru ani predchadzajucej domnienky.

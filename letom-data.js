@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Blesková správa",
+    title: "Pobrežná stráž potvrdila: zo Siviri evakuovali po mori vyše 300 ľudí",
+    description: "Grécka pobrežná stráž potvrdila, že zo Siviri odviezli po mori viac než 300 obyvateľov a dovolenkárov.",
+    url: "spravy/siviri-evakuacia-more-2026.html",
+    keywords: "siviri chalkidiki kassandra grecko poziar evakuacia pobrežná stráž more fourke dovolenkari",
+  },
+  {
     type: "Hra",
     title: "Majster Stredomoria: Pláže a prírodné krásy",
     description: "15 otázok o plážach, ostrovoch a prírodných divoch Stredomoria. Tri žolíky a cesta až k miliónu míľ.",
