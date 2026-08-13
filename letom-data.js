@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Hra",
+    title: "Majster Stredomoria: Pláže a prírodné krásy",
+    description: "15 otázok o plážach, ostrovoch a prírodných divoch Stredomoria. Tri žolíky a cesta až k miliónu míľ.",
+    url: "kvizy/majster-stredomoria-plaze-priroda.html",
+    keywords: "majster stredomoria plaze prirodne krasy navagio nissi beach sardinia elafonissi malta korzika hra kviz 15 otazok",
+  },
+  {
     type: "Blesková správa",
     title: "Etna nepovoľuje. Catania predĺžila úplnú stopku letov až do piatka 02:00",
     description: "Letisko Catania predĺžilo úplné pozastavenie všetkých príletov a odletov až do piatka 14. augusta do 02:00.",

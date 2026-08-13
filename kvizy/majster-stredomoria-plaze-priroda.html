@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Majster Stredomoria: Pláže a prírodné krásy – interaktívna vedomostná súťaž s 15 otázkami a tromi nápovedami." />
+    <title>Majster Stredomoria: Pláže a prírodné krásy</title>
+    <link rel="stylesheet" href="../style.css?v=20260811-majster-1" />
+    <link rel="stylesheet" href="kvizy.css?v=20260731-mobile-images-1" />
+    <link rel="stylesheet" href="majster-stredomoria.css?v=20260811-majster-1" />
+  </head>
+  <body class="article-page quiz-page master-page">
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hlavná navigácia">
+        <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov"><img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" /><span>Letom po Stredomorí</span></a>
+        <div class="nav-panel nav-panel-static"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html" aria-current="page">Kvízy</a><a class="nav-cta" href="../index.html#domov">Späť na domov</a></div>
+      </nav>
+    </header>
+
+    <main class="master-game" data-game-root>
+      <section class="master-stage" aria-labelledby="master-title">
+        <div class="master-sky" aria-hidden="true"></div>
+        <div class="master-topbar">
+          <a class="master-back" href="index.html">← Všetky kvízy</a>
+          <button class="master-sound" type="button" data-sound-toggle aria-label="Vypnúť zvuk" aria-pressed="true"><span aria-hidden="true">🔊</span><span class="master-sound-label">Zvuk</span></button>
+        </div>
+
+        <section class="master-intro" data-screen="intro">
+          <p class="master-brand">MAJSTER STREDOMORIA</p>
+          <p class="master-route">Pláže a prírodné krásy</p>
+          <h1 id="master-title">Cesta za miliónom zážitkov</h1>
+          <p class="master-subtitle">15 otázok od slávnych pláží až po skryté prírodné poklady Stredomoria.</p>
+          <p class="master-lead">Poznáš najkrajšie pláže, ostrovy, lagúny a prírodné divy Stredomoria? Prvých päť otázok ťa zahreje. Potom začne byť cesta k miliónu stredomorských míľ podstatne náročnejšia.</p>
+          <div class="master-intro-features" aria-label="Pravidlá hry"><span>15 úrovní</span><span>3 nápovedy</span><span>1 000 000 míľ</span></div>
+          <button class="master-start" type="button" data-start>ZAČAŤ HRU</button>
+          <p class="master-intro-note">Hra používa vlastné generované zvukové efekty. Zvuk môžeš kedykoľvek vypnúť.</p>
+        </section>
+
+        <section class="master-play" data-screen="play" hidden aria-label="Hra Majster Stredomoria">
+          <div class="master-game-layout">
+            <div class="master-main-column">
+              <div class="master-progress-row"><p data-question-count>Otázka 1 z 15</p><p data-current-miles>Hráš o 100 míľ</p></div>
+              <div class="master-lifelines" aria-label="Nápovedy">
+                <button type="button" class="master-lifeline" data-lifeline="fifty" aria-label="Nápoveda 50 na 50"><span>50 : 50</span><small>zúžiť výber</small></button>
+                <button type="button" class="master-lifeline master-lifeline-audience" data-lifeline="audience"><span>☷</span><small>Čo si myslia cestovatelia</small></button>
+                <button type="button" class="master-lifeline" data-lifeline="hint"><span>✦</span><small>Nápoveda</small></button>
+              </div>
+              <article class="master-question-card" aria-live="polite">
+                <p class="master-tier" data-tier-label>Ľahká plavba</p>
+                <h2 data-question tabindex="-1"></h2>
+              </article>
+              <div class="master-answers" data-answers aria-label="Možnosti odpovede"></div>
+              <p class="master-status" data-status aria-live="assertive" role="status"></p>
+              <button class="master-quit" type="button" data-quit>Ukončiť hru</button>
+            </div>
+            <aside class="master-ladder-panel" aria-label="Rebríček stredomorských míľ">
+              <div class="master-ladder-heading"><p>CESTA ZA ZÁŽITKAMI</p><strong>Rebríček míľ</strong></div>
+              <ol class="master-ladder" data-ladder></ol>
+            </aside>
+            <details class="master-ladder-mobile"><summary>Rebríček míľ</summary><ol class="master-ladder" data-ladder-mobile></ol></details>
+          </div>
+        </section>
+
+        <section class="master-result" data-screen="result" hidden aria-labelledby="master-result-title">
+          <div class="master-confetti" data-confetti aria-hidden="true"></div>
+          <p class="master-brand" data-result-brand>MAJSTER STREDOMORIA</p>
+          <div class="master-trophy" data-result-icon aria-hidden="true">🧭</div>
+          <h2 id="master-result-title" data-result-title tabindex="-1"></h2>
+          <p class="master-result-copy" data-result-copy></p>
+          <p class="master-result-miles" data-result-miles></p>
+          <section class="master-review" aria-labelledby="master-review-title"><h3 id="master-review-title">Prehľad tvojej cesty</h3><ol data-review></ol></section>
+          <div class="master-result-actions"><button class="master-start" type="button" data-restart>HRAŤ ZNOVA</button><a class="master-secondary" href="index.html">SPÄŤ NA KVÍZY</a></div>
+        </section>
+      </section>
+
+      <div class="master-modal" data-modal hidden role="dialog" aria-modal="true" aria-labelledby="master-modal-title">
+        <div class="master-modal-backdrop" data-modal-close></div>
+        <section class="master-modal-card"><button class="master-modal-close" type="button" data-modal-close aria-label="Zavrieť okno">×</button><p class="master-modal-eyebrow" data-modal-eyebrow></p><h2 id="master-modal-title" data-modal-title tabindex="-1"></h2><div data-modal-content></div><div class="master-modal-actions" data-modal-actions></div></section>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="footer-content"><a class="footer-brand" href="../index.html#domov"><img src="../images/logo/logo.png" alt="Logo Letom po Stredomorí" /><div><strong>Letom po Stredomorí</strong><p>Cestovateľský magazín spájajúci osobné skúsenosti, praktický prieskum a vizuálnu inšpiráciu.</p></div></a><div class="footer-links"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html">Kvízy</a><a href="../audio.html">Podcast</a></div><p class="copyright">© 2026 Letom po Stredomorí</p><p class="last-updated">Posledná aktualizácia: 13. august 2026, 19:02</p></div></footer>
+    <script src="majster-stredomoria-plaze-priroda.js?v=20260813-plaze-priroda-1"></script>
+  </body>
+</html>
