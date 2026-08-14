@@ -1067,3 +1067,51 @@ if (siviriNewsIndex > -1) {
   const [siviriNews] = window.LETOM_FLASH_NEWS.splice(siviriNewsIndex, 1);
   window.LETOM_FLASH_NEWS.unshift(siviriNews);
 }
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "omis-poziar-evakuacia-2026",
+  label: "Kategória: požiare a bezpečnosť · Chorvátsko/Dalmácia – Omiš a Lokva Rogoznica",
+  title: "Veľký požiar sa dostal až k Omišu. Horeli domy, prebieha evakuácia a zasahujú stovky hasičov",
+  date: "Aktualizované: 14. augusta 2026, približne 8:25",
+  datetime: "2026-08-14T08:25:00+02:00",
+  image: "images/novinky/omis-poziar-evakuacia-2026.jpg",
+  imageAlt: "Veľký požiar pri Omiši. Ilustračný vizuál.",
+  summary: "Veľký lesný požiar, ktorý vypukol vo štvrtok 13. augusta približne o 20:15 pri Lokve Rogoznici, sa počas noci za silného vetra rozšíril pozdĺž pobrežia až smerom k Omišu. Chorvátska hasičská komunita potvrdzuje zásah na celom území od Lokve Rogoznice po Omiš a označuje situáciu za mimoriadne vážnu.",
+  body: [
+    "Počas noci sa oheň dostal aj do oblasti Borak priamo nad centrom Omišu. Miestne médiá a správy z terénu potvrdzujú, že plamene sa objavili aj v oblastiach Nemira a Brzet a v určitom momente sa dostali veľmi blízko k zastavanej časti mesta.",
+    "Podľa oficiálnych údajov chorvátskych hasičov bolo o 7:00 na zásah nasadených už 286 hasičov a 93 hasičských vozidiel. Posily prišli nielen z Dalmácie, ale aj z viacerých ďalších chorvátskych žúp a zo Záhrebu. Okolo 6:00 boli k požiaru vyslané štyri lietadlá Canadair CL-415.",
+    "Hasiči dostali hlásenia o zasiahnutých alebo horiacich domoch v oblastiach Ivašnjak, Staro Selo, Pod Vajle, Nemira, Stanići a Medići. Zdravotná služba podľa HVZ ošetrila 19 ľudí. Presný rozsah škôd zatiaľ nie je známy.",
+    "Prebiehala rozsiahla evakuácia miestnych obyvateľov aj turistov po súši a po mori. Otvorené boli prijímacie centrá v Omiši, Dugom Rate, Makarskej a Splite. O 7:00 sa v nich nachádzalo približne 150 evakuovaných ľudí a z Omišu smerovali do Splitu ďalšie štyri autobusy. V prístave Omiš bol pripravený aj výsadkový útočný čln chorvátskeho námorníctva pre prípad potreby ďalšej evakuácie."
+  ],
+  sections: [
+    {
+      title: "Doprava je výrazne obmedzená",
+      paragraphs: [
+        "K 8:05 v piatok 14. augusta zostávala pre požiar uzavretá Jadranská magistrála D8 medzi Stanići a Medići cez Lokvu Rogoznicu. Uzavretá bola tiež omišská obchádzka DC553 smerom na Makarskú."
+      ]
+    },
+    {
+      title: "Prečo teraz",
+      paragraphs: [
+        "Požiar sa počas jedinej noci z oblasti Lokve Rogoznice rozšíril až k Omišu. Silný a meniaci sa vietor výrazne komplikoval zásah a oheň prenikol do zastavaných oblastí. Hlavný chorvátsky hasičský veliteľ Slavko Tucaković ho ráno označil za jeden z najťažších požiarov v histórii Chorvátska."
+      ]
+    },
+    {
+      title: "Pre slovenského cestovateľa",
+      paragraphs: [
+        "Ak ste momentálne v Omiši, Stanići, Nemire, Lokve Rogoznici, Medići alebo v bezprostrednom okolí, riaďte sa výlučne pokynmi polície, hasičov, civilnej ochrany a svojho ubytovateľa. Ak dostanete príkaz na evakuáciu, nečakajte na ďalší vývoj a opustite miesto určenou trasou.",
+        "Na cestu po magistrále medzi Omišom a Makarskou sa momentálne nespoliehajte – v oblasti sú uzávery a situácia sa môže meniť veľmi rýchlo. Pri bezprostrednom ohrození volajte v Chorvátsku 112, prípadne hasičov na 193.",
+        "Dôležité: príčina vzniku požiaru zatiaľ nebola oficiálne potvrdená. Na sociálnych sieťach a v niektorých médiách sa objavujú dohady o úmyselnom založení, ale v tejto chvíli ich nemožno uvádzať ako fakt.",
+        "Stav overenia: Potvrdené Chorvátskou hasičskou komunitou, HAK a viacerými nezávislými chorvátskymi médiami. Situácia je stále dynamická a údaje o škodách či počte evakuovaných sa ešte môžu výrazne zmeniť."
+      ]
+    }
+  ],
+  source: "Zdroje:",
+  sourceLinks: [
+    { label: "Hrvatska vatrogasna zajednica", url: "https://hvz.gov.hr/" },
+    { label: "Hrvatski autoklub (HAK)", url: "https://www.hak.hr/info/stanje-na-cestama/" },
+    { label: "Hina/Index", url: "https://www.index.hr/" },
+    { label: "Jutarnji list", url: "https://www.jutarnji.hr/" },
+    { label: "Slobodna Dalmacija", url: "https://slobodnadalmacija.hr/" }
+  ]
+});

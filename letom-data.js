@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Veľký požiar sa dostal až k Omišu. Horeli domy, prebieha evakuácia a zasahujú stovky hasičov",
+    description: "Veľký lesný požiar sa počas noci za silného vetra rozšíril pozdĺž pobrežia od Lokve Rogoznice až smerom k Omišu.",
+    url: "spravy/omis-poziar-evakuacia-2026.html",
+    keywords: "omis lokva rogoznica dalmacia chorvatsko poziar evakuacia hasici doprava d8 stanici medici",
+  },
+  {
+    type: "Blesková správa",
     title: "Pobrežná stráž potvrdila: zo Siviri evakuovali po mori vyše 300 ľudí",
     description: "Grécka pobrežná stráž potvrdila, že zo Siviri odviezli po mori viac než 300 obyvateľov a dovolenkárov.",
     url: "spravy/siviri-evakuacia-more-2026.html",
