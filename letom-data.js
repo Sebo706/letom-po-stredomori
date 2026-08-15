@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Blesková správa",
+    title: "Sicília bez letov, Chorvátsko po požiaroch: Catania zatvorená do 15:00, Omiš a Pelješac stabilizované",
+    description: "Catania zostáva bez letov pre erupciu Etny; požiare pri Omiši a na Pelješci sú stabilizované, dopravné obmedzenia trvajú.",
+    url: "spravy/sicilia-chorvatsko-aktualne-2026.html",
+    keywords: "sicilia catania etna lety chorvatsko omis peljesac poziar dc553 dc414 doprava hak",
+  },
+  {
+    type: "Blesková správa",
     title: "Veľký požiar sa dostal až k Omišu. Horeli domy, prebieha evakuácia a zasahujú stovky hasičov",
     description: "Veľký lesný požiar sa počas noci za silného vetra rozšíril pozdĺž pobrežia od Lokve Rogoznice až smerom k Omišu.",
     url: "spravy/omis-poziar-evakuacia-2026.html",

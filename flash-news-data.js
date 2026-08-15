@@ -1115,3 +1115,61 @@ window.LETOM_FLASH_NEWS.unshift({
     { label: "Slobodna Dalmacija", url: "https://slobodnadalmacija.hr/" }
   ]
 });
+
+window.LETOM_FLASH_NEWS.unshift({
+  id: "sicilia-chorvatsko-aktualne-2026",
+  label: "Blesková správa · Taliansko/Sicília + Chorvátsko/Dalmácia",
+  title: "Sicília bez letov, Chorvátsko po požiaroch: Catania zatvorená do 15:00, Omiš a Pelješac stabilizované",
+  date: "15. august 2026, 8:25",
+  datetime: "2026-08-15T08:25:00+02:00",
+  image: "images/novinky/sicilia-chorvatsko-aktualne-2026.jpg",
+  imageAlt: "Etna nad letiskom Catania a požiarisko pri chorvátskom pobreží. Ilustračný vizuál.",
+  summary: "Dve rozdielne udalosti dnes ovplyvňujú cestovanie v Stredomorí. Na Sicílii pokračuje úplné prerušenie letov z Catanie pre erupciu Etny, zatiaľ čo v Chorvátsku sa situácia po veľkých požiaroch pri Omiši a na Pelješci stabilizovala. Dopravné obmedzenia však zostávajú.",
+  body: [],
+  sections: [
+    {
+      title: "✈️ Catania zostáva bez letov najmenej do 15:00",
+      paragraphs: [
+        "Letisko Catania predĺžilo pozastavenie všetkých príletov a odletov až do dnešnej 15:00. Dôvodom je pokračujúca aktivita Etny, sopečný popol a uzavretie sektorov vzdušného priestoru C1 a B3. Informáciu potvrdzuje priamo prevádzkovateľ letiska, Reuters, AP aj Sky TG24.",
+        "Ide o ďalšie predĺženie obmedzení počas jedného z najvyťaženejších dovolenkových víkendov v Taliansku. Obnovenie prevádzky o 15:00 zatiaľ nemožno považovať za isté – ďalší vývoj bude závisieť od sopečnej aktivity, množstva popola a poveternostných podmienok."
+      ]
+    },
+    {
+      title: "Pre slovenského cestovateľa",
+      paragraphs: [
+        "Ak máte dnes let do Catanie alebo z Catanie, na letisko nechoďte bez potvrdenia od aerolinky, že váš let skutočne poletí. Pri presmerovaní na iné sicílske alebo okolité letisko riešte náhradnú dopravu najskôr priamo s leteckou spoločnosťou a uschovajte si účtenky."
+      ]
+    },
+    {
+      title: "🔥 Omiš a Pelješac: požiare pod kontrolou, cesty ešte obmedzené",
+      paragraphs: [
+        "V Chorvátsku je situácia podstatne pokojnejšia. Hlavný hasičský veliteľ Slavko Tucaković v piatok večer oznámil, že situácia na požiariskách je stabilná a požiare sú pod kontrolou hasičov. Pri Omiši už podľa jeho vyjadrenia nebola otvorená vatra a zostávalo len minimálne zadymenie. Na Pelješci zostali hasiči aj počas noci a pokračovali v dohliadaní a dohasovaní.",
+        "Pre cestovateľov však obmedzenia nekončia. Podľa aktuálnych údajov HAK z dnešného rána je omišská obchádzka DC553 stále uzavretá pre všetky vozidlá. Na Pelješci sa na úseku DC414 Prizdrina – Potomje a na miestnej ceste Kuna Pelješka – Pijavičino jazdí iba jedným pruhom."
+      ]
+    },
+    {
+      title: "Pre slovenského cestovateľa",
+      paragraphs: [
+        "Ak dnes cestujete cez Omiš alebo Pelješac, počítajte so zdržaním a riaďte sa aktuálnymi pokynmi HAK, polície a hasičov. Nevstupujte na požiariská ani na uzavreté cesty, aj keď už na mieste nie sú viditeľné plamene."
+      ]
+    },
+    {
+      title: "Stav overenia",
+      paragraphs: [
+        "✅ Catania: potvrdené oficiálnym oznámením letiska a viacerými nezávislými zdrojmi.",
+        "✅ Omiš a Pelješac: stabilizáciu potvrdzuje HINA a viacero chorvátskych médií; aktuálne cestné obmedzenia potvrdzuje HAK."
+      ]
+    }
+  ],
+  source: "Zdroje:",
+  sourceLinks: [
+    { label: "Letisko Catania/SAC", url: "https://aeroporto.catania.it/en/news" },
+    { label: "Reuters", url: "https://www.reuters.com/" },
+    { label: "AP", url: "https://apnews.com/" },
+    { label: "Sky TG24", url: "https://tg24.sky.it/" },
+    { label: "HINA", url: "https://www.hina.hr/" },
+    { label: "HRT", url: "https://www.hrt.hr/" },
+    { label: "N1 Hrvatska", url: "https://n1info.hr/" },
+    { label: "HAK", url: "https://www.hak.hr/info/stanje-na-cestama/" }
+  ]
+});
