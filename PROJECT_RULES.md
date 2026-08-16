@@ -103,6 +103,7 @@ Pri novych dohodnutych pravidlach ich doplnit sem.
 - Pri hre s postupom spristupnit dalsiu misiu hned po uspesnom dokonceni predchadzajucej; dalsi level odomknut po dokonceni jeho celej serie misií.
 - Narocnost zvysovat postupne po leveloch a v kazdom novom leveli pridat najviac jednu novu mechaniku. Chyba dietata nesmie znamenat stratu postupu ani trest; ponuknut dalsi pokus a zrozumitelnu napovedu.
 - Pre deti, ktore este necitaju, pouzivat velke dotykove prvky, jasne obrazky, kratke slovenske hlasove pokyny, viditelnu spatnu vazbu a samostatne vypnutie zvuku.
+- Pri hre `Malý jazykový hrdina` musí byť prvým krokom hlasový úvod so všetkými ikonami a ich slovenským významom. Výber jazyka môže nasledovať až po tomto úvode; hra musí každý ďalší krok krátko hlasovo vysvetliť a plynulo posunúť dieťa na aktívne miesto.
 - Postup hry ukladat lokalne do `localStorage`; ak je vhodne, moze hra po prvom nacitani fungovat offline cez jednoduchy service worker.
 - Rodicovske nastavenia, reset postupu alebo podobne akcie oddelit jednoduchou rodicovskou brankou a zretelne ich oznacit.
 - Pre hero obrazok hry a nahladovu kartu pouzit samostatne, zmysluplne vizualy bez doleziteho textu vlozeneho priamo v obrazku. Hlavny motiv musi byt pri mobilnom aj desktopovom zobrazeni cely; pouzit bezpecnu kompoziciu a `object-fit: contain` alebo `background-size: contain`, nie orezavajuci rezim `cover`.
