@@ -58,6 +58,9 @@
 .tour-next { min-width: min(18rem, 100%); justify-content: center; }
 .tour-next span[aria-hidden="true"] { font-size: 1.45rem; }
 
+.language-top-actions { display: inline-flex; align-items: center; gap: 0.65rem; }
+.parent-reset-top { min-height: 2.75rem; padding: 0 0.75rem; border: 1px solid #c7dbe3; border-radius: 999px; background: #fffdf8; color: #42677b; font-weight: 800; text-decoration: none; }
+
 .phrase-card { align-items: center; }
 .phrase-helper { color: #375877; font-weight: 700; }
 .phrase-audio-actions { display: flex; align-items: center; }
@@ -84,6 +87,7 @@
   .tour-actions { align-items: stretch; flex-direction: column; }
   .tour-actions .audio-button { align-self: center; }
   .tour-next { min-width: 100%; }
+  .parent-reset-top { font-size: 0.72rem; }
   .answer-grid { gap: 0.75rem; }
   .answer-button { min-height: 7.35rem; }
   .practice-speaker { width: 4.5rem; height: 4.5rem; }

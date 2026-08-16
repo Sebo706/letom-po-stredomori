@@ -218,7 +218,7 @@
     const button = event.target.closest('[data-answer]');
     if (button) choosePractice(button);
   });
-  $('reset-all').addEventListener('click', () => {
+  document.querySelectorAll('[data-reset-progress]').forEach((resetButton) => resetButton.addEventListener('click', () => {
     if (!confirm('Naozaj vymazať všetky hviezdičky a medaily?')) return;
     state.learned = {};
     state.medals = [];
@@ -226,7 +226,7 @@
     tourIndex = 0;
     renderTour();
     show('icon-tour', 'Začíname znovu. Pozri sa na obrázok.');
-  });
+  }));
 
   setSoundButton();
   renderTour();
