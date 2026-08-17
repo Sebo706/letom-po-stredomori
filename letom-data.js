@@ -1,5 +1,12 @@
 window.LETOM_SEARCH_INDEX = [
   {
+    type: "Článok",
+    title: "K moru s povolením od štátu: Ako sa z Československa cestovalo do Stredomoria pred rokom 1989",
+    description: "Pas, výjazdná doložka, devízový prísľub, Čedok a dlhá cesta k Jadranu v časoch, keď o dovolenke rozhodoval aj štát.",
+    url: "blog/cestovanie-do-stredomoria-pred-1989.html",
+    keywords: "československo cestovanie pred 1989 juhoslávia jadran chorvátsko slovinsko čedok výjazdná doložka devízový prísľub devízy pas normalizácia",
+  },
+  {
     type: "Blesková správa",
     title: "Sicília bez letov, Chorvátsko po požiaroch: Catania zatvorená do 15:00, Omiš a Pelješac stabilizované",
     description: "Catania zostáva bez letov pre erupciu Etny; požiare pri Omiši a na Pelješci sú stabilizované, dopravné obmedzenia trvajú.",

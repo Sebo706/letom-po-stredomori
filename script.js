@@ -159,6 +159,19 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const cestovaniePred1989LatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "K moru s povolením od štátu: Ako sa z Československa cestovalo do Stredomoria pred rokom 1989",
+  publishedAt: "2026-08-17T12:32:00",
+  date: "Pridané 17. 8. 2026, 12:32",
+  image: "images/blog/cestovanie-stredomorie-pred-1989/hero-cestovanie-pred-1989.jpg",
+  imageAlt: "Ilustračný vizuál rodiny pri aute na ceste k Jadranu pred rokom 1989",
+  description: "Pas, výjazdná doložka, devízový prísľub, Čedok a dlhá cesta k Jadranu v časoch, keď o dovolenke rozhodoval aj štát.",
+  url: "blog/cestovanie-do-stredomoria-pred-1989.html",
+  label: "Čítať článok",
+};
+
 const pracovneMinutyLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -324,7 +337,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -718,7 +731,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-15T08:25:00";
+  const siteLastUpdated = "2026-08-17T12:44:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1637,6 +1650,14 @@ const cyprusLarnakaParalimniArticle = {
   date: "7. august 2026, 10:28",
 };
 
+const cestovaniePred1989Article = {
+  title: "K moru s povolením od štátu: Ako sa z Československa cestovalo do Stredomoria pred rokom 1989",
+  description: "Pas, výjazdná doložka, devízový prísľub, Čedok a cesta k Jadranu v časoch, keď o dovolenke rozhodoval aj štát.",
+  url: "blog/cestovanie-do-stredomoria-pred-1989.html",
+  image: "images/blog/cestovanie-stredomorie-pred-1989/hero-cestovanie-pred-1989.jpg",
+  date: "17. august 2026, 12:32",
+};
+
 const pracovneMinutyArticle = {
   title: "Talian pracuje na kávu 11 minút, Slovák 23. A Grék? Prekvapivé porovnanie Stredomoria",
   description:
@@ -1659,6 +1680,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      cestovaniePred1989Article,
       pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,
       {
@@ -1704,6 +1726,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      cestovaniePred1989Article,
       pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,
       poziareStredomorieArticle,
@@ -1764,12 +1787,12 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [pracovneMinutyArticle, poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [cestovaniePred1989Article, pracovneMinutyArticle, poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [pracovneMinutyArticle, osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [cestovaniePred1989Article, pracovneMinutyArticle, osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
@@ -1803,7 +1826,7 @@ const articleLibrary = {
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [pracovneMinutyArticle, stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [cestovaniePred1989Article, pracovneMinutyArticle, stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 

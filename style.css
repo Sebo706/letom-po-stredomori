@@ -2220,6 +2220,15 @@ a {
   background: var(--color-surface);
 }
 
+/* Historický článok používa ilustračné vizuály s dôležitou kompozíciou. */
+.article-cestovanie-pred-1989 .article-cover img,
+.article-cestovanie-pred-1989 .article-photo img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--color-surface);
+}
+
 .article-cover figcaption {
   padding: 10px 14px 12px;
   color: var(--color-muted);
