@@ -159,6 +159,18 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const rodosObjavujemeLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Rodos: slnečný grécky ostrov, kde stál jeden zo siedmich divov sveta",
+  publishedAt: "2026-08-20T20:38:00",
+  date: "Pridané 20. 8. 2026, 20:38",
+  image: "images/blog/objavujeme-stredomorie-rodos-2/hero-rodos.jpg",
+  imageAlt: "Rodos s Lindosom a akropolou pri západe slnka",
+  description: "Objavujeme Stredomorie · 2. časť: osobné skúsenosti z dvoch pobytov, pláže, výlety autom a praktické rady z Rodu.",
+  url: "blog/objavujeme-stredomorie-rodos-2.html",
+  label: "Čítať článok",
+};
 const cestovaniePred1989LatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -337,7 +349,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [rodosObjavujemeLatestUpdate, cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -731,7 +743,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-17T12:44:00";
+  const siteLastUpdated = "2026-08-20T20:38:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1658,6 +1670,14 @@ const cestovaniePred1989Article = {
   date: "17. august 2026, 12:32",
 };
 
+const rodosObjavujemeArticle = {
+  title: "Rodos: slnečný grécky ostrov, kde stál jeden zo siedmich divov sveta",
+  description: "Objavujeme Stredomorie · 2. časť: osobné skúsenosti z dvoch pobytov, pláže, výlety autom a praktické rady z Rodu.",
+  url: "blog/objavujeme-stredomorie-rodos-2.html",
+  image: "images/blog/objavujeme-stredomorie-rodos-2/hero-rodos.jpg",
+  date: "20. august 2026, 20:38",
+};
+
 const pracovneMinutyArticle = {
   title: "Talian pracuje na kávu 11 minút, Slovák 23. A Grék? Prekvapivé porovnanie Stredomoria",
   description:
@@ -1726,6 +1746,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      rodosObjavujemeArticle,
       cestovaniePred1989Article,
       pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,

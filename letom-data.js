@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Rodos: slnečný grécky ostrov, kde stál jeden zo siedmich divov sveta",
+    description: "Objavujeme Stredomorie · 2. časť: osobné skúsenosti z dvoch pobytov, pláže, výlety autom a praktické rady z Rodu.",
+    url: "blog/objavujeme-stredomorie-rodos-2.html",
+    keywords: "Rodos Grécko Lindos Prasonisi Tsambika Agathi Anthony Quinn Bay Kallithea Filerimos Faliraki Symi pláže auto dovolenka",
+  },
+  {
+    type: "Článok",
     title: "K moru s povolením od štátu: Ako sa z Československa cestovalo do Stredomoria pred rokom 1989",
     description: "Pas, výjazdná doložka, devízový prísľub, Čedok a dlhá cesta k Jadranu v časoch, keď o dovolenke rozhodoval aj štát.",
     url: "blog/cestovanie-do-stredomoria-pred-1989.html",
