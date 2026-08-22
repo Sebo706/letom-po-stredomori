@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veľký stredomorský kvíz: 50 otázok v piatich leveloch a až 1000 bodov.">
+    <meta property="og:title" content="VEĽKÝ STREDOMORSKÝ KVÍZ – 50 otázok">
+    <meta property="og:description" content="50 otázok o Stredomorí v piatich leveloch a maximum 1000 bodov.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sebo706.github.io/letom-po-stredomori/images/kvizy/velky-stredomorsky-kviz-50-hero.png">
+    <link rel="canonical" href="https://sebo706.github.io/letom-po-stredomori/kvizy/velky-stredomorsky-kviz-50.html">
+    <title>VEĽKÝ STREDOMORSKÝ KVÍZ | Letom po Stredomorí</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="kvizy.css">
+    <link rel="stylesheet" href="velky-stredomorsky-kviz-50.css">
+</head>
+<body class="article-page quiz-page grand-quiz-page">
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Hlavná navigácia">
+            <a class="brand" href="../index.html#domov" aria-label="Letom po Stredomorí domov">
+                <img class="brand-logo" src="../images/logo/logo.png" alt="Logo Letom po Stredomorí">
+                <span>Letom po Stredomorí</span>
+            </a>
+            <div class="nav-panel nav-panel-static">
+                <a href="../index.html#destinacie">Destinácie</a>
+                <a href="../lety.html">Lety</a>
+                <a href="../spravy.html">Správy</a>
+                <a href="../blog.html">Blog</a>
+                <a href="index.html" aria-current="page">Kvízy</a>
+                <a class="nav-cta" href="../index.html#domov">Domov</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="med-quiz grand-quiz" id="main-content">
+        <section class="grand-quiz-cover" aria-labelledby="grand-quiz-title">
+            <img src="../images/kvizy/velky-stredomorsky-kviz-50-hero.png" alt="Veľký stredomorský kvíz – 50 otázok, 5 levelov a maximum 1000 bodov." width="1680" height="945">
+        </section>
+
+        <section class="quiz-shell grand-quiz-stage" aria-live="polite">
+            <section id="grand-quiz-intro" class="grand-screen grand-intro-screen">
+                <p class="grand-kicker">Interaktívna vedomostná hra</p>
+                <h1 id="grand-quiz-title">VEĽKÝ STREDOMORSKÝ KVÍZ</h1>
+                <p class="grand-intro-lead">Ako dobre poznáš Stredomorie? Začni jednoduchými otázkami a postupne sa prebojuj až k otázkam pre skutočných znalcov.</p>
+                <div class="grand-meta" aria-label="Parametre kvízu">
+                    <span><strong>50</strong> otázok</span>
+                    <span><strong>5</strong> levelov</span>
+                    <span><strong>1000</strong> bodov</span>
+                </div>
+                <div class="grand-actions">
+                    <button id="grand-start" class="grand-primary" type="button">Začať kvíz</button>
+                    <button id="grand-resume" class="grand-secondary" type="button" hidden>Pokračovať v rozbehnutom kvíze</button>
+                    <button id="grand-restart-intro" class="grand-link-button" type="button" hidden>Začať odznova</button>
+                </div>
+                <p id="grand-record" class="grand-record" hidden></p>
+            </section>
+
+            <section id="grand-quiz-play" class="grand-screen" hidden aria-labelledby="grand-question">
+                <div class="grand-game-top">
+                    <div>
+                        <p id="grand-level" class="grand-level-label"></p>
+                        <p id="grand-question-count" class="grand-question-count"></p>
+                    </div>
+                    <p id="grand-score" class="grand-score" aria-live="polite">0 bodov</p>
+                </div>
+                <div class="grand-progress" aria-label="Postup kvízom"><span id="grand-progress-bar"></span></div>
+
+                <article class="grand-question-card">
+                    <p id="grand-points" class="grand-points"></p>
+                    <h2 id="grand-question" tabindex="-1"></h2>
+                    <div id="grand-answers" class="grand-answers" aria-label="Možnosti odpovede"></div>
+                    <div id="grand-feedback" class="grand-feedback" role="status" aria-live="polite" hidden></div>
+                    <button id="grand-next" class="grand-primary grand-next" type="button" hidden>Pokračovať</button>
+                </article>
+            </section>
+
+            <section id="grand-level-summary" class="grand-screen grand-summary-screen" hidden aria-labelledby="grand-level-summary-title">
+                <p class="grand-kicker">Level dokončený</p>
+                <h2 id="grand-level-summary-title" tabindex="-1"></h2>
+                <p id="grand-level-summary-text" class="grand-summary-lead"></p>
+                <div id="grand-level-summary-stats" class="grand-summary-stats"></div>
+                <button id="grand-next-level" class="grand-primary" type="button">Pokračovať do ďalšieho levelu</button>
+            </section>
+
+            <section id="grand-quiz-result" class="grand-screen grand-result-screen" hidden aria-labelledby="grand-result-title">
+                <div id="grand-confetti" class="grand-confetti" aria-hidden="true"></div>
+                <p class="grand-kicker">Tvoj výsledok</p>
+                <h2 id="grand-result-title" tabindex="-1"></h2>
+                <p id="grand-result-score" class="grand-result-score"></p>
+                <p id="grand-result-copy" class="grand-result-copy"></p>
+
+                <section class="grand-result-section" aria-labelledby="grand-level-results-title">
+                    <h3 id="grand-level-results-title">Výsledky podľa levelov</h3>
+                    <ol id="grand-level-results" class="grand-level-results"></ol>
+                </section>
+                <section class="grand-result-section" aria-labelledby="grand-review-title">
+                    <h3 id="grand-review-title">Prehľad všetkých odpovedí</h3>
+                    <ol id="grand-review" class="grand-review"></ol>
+                </section>
+                <div class="grand-actions">
+                    <button id="grand-restart-result" class="grand-primary" type="button">Hrať znova</button>
+                    <button id="grand-share" class="grand-secondary" type="button">Zdieľať výsledok</button>
+                    <a class="grand-text-link" href="index.html">Späť na kvízy</a>
+                    <a class="grand-text-link" href="../index.html#domov">Objavovať Stredomorie</a>
+                </div>
+                <p id="grand-share-feedback" class="grand-record" role="status" aria-live="polite" hidden></p>
+                <label id="grand-share-fallback" class="grand-share-fallback" hidden>
+                    Skopíruj si výsledok a odkaz
+                    <input id="grand-share-url" type="text" readonly>
+                </label>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a class="footer-brand" href="../index.html#domov" aria-label="Späť hore na domov">
+                <img src="../images/logo/logo.png" alt="Logo Letom po Stredomorí">
+                <div><strong>Letom po Stredomorí</strong><p>Cestovateľský magazín spájajúci osobné skúsenosti, praktický prieskum a vizuálnu inšpiráciu.</p></div>
+            </a>
+            <div class="footer-links" aria-label="Odkazy v pätičke"><a href="../index.html#destinacie">Destinácie</a><a href="../lety.html">Lety</a><a href="../spravy.html">Správy</a><a href="../blog.html">Blog</a><a href="index.html">Kvízy</a><a href="../audio.html">Podcast</a></div>
+            <p class="ai-note">Pri príprave obsahu využívam aj AI nástroje ako pomoc pri prieskume, štruktúre a ilustračných vizuáloch. Finálny výber, úpravy a publikovanie robím ručne.</p>
+            <p class="copyright">© 2026 Letom po Stredomorí</p>
+            <!-- POVINNÉ: Tento dátum aktualizovať pri každej obsahovej zmene webu -->
+            <p class="last-updated">Posledná aktualizácia: 22. augusta 2026, 14:09</p>
+        </div>
+    </footer>
+
+    <script src="velky-stredomorsky-kviz-50.js"></script>
+</body>
+</html>

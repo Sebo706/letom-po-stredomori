@@ -239,6 +239,13 @@ window.LETOM_SEARCH_INDEX = [
   },
   {
     type: "Kvíz",
+    title: "VEĽKÝ STREDOMORSKÝ KVÍZ – 50 otázok",
+    description: "50 otázok o Stredomorí v piatich leveloch. Zbierajte body a skúste dosiahnuť maximum 1000 bodov.",
+    url: "kvizy/velky-stredomorsky-kviz-50.html",
+    keywords: "veľký stredomorský kvíz velky stredomorsky kviz 50 otázok otazky 5 levelov 1000 bodov grécko grecko taliansko španielsko spanielsko chorvátsko chorvatsko cyprus malta francúzsko francuzsko slovinsko",
+  },
+  {
+    type: "Kvíz",
     title: "Veľký stredomorský kvíz",
     description: "15 otázok o krajinách, ostrovoch, mestách, jedle a prírode európskeho Stredomoria.",
     url: "kvizy/velky-stredomorsky-kviz.html",
