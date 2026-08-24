@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Neapol za 44 € spiatočne: 4 noci pod Vezuvom",
+    description: "Letom za dostupné ceny · 1. časť: praktický tip na štyri noci v Neapole, Pompeje a Vezuv s priamym letom z Bratislavy.",
+    url: "blog/neapol-za-44-eur-4-noci-pod-vezuvom.html",
+    keywords: "Letom za dostupné ceny Neapol Vezuv Pompeje Kampánia Taliansko Bratislava lacný výlet letenka ubytovanie Alibus Maradona pizza",
+  },
+  {
+    type: "Článok",
     title: "Rodos: slnečný grécky ostrov, kde stál jeden zo siedmich divov sveta",
     description: "Objavujeme Stredomorie · 2. časť: osobné skúsenosti z dvoch pobytov, pláže, výlety autom a praktické rady z Rodu.",
     url: "blog/objavujeme-stredomorie-rodos-2.html",

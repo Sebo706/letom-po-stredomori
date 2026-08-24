@@ -159,6 +159,18 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const neapolLetomLacnoLatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Neapol za 44 € spiatočne: 4 noci pod Vezuvom",
+  publishedAt: "2026-08-24T09:38:00",
+  date: "Pridané 24. 8. 2026, 09:38",
+  image: "images/blog/letom-za-zazitkom-neapol-44/hero-neapol-44.png",
+  imageAlt: "Neapol, Vezuv a priamy let z Bratislavy",
+  description: "Letom za dostupné ceny · 1. časť: praktický tip na štyri noci v Neapole, Pompeje a Vezuv s priamym letom z Bratislavy.",
+  url: "blog/neapol-za-44-eur-4-noci-pod-vezuvom.html",
+  label: "Čítať článok",
+};
 const rodosObjavujemeLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -349,7 +361,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [rodosObjavujemeLatestUpdate, cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [neapolLetomLacnoLatestUpdate, rodosObjavujemeLatestUpdate, cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -743,7 +755,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-20T20:38:00";
+  const siteLastUpdated = "2026-08-24T09:38:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1670,6 +1682,14 @@ const cestovaniePred1989Article = {
   date: "17. august 2026, 12:32",
 };
 
+const neapolLetomLacnoArticle = {
+  title: "Neapol za 44 € spiatočne: 4 noci pod Vezuvom",
+  description: "Letom za dostupné ceny · 1. časť: praktický tip na štyri noci v Neapole, Pompeje a Vezuv s priamym letom z Bratislavy.",
+  url: "blog/neapol-za-44-eur-4-noci-pod-vezuvom.html",
+  image: "images/blog/letom-za-zazitkom-neapol-44/hero-neapol-44.png",
+  date: "24. august 2026, 09:38",
+};
+
 const rodosObjavujemeArticle = {
   title: "Rodos: slnečný grécky ostrov, kde stál jeden zo siedmich divov sveta",
   description: "Objavujeme Stredomorie · 2. časť: osobné skúsenosti z dvoch pobytov, pláže, výlety autom a praktické rady z Rodu.",
@@ -1700,6 +1720,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      neapolLetomLacnoArticle,
       cestovaniePred1989Article,
       pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,

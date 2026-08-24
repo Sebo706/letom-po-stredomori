@@ -2194,6 +2194,14 @@ a {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
 }
 
+.series-note {
+  max-width: 720px;
+  margin: 12px 0 0;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
 .article-cover {
   width: 100%;
   margin: 30px 0 0;
@@ -2231,6 +2239,15 @@ a {
 
 .article-rodos-objavujeme-2 .article-cover img,
 .article-rodos-objavujeme-2 .article-photo img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--color-surface);
+}
+
+/* Vizuály tipu Letom za dostupné ceny obsahujú dôležitú celú kompozíciu. */
+.article-neapol-tip .article-cover img,
+.article-neapol-tip .article-photo img {
   height: auto;
   aspect-ratio: auto;
   object-fit: contain;
