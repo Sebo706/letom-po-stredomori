@@ -159,6 +159,18 @@ searchClose?.addEventListener("click", closeSearch);
 searchInput?.addEventListener("input", (event) => {
   renderSearchResults(event.target.value);
 });
+const jesenStredomorie2026LatestUpdate = {
+  kind: "article",
+  type: "Nový článok",
+  title: "Jeseň v Stredomorí 2026: veľký prehľad kúpania, turistiky a priamych letov zo Slovenska",
+  publishedAt: "2026-09-03T22:45:00",
+  date: "Pridané 3. 9. 2026, 22:45",
+  image: "images/blog/jesen-stredomorie-2026/hero-jesen-stredomorie-2026.webp",
+  imageAlt: "Jesenné Stredomorie: kúpanie, turistika a priame lety",
+  description: "Veľký praktický prehľad jesene pri mori: kde sa ešte kúpať, kam skôr na výlety a dokedy sa lieta z Bratislavy a Košíc.",
+  url: "blog/jesen-v-stredomori-2026-velky-prehlad.html",
+  label: "Čítať článok",
+};
 const neapolLetomLacnoLatestUpdate = {
   kind: "article",
   type: "Nový článok",
@@ -361,7 +373,7 @@ searchResults?.addEventListener("click", (event) => {
   }
 });
 
-const latestUpdates = [neapolLetomLacnoLatestUpdate, rodosObjavujemeLatestUpdate, cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
+const latestUpdates = [jesenStredomorie2026LatestUpdate, neapolLetomLacnoLatestUpdate, rodosObjavujemeLatestUpdate, cestovaniePred1989LatestUpdate, pracovneMinutyLatestUpdate, cyprusLarnakaParalimniLatestUpdate, osemPribehovStredomoriaLatestUpdate, sardiniaRoadtripLatestUpdate, poziareStredomorieLatestUpdate, stredomorieVlajkaLatestUpdate, francuzskaRivieraLatestUpdate, malorkaNaBicykliLatestUpdate, letenkySlovenskoLatestUpdate, lefkadaAutomLatestUpdate, zaujimavostiStredomoria3LatestUpdate, pravaCestujucichLatestUpdate,
   {
     kind: "audio",
     type: "Nový podcast",
@@ -755,7 +767,7 @@ function renderLastUpdated() {
     return;
   }
 
-  const siteLastUpdated = "2026-08-24T09:38:00";
+  const siteLastUpdated = "2026-09-04T06:24:00";
   const newestUpdate = [...latestUpdates].sort(
     (first, second) => new Date(second.publishedAt) - new Date(first.publishedAt)
   )[0];
@@ -1682,6 +1694,14 @@ const cestovaniePred1989Article = {
   date: "17. august 2026, 12:32",
 };
 
+const jesenStredomorie2026Article = {
+  title: "Jeseň v Stredomorí 2026: veľký prehľad kúpania, turistiky a priamych letov zo Slovenska",
+  description: "Veľký praktický prehľad jesene v Stredomorí: kúpanie, turistika a priame lety z Bratislavy a Košíc.",
+  url: "blog/jesen-v-stredomori-2026-velky-prehlad.html",
+  image: "images/blog/jesen-stredomorie-2026/hero-jesen-stredomorie-2026.webp",
+  date: "3. september 2026, 22:45",
+};
+
 const neapolLetomLacnoArticle = {
   title: "Neapol za 44 € spiatočne: 4 noci pod Vezuvom",
   description: "Letom za dostupné ceny · 1. časť: praktický tip na štyri noci v Neapole, Pompeje a Vezuv s priamym letom z Bratislavy.",
@@ -1720,6 +1740,7 @@ const articleLibrary = {
     name: "Taliansko",
     description: "Články z Talianska, pobrežia Amalfi, Sardínie, miest a praktického plánovania ciest.",
     articles: [
+      jesenStredomorie2026Article,
       neapolLetomLacnoArticle,
       cestovaniePred1989Article,
       pracovneMinutyArticle,
@@ -1767,6 +1788,7 @@ const articleLibrary = {
     name: "Grécko",
     description: "Články z Grécka, ostrovov, krétskych lagún a pobrežia.",
     articles: [
+      jesenStredomorie2026Article,
       rodosObjavujemeArticle,
       cestovaniePred1989Article,
       pracovneMinutyArticle,
@@ -1801,6 +1823,7 @@ const articleLibrary = {
     name: "Španielsko",
   description: "Články zo Španielska, miest, pobrežia, Mallorky a dovolenkovej reality.",
   articles: [
+      jesenStredomorie2026Article,
       pracovneMinutyArticle,
       osemPribehovStredomoriaArticle,
       poziareStredomorieArticle,
@@ -1829,17 +1852,18 @@ const articleLibrary = {
   francuzsko: {
     name: "Francúzsko",
     description: "Články z Azúrového pobrežia, Camargue a francúzskeho Stredomoria.",
-    articles: [cestovaniePred1989Article, pracovneMinutyArticle, poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [jesenStredomorie2026Article, cestovaniePred1989Article, pracovneMinutyArticle, poziareStredomorieArticle, stredomorieVlajkaArticle, francuzskaRivieraArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   chorvatsko: {
     name: "Chorvátsko",
     description: "Články z Jadranu, Stonu, ostrovov a historických miest.",
-    articles: [cestovaniePred1989Article, pracovneMinutyArticle, osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [jesenStredomorie2026Article, cestovaniePred1989Article, pracovneMinutyArticle, osemPribehovStredomoriaArticle, stredomorieVlajkaArticle, zaujimavostiStredomoria3Article, pravaCestujucichEuArticle, cestovkaArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   malta: {
     name: "Malta",
     description: "Články z Malty, ostrovných miest, koncertnej atmosféry a praktického cestovania.",
     articles: [
+      jesenStredomorie2026Article,
       pracovneMinutyArticle,
       stredomorieVlajkaArticle,
       pravaCestujucichEuArticle,
@@ -1863,12 +1887,12 @@ const articleLibrary = {
   cyprus: {
     name: "Cyprus",
     description: "Články z Cypru, Larnaky, zimného cestovania a aktívneho objavovania ostrova.",
-    articles: [pracovneMinutyArticle, cyprusLarnakaParalimniArticle, stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
+    articles: [jesenStredomorie2026Article, pracovneMinutyArticle, cyprusLarnakaParalimniArticle, stredomorieVlajkaArticle, letenkySlovenskoArticle, pravaCestujucichEuArticle, cestovkaArticle, zaujimavostiStredomoria2Article, suveniryEuMimoEuArticle, plavbaLodouArticle, slovaciLietanieArticle, praktickeRadyArticle, solnePanvyArticle],
   },
   slovinsko: {
     name: "Slovinsko",
     description: "Články zo slovinského pobrežia a všeobecné praktické rady pre Stredomorie.",
-    articles: [cestovaniePred1989Article, pracovneMinutyArticle, stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
+    articles: [jesenStredomorie2026Article, cestovaniePred1989Article, pracovneMinutyArticle, stredomorieVlajkaArticle, pravaCestujucichEuArticle, suveniryEuMimoEuArticle, plavbaLodouArticle, zaujimavostiStredomoriaArticle, slovaciLietanieArticle, praktickeRadyArticle],
   },
 };
 

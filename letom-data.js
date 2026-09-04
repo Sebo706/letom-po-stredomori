@@ -1,6 +1,13 @@
 window.LETOM_SEARCH_INDEX = [
   {
     type: "Článok",
+    title: "Jeseň v Stredomorí 2026: veľký prehľad kúpania, turistiky a priamych letov zo Slovenska",
+    description: "Veľký praktický prehľad jesene v Stredomorí: kúpanie, turistika a priame lety z Bratislavy a Košíc.",
+    url: "blog/jesen-v-stredomori-2026-velky-prehlad.html",
+    keywords: "jeseň Stredomorie 2026 kúpanie turistika lety Bratislava Košice Cyprus Malta Grécko Taliansko Španielsko Chorvátsko Francúzsko Mallorca Sicília Malaga",
+  },
+  {
+    type: "Článok",
     title: "Neapol za 44 € spiatočne: 4 noci pod Vezuvom",
     description: "Letom za dostupné ceny · 1. časť: praktický tip na štyri noci v Neapole, Pompeje a Vezuv s priamym letom z Bratislavy.",
     url: "blog/neapol-za-44-eur-4-noci-pod-vezuvom.html",
